@@ -24,7 +24,14 @@ const Sidebar: React.FC<SidebarProps> = ({
   const totalCount = mode === 'papers' ? questions.length : chapters.length;
   const progress = Math.round((completedCount / totalCount) * 100);
 
+  // Generate unique ID for this component instance to avoid CSS conflicts
+  const progressBarId = `progress-bar-${mode}`;
+
   return (
+    <>
+      <style>
+        {`#${progressBarId} { width: ${progress}%; }`}
+      </style>
     <div className="bg-gradient-to-br from-white via-purple-50 to-pink-50 border-4 border-purple-200 rounded-3xl shadow-2xl lg:sticky lg:top-24 p-6">
       <div className="mb-6 pb-4 border-b-4 border-purple-200">
         <div className="flex items-center justify-between mb-3">
@@ -51,8 +58,8 @@ const Sidebar: React.FC<SidebarProps> = ({
           </div>
           <div className="bg-slate-200 rounded-full h-3 overflow-hidden">
             <div 
+              id={progressBarId}
               className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 rounded-full transition-all duration-500"
-              style={{ width: `${progress}%` }}
             />
           </div>
         </div>
@@ -142,6 +149,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         )}
       </nav>
     </div>
+    </>
   );
 };
 
