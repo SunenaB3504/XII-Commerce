@@ -1,0 +1,351 @@
+# Development Guide
+
+## Overview
+
+This guide outlines coding standards, development practices, and contribution guidelines for the Neil's Commerce Prep application.
+
+## Technology Stack & Requirements
+
+### Prerequisites
+- **Node.js**: 18+ (LTS recommended)
+- **npm**: Latest stable version
+- **Git**: For version control
+- **VS Code**: Recommended editor with TypeScript support
+
+### Development Environment
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Coding Standards
+
+### TypeScript Guidelines
+
+#### Type Definitions
+- Use explicit types for all function parameters and return values
+- Prefer interfaces over types for object shapes
+- Use union types for related constants
+- Avoid `any` type; use `unknown` if type is truly unknown
+
+```typescript
+// ✅ Good
+interface User {
+  id: string;
+  name: string;
+  email?: string;
+}
+
+function processUser(user: User): boolean {
+  // implementation
+}
+
+// ❌ Avoid
+function processUser(user: any): any {
+  // implementation
+}
+```
+
+#### Component Props
+- Define props interfaces for all components
+- Use `React.FC<Props>` or explicit function signatures
+- Mark optional props with `?`
+
+```typescript
+interface QuestionViewProps {
+  question: Question;
+  showSolution?: boolean;
+}
+
+const QuestionView: React.FC<QuestionViewProps> = ({ question, showSolution = false }) => {
+  // implementation
+};
+```
+
+### React Best Practices
+
+#### Component Structure
+- Use functional components with hooks
+- Prefer custom hooks for complex logic
+- Keep components focused on single responsibility
+- Use meaningful component names
+
+#### State Management
+- Use `useState` for local component state
+- Use `useEffect` for side effects and data fetching
+- Use `useCallback` to prevent unnecessary re-renders
+- Avoid deep state nesting
+
+```typescript
+// ✅ Good
+const [selectedQuestion, setSelectedQuestion] = useState<string | null>(null);
+const [isLoading, setIsLoading] = useState(false);
+
+const handleSelectQuestion = useCallback((id: string) => {
+  setSelectedQuestion(id);
+}, []);
+```
+
+#### Event Handlers
+- Prefix with `handle` (e.g., `handleClick`, `handleSubmit`)
+- Use `useCallback` for handlers passed as props
+- Destructure event parameters appropriately
+
+### File Organization
+
+#### Directory Structure
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Basic UI components (buttons, inputs)
+│   ├── layout/         # Layout components (sidebar, header)
+│   └── features/       # Feature-specific components
+├── hooks/              # Custom React hooks
+├── utils/              # Utility functions
+├── types/              # TypeScript type definitions
+├── constants/          # Application constants
+└── data/               # Static data and content
+```
+
+#### File Naming
+- **Components**: PascalCase (e.g., `QuestionView.tsx`)
+- **Hooks**: camelCase with `use` prefix (e.g., `useLocalStorage.ts`)
+- **Utils**: camelCase (e.g., `formatDate.ts`)
+- **Types**: PascalCase with descriptive names (e.g., `QuestionTypes.ts`)
+
+#### Import Organization
+```typescript
+// React imports first
+import React, { useState, useEffect } from 'react';
+
+// Third-party libraries
+import { format } from 'date-fns';
+
+// Local imports - types first, then components, then utils
+import type { Question } from '../types';
+import { Button } from '../components/ui/Button';
+import { formatQuestion } from '../utils/questionUtils';
+
+// Relative imports
+import Sidebar from './Sidebar';
+```
+
+### Styling Guidelines
+
+#### Tailwind CSS
+- Use utility-first approach
+- Follow design system color palette
+- Use responsive prefixes consistently (`sm:`, `md:`, `lg:`, `xl:`)
+- Group related classes logically
+
+```tsx
+// ✅ Good
+<div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+
+// ❌ Avoid
+<div className="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition-shadow">
+```
+
+#### CSS Custom Properties
+- Define custom animations in component styles
+- Use CSS variables for theme values
+- Keep styles scoped to components
+
+```tsx
+const styles = `
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+`;
+```
+
+### Performance Optimization
+
+#### React Optimization
+- Use `React.memo` for expensive components
+- Optimize context providers
+- Lazy load route components
+- Avoid inline functions in render
+
+#### Bundle Optimization
+- Import only required functions from libraries
+- Use dynamic imports for large components
+- Optimize images and assets
+- Monitor bundle size
+
+### Accessibility (a11y)
+
+#### Semantic HTML
+- Use proper heading hierarchy (h1 → h2 → h3)
+- Use semantic elements (`<button>`, `<nav>`, `<main>`)
+- Provide meaningful alt text for images
+
+#### Keyboard Navigation
+- Ensure all interactive elements are keyboard accessible
+- Maintain logical tab order
+- Provide visible focus indicators
+
+#### Screen Readers
+- Use ARIA labels when needed
+- Test with screen readers
+- Ensure text-to-speech compatibility
+
+### Testing Guidelines
+
+#### Component Testing
+- Test user interactions
+- Test state changes
+- Test accessibility features
+- Use React Testing Library
+
+#### Content Testing
+- Validate data structure compliance
+- Test content rendering
+- Verify accessibility features
+
+### Git Workflow
+
+#### Branch Naming
+- Feature branches: `feature/add-question-types`
+- Bug fixes: `fix/sidebar-navigation`
+- Documentation: `docs/update-api-reference`
+
+#### Commit Messages
+```
+type(scope): description
+
+Types:
+- feat: new feature
+- fix: bug fix
+- docs: documentation
+- style: formatting
+- refactor: code restructuring
+- test: testing
+- chore: maintenance
+
+Examples:
+- feat(questions): add solution toggle functionality
+- fix(sidebar): resolve navigation overflow on mobile
+- docs(readme): update installation instructions
+```
+
+#### Pull Request Process
+1. Create feature branch from `main`
+2. Make changes following guidelines
+3. Test thoroughly
+4. Update documentation if needed
+5. Create PR with clear description
+6. Code review and approval
+7. Merge to `main`
+
+### Code Quality Tools
+
+#### ESLint Configuration
+```json
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
+```
+
+#### Prettier Configuration
+```json
+{
+  "semi": true,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "printWidth": 100,
+  "tabWidth": 2
+}
+```
+
+### Error Handling
+
+#### User-Facing Errors
+- Provide clear, actionable error messages
+- Use appropriate error states in UI
+- Log errors for debugging
+
+#### Development Errors
+- Use TypeScript strict mode
+- Handle null/undefined values appropriately
+- Validate props in development
+
+### Documentation
+
+#### Code Comments
+- Document complex logic
+- Explain business rules
+- Comment side effects
+
+#### Component Documentation
+```typescript
+interface QuestionViewProps {
+  /** The question object to display */
+  question: Question;
+  /** Whether to show the solution by default */
+  showSolution?: boolean;
+}
+```
+
+## Deployment
+
+### Build Process
+```bash
+# Create production build
+npm run build
+
+# The build artifacts will be stored in the `dist/` directory
+```
+
+### Environment Variables
+- Use `.env.local` for local development
+- Never commit sensitive data
+- Use environment-specific configs
+
+### CI/CD
+- Run tests on every push
+- Build and deploy on main branch merges
+- Use automated deployment platforms
+
+## Security Considerations
+
+- Sanitize user inputs
+- Use HTTPS in production
+- Implement Content Security Policy
+- Regular dependency updates
+
+## Maintenance
+
+### Regular Tasks
+- Update dependencies monthly
+- Review and update documentation
+- Monitor performance metrics
+- Security audits quarterly
+
+### Code Reviews
+- All changes require review
+- Focus on code quality, security, and performance
+- Ensure adherence to guidelines
+
+**Last Updated:** October 1, 2025</content>
+<parameter name="filePath">c:\Users\Admin\Neil\XII-Commerce\docs\development-guide.md
