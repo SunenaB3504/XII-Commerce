@@ -7,15 +7,28 @@ This guide covers the installation, development setup, and deployment process fo
 ## Prerequisites
 
 ### System Requirements
-- **Node.js**: Version 18.0.0 or higher (LTS recommended)
+- **Node.js**: Version 18.0.0 or higher (LTS 18.x or 20.x recommended)
 - **npm**: Version 8.0.0 or higher (comes with Node.js)
 - **Git**: Version 2.30.0 or higher
-- **Operating System**: Windows 10+, macOS 10.15+, or Linux
+- **Operating System**: 
+  - Windows 10/11 (22H2 or later)
+  - macOS 10.15 Catalina or later
+  - Linux (Ubuntu 20.04+, Fedora 35+, or equivalent)
+- **RAM**: Minimum 4GB (8GB recommended for development)
+- **Disk Space**: 500MB for project and dependencies
 
 ### Recommended Tools
-- **VS Code**: With TypeScript and React extensions
-- **GitHub Desktop**: For easier Git operations
+- **VS Code**: Latest version with these extensions:
+  - TypeScript and JavaScript Language Features
+  - ES7+ React/Redux/React-Native snippets
+  - Tailwind CSS IntelliSense
+  - Prettier - Code formatter
+  - ESLint
+  - GitLens (for Git integration)
+- **GitHub Desktop**: For easier Git operations (optional)
 - **Browser**: Chrome/Edge/Firefox with developer tools
+  - React Developer Tools extension
+  - Accessibility Insights extension (for testing)
 
 ## Local Development Setup
 
@@ -119,24 +132,68 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/XII-Commerce/',  // GitHub Pages base path
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined  // Optional: customize code splitting
+      }
+    }
   }
 })
 ```
 
+**Current Build Performance:**
+- Build Time: ~2.3 seconds
+- Bundle Size: ~860 KB (207 KB gzipped)
+- Output: Optimized ES modules with CSS extraction
+- Sourcemaps: Enabled for production debugging
+
 ## Deployment Options
 
-### Static Site Hosting
+### GitHub Pages (Recommended & Configured)
 
-#### GitHub Pages
-1. Build the application: `npm run build`
-2. Install gh-pages: `npm install -g gh-pages`
-3. Deploy to GitHub Pages:
-   ```bash
-   npx gh-pages -d dist
-   ```
+**Automated Deployment:**
+The app automatically deploys to GitHub Pages when you push to the `main` branch. The CI/CD pipeline is configured via GitHub Actions.
+
+**GitHub Actions Workflow:**
+Location: `.github/workflows/deploy.yml`
+
+The workflow:
+1. Triggers on push to `main` branch
+2. Checks out the code
+3. Sets up Node.js environment
+4. Installs dependencies
+5. Builds the application
+6. Deploys to GitHub Pages
+
+**Manual Deployment:**
+```bash
+# Build and deploy manually
+npm run deploy
+
+# This runs: npm run build && gh-pages -d dist
+```
+
+**Configuration:**
+- **Base Path**: `/XII-Commerce/` (configured in vite.config.ts)
+- **Branch**: Deploys to `gh-pages` branch
+- **URL**: https://SunenaB3504.github.io/XII-Commerce
+- **Build Directory**: `dist/`
+
+**Package.json Scripts:**
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  }
+}
+```
 
 #### Netlify
 1. Connect your GitHub repository to Netlify

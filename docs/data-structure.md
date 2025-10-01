@@ -29,29 +29,30 @@ interface QuestionPaper {
 ```typescript
 interface Concept {
   title: string;          // Concept name
-  content: ReactNode;     // Main explanation
-  examFocus?: boolean;    // Exam importance flag
-  mnemonic?: string;      // Memory aid
-  example?: ReactNode;    // Illustrative example
+  content: ReactNode;     // Main explanation (supports rich JSX)
+  examFocus?: boolean;    // Exam importance flag (shows EXAM FOCUS badge)
+  mnemonic?: string;      // Memory aid for retention
+  example?: ReactNode;    // Illustrative example (changed from string to ReactNode for rich content)
 }
 
 interface CaseStudy {
   title: string;          // Case study title
-  scenario: string;       // Situation description
-  analysis: ReactNode;    // Analysis and takeaways
+  scenario: string;       // Situation description (plain text)
+  analysis: ReactNode;    // Analysis and takeaways (supports rich JSX)
 }
 
 interface LearningModule {
-  chapter: string;        // Chapter number (e.g., "1", "2")
-  title: string;          // Chapter title
-  overview: string;       // Brief introduction
-  keyConcepts: Concept[]; // Array of concepts
-  keywords: Array<{       // Glossary terms
-    term: string;
-    definition: string;
+  chapter: string;        // Chapter number as string (e.g., "1", "2", "10")
+  title: string;          // Chapter title (e.g., "Nature and Significance of Management")
+  overview: string;       // Brief introduction (plain text, read by TTS)
+  keyConcepts: Concept[]; // Array of 3-8 concepts per chapter
+  keywords: Array<{       // Glossary terms (5-10 terms recommended)
+    term: string;         // Technical term or vocabulary
+    definition: string;   // Clear, concise definition
   }>;
-  caseStudies: CaseStudy[]; // Practical examples
-  quickRevision: ReactNode; // Summary content
+  caseStudies: CaseStudy[]; // Practical examples (1-3 per chapter)
+  quickRevision: ReactNode; // Summary content for rapid review (supports rich JSX)
+  subject?: string;       // Subject name (optional, for reference)
 }
 ```
 
@@ -235,19 +236,28 @@ export const accountancyLearningModules: LearningModule[] = [
 ## Content Quality Standards
 
 ### Educational Accuracy
-- Content must align with CBSE syllabus
-- Solutions must be correct and well-explained
-- Examples must be relevant and clear
+- Content must align with CBSE Class XII syllabus (2025-26)
+- Solutions must be correct and verified against official materials
+- Examples must be relevant, clear, and accurate
+- Case studies should reflect real-world scenarios
 
-### Accessibility
-- Text-to-speech compatible content
-- Screen reader friendly structure
-- Alternative text for visual elements
+### Accessibility & Usability
+- **Text-to-Speech Compatible**: All text content must work with Web Speech API
+- **Screen Reader Friendly**: Proper semantic structure and ARIA labels where needed
+- **Alternative Text**: Descriptions for visual elements
+- **Rich Content Support**: Proper ReactNode formatting for complex layouts
 
 ### Consistency
-- Uniform formatting across all content
-- Consistent terminology usage
-- Standard question/solution structure
+- **Formatting**: Uniform use of ReactNode patterns across all content
+- **Terminology**: Consistent usage of technical terms
+- **Structure**: Standard question/solution/explanation format
+- **Styling**: Follow design system guidelines for visual elements
+
+### Visual Design in Content
+- Use gradient sections appropriately (refer to design-system.md)
+- Apply glassmorphism patterns for cards and containers
+- Include proper spacing and typography classes
+- Ensure responsive design for all screen sizes
 
 ## Maintenance Guidelines
 

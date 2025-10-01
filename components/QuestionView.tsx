@@ -24,6 +24,15 @@ const QuestionView: React.FC<QuestionViewProps> = ({ question }) => {
     .animate-fade-in-slow {
         animation: fadeInSlow 0.6s ease-in forwards;
     }
+    @keyframes bounceIn {
+        0% { opacity: 0; transform: scale(0.3); }
+        50% { transform: scale(1.05); }
+        70% { transform: scale(0.9); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+    .animate-bounce-in {
+        animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    }
     ul.list-roman {
         list-style-type: upper-roman;
     }
@@ -32,50 +41,85 @@ const QuestionView: React.FC<QuestionViewProps> = ({ question }) => {
   return (
     <>
       <style>{style}</style>
-      <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md animate-fade-in">
-      <div className="flex justify-between items-start">
-        <h3 className="text-2xl font-bold text-slate-800 mb-4">Question {question.id}</h3>
-        <span className="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">
-          {question.marks} {question.marks > 1 ? 'Marks' : 'Mark'}
-        </span>
-      </div>
-      <div className="prose max-w-none text-slate-700">
-        {question.question}
-      </div>
-
-      <div className="mt-8 border-t pt-6 text-center">
-        {!showSolution && (
-           <button
-            onClick={() => setShowSolution(true)}
-            className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-          >
-            Show Solution & Explanation
-          </button>
-        )}
-       
-        {showSolution && (
-          <div className="text-left animate-fade-in-slow">
-            <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
-                <h4 className="text-lg font-semibold text-green-800">Solution</h4>
-                <div className="mt-2 text-green-900">{question.solution}</div>
+      <div className="bg-gradient-to-br from-white via-yellow-50 to-orange-50 border-4 border-yellow-300 rounded-3xl shadow-2xl p-8 animate-fade-in">
+        <div className="flex flex-col sm:flex-row items-start justify-between mb-6 gap-4">
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center shadow-2xl transform rotate-6 hover:rotate-0 transition-transform">
+              <span className="text-3xl transform -rotate-6">❓</span>
             </div>
-
-            <div className="mt-6">
-                <div className="prose max-w-none text-slate-700">
-                    {question.explanation}
-                </div>
+            <div>
+              <h3 className="text-3xl font-black text-slate-800 mb-1">Question {question.id}</h3>
+              <p className="text-purple-600 font-bold">Let's ace this! 💪</p>
             </div>
-            
-             <button
-                onClick={() => setShowSolution(false)}
-                className="mt-8 bg-slate-200 text-slate-700 font-bold py-2 px-6 rounded-lg hover:bg-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
-              >
-                Hide Solution
-              </button>
           </div>
-        )}
+          <div className="flex items-center gap-3">
+            <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-base font-black px-5 py-3 rounded-2xl shadow-2xl border-2 border-yellow-300 transform hover:scale-110 transition-transform">
+              <span className="text-xl">⭐</span> {question.marks} {question.marks > 1 ? 'Points' : 'Point'}
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white border-4 border-purple-200 rounded-2xl p-6 mb-8 shadow-lg">
+          <div className="prose prose-slate max-w-none text-slate-800 text-lg leading-relaxed font-medium">
+            {question.question}
+          </div>
+        </div>
+
+        <div className="border-t-4 border-purple-200 pt-8">
+          {!showSolution && (
+            <div className="text-center">
+              <button
+                onClick={() => setShowSolution(true)}
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 text-white font-black text-lg py-5 px-10 rounded-2xl hover:from-purple-600 hover:via-pink-600 hover:to-rose-600 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-yellow-400 shadow-2xl hover:shadow-3xl border-4 border-white"
+              >
+                <span className="text-2xl animate-bounce">💡</span>
+                <span>Reveal Answer!</span>
+                <span className="text-2xl">✨</span>
+              </button>
+              <p className="text-purple-600 font-bold text-sm mt-4">Click to see the solution and learn! 🚀</p>
+            </div>
+          )}
+
+          {showSolution && (
+            <div className="space-y-6 animate-bounce-in">
+              <div className="bg-gradient-to-r from-green-400 to-emerald-500 border-4 border-green-300 rounded-3xl p-6 shadow-2xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
+                    <span className="text-3xl">✅</span>
+                  </div>
+                  <h4 className="text-2xl font-black text-white drop-shadow-lg">Correct Answer!</h4>
+                </div>
+                <div className="text-white text-xl font-bold bg-white/20 backdrop-blur-sm rounded-2xl p-5 border-2 border-white/40">
+                  {question.solution}
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-blue-400 to-indigo-500 border-4 border-blue-300 rounded-3xl p-6 shadow-2xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
+                    <span className="text-3xl">🧠</span>
+                  </div>
+                  <h4 className="text-2xl font-black text-white drop-shadow-lg">How It Works</h4>
+                </div>
+                <div className="prose prose-slate max-w-none text-white text-base leading-relaxed font-medium bg-white/20 backdrop-blur-sm rounded-2xl p-5 border-2 border-white/40">
+                  {question.explanation}
+                </div>
+              </div>
+
+              <div className="text-center pt-4 flex flex-col items-center gap-3">
+                <div className="text-5xl animate-bounce">🎉</div>
+                <p className="text-purple-700 font-black text-xl">Awesome work! 🌟</p>
+                <button
+                  onClick={() => setShowSolution(false)}
+                  className="inline-flex items-center gap-3 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-bold text-base py-3 px-6 rounded-2xl hover:from-slate-700 hover:to-slate-800 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-slate-400 shadow-lg"
+                >
+                  <span>Hide Solution</span>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
     </>
   );
 }

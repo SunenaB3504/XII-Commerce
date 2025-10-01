@@ -7,10 +7,15 @@ This guide outlines coding standards, development practices, and contribution gu
 ## Technology Stack & Requirements
 
 ### Prerequisites
-- **Node.js**: 18+ (LTS recommended)
-- **npm**: Latest stable version
-- **Git**: For version control
-- **VS Code**: Recommended editor with TypeScript support
+- **Node.js**: 18+ (LTS 18.x or 20.x recommended)
+- **npm**: 8+ (comes with Node.js)
+- **Git**: 2.30+ for version control
+- **VS Code**: Recommended editor with these extensions:
+  - TypeScript and JavaScript Language Features
+  - ES7+ React/Redux/React-Native snippets
+  - Tailwind CSS IntelliSense
+  - Prettier - Code formatter
+  - ESLint
 
 ### Development Environment
 ```bash
@@ -141,25 +146,118 @@ import Sidebar from './Sidebar';
 
 ### Styling Guidelines
 
-#### Tailwind CSS
-- Use utility-first approach
-- Follow design system color palette
+#### Tailwind CSS Best Practices
+- Use utility-first approach following the design system
+- Follow established gradient patterns for consistency
 - Use responsive prefixes consistently (`sm:`, `md:`, `lg:`, `xl:`)
-- Group related classes logically
+- Group related classes logically: layout → spacing → colors → effects
+- Leverage design tokens from design-system.md
 
 ```tsx
-// ✅ Good
-<div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+// ✅ Good - Organized, follows design system
+<div className="bg-white/95 backdrop-blur-sm border border-slate-200/50 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
 
-// ❌ Avoid
+// ❌ Avoid - Inconsistent with design system, poor organization
 <div className="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition-shadow">
 ```
 
-#### CSS Custom Properties
-- Define custom animations in component styles
-- Use CSS variables for theme values
-- Keep styles scoped to components
+#### Visual Design Patterns
 
+**Glassmorphism Cards:**
+```tsx
+// Standard glassmorphism pattern
+className="bg-white/95 backdrop-blur-sm border border-slate-200/50 rounded-2xl shadow-xl"
+
+// With hover enhancement
+className="bg-white/95 backdrop-blur-sm border border-slate-200/50 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
+```
+
+**Gradient Buttons:**
+```tsx
+// Primary action button
+className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500/50 focus:ring-offset-2 shadow-lg hover:shadow-xl"
+
+// Secondary/cancel button
+className="bg-gradient-to-r from-slate-600 to-slate-700 text-white font-bold py-3 px-6 rounded-xl hover:from-slate-700 hover:to-slate-800 transition-all duration-300 shadow-md"
+```
+
+**Gradient Icon Containers:**
+```tsx
+// Small icon (24px)
+<div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md">
+  <svg className="w-4 h-4 text-white">...</svg>
+</div>
+
+// Medium icon (32px)
+<div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center shadow-md">
+  <svg className="w-5 h-5 text-white">...</svg>
+</div>
+
+// Large icon (48px)
+<div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
+  <svg className="w-7 h-7 text-white">...</svg>
+</div>
+```
+
+**Gradient Badges:**
+```tsx
+// Exam focus badge
+<span className="text-xs bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold px-3 py-1 rounded-full shadow-md">
+  EXAM FOCUS
+</span>
+
+// Marks indicator
+<div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
+  <svg className="w-4 h-4 inline mr-1">...</svg>
+  6 Marks
+</div>
+```
+
+**Content Sections with Gradients:**
+```tsx
+// Neutral content section
+<div className="bg-gradient-to-r from-slate-50 to-blue-50/30 border border-slate-200/50 rounded-xl p-6">
+  {content}
+</div>
+
+// Success/solution section
+<div className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200/50 rounded-xl p-6 shadow-lg">
+  {solution}
+</div>
+
+// Information/explanation section
+<div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200/50 rounded-xl p-6 shadow-lg">
+  {explanation}
+</div>
+```
+
+#### Icon System
+
+**Icon Guidelines:**
+- Use Heroicons (outline style) for consistency
+- Inline SVG for performance and customization
+- Follow size standards: `h-3 w-3` (small), `h-4 w-4` (medium), `h-5 w-5` (standard), `h-6 w-6` (large)
+- Use `stroke="currentColor"` for color inheritance
+- Always include proper viewBox and strokeWidth
+
+```tsx
+// Standard icon usage
+<svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+</svg>
+
+// Icon in button
+<button className="flex items-center space-x-3">
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="..." />
+  </svg>
+  <span>Button Text</span>
+</button>
+```
+
+#### Animation Standards
+
+**CSS Animations:**
 ```tsx
 const styles = `
   @keyframes fadeIn {
@@ -169,7 +267,36 @@ const styles = `
   .animate-fade-in {
     animation: fadeIn 0.5s ease-out forwards;
   }
+  
+  @keyframes fadeInSlow {
+    0% { opacity: 0; transform: translateY(-5px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-slow {
+    animation: fadeInSlow 0.6s ease-out forwards;
+  }
 `;
+
+return (
+  <>
+    <style>{styles}</style>
+    <div className="animate-fade-in">{content}</div>
+  </>
+);
+```
+
+**Transition Classes:**
+```tsx
+// Standard transitions
+className="transition-all duration-300"  // All properties, 300ms
+className="transition-colors duration-200"  // Colors only, 200ms
+className="transition-transform duration-300"  // Transform only
+className="transition-shadow duration-200"  // Shadow only
+
+// Hover effects
+className="hover:scale-105 transition-transform"  // Scale on hover
+className="hover:shadow-xl transition-shadow"  // Shadow on hover
+className="hover:from-blue-700 hover:to-blue-800 transition-colors"  // Gradient shift
 ```
 
 ### Performance Optimization

@@ -9,26 +9,43 @@ interface ModeSelectorProps {
 }
 
 const ModeSelector: React.FC<ModeSelectorProps> = ({ currentMode, onSetMode, showLearnTab }) => {
-  const baseClasses = "px-4 py-2 rounded-md font-medium text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200";
-  const selectedClasses = "bg-blue-600 text-white shadow";
-  const unselectedClasses = "bg-white text-slate-700 hover:bg-slate-200";
-
   return (
-    <div className="mt-6 flex space-x-4 p-1 bg-slate-200 rounded-lg">
-      <button 
-        onClick={() => onSetMode('papers')}
-        className={`${baseClasses} ${currentMode === 'papers' ? selectedClasses : unselectedClasses}`}
-      >
-        Practice Papers
-      </button>
-      {showLearnTab && (
-        <button 
-          onClick={() => onSetMode('learn')}
-          className={`${baseClasses} ${currentMode === 'learn' ? selectedClasses : unselectedClasses}`}
+    <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-2 border-4 border-white/60 mb-6">
+      <div className="flex flex-col sm:flex-row gap-3">
+        <button
+          onClick={() => onSetMode('papers')}
+          className={`flex-1 px-6 py-5 rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 transform focus:outline-none focus:ring-4 focus:ring-yellow-400 ${
+            currentMode === 'papers'
+              ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-2xl scale-105 border-4 border-white'
+              : 'bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 hover:scale-105 hover:shadow-lg border-2 border-slate-300'
+          }`}
         >
-          Study Content
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-3xl">🎮</span>
+            <span>Challenge Mode</span>
+            <span className="text-xs font-semibold opacity-90">Test Your Skills!</span>
+            {currentMode === 'papers' && <span className="text-xl animate-bounce">⚡</span>}
+          </div>
         </button>
-      )}
+
+        {showLearnTab && (
+          <button
+            onClick={() => onSetMode('learn')}
+            className={`flex-1 px-6 py-5 rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 transform focus:outline-none focus:ring-4 focus:ring-yellow-400 ${
+              currentMode === 'learn'
+                ? 'bg-gradient-to-r from-teal-500 to-cyan-500 text-white shadow-2xl scale-105 border-4 border-white'
+                : 'bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 hover:scale-105 hover:shadow-lg border-2 border-slate-300'
+            }`}
+          >
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-3xl">📖</span>
+              <span>Study Mode</span>
+              <span className="text-xs font-semibold opacity-90">Learn Concepts!</span>
+              {currentMode === 'learn' && <span className="text-xl animate-bounce">💡</span>}
+            </div>
+          </button>
+        )}
+      </div>
     </div>
   );
 };
