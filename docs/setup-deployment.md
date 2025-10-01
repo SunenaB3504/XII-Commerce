@@ -130,9 +130,9 @@ The build process is configured in `vite.config.ts`:
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: '/XII-Commerce/',  // GitHub Pages base path
+  base: mode === 'production' ? '/XII-Commerce/' : '/',  // GitHub Pages base path
   build: {
     outDir: 'dist',
     sourcemap: true,
@@ -142,12 +142,18 @@ export default defineConfig({
       }
     }
   }
-})
+}))
 ```
 
+**Important Notes:**
+- Base path uses Vite's `mode` parameter for proper production detection
+- `index.html` uses relative paths (e.g., `./index.tsx`) for proper asset resolution
+- Missing assets (like `vite.svg`) should be removed from `index.html` to avoid 404 errors
+
 **Current Build Performance:**
-- Build Time: ~2.3 seconds
-- Bundle Size: ~860 KB (207 KB gzipped)
+- Build Time: ~3.8 seconds
+- Bundle Size: ~858 KB (207 KB gzipped)
+- CSS Bundle: ~59 KB (8.4 KB gzipped)
 - Output: Optimized ES modules with CSS extraction
 - Sourcemaps: Enabled for production debugging
 
@@ -178,10 +184,11 @@ npm run deploy
 ```
 
 **Configuration:**
-- **Base Path**: `/XII-Commerce/` (configured in vite.config.ts)
-- **Branch**: Deploys to `gh-pages` branch
-- **URL**: https://SunenaB3504.github.io/XII-Commerce
+- **Base Path**: `/XII-Commerce/` (uses Vite's mode parameter in vite.config.ts)
+- **Deployment Method**: GitHub Actions (automated on push to main)
+- **URL**: https://sunenab3504.github.io/XII-Commerce/
 - **Build Directory**: `dist/`
+- **Status**: ✅ Live and operational
 
 **Package.json Scripts:**
 ```json
