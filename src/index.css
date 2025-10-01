@@ -1,3 +1,4 @@
+/* Tailwind CSS directives - these @tailwind rules are processed by PostCSS and replaced with actual CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
