@@ -100,7 +100,7 @@ export const questions21to22: Question[] = [
           React.createElement("p", { className: "font-semibold underline" }, "Step 1: Calculate correct distribution as per deed"),
           React.createElement("table", { className: "min-w-full border mt-2 text-sm" },
             React.createElement("thead", null,
-              React.createElement("tr", { className: "bg-gray-100" },
+              React.createElement("tr", { className: "bg-gray-100 text-gray-900" },
                 React.createElement("th", { className: "border px-2 py-1" }, "Particulars"),
                 React.createElement("th", { className: "border px-2 py-1" }, "Amit"),
                 React.createElement("th", { className: "border px-2 py-1" }, "Sumit"),
@@ -182,3 +182,4 @@ export const questions21to22: Question[] = [
     )
   }
 ];
+

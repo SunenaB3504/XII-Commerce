@@ -9,7 +9,7 @@ export const questions27to34: Question[] = [
       React.createElement("p", { className: "font-semibold mb-3" }, "A company had following balances in their books of Accounts:"),
       React.createElement("table", { className: "min-w-full border-collapse border my-3" },
         React.createElement("thead", null,
-          React.createElement("tr", { className: "bg-gray-100" },
+          React.createElement("tr", { className: "bg-gray-100 text-gray-900" },
             React.createElement("th", { className: "border px-4 py-2 text-left" }, ""),
             React.createElement("th", { className: "border px-4 py-2 text-right" }, "31 March, 2025"),
             React.createElement("th", { className: "border px-4 py-2 text-right" }, "31 March, 2024")
@@ -178,7 +178,7 @@ export const questions27to34: Question[] = [
       React.createElement("p", { className: "font-semibold mb-3" }, "Complete the following Comparative Balance Sheet as at March 31, 2024 and March 31, 2025:"),
       React.createElement("table", { className: "min-w-full border-collapse border" },
         React.createElement("thead", null,
-          React.createElement("tr", { className: "bg-gray-100" },
+          React.createElement("tr", { className: "bg-gray-100 text-gray-900 text-gray-900" },
             React.createElement("th", { className: "border px-3 py-2 text-left" }, "PARTICULARS"),
             React.createElement("th", { className: "border px-3 py-2 text-right" }, "31st March 2024"),
             React.createElement("th", { className: "border px-3 py-2 text-right" }, "31st March 2025"),
@@ -244,7 +244,7 @@ export const questions27to34: Question[] = [
       React.createElement("p", { className: "font-semibold underline mb-2" }, "Comparative Balance Sheet as at March 31, 2024 and March 31, 2025"),
       React.createElement("table", { className: "min-w-full border-collapse border text-sm" },
         React.createElement("thead", null,
-          React.createElement("tr", { className: "bg-gray-100" },
+          React.createElement("tr", { className: "bg-gray-100 text-gray-900" },
             React.createElement("th", { className: "border px-3 py-2 text-left" }, "PARTICULARS"),
             React.createElement("th", { className: "border px-3 py-2 text-right" }, "31st March 2024"),
             React.createElement("th", { className: "border px-3 py-2 text-right" }, "31st March 2025"),
@@ -338,7 +338,7 @@ export const questions27to34: Question[] = [
       React.createElement("p", { className: "font-semibold mb-3" }, "Prepare Common Size Statement of Profit and Loss for the year ended March 31, 2025:"),
       React.createElement("table", { className: "min-w-full border-collapse border" },
         React.createElement("thead", null,
-          React.createElement("tr", { className: "bg-gray-100" },
+          React.createElement("tr", { className: "bg-gray-100 text-gray-900" },
             React.createElement("th", { className: "border px-4 py-2 text-left" }, "PARTICULARS"),
             React.createElement("th", { className: "border px-4 py-2 text-right" }, "31st March, 2025")
           )
@@ -380,7 +380,7 @@ export const questions27to34: Question[] = [
       React.createElement("p", { className: "font-semibold underline mb-2" }, "Common Size Statement of Profit and Loss for the year ended March 31, 2025"),
       React.createElement("table", { className: "min-w-full border-collapse border text-sm" },
         React.createElement("thead", null,
-          React.createElement("tr", { className: "bg-gray-100" },
+          React.createElement("tr", { className: "bg-gray-100 text-gray-900" },
             React.createElement("th", { className: "border px-4 py-2 text-left" }, "PARTICULARS"),
             React.createElement("th", { className: "border px-4 py-2 text-right" }, "31st March, 2025"),
             React.createElement("th", { className: "border px-4 py-2 text-right" }, "Percentage of RFO")
@@ -607,7 +607,7 @@ export const questions27to34: Question[] = [
       ),
       React.createElement("table", { className: "min-w-full border-collapse border mb-3" },
         React.createElement("thead", null,
-          React.createElement("tr", { className: "bg-gray-100" },
+          React.createElement("tr", { className: "bg-gray-100 text-gray-900" },
             React.createElement("th", { className: "border px-3 py-2 text-left" }, "Particulars"),
             React.createElement("th", { className: "border px-3 py-2 text-right" }, "31.03.2025"),
             React.createElement("th", { className: "border px-3 py-2 text-right" }, "31.03.2024")
@@ -667,7 +667,7 @@ export const questions27to34: Question[] = [
           React.createElement("p", { className: "font-semibold underline mb-2" }, "(i) Cash Flow from Operating Activities"),
           React.createElement("table", { className: "min-w-full border-collapse border text-sm" },
             React.createElement("thead", null,
-              React.createElement("tr", { className: "bg-gray-100" },
+              React.createElement("tr", { className: "bg-gray-100 text-gray-900" },
                 React.createElement("th", { className: "border px-3 py-1 text-left" }, "Particulars"),
                 React.createElement("th", { className: "border px-3 py-1 text-right" }, "Amount (₹)")
               )
@@ -704,7 +704,7 @@ export const questions27to34: Question[] = [
           React.createElement("p", { className: "font-semibold underline mb-2" }, "(ii) Cash Flow from Financing Activities"),
           React.createElement("table", { className: "min-w-full border-collapse border text-sm" },
             React.createElement("thead", null,
-              React.createElement("tr", { className: "bg-gray-100" },
+              React.createElement("tr", { className: "bg-gray-100 text-gray-900" },
                 React.createElement("th", { className: "border px-3 py-1 text-left" }, "Particulars"),
                 React.createElement("th", { className: "border px-3 py-1 text-right" }, "Amount (₹)")
               )
@@ -785,3 +785,4 @@ export const questions27to34: Question[] = [
     )
   }
 ];
+
