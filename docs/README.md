@@ -25,7 +25,7 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 - Accessibility guidelines (WCAG AA/AAA)
 - Design principles and governance
 
-### ⭐ [Visual Design Reference](./visual-design-reference.md) **NEW**
+### ⭐ [Visual Design Reference](./visual-design-reference.md)
 **Quick reference for all UI patterns**
 - Ready-to-use component code snippets
 - Complete gradient palette with examples
@@ -44,6 +44,17 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 - Content formatting with React nodes
 - Data validation and quality standards
 - Visual design integration in content
+
+### 📝 [Learning Content Generation Guide](./learning-content-guide.md) **NEW**
+**Comprehensive approach to creating exam-focused Study Mode content**
+- Content philosophy and exam-first approach
+- Source material analysis (CBSE textbooks, sample papers, marking schemes)
+- Complete content structure breakdown
+- Step-by-step content creation process
+- Writing guidelines and visual design principles
+- Quality assurance and testing protocols
+- Templates and examples for all content types
+- Best practices for CBSE Board Exam preparation materials
 
 ### 💻 [Development Guide](./development-guide.md)
 **Coding standards and best practices**
@@ -84,9 +95,10 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 
 ### For Content Contributors
 1. **Understand Format**: [Data Structure](./data-structure.md)
-2. **Add Materials**: [Content Contribution Guide](./content-contribution.md)
-3. **Apply Design**: [Design System](./design-system.md)
-4. **Test Locally**: [Setup & Deployment Guide](./setup-deployment.md)
+2. **Learn Content Creation**: [Learning Content Generation Guide](./learning-content-guide.md)
+3. **Add Materials**: [Content Contribution Guide](./content-contribution.md)
+4. **Apply Design**: [Design System](./design-system.md)
+5. **Test Locally**: [Setup & Deployment Guide](./setup-deployment.md)
 
 ### For UI/UX Designers
 1. **Design Principles**: [Design System](./design-system.md)
