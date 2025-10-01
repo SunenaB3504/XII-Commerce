@@ -14,21 +14,24 @@ const PaperSelector: React.FC<PaperSelectorProps> = ({ papers, selectedPaper, on
 
   return (
     <div className="mt-6">
-      <h2 className="text-lg font-semibold text-slate-600 mb-3">Select a Paper</h2>
-      <div className="flex flex-wrap gap-3">
+      <h2 className="text-2xl font-black text-slate-800 mb-4 flex items-center gap-2">
+        <span className="text-2xl">📝</span>
+        Choose Your Challenge!
+      </h2>
+      <div className="flex flex-wrap gap-4">
         {papers.map((paper) => {
           const isSelected = paper.name === selectedPaper;
           return (
             <button
               key={paper.name}
               onClick={() => onSelectPaper(paper.name)}
-              className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
+              className={`px-6 py-3 rounded-2xl font-bold text-base transition-all duration-300 transform focus:outline-none focus:ring-4 focus:ring-yellow-400 ${
                 isSelected
-                  ? 'bg-blue-600 text-white shadow-md scale-105'
-                  : 'bg-white text-slate-700 hover:bg-slate-200 shadow'
+                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-2xl scale-105 border-4 border-white hover:scale-110'
+                  : 'bg-white text-slate-800 hover:bg-gradient-to-r hover:from-slate-100 hover:to-slate-200 shadow-lg border-2 border-purple-200 hover:border-pink-300 hover:scale-105'
               }`}
             >
-              {paper.name}
+              {paper.name} {isSelected && '🔥'}
             </button>
           );
         })}
