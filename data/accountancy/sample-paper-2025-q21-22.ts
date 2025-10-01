@@ -38,7 +38,7 @@ export const questions21to22: Question[] = [
       React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Workings:"),
       React.createElement("div", { className: "mt-2 space-y-3" },
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "1. Share Application & Allotment Details:"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "1. Share Application & Allotment Details:"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1" },
             React.createElement("li", null, "Application: ₹7 (₹6 capital + ₹1 premium)"),
             React.createElement("li", null, "Allotment: ₹12 (₹10 capital + ₹2 premium)"),
@@ -47,7 +47,7 @@ export const questions21to22: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "2. Rancho's Forfeiture:"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "2. Rancho's Forfeiture:"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1" },
             React.createElement("li", null, "Shares held: 10,000"),
             React.createElement("li", null, "Paid on application: ₹70,000"),
@@ -55,7 +55,7 @@ export const questions21to22: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "3. Re-issue of 8,000 shares:"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "3. Re-issue of 8,000 shares:"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1" },
             React.createElement("li", null, "Re-issued at ₹22 per share (discount ₹2)"),
             React.createElement("li", null, "Discount = 8,000 × ₹2 = ₹16,000"),
@@ -64,7 +64,7 @@ export const questions21to22: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "4. Balance in Forfeited Shares A/c:"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "4. Balance in Forfeited Shares A/c:"),
           React.createElement("p", { className: "ml-4" }, "Remaining 2,000 shares not re-issued: ₹14,000"),
           React.createElement("p", { className: "ml-4" }, "Sultan's calls in arrear (5,000 × ₹2): ₹10,000")
         )
@@ -169,7 +169,7 @@ export const questions21to22: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Notes:"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Notes:"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1 space-y-1" },
             React.createElement("li", null, "Amit's salary = ₹10,000 × 12 = ₹1,20,000"),
             React.createElement("li", null, "Pulkit's salary = ₹15,000 × 4 quarters = ₹60,000"),
@@ -182,4 +182,5 @@ export const questions21to22: Question[] = [
     )
   }
 ];
+
 

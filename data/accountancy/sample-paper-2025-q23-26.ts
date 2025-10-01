@@ -145,7 +145,7 @@ export const questions23to26: Question[] = [
                 React.createElement("td", { className: "border px-3 py-1" }, "By Gloria Ltd. A/c"),
                 React.createElement("td", { className: "border px-3 py-1 text-right" }, "33,60,000")
               ),
-              React.createElement("tr", { className: "font-semibold" },
+              React.createElement("tr", { className: "font-semibold text-gray-900" },
                 React.createElement("td", { className: "border px-3 py-1" }, ""),
                 React.createElement("td", { className: "border px-3 py-1 text-right" }, "2,37,60,000"),
                 React.createElement("td", { className: "border px-3 py-1" }, ""),
@@ -184,7 +184,7 @@ export const questions23to26: Question[] = [
                 React.createElement("td", { className: "border px-3 py-1" }, "By Gloria Ltd. A/c"),
                 React.createElement("td", { className: "border px-3 py-1 text-right" }, "8,40,000")
               ),
-              React.createElement("tr", { className: "font-semibold" },
+              React.createElement("tr", { className: "font-semibold text-gray-900" },
                 React.createElement("td", { className: "border px-3 py-1" }, ""),
                 React.createElement("td", { className: "border px-3 py-1 text-right" }, "20,00,000"),
                 React.createElement("td", { className: "border px-3 py-1" }, ""),
@@ -198,7 +198,7 @@ export const questions23to26: Question[] = [
     explanation: React.createElement(React.Fragment, null,
       React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Workings:"),
       React.createElement("div", { className: "space-y-2 mt-2" },
-        React.createElement("p", { className: "font-semibold" }, "1. Shares issued for cash:"),
+        React.createElement("p", { className: "font-semibold text-gray-900" }, "1. Shares issued for cash:"),
         React.createElement("ul", { className: "list-disc pl-6" },
           React.createElement("li", null, "40,000 shares @ ₹4 premium = ₹10 + ₹4 = ₹14 per share"),
           React.createElement("li", null, "Share Capital = 40,000 × ₹10 = ₹4,00,000"),
@@ -283,7 +283,7 @@ export const questions23to26: Question[] = [
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2" }, "")
               ),
-              React.createElement("tr", { className: "font-semibold" },
+              React.createElement("tr", { className: "font-semibold text-gray-900" },
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2 text-right" }, "6,72,000"),
@@ -311,7 +311,7 @@ export const questions23to26: Question[] = [
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2" }, "")
               ),
-              React.createElement("tr", { className: "font-semibold" },
+              React.createElement("tr", { className: "font-semibold text-gray-900" },
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2 text-right" }, "4,48,000"),
@@ -332,7 +332,7 @@ export const questions23to26: Question[] = [
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2" }, "")
               ),
-              React.createElement("tr", { className: "font-semibold" },
+              React.createElement("tr", { className: "font-semibold text-gray-900" },
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2" }, ""),
                 React.createElement("td", { className: "border px-3 py-2 text-right" }, "2,24,000"),
@@ -343,7 +343,7 @@ export const questions23to26: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Interest Calculations:"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Interest Calculations:"),
           React.createElement("ul", { className: "list-disc pl-6" },
             React.createElement("li", null, "Year 1: ₹6,00,000 × 12% = ₹72,000"),
             React.createElement("li", null, "Year 2: ₹4,00,000 × 12% = ₹48,000"),
@@ -424,7 +424,7 @@ export const questions23to26: Question[] = [
               React.createElement("td", { className: "border px-4 py-2" }, "Investment"),
               React.createElement("td", { className: "border px-4 py-2 text-right" }, "1,20,000")
             ),
-            React.createElement("tr", { className: "font-semibold" },
+            React.createElement("tr", { className: "font-semibold text-gray-900" },
               React.createElement("td", { className: "border px-4 py-2" }, ""),
               React.createElement("td", { className: "border px-4 py-2 text-right" }, "7,50,000"),
               React.createElement("td", { className: "border px-4 py-2" }, ""),
@@ -476,7 +476,7 @@ export const questions23to26: Question[] = [
                 React.createElement("td", { className: "border px-3 py-1 pl-6" }, "Iknoor's Capital A/c"),
                 React.createElement("td", { className: "border px-3 py-1 text-right" }, "24,000")
               ),
-              React.createElement("tr", { className: "font-semibold" },
+              React.createElement("tr", { className: "font-semibold text-gray-900" },
                 React.createElement("td", { className: "border px-3 py-1" }, ""),
                 React.createElement("td", { className: "border px-3 py-1 text-right" }, "60,000"),
                 React.createElement("td", { className: "border px-3 py-1" }, ""),
@@ -561,7 +561,7 @@ export const questions23to26: Question[] = [
                 React.createElement("td", { className: "border px-2 py-1 text-right" }, "4,000"),
                 React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
               ),
-              React.createElement("tr", { className: "font-semibold" },
+              React.createElement("tr", { className: "font-semibold text-gray-900" },
                 React.createElement("td", { className: "border px-2 py-1" }, ""),
                 React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,24,000"),
                 React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,16,000"),
@@ -601,7 +601,7 @@ export const questions23to26: Question[] = [
                 React.createElement("td", { className: "border px-2 py-1 text-right" }, "48,000"),
                 React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
               ),
-              React.createElement("tr", { className: "font-semibold" },
+              React.createElement("tr", { className: "font-semibold text-gray-900" },
                 React.createElement("td", { className: "border px-2 py-1" }, ""),
                 React.createElement("td", { className: "border px-2 py-1 text-right" }, "4,50,000"),
                 React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,00,000"),
@@ -620,7 +620,7 @@ export const questions23to26: Question[] = [
       React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Detailed Workings:"),
       React.createElement("div", { className: "space-y-3 mt-2" },
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "1. Revaluation Adjustments:"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "1. Revaluation Adjustments:"),
           React.createElement("ul", { className: "list-disc pl-6" },
             React.createElement("li", null, "Bad Debts: ₹5,000, New Debtors = ₹72,000 - ₹5,000 = ₹67,000"),
             React.createElement("li", null, "New Provision @ 10% (existing rate 8,000/80,000) = ₹6,700"),
@@ -631,7 +631,7 @@ export const questions23to26: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "2. Premium for Goodwill Distribution:"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "2. Premium for Goodwill Distribution:"),
           React.createElement("ul", { className: "list-disc pl-6" },
             React.createElement("li", null, "Goodwill brought in = ₹40,000"),
             React.createElement("li", null, "Distributed to old partners in sacrificing ratio 3:2"),
@@ -640,7 +640,7 @@ export const questions23to26: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "3. Capital Adjustment (Proportionate Capital Method):"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "3. Capital Adjustment (Proportionate Capital Method):"),
           React.createElement("ul", { className: "list-disc pl-6" },
             React.createElement("li", null, "Ishaya's share = 25% = 1/4, Old partners = 3/4"),
             React.createElement("li", null, "Ishaya's capital = ₹2,50,000, so total capital = ₹2,50,000 × 4 = ₹10,00,000"),
@@ -707,4 +707,5 @@ export const questions23to26: Question[] = [
     explanation: React.createElement("p", { className: "mt-2" }, "Pro-rata allotment means shares are allotted in proportion. Here 80,000 shares allotted to applicants of 1,10,000 shares means ratio 8:11 or simplified 5:4 for every 5 shares applied, 4 are allotted. Mukta must have applied for 7,500 shares (6,000 × 5/4) and got 6,000 allotted.")
   }
 ];
+
 

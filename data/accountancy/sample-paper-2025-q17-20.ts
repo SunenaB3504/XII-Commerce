@@ -7,13 +7,13 @@ export const questions17to20: Question[] = [
     id: '17',
     marks: 3,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Raju, Rinku and Munni were partners sharing Profits & Losses in the ratio 3:1:1. They admitted Chunni into partnership for 1/5 share. It was decided that Munni will have 1/4 share in future profits. Goodwill of the firm was valued at ₹3,20,000 and Chunni was unable to bring anything. Calculate New Ratio, Sacrificing Ratio and journalise for goodwill at the time of admission of Chunni.")
+      React.createElement("p", { className: "font-semibold text-gray-900" }, "Raju, Rinku and Munni were partners sharing Profits & Losses in the ratio 3:1:1. They admitted Chunni into partnership for 1/5 share. It was decided that Munni will have 1/4 share in future profits. Goodwill of the firm was valued at ₹3,20,000 and Chunni was unable to bring anything. Calculate New Ratio, Sacrificing Ratio and journalise for goodwill at the time of admission of Chunni.")
     ),
     solution: React.createElement(React.Fragment, null,
       React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Solution:"),
       React.createElement("div", { className: "space-y-3" },
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Step 1: Calculate New Ratio"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Step 1: Calculate New Ratio"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1 space-y-1" },
             React.createElement("li", null, "Chunni's share = 1/5"),
             React.createElement("li", null, "Munni's new share = 1/4"),
@@ -25,7 +25,7 @@ export const questions17to20: Question[] = [
           React.createElement("p", { className: "mt-2 font-semibold" }, "New Ratio = 33/80 : 11/80 : 1/4 : 1/5 = 33 : 11 : 20 : 16")
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Step 2: Calculate Sacrificing Ratio"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Step 2: Calculate Sacrificing Ratio"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1 space-y-1" },
             React.createElement("li", null, "Raju: 3/5 - 33/80 = 48/80 - 33/80 = 15/80"),
             React.createElement("li", null, "Rinku: 1/5 - 11/80 = 16/80 - 11/80 = 5/80"),
@@ -34,7 +34,7 @@ export const questions17to20: Question[] = [
           React.createElement("p", { className: "mt-2 font-semibold" }, "Sacrificing Ratio = 15 : 5 : 0 = 3 : 1 : 0")
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Step 3: Journal Entry for Goodwill"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Step 3: Journal Entry for Goodwill"),
           React.createElement("p", { className: "mt-1" }, "Chunni's share of goodwill = ₹3,20,000 × 1/5 = ₹64,000"),
           React.createElement("p", null, "Distributed in sacrificing ratio 3:1"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1" },
@@ -91,13 +91,13 @@ export const questions17to20: Question[] = [
     id: '17 (OR)',
     marks: 3,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Yashasvi, Nitish and Harshit were partners sharing Profit & Loss in the ratio 5:3:2. W.e.f 01 April, 2025, they decided to share future Profit & Loss in the ratio 4:3:2. On the date of reconstitution Goodwill was appearing in the books of ₹4,00,000. Goodwill of the firm was valued at ₹7,20,000 on the date of reconstitution. Determine gain or sacrifice for each partner and pass necessary entries.")
+      React.createElement("p", { className: "font-semibold text-gray-900" }, "Yashasvi, Nitish and Harshit were partners sharing Profit & Loss in the ratio 5:3:2. W.e.f 01 April, 2025, they decided to share future Profit & Loss in the ratio 4:3:2. On the date of reconstitution Goodwill was appearing in the books of ₹4,00,000. Goodwill of the firm was valued at ₹7,20,000 on the date of reconstitution. Determine gain or sacrifice for each partner and pass necessary entries.")
     ),
     solution: React.createElement(React.Fragment, null,
       React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Solution:"),
       React.createElement("div", { className: "space-y-3" },
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Step 1: Calculate Gain/Sacrifice"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Step 1: Calculate Gain/Sacrifice"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1 space-y-1" },
             React.createElement("li", null, "Yashasvi: Old 5/10 - New 4/9 = 45/90 - 40/90 = 5/90 = 1/18 (Sacrifice)"),
             React.createElement("li", null, "Nitish: Old 3/10 - New 3/9 = 27/90 - 30/90 = -3/90 = -1/30 (Gain)"),
@@ -106,7 +106,7 @@ export const questions17to20: Question[] = [
           React.createElement("p", { className: "mt-2 font-semibold" }, "Sacrificing Ratio = 1 : 0 : 0")
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Step 2: Write off existing Goodwill"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Step 2: Write off existing Goodwill"),
           React.createElement("pre", { className: "bg-gray-100 p-3 rounded mt-1" },
             "Yashasvi's Capital A/c    Dr.    2,00,000\n" +
             "Nitish's Capital A/c      Dr.    1,20,000\n" +
@@ -116,7 +116,7 @@ export const questions17to20: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Step 3: Adjust for change in profit-sharing"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Step 3: Adjust for change in profit-sharing"),
           React.createElement("p", { className: "mt-1" }, "Hidden Goodwill = ₹7,20,000 - ₹4,00,000 = ₹3,20,000"),
           React.createElement("p", null, "Yashasvi sacrificed 1/18, gaining partners compensate:"),
           React.createElement("ul", { className: "list-disc pl-6 mt-1" },
@@ -184,7 +184,7 @@ export const questions17to20: Question[] = [
     id: '19',
     marks: 3,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "On January 01, 2025 Ritu Ltd. Issued ₹40,00,000, 8% Debentures of ₹100 each at 5% discount to be redeemed at 10% premium at the end of 5 years. Balance in Securities Premium on the date of such issue was of ₹2,70,000. Pass entries for Issue of debentures.")
+      React.createElement("p", { className: "font-semibold text-gray-900" }, "On January 01, 2025 Ritu Ltd. Issued ₹40,00,000, 8% Debentures of ₹100 each at 5% discount to be redeemed at 10% premium at the end of 5 years. Balance in Securities Premium on the date of such issue was of ₹2,70,000. Pass entries for Issue of debentures.")
     ),
     solution: React.createElement(React.Fragment, null,
       React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Journal Entries:"),
@@ -232,7 +232,7 @@ export const questions17to20: Question[] = [
       React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Journal Entries:"),
       React.createElement("div", { className: "space-y-4" },
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Case A: Investment reduced by ₹2,50,000"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Case A: Investment reduced by ₹2,50,000"),
           React.createElement("pre", { className: "bg-gray-100 p-2 rounded mt-1 text-sm" },
             "Investment Fluctuation Reserve A/c  Dr.  2,50,000\n" +
             "    To Investment A/c                           2,50,000\n\n" +
@@ -242,7 +242,7 @@ export const questions17to20: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Case B: Investment increased by ₹5,00,000"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Case B: Investment increased by ₹5,00,000"),
           React.createElement("pre", { className: "bg-gray-100 p-2 rounded mt-1 text-sm" },
             "Investment A/c                       Dr.  5,00,000\n" +
             "    To Revaluation A/c                          5,00,000\n\n" +
@@ -252,7 +252,7 @@ export const questions17to20: Question[] = [
           )
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Case C: No change"),
+          React.createElement("p", { className: "font-semibold text-gray-900" }, "Case C: No change"),
           React.createElement("pre", { className: "bg-gray-100 p-2 rounded mt-1 text-sm" },
             "Investment Fluctuation Reserve A/c  Dr.  4,00,000\n" +
             "    To Ankur's Capital A/c                      2,40,000\n" +
@@ -272,4 +272,5 @@ export const questions17to20: Question[] = [
     )
   }
 ];
+
 
