@@ -142,6 +142,158 @@ export const questions17to20: Question[] = [
 - ✅ Faster navigation to specific questions
 - ✅ Easier maintenance and updates
 
+### Step 2c: Using Official CBSE Marking Schemes (Recommended)
+
+When available, always reference official CBSE marking schemes for accuracy and completeness.
+
+#### Extracting Content from Official PDFs
+
+Use the PDF extraction tool to extract text from official CBSE marking scheme PDFs:
+
+```bash
+# From project root
+python scripts/extract-pdf.py "path/to/Accountancy-MS.pdf"
+```
+
+This creates a text file with extracted content for easy reference.
+
+#### Solution Format by Question Type
+
+**1-Mark MCQs (Q1-16)**:
+- Verify correct answer matches official answer key
+- Include brief explanation of why it's correct
+- Reference relevant concept or formula
+
+**3-Mark Questions (Q17-20)**:
+```typescript
+{
+  id: '17',
+  marks: 3,
+  question: React.createElement(...),
+  solution: React.createElement(React.Fragment, null,
+    React.createElement("h4", { className: "font-bold text-lg mb-2" }, "Journal Entry"),
+    React.createElement("table", { className: "border-collapse border border-gray-300 w-full" },
+      React.createElement("thead", null,
+        React.createElement("tr", null,
+          React.createElement("th", {
+            className: "border border-gray-300 p-2 text-left font-bold bg-gray-100 text-gray-900"
+          }, "Date"),
+          React.createElement("th", {
+            className: "border border-gray-300 p-2 text-left font-bold bg-gray-100 text-gray-900"
+          }, "Particulars"),
+          React.createElement("th", {
+            className: "border border-gray-300 p-2 text-right font-bold bg-gray-100 text-gray-900"
+          }, "Debit (₹)"),
+          React.createElement("th", {
+            className: "border border-gray-300 p-2 text-right font-bold bg-gray-100 text-gray-900"
+          }, "Credit (₹)")
+        )
+      ),
+      React.createElement("tbody", null,
+        React.createElement("tr", null,
+          React.createElement("td", { className: "border border-gray-300 p-2" }, "2024-01-01"),
+          React.createElement("td", { className: "border border-gray-300 p-2" }, "Cash A/c Dr."),
+          React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "50,000"),
+          React.createElement("td", { className: "border border-gray-300 p-2" }, "")
+        )
+      )
+    ),
+    React.createElement("div", { className: "mt-4" },
+      React.createElement("h5", { className: "font-bold" }, "Working Notes:"),
+      React.createElement("p", null, "Calculation details...")
+    )
+  ),
+  explanation: React.createElement("p", null, "Step-by-step reasoning...")
+}
+```
+
+**4-Mark Questions (Q21-22)** - Balance Sheets:
+- Include complete balance sheet structure (Assets & Liabilities)
+- Add working notes table for all calculations
+- Show subtotals and final totals
+- Use proper accounting headers
+
+**6-Mark Questions (Q23-26)** - Complex Entries:
+- Provide all 4 journal entries as per CBSE format
+- Include loan accounts with interest calculations
+- Show partner capital accounts in T-account format
+- Provide detailed working notes for adjustments
+
+**Part B Questions (Q27-34)** - Financial Analysis:
+- Comparative statements with both years' data
+- Common size statements with percentages
+- Cash flow statements with operating/investing/financing activities
+- Ratio calculations with formulas and interpretations
+
+#### Table Formatting Rules - CRITICAL ⚠️
+
+**Always include `text-gray-900` with colored backgrounds:**
+
+```typescript
+// ✅ CORRECT - Dark text on light background
+className: "font-bold bg-gray-100 text-gray-900"
+
+// ❌ WRONG - Missing text color, will be invisible
+className: "font-bold bg-gray-100"
+```
+
+**Standard Table Classes:**
+- **Headers**: `border border-gray-300 p-2 font-bold bg-gray-100 text-gray-900`
+- **Subtotals**: `border border-gray-300 p-2 font-semibold bg-gray-50 text-gray-900`
+- **Final Totals**: `border border-gray-300 p-2 font-bold bg-green-50 text-gray-900`
+- **Number Columns**: Always add `text-right` for financial data
+
+**Example - Proper Balance Sheet Table:**
+```typescript
+React.createElement("table", { className: "border-collapse border border-gray-300 w-full mt-4" },
+  React.createElement("thead", null,
+    React.createElement("tr", null,
+      React.createElement("th", {
+        // ✅ Header with dark text
+        className: "border border-gray-300 p-2 text-left font-bold bg-gray-100 text-gray-900"
+      }, "Liabilities"),
+      React.createElement("th", {
+        className: "border border-gray-300 p-2 text-right font-bold bg-gray-100 text-gray-900"
+      }, "Amount (₹)")
+    )
+  ),
+  React.createElement("tbody", null,
+    // Regular row - no background color needed
+    React.createElement("tr", null,
+      React.createElement("td", { className: "border border-gray-300 p-2" }, "Capital"),
+      React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "500,000")
+    ),
+    // Subtotal row - light gray background with dark text
+    React.createElement("tr", null,
+      React.createElement("td", {
+        // ✅ Subtotal with dark text for visibility
+        className: "border border-gray-300 p-2 font-semibold bg-gray-50 text-gray-900"
+      }, "Total Current Liabilities"),
+      React.createElement("td", {
+        className: "border border-gray-300 p-2 text-right font-semibold bg-gray-50 text-gray-900"
+      }, "1,200,000")
+    ),
+    // Final total row - light green background with dark text
+    React.createElement("tr", null,
+      React.createElement("td", {
+        // ✅ Total with dark text on green background
+        className: "border border-gray-300 p-2 font-bold bg-green-50 text-gray-900"
+      }, "Total Liabilities"),
+      React.createElement("td", {
+        className: "border border-gray-300 p-2 text-right font-bold bg-green-50 text-gray-900"
+      }, "2,500,000")
+    )
+  )
+)
+```
+
+**Testing Table Visibility:**
+Always view tables in browser to ensure:
+- ✅ All header text is clearly visible (dark on light gray)
+- ✅ All subtotal text is readable (dark on very light gray)
+- ✅ All total text stands out (dark on light green)
+- ✅ Numbers are right-aligned in amount columns
+
 ### Step 3: Update Subject Index
 
 Add the new paper to the subject's question papers array in `data/index.ts`:
@@ -314,9 +466,16 @@ React.createElement("table", { className: "border-collapse border border-slate-3
 - [ ] Options are balanced and plausible
 - [ ] Only one correct answer per question
 - [ ] Solutions clearly indicate the correct answer
+- [ ] Solutions follow official CBSE marking scheme format (when available)
 - [ ] Explanations are comprehensive and educational
 - [ ] Content aligns with CBSE syllabus
 - [ ] No spelling or grammatical errors
+- [ ] Tables include proper text colors (text-gray-900 on colored backgrounds)
+- [ ] All financial tables tested for visibility in browser
+- [ ] Number columns are right-aligned (text-right)
+- [ ] Journal entries follow proper debit/credit format
+- [ ] Balance sheets include working notes
+- [ ] Financial statements have proper headers and subtotals
 
 ### Learning Modules
 - [ ] Chapter number matches official syllabus
@@ -346,6 +505,9 @@ React.createElement("table", { className: "border-collapse border border-slate-3
 3. Verify all content displays correctly
 4. Test interactive features (solution toggle, TTS)
 5. Check responsive design on different screen sizes
+6. **For tables**: Verify all text is visible (headers, subtotals, totals)
+7. **For financial data**: Check number alignment (right-aligned)
+8. **For journal entries**: Verify debit/credit columns are properly formatted
 
 ### Accessibility Testing
 1. Test keyboard navigation
@@ -411,5 +573,5 @@ When using external content:
 - Cite sources appropriately
 - Maintain academic integrity
 
-**Last Updated:** October 1, 2025</content>
+**Last Updated:** January 2025</content>
 <parameter name="filePath">c:\Users\Admin\Neil\XII-Commerce\docs\content-contribution.md

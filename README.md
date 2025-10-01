@@ -6,7 +6,13 @@
 
 ## 📚 About
 
-A comprehensive study tool for CBSE Class XII Commerce students, featuring interactive question papers and structured learning modules for Accountancy, Business Studies, and Economics.
+A comprehensive study tool for CBSE Class XII Commerce students, featuring interactive question papers with **official CBSE marking scheme solutions** and structured learning modules for Accountancy, Business Studies, and Economics.
+
+### Latest Updates (v1.2.0)
+- ✅ **Official CBSE Marking Scheme Integration**: Accountancy Sample Paper 2025-26 updated with comprehensive solutions from official CBSE marking scheme
+- ✅ **Enhanced Solutions**: Detailed journal entries, balance sheets, financial statements with step-by-step working notes
+- ✅ **Professional Formatting**: Properly formatted accounting tables with clear visibility
+- ✅ **Quality Improvements**: All 34 questions verified against official answer key
 
 ## 🚀 Live Demo
 
@@ -79,11 +85,13 @@ For maintainability, large question papers (30+ questions) use a modular approac
 
 ## 🎨 Features
 
-- **Interactive Question Papers**: Practice with CBSE sample papers and board exams
+- **Official CBSE Solutions**: Sample papers include comprehensive solutions following official CBSE marking schemes
+- **Interactive Question Papers**: Practice with CBSE sample papers and board exams with detailed explanations
+- **Professional Accounting Format**: Journal entries, balance sheets, and financial statements in proper CBSE format
 - **Structured Learning Modules**: Comprehensive study materials with examples and case studies
 - **Text-to-Speech**: Accessibility feature for learning content
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
-- **Modern UI**: Clean, educational-focused interface
+- **Modern UI**: Clean, educational-focused interface with excellent visibility
 
 ## 📖 Documentation
 

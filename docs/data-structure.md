@@ -91,6 +91,62 @@ data/
 
 For large question papers (30+ questions), use a modular approach to improve maintainability:
 
+#### Official CBSE Marking Scheme Integration
+
+**CBSE Sample Paper 2025-26 (Accountancy)** follows the official marking scheme with comprehensive solutions:
+
+**Solution Structure by Question Type:**
+- **MCQs (Q1-16)**: Verified correct answers matching official answer key
+- **3-Mark Questions (Q17-20)**: 
+  - Journal entries with proper date, particulars, debit/credit columns
+  - Working notes showing detailed calculations (goodwill, ratios, adjustments)
+  - Step-by-step explanations with formulas and reasoning
+- **4-Mark Questions (Q21-22)**:
+  - Complete balance sheets with assets and liabilities sections
+  - Working notes tables for calculations (depreciation, provisions, capital)
+  - Proper accounting format with headers and subtotals
+- **6-Mark Questions (Q23-26)**:
+  - Business acquisition journal entries (4 entries minimum)
+  - Loan accounts with interest calculations
+  - Partner capital accounts in T-account format
+  - Detailed working notes for all adjustments
+- **Part B Questions (Q27-34)**:
+  - Comparative statements (horizontal analysis)
+  - Common size statements (vertical analysis)
+  - Cash flow statements with detailed working
+  - Ratio calculations with interpretations
+
+**Table Formatting Standards** (Critical for Visibility):
+```typescript
+// Table Headers - Must have dark text on light gray background
+{ content: "Particulars", className: "font-bold text-left bg-gray-100 text-gray-900" }
+
+// Subtotal Rows - Must have dark text for visibility
+{ content: "Total Current Assets", className: "font-semibold bg-gray-50 text-gray-900" }
+
+// Final Total Rows - Must have dark text on light green background
+{ content: "Profit After Tax", className: "font-bold bg-green-50 text-gray-900" }
+
+// Regular Data Cells
+{ content: "500,000", className: "text-right" }
+```
+
+**Common Table Styling Issues & Fixes:**
+- ❌ **Problem**: `bg-gray-100` without text color → White text invisible on light gray
+- ✅ **Solution**: Always add `text-gray-900` to headers with colored backgrounds
+- ❌ **Problem**: `font-semibold bg-gray-50` → Inherits light text color
+- ✅ **Solution**: Explicitly set `text-gray-900` for all semibold rows
+- ❌ **Problem**: `bg-green-50` totals invisible
+- ✅ **Solution**: Add `text-gray-900` to maintain contrast
+
+**Color Specifications for Tables:**
+- `text-gray-900`: #111827 (very dark gray, excellent contrast on light backgrounds)
+- `bg-gray-100`: #F3F4F6 (light gray for headers)
+- `bg-gray-50`: #F9FAFB (very light gray for subtotals)
+- `bg-green-50`: #F0FDF4 (very light green for final totals)
+
+#### Modular File Structure
+
 **Main File Structure** (`sample-paper-2025.ts`):
 ```typescript
 import { QuestionPaper } from '../../types';
@@ -145,9 +201,12 @@ export const questions17to20: Question[] = [
 #### Question Papers
 - **Sample Papers**: `sample-paper-2025.ts` (main file)
 - **Sample Paper Batches** (for modular papers): `sample-paper-2025-q[range].ts`
-  - Example: `sample-paper-2025-q17-20.ts` (Questions 17-20)
-  - Example: `sample-paper-2025-q21-22.ts` (Questions 21-22)
+  - Example: `sample-paper-2025-q17-20.ts` (Questions 17-20, 3-mark batch)
+  - Example: `sample-paper-2025-q21-22.ts` (Questions 21-22, 4-mark batch)
+  - Example: `sample-paper-2025-q23-26.ts` (Questions 23-26, 6-mark batch)
+  - Example: `sample-paper-2025-q27-34.ts` (Questions 27-34, Part B batch)
   - Batch by marks or logical sections (3-mark, 4-mark, 6-mark, Part B, etc.)
+  - Each batch file exports `Question[]` array for import into main file
 - **Board Exams**: `board-exam-[set]-[question]-[year].ts`
   - Example: `board-exam-67-3-1.ts` (Set 67, Q3, Variant 1)
 
@@ -175,12 +234,67 @@ React.createElement("ul", { className: "list-disc pl-5" },
   React.createElement("li", null, "Second point")
 )
 
+// Tables for accounting data (Balance Sheets, Financial Statements)
+React.createElement("table", { className: "border-collapse border border-gray-300 w-full mt-4" },
+  React.createElement("thead", null,
+    React.createElement("tr", null,
+      React.createElement("th", {
+        className: "border border-gray-300 p-2 text-left font-bold bg-gray-100 text-gray-900"
+      }, "Particulars"),
+      React.createElement("th", {
+        className: "border border-gray-300 p-2 text-right font-bold bg-gray-100 text-gray-900"
+      }, "Amount (₹)")
+    )
+  ),
+  React.createElement("tbody", null,
+    React.createElement("tr", null,
+      React.createElement("td", { className: "border border-gray-300 p-2" }, "Cash"),
+      React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "50,000")
+    ),
+    React.createElement("tr", null,
+      React.createElement("td", {
+        className: "border border-gray-300 p-2 font-semibold bg-gray-50 text-gray-900"
+      }, "Total Current Assets"),
+      React.createElement("td", {
+        className: "border border-gray-300 p-2 text-right font-semibold bg-gray-50 text-gray-900"
+      }, "500,000")
+    ),
+    React.createElement("tr", null,
+      React.createElement("td", {
+        className: "border border-gray-300 p-2 font-bold bg-green-50 text-gray-900"
+      }, "Profit After Tax"),
+      React.createElement("td", {
+        className: "border border-gray-300 p-2 text-right font-bold bg-green-50 text-gray-900"
+      }, "1,250,000")
+    )
+  )
+)
+
 // Links (if needed)
 React.createElement("a", {
   href: "#",
   className: "text-blue-600 hover:underline"
 }, "link text")
 ```
+
+### Table Styling Best Practices
+
+**CRITICAL**: Always specify `text-gray-900` (or appropriate dark color) when using light background colors:
+
+- ✅ **Correct**: `className: "font-bold bg-gray-100 text-gray-900"`
+- ❌ **Wrong**: `className: "font-bold bg-gray-100"` (text may be invisible)
+
+**Standard Table Classes:**
+- **Table Container**: `border-collapse border border-gray-300 w-full mt-4`
+- **Header Cells**: `border border-gray-300 p-2 font-bold bg-gray-100 text-gray-900`
+- **Data Cells**: `border border-gray-300 p-2` (add `text-right` for numbers)
+- **Subtotal Rows**: `border border-gray-300 p-2 font-semibold bg-gray-50 text-gray-900`
+- **Total Rows**: `border border-gray-300 p-2 font-bold bg-green-50 text-gray-900`
+
+**Alignment Guidelines:**
+- **Text/Particulars**: `text-left` (default, can be omitted)
+- **Numbers/Amounts**: `text-right` (always specify for financial data)
+- **Centered**: `text-center` (rarely used, mostly for column headers)
 
 ### Question Structure
 ```typescript
@@ -278,8 +392,10 @@ export const accountancyLearningModules: LearningModule[] = [
 - **ID**: Must be unique within a paper, string format
 - **Marks**: Positive integer (1-6 for CBSE)
 - **Content**: Must be valid ReactNode, not empty
-- **Solution**: Must clearly indicate correct answer
-- **Explanation**: Must be educational and comprehensive
+- **Solution**: Must clearly indicate correct answer with proper formatting
+- **Explanation**: Must be educational, comprehensive, and follow official marking scheme
+- **Tables**: Must include proper text colors (text-gray-900) on all colored backgrounds
+- **Financial Data**: Must use right-aligned numbers, proper accounting format
 
 ### Learning Module Validation
 - **Chapter**: Sequential numbering as string
@@ -298,9 +414,11 @@ export const accountancyLearningModules: LearningModule[] = [
 
 ### Educational Accuracy
 - Content must align with CBSE Class XII syllabus (2025-26)
-- Solutions must be correct and verified against official materials
-- Examples must be relevant, clear, and accurate
+- Solutions must be correct and verified against official CBSE marking schemes
+- All accounting solutions must follow standard formats (journal entries, ledgers, financial statements)
+- Examples must be relevant, clear, accurate, and match official patterns
 - Case studies should reflect real-world scenarios
+- Working notes must show all calculations step-by-step
 
 ### Accessibility & Usability
 - **Text-to-Speech Compatible**: All text content must work with Web Speech API
@@ -340,5 +458,5 @@ export const accountancyLearningModules: LearningModule[] = [
 - Use descriptive commit messages
 - Tag major content updates
 
-**Last Updated:** October 1, 2025</content>
+**Last Updated:** January 2025</content>
 <parameter name="filePath">c:\Users\Admin\Neil\XII-Commerce\docs\data-structure.md

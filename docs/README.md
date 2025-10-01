@@ -4,6 +4,8 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 
 ## 📚 Documentation Overview
 
+**Latest Update (v1.2.0)**: Official CBSE Marking Scheme integration for Accountancy Sample Paper 2025-26 with comprehensive solutions, professional table formatting, and visibility improvements.
+
 ### 📋 [Architecture Overview](./architecture.md)
 **Essential for understanding the technical foundation**
 - Complete technology stack (React 19, TypeScript 5.8.2, Vite 6.2.0, Tailwind CSS 4.1.13)
@@ -163,8 +165,8 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 
 - **Total Documents**: 7 comprehensive guides
 - **Coverage**: Architecture, Design, Development, Content, Deployment
-- **Last Major Update**: October 1, 2025
-- **Version**: 1.0
+- **Last Major Update**: January 2025 (v1.2.0 - CBSE Marking Scheme Integration)
+- **Version**: 1.2
 
 ---
 
@@ -192,7 +194,7 @@ This application serves **CBSE Class XII Commerce students**. All decisions shou
 
 ---
 
-**Last Updated:** October 1, 2025
+**Last Updated:** January 2025
 
 **For contributions**: Follow the guides above and submit a pull request!
 

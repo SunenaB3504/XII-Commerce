@@ -7,6 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2025-01-XX
+
+### Added
+- **Official CBSE Marking Scheme Integration**: Accountancy Sample Paper 2025-26 updated with comprehensive solutions from official CBSE marking scheme
+  - PDF extraction tool (`scripts/extract-pdf.py`) for automated content extraction from official CBSE documents
+  - All 34 questions now include official solutions with step-by-step working notes
+  - Enhanced solution format with detailed journal entries, T-accounts, and financial statements
+  - Structured tables for balance sheets, comparative statements, and common size statements
+  - Professional formatting with proper accounting headers and subtotals
+
+### Changed
+- **Solution Structure Enhancement**: Upgraded from simple answers to comprehensive educational solutions
+  - Q1-16 (MCQs): Verified against official answer key
+  - Q17-20 (3-mark): Detailed journal entries, goodwill calculations, ratio analysis with formulas
+  - Q21-22 (4-mark): Complete balance sheets with working notes tables
+  - Q23-26 (6-mark): Business acquisition entries, loan accounts, partner capital accounts with T-account format
+  - Q27-34 (Part B): Comparative statements, common size analysis, cash flow statements with detailed working
+
+### Fixed
+- **Table Visibility Issues**: Resolved text color problems in all accounting tables
+  - Added `text-gray-900` to table headers with `bg-gray-100` backgrounds (Commit: 61fc4e9)
+  - Added `text-gray-900` to subtotal rows with `bg-gray-50` backgrounds (Commit: dcd2778)
+  - Added `text-gray-900` to total rows with `bg-green-50` backgrounds (Commit: dcd2778)
+  - Ensured all semibold text has dark color for visibility on light backgrounds
+  - Changes applied across all 4 question batch files (73 insertions, 67 deletions)
+
+### Technical
+- Maintained modular architecture with 5 TypeScript files for better maintainability
+- Zero TypeScript compilation errors across all updated files
+- All solutions tested in development environment (Vite dev server on port 3001)
+- Git workflow: 3 commits pushed to main branch
+  - 148f956: Initial marking scheme integration
+  - 61fc4e9: Table header visibility fix
+  - dcd2778: Subtotal/total visibility fix
+
 ## [1.1.0] - 2025-10-01
 
 ### Added
@@ -72,6 +107,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History Summary
 
+- **1.2.0** (2025-01-XX) - Official CBSE marking scheme integration + table visibility fixes
 - **1.1.0** (2025-10-01) - Modular question paper architecture
 - **1.0.0** (2025-09-XX) - Initial release
 

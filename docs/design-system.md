@@ -39,6 +39,18 @@ Neil's Commerce Prep follows a **vibrant, teen-friendly design system** optimize
   - Large: `shadow-2xl` (most cards)
   - Extra: `shadow-3xl` (hover states)
 
+### Table Text Colors - Critical for Visibility ⚠️
+**IMPORTANT**: Always specify dark text colors on light backgrounds to ensure readability!
+
+- **Header Text**: `text-gray-900` (very dark gray #111827) on `bg-gray-100` (light gray #F3F4F6)
+- **Subtotal Text**: `text-gray-900` on `bg-gray-50` (very light gray #F9FAFB)
+- **Total Text**: `text-gray-900` on `bg-green-50` (very light green #F0FDF4)
+- **Body Text**: Default dark color, no background needed
+
+**Common Mistake**: Omitting text color on colored backgrounds causes text to inherit lighter colors and become invisible.
+
+**Rule**: Any row with `bg-gray-100`, `bg-gray-50`, or `bg-green-50` MUST include `text-gray-900` in the className.
+
 ## Typography - Bold & Energetic
 
 ### Font Weights - Go Big or Go Home!
@@ -140,6 +152,67 @@ Neil's Commerce Prep follows a **vibrant, teen-friendly design system** optimize
 // Sidebar Item - Inactive
 <button className="bg-white/80 hover:bg-white text-slate-700 border-2 border-purple-200 hover:border-pink-300 hover:shadow-lg p-4 rounded-2xl transition-all hover:scale-105">
 ```
+```
+
+### Tables - Accounting & Financial Data
+```tsx
+// Standard accounting table with proper text colors
+<table className="border-collapse border border-gray-300 w-full mt-4">
+  <thead>
+    <tr>
+      {/* CRITICAL: Always include text-gray-900 on colored backgrounds */}
+      <th className="border border-gray-300 p-2 text-left font-bold bg-gray-100 text-gray-900">
+        Particulars
+      </th>
+      <th className="border border-gray-300 p-2 text-right font-bold bg-gray-100 text-gray-900">
+        Amount (₹)
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {/* Regular data row - no background color */}
+    <tr>
+      <td className="border border-gray-300 p-2">Cash</td>
+      <td className="border border-gray-300 p-2 text-right">50,000</td>
+    </tr>
+    {/* Subtotal row - light gray background with dark text */}
+    <tr>
+      <td className="border border-gray-300 p-2 font-semibold bg-gray-50 text-gray-900">
+        Total Current Assets
+      </td>
+      <td className="border border-gray-300 p-2 text-right font-semibold bg-gray-50 text-gray-900">
+        500,000
+      </td>
+    </tr>
+    {/* Final total row - light green background with dark text */}
+    <tr>
+      <td className="border border-gray-300 p-2 font-bold bg-green-50 text-gray-900">
+        Profit After Tax
+      </td>
+      <td className="border border-gray-300 p-2 text-right font-bold bg-green-50 text-gray-900">
+        1,250,000
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+// Table in React.createElement format (for data files)
+React.createElement("table", { className: "border-collapse border border-gray-300 w-full mt-4" },
+  React.createElement("thead", null,
+    React.createElement("tr", null,
+      React.createElement("th", {
+        className: "border border-gray-300 p-2 text-left font-bold bg-gray-100 text-gray-900"
+      }, "Particulars")
+    )
+  ),
+  React.createElement("tbody", null,
+    React.createElement("tr", null,
+      React.createElement("td", {
+        className: "border border-gray-300 p-2 font-semibold bg-gray-50 text-gray-900"
+      }, "Subtotal")
+    )
+  )
+)
 ```
 
 ### Icon Containers
@@ -659,6 +732,7 @@ className="transform rotate-6 hover:rotate-0 transition-transform duration-300"
 6. **Mobile-First Fun**: Large touch targets, readable on phones
 7. **Motivation Built-In**: "Level Up", "Champions", "Challenge", encouraging language
 8. **Visual Rewards**: Celebrations (🎉), achievements (✨), progress bars
+9. **Text Visibility**: Always specify dark text colors on light backgrounds (tables, cards, badges)
 
 ## Design System Governance - Teen Edition Rules!
 
@@ -673,6 +747,14 @@ className="transform rotate-6 hover:rotate-0 transition-transform duration-300"
 - **✅ Add Personality**: Motivational messages, celebrations
 - **✅ Size Appropriately**: Match text size or slightly larger
 - **❌ Don't Overuse**: Keep meaningful, not decorative clutter
+
+### Table Text Color Rules ⚠️
+- **✅ ALWAYS**: Include `text-gray-900` with `bg-gray-100`, `bg-gray-50`, or `bg-green-50`
+- **✅ Headers**: `font-bold bg-gray-100 text-gray-900`
+- **✅ Subtotals**: `font-semibold bg-gray-50 text-gray-900`
+- **✅ Totals**: `font-bold bg-green-50 text-gray-900`
+- **❌ NEVER**: Use colored backgrounds without explicit text color (causes invisible text)
+- **Testing**: View tables in browser to verify all text is clearly visible
 
 ### Border & Shadow Guidelines
 - **Thick Borders (`border-4`)**: Main cards, active states, important sections
@@ -715,7 +797,7 @@ className="transform rotate-6 hover:rotate-0 transition-transform duration-300"
 4. **Body Content**: Regular weight, readable sizing
 5. **Metadata**: Smaller, muted color
 
-**Last Updated:** October 1, 2025
+**Last Updated:** January 2025
 
 ---
 
