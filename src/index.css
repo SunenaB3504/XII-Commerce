@@ -1,4 +1,7 @@
-/* Tailwind CSS directives - these @tailwind rules are processed by PostCSS and replaced with actual CSS */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind CSS v4 - import with source paths */
+@import "tailwindcss";
+
+/* Ensure Tailwind scans these paths */
+@source "../components";
+@source "..";
+@source "../*.tsx";
