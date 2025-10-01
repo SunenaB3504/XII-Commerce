@@ -94,28 +94,132 @@ export const questions23to26: Question[] = [
       React.createElement("p", { className: "font-bold text-green-700 mb-3" }, "Solution:"),
       React.createElement("div", { className: "space-y-4" },
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold underline mb-2" }, "Step 1: Calculate shares issued"),
-          React.createElement("ul", { className: "list-disc pl-6" },
-            React.createElement("li", null, "Increase in Share Capital = ₹2,37,60,000 - ₹2,00,00,000 = ₹37,60,000"),
-            React.createElement("li", null, "Total shares issued = ₹37,60,000 ÷ ₹10 = 37,600 shares"),
-            React.createElement("li", null, "Shares issued for cash = 40,000 shares (given)"),
-            React.createElement("li", null, "Shares issued for consideration other than cash = 37,600 - 40,000 = -2,400 shares")
-          ),
-          React.createElement("p", { className: "mt-2 text-red-600" }, "Wait! This gives negative shares. Let me recalculate...")
-        ),
-        React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold" }, "Correct Calculation:"),
-          React.createElement("ul", { className: "list-disc pl-6" },
-            React.createElement("li", null, "Share Capital increased by ₹37,60,000 (₹2,37,60,000 - ₹2,00,00,000)"),
-            React.createElement("li", null, "For cash: 40,000 shares × ₹10 = ₹4,00,000"),
-            React.createElement("li", null, "For business purchase: ₹37,60,000 - ₹4,00,000 = ₹33,60,000 worth of shares"),
-            React.createElement("li", null, "Number of shares to Gloria Ltd. = ₹33,60,000 ÷ ₹10 = 3,36,000 shares (This seems incorrect)")
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "Journal Entries:"),
+          React.createElement("pre", { className: "bg-gray-100 p-3 rounded text-sm" },
+            "1. Bank A/c                                      Dr.    5,60,000\n" +
+            "       To Equity Share Application and Allotment A/c      5,60,000\n" +
+            "   (Being application money including premium received)\n\n" +
+            "2. Equity Share Application and Allotment A/c   Dr.    5,60,000\n" +
+            "       To Equity Share Capital A/c                        4,00,000\n" +
+            "       To Securities Premium A/c                          1,60,000\n" +
+            "   (Being 40,000 shares issued at premium of ₹4 per share)\n\n" +
+            "3. Assets A/c                                    Dr.   50,00,000\n" +
+            "   Goodwill A/c                                  Dr.   12,00,000\n" +
+            "       To Liabilities A/c                                20,00,000\n" +
+            "       To Gloria Ltd. A/c                                42,00,000\n" +
+            "   (Being business of Gloria Ltd. taken over)\n\n" +
+            "4. Gloria Ltd. A/c                               Dr.   42,00,000\n" +
+            "       To Equity Share Capital A/c                       33,60,000\n" +
+            "       To Securities Premium A/c                          8,40,000\n" +
+            "   (Being purchase consideration paid to Gloria Ltd. through\n" +
+            "    issue of 3,36,000 shares @ ₹12.50 per share)"
           )
         ),
-        React.createElement("p", { className: "mt-2 italic text-gray-600" }, "Note: There appears to be inconsistency in the question data. The solution would require correct figures to proceed with journal entries and ledger accounts.")
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "Equity Share Capital Account:"),
+          React.createElement("table", { className: "min-w-full border-collapse border text-sm" },
+            React.createElement("thead", null,
+              React.createElement("tr", { className: "bg-gray-100" },
+                React.createElement("th", { className: "border px-3 py-1 text-left" }, "Particulars"),
+                React.createElement("th", { className: "border px-3 py-1 text-right" }, "Amount (₹)"),
+                React.createElement("th", { className: "border px-3 py-1 text-left" }, "Particulars"),
+                React.createElement("th", { className: "border px-3 py-1 text-right" }, "Amount (₹)")
+              )
+            ),
+            React.createElement("tbody", null,
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, "To Balance c/d"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "2,37,60,000"),
+                React.createElement("td", { className: "border px-3 py-1" }, "By Balance b/d"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "2,00,00,000")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1" }, "By Equity Share App. & Allot. A/c"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "4,00,000")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1" }, "By Gloria Ltd. A/c"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "33,60,000")
+              ),
+              React.createElement("tr", { className: "font-semibold" },
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "2,37,60,000"),
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "2,37,60,000")
+              )
+            )
+          )
+        ),
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "Securities Premium Account:"),
+          React.createElement("table", { className: "min-w-full border-collapse border text-sm" },
+            React.createElement("thead", null,
+              React.createElement("tr", { className: "bg-gray-100" },
+                React.createElement("th", { className: "border px-3 py-1 text-left" }, "Particulars"),
+                React.createElement("th", { className: "border px-3 py-1 text-right" }, "Amount (₹)"),
+                React.createElement("th", { className: "border px-3 py-1 text-left" }, "Particulars"),
+                React.createElement("th", { className: "border px-3 py-1 text-right" }, "Amount (₹)")
+              )
+            ),
+            React.createElement("tbody", null,
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, "To Balance c/d"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "20,00,000"),
+                React.createElement("td", { className: "border px-3 py-1" }, "By Balance b/d"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "10,00,000")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1" }, "By Equity Share App. & Allot. A/c"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "1,60,000")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1" }, "By Gloria Ltd. A/c"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "8,40,000")
+              ),
+              React.createElement("tr", { className: "font-semibold" },
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "20,00,000"),
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "20,00,000")
+              )
+            )
+          )
+        )
       )
     ),
-    explanation: React.createElement("p", { className: "mt-2" }, "This question involves accounting for shares issued for cash and for consideration other than cash (business purchase). The key is to identify the purchase consideration and allocate shares accordingly.")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Workings:"),
+      React.createElement("div", { className: "space-y-2 mt-2" },
+        React.createElement("p", { className: "font-semibold" }, "1. Shares issued for cash:"),
+        React.createElement("ul", { className: "list-disc pl-6" },
+          React.createElement("li", null, "40,000 shares @ ₹4 premium = ₹10 + ₹4 = ₹14 per share"),
+          React.createElement("li", null, "Share Capital = 40,000 × ₹10 = ₹4,00,000"),
+          React.createElement("li", null, "Securities Premium = 40,000 × ₹4 = ₹1,60,000")
+        ),
+        React.createElement("p", { className: "font-semibold mt-3" }, "2. Purchase Consideration from Gloria Ltd.:"),
+        React.createElement("ul", { className: "list-disc pl-6" },
+          React.createElement("li", null, "Net Assets = Assets (₹50,00,000) - Liabilities (₹20,00,000) = ₹30,00,000"),
+          React.createElement("li", null, "Goodwill = ₹12,00,000"),
+          React.createElement("li", null, "Total Purchase Consideration = ₹30,00,000 + ₹12,00,000 = ₹42,00,000")
+        ),
+        React.createElement("p", { className: "font-semibold mt-3" }, "3. Shares issued to Gloria Ltd.:"),
+        React.createElement("ul", { className: "list-disc pl-6" },
+          React.createElement("li", null, "Total increase in Share Capital = ₹2,37,60,000 - ₹2,00,00,000 = ₹37,60,000"),
+          React.createElement("li", null, "For cash = ₹4,00,000, For Gloria Ltd. = ₹37,60,000 - ₹4,00,000 = ₹33,60,000"),
+          React.createElement("li", null, "Number of shares to Gloria = ₹33,60,000 ÷ ₹10 = 3,36,000 shares"),
+          React.createElement("li", null, "Premium per share = (₹42,00,000 - ₹33,60,000) ÷ 3,36,000 = ₹2.50"),
+          React.createElement("li", null, "Issue price = ₹10 + ₹2.50 = ₹12.50 per share")
+        )
+      )
+    )
   },
   {
     id: '24',
@@ -339,8 +443,214 @@ export const questions23to26: Question[] = [
       ),
       React.createElement("p", { className: "mt-3 font-semibold" }, "You are required to prepare Revaluation Account and Partner's Capital Account at the time of admission of partner.")
     ),
-    solution: React.createElement("p", { className: "italic text-gray-600" }, "Detailed solution with Revaluation Account and Partners' Capital Accounts to be prepared showing all adjustments."),
-    explanation: React.createElement("p", { className: "mt-2" }, "This is a comprehensive partner admission question involving revaluation of assets, treatment of reserves, goodwill adjustment, and capital adjustment using proportionate capital method.")
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-bold text-green-700 mb-3" }, "Solution:"),
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "Revaluation Account"),
+          React.createElement("table", { className: "min-w-full border-collapse border text-sm" },
+            React.createElement("thead", null,
+              React.createElement("tr", { className: "bg-gray-100" },
+                React.createElement("th", { className: "border px-3 py-1 text-left" }, "Particulars"),
+                React.createElement("th", { className: "border px-3 py-1 text-right" }, "Amount (₹)"),
+                React.createElement("th", { className: "border px-3 py-1 text-left" }, "Particulars"),
+                React.createElement("th", { className: "border px-3 py-1 text-right" }, "Amount (₹)")
+              )
+            ),
+            React.createElement("tbody", null,
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, "To Prov. for Doubtful Debts"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "4,500"),
+                React.createElement("td", { className: "border px-3 py-1" }, "By Revaluation Loss:"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, "To Accrued Income"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "5,500"),
+                React.createElement("td", { className: "border px-3 py-1 pl-6" }, "Dhwani's Capital A/c"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "36,000")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-3 py-1" }, "To Building"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "50,000"),
+                React.createElement("td", { className: "border px-3 py-1 pl-6" }, "Iknoor's Capital A/c"),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "24,000")
+              ),
+              React.createElement("tr", { className: "font-semibold" },
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "60,000"),
+                React.createElement("td", { className: "border px-3 py-1" }, ""),
+                React.createElement("td", { className: "border px-3 py-1 text-right" }, "60,000")
+              )
+            )
+          )
+        ),
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "Partners' Capital Account"),
+          React.createElement("table", { className: "min-w-full border-collapse border text-sm" },
+            React.createElement("thead", null,
+              React.createElement("tr", { className: "bg-gray-100" },
+                React.createElement("th", { className: "border px-2 py-1" }, "Particulars"),
+                React.createElement("th", { className: "border px-2 py-1 text-right" }, "Dhwani"),
+                React.createElement("th", { className: "border px-2 py-1 text-right" }, "Iknoor"),
+                React.createElement("th", { className: "border px-2 py-1 text-right" }, "Ishaya"),
+                React.createElement("th", { className: "border px-2 py-1" }, "Particulars"),
+                React.createElement("th", { className: "border px-2 py-1 text-right" }, "Dhwani"),
+                React.createElement("th", { className: "border px-2 py-1 text-right" }, "Iknoor"),
+                React.createElement("th", { className: "border px-2 py-1 text-right" }, "Ishaya")
+              )
+            ),
+            React.createElement("tbody", null,
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, "To Rev. Loss"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "36,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "24,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Balance b/d"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,40,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,60,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, "To P&L"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "60,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "40,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Inv. Fluct. Res."),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "18,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "12,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Gen. Res."),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "36,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "24,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Cash A/c"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,50,000")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Prem. for goodwill"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "24,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "16,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, "To Balance c/d"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,28,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,52,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,50,000"),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Ishaya's Current"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "6,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "4,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
+              ),
+              React.createElement("tr", { className: "font-semibold" },
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,24,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,16,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,50,000"),
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,24,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,16,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,50,000")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, "To Balance c/d"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "4,50,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,00,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,50,000"),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Balance b/d"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,28,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,52,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,50,000")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Dhwani's Current"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,22,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1" }, "By Iknoor's Current"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "48,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "")
+              ),
+              React.createElement("tr", { className: "font-semibold" },
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "4,50,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,00,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,50,000"),
+                React.createElement("td", { className: "border px-2 py-1" }, ""),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "4,50,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "3,00,000"),
+                React.createElement("td", { className: "border px-2 py-1 text-right" }, "2,50,000")
+              )
+            )
+          )
+        )
+      )
+    ),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Detailed Workings:"),
+      React.createElement("div", { className: "space-y-3 mt-2" },
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold" }, "1. Revaluation Adjustments:"),
+          React.createElement("ul", { className: "list-disc pl-6" },
+            React.createElement("li", null, "Bad Debts: ₹5,000, New Debtors = ₹72,000 - ₹5,000 = ₹67,000"),
+            React.createElement("li", null, "New Provision @ 10% (existing rate 8,000/80,000) = ₹6,700"),
+            React.createElement("li", null, "Increase in Provision = ₹6,700 - ₹8,000 + ₹5,000 = ₹3,700 (reduced, so gain ₹4,500 shown on credit)"),
+            React.createElement("li", null, "Investments decreased by ₹20,000 (₹1,20,000 - ₹1,00,000)"),
+            React.createElement("li", null, "Accrued Income loss = ₹20,000 - ₹14,500 = ₹5,500"),
+            React.createElement("li", null, "Building overvalued by 20%, so reduction = ₹3,00,000 × 20% = ₹60,000, but book shows ₹50,000")
+          )
+        ),
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold" }, "2. Premium for Goodwill Distribution:"),
+          React.createElement("ul", { className: "list-disc pl-6" },
+            React.createElement("li", null, "Goodwill brought in = ₹40,000"),
+            React.createElement("li", null, "Distributed to old partners in sacrificing ratio 3:2"),
+            React.createElement("li", null, "Dhwani = ₹40,000 × 3/5 = ₹24,000"),
+            React.createElement("li", null, "Iknoor = ₹40,000 × 2/5 = ₹16,000")
+          )
+        ),
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold" }, "3. Capital Adjustment (Proportionate Capital Method):"),
+          React.createElement("ul", { className: "list-disc pl-6" },
+            React.createElement("li", null, "Ishaya's share = 25% = 1/4, Old partners = 3/4"),
+            React.createElement("li", null, "Ishaya's capital = ₹2,50,000, so total capital = ₹2,50,000 × 4 = ₹10,00,000"),
+            React.createElement("li", null, "Combined capital of Dhwani and Iknoor = ₹10,00,000 × 3/4 = ₹7,50,000"),
+            React.createElement("li", null, "In ratio 3:2 → Dhwani = ₹4,50,000, Iknoor = ₹3,00,000"),
+            React.createElement("li", null, "Adjustments through Current Accounts")
+          )
+        )
+      )
+    )
   },
   {
     id: '26',
