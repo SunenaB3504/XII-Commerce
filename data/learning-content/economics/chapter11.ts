@@ -18,7 +18,7 @@ export const chapter11Module: LearningModule = {
       example: React.createElement('ul', { className: 'list-disc pl-5 mt-2 space-y-2' },
         React.createElement('li', null, React.createElement('b', null, 'Regulation of markets:'), ' To create transparent and orderly marketing conditions.'),
         React.createElement('li', null, React.createElement('b', null, 'Provision of physical infrastructure:'), ' Roads, warehouses, cold storages.'),
-        React.createElement('li', null, React.createElement('b', null, 'Cooperative marketing.'),
+        React.createElement('li', null, React.createElement('b', null, 'Cooperative marketing:')),
         React.createElement('li', null, React.createElement('b', null, 'Policy instruments:'), ' Like Minimum Support Price (MSP), buffer stocks, and Public Distribution System (PDS).')
       )
     },
