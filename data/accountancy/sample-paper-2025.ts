@@ -1,9 +1,14 @@
 import { QuestionPaper } from '../../types';
 import React from 'react';
+import { questions17to20 } from './sample-paper-2025-q17-20';
+import { questions21to22 } from './sample-paper-2025-q21-22';
+import { questions23to26 } from './sample-paper-2025-q23-26';
+import { questions27to34 } from './sample-paper-2025-q27-34';
 
 export const accountancySamplePaper2025: QuestionPaper = {
   name: 'CBSE Sample Paper 2025-26',
   questions: [
+    // Questions 1-16: 1-mark MCQs
   {
     id: '1',
     marks: 1,
@@ -290,7 +295,7 @@ export const accountancySamplePaper2025: QuestionPaper = {
       )
     )
   },
-   {
+  {
     id: '9',
     marks: 1,
     question: React.createElement(React.Fragment, null,
@@ -458,6 +463,18 @@ export const accountancySamplePaper2025: QuestionPaper = {
       ),
       solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A."),
       explanation: React.createElement("p", { className: "mt-2" }, "At the time of reconstitution of a partnership firm, existing reserves must be adjusted. A provision for the actual liability (claim of ₹50,000) is created from the Workmen Compensation Reserve. The remaining surplus in the reserve (₹80,000 - ₹50,000 = ₹30,000) is an accumulated profit that belongs to the partners in their old profit-sharing ratio (equally) and should be distributed to them. It is not distributed in the new ratio.")
-  }
-]
+  },
+    
+    // Questions 17-20: 3-mark questions
+    ...questions17to20,
+
+    // Questions 21-22: 4-mark questions
+    ...questions21to22,
+
+    // Questions 23-26: 6-mark questions
+    ...questions23to26,
+
+    // Questions 27-34: Part B - Analysis of Financial Statements
+    ...questions27to34
+  ]
 };

@@ -27,7 +27,13 @@ data/[subject]/[paper-name].ts
 - Board Exams: `board-exam-[set]-[question]-[variant].ts`
   - Example: `board-exam-67-3-1.ts`
 
-### Step 2: Implement Question Structure
+### Step 2: Choose Approach (Single File vs Modular)
+
+**For Small Papers** (< 25 questions): Use single file approach
+
+**For Large Papers** (30+ questions): Use modular approach with batch files
+
+#### Option A: Single File Approach
 
 ```typescript
 import { QuestionPaper } from '../../types';
@@ -60,6 +66,81 @@ export const businessStudiesSamplePaper2025: QuestionPaper = {
   ]
 };
 ```
+
+#### Option B: Modular Approach (Recommended for 30+ Questions)
+
+**Step 2a: Create Main File** (`sample-paper-2025.ts`)
+```typescript
+import { QuestionPaper } from '../../types';
+import React from 'react';
+import { questions17to20 } from './sample-paper-2025-q17-20';
+import { questions21to22 } from './sample-paper-2025-q21-22';
+import { questions23to26 } from './sample-paper-2025-q23-26';
+import { questions27to34 } from './sample-paper-2025-q27-34';
+
+export const accountancySamplePaper2025: QuestionPaper = {
+  name: 'CBSE Sample Paper 2025-26',
+  questions: [
+    // Questions 1-16: 1-mark MCQs (inline in main file)
+    {
+      id: '1',
+      marks: 1,
+      question: React.createElement(...),
+      solution: React.createElement(...),
+      explanation: React.createElement(...)
+    },
+    // ... questions 2-16
+    
+    // Questions 17-34: Spread from batch files
+    ...questions17to20,
+    ...questions21to22,
+    ...questions23to26,
+    ...questions27to34
+  ]
+};
+```
+
+**Step 2b: Create Batch Files**
+
+Create separate files for each batch (e.g., `sample-paper-2025-q17-20.ts`):
+
+```typescript
+import { Question } from '../../types';
+import React from 'react';
+
+export const questions17to20: Question[] = [
+  {
+    id: '17',
+    marks: 3,
+    question: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold" }, "Question 17 text...")
+    ),
+    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Solution..."),
+    explanation: React.createElement("p", null, "Explanation...")
+  },
+  {
+    id: '17 (OR)',
+    marks: 3,
+    question: React.createElement(...),
+    solution: React.createElement(...),
+    explanation: React.createElement(...)
+  },
+  // ... questions 18-20
+];
+```
+
+**Batch File Naming Guide:**
+- Group by marks: `q17-20.ts` (3-mark questions)
+- Group by section: `q27-34.ts` (Part B questions)
+- Keep batches manageable (2-8 questions per file)
+- Use descriptive names: `q23-26.ts` for 6-mark questions
+
+**Benefits:**
+- ✅ Files stay under 500 lines (easier to edit)
+- ✅ Better version control and collaboration
+- ✅ Reduced merge conflicts
+- ✅ Faster navigation to specific questions
+- ✅ Easier maintenance and updates
 
 ### Step 3: Update Subject Index
 

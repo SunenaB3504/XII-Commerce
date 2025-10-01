@@ -72,7 +72,11 @@ interface Subject {
 data/
 ├── index.ts                    # Central data aggregation
 ├── [subject]/                  # Subject-specific papers
-│   ├── sample-paper-2025.ts
+│   ├── sample-paper-2025.ts    # Main file (imports + Q1-16 for modular papers)
+│   ├── sample-paper-2025-q17-20.ts  # Batch file for questions 17-20
+│   ├── sample-paper-2025-q21-22.ts  # Batch file for questions 21-22
+│   ├── sample-paper-2025-q23-26.ts  # Batch file for questions 23-26
+│   ├── sample-paper-2025-q27-34.ts  # Batch file for questions 27-34
 │   ├── board-exam-[code].ts
 │   └── ...
 ├── learning-content/
@@ -83,10 +87,67 @@ data/
 └── types.ts                    # Type definitions (root level)
 ```
 
+### Modular Question Papers (New Approach)
+
+For large question papers (30+ questions), use a modular approach to improve maintainability:
+
+**Main File Structure** (`sample-paper-2025.ts`):
+```typescript
+import { QuestionPaper } from '../../types';
+import React from 'react';
+import { questions17to20 } from './sample-paper-2025-q17-20';
+import { questions21to22 } from './sample-paper-2025-q21-22';
+import { questions23to26 } from './sample-paper-2025-q23-26';
+import { questions27to34 } from './sample-paper-2025-q27-34';
+
+export const accountancySamplePaper2025: QuestionPaper = {
+  name: 'CBSE Sample Paper 2025-26',
+  questions: [
+    // Questions 1-16: 1-mark MCQs (inline for main file)
+    { id: '1', marks: 1, question: ..., solution: ..., explanation: ... },
+    // ... questions 2-16
+    
+    // Questions 17-34: Imported from batch files
+    ...questions17to20,
+    ...questions21to22,
+    ...questions23to26,
+    ...questions27to34
+  ]
+};
+```
+
+**Batch File Structure** (`sample-paper-2025-q17-20.ts`):
+```typescript
+import { Question } from '../../types';
+import React from 'react';
+
+export const questions17to20: Question[] = [
+  {
+    id: '17',
+    marks: 3,
+    question: React.createElement(...),
+    solution: React.createElement(...),
+    explanation: React.createElement(...)
+  },
+  // ... questions 18-20
+];
+```
+
+**Benefits of Modular Approach:**
+- **Manageable File Sizes**: Each file stays under 500 lines
+- **Better Version Control**: Easier to track changes in specific question ranges
+- **Team Collaboration**: Multiple contributors can work on different batches simultaneously
+- **Reduced Merge Conflicts**: Changes in one batch don't affect others
+- **Easier Maintenance**: Quickly locate and update specific questions
+
 ### Naming Conventions
 
 #### Question Papers
-- **Sample Papers**: `sample-paper-2025.ts`
+- **Sample Papers**: `sample-paper-2025.ts` (main file)
+- **Sample Paper Batches** (for modular papers): `sample-paper-2025-q[range].ts`
+  - Example: `sample-paper-2025-q17-20.ts` (Questions 17-20)
+  - Example: `sample-paper-2025-q21-22.ts` (Questions 21-22)
+  - Batch by marks or logical sections (3-mark, 4-mark, 6-mark, Part B, etc.)
 - **Board Exams**: `board-exam-[set]-[question]-[year].ts`
   - Example: `board-exam-67-3-1.ts` (Set 67, Q3, Variant 1)
 

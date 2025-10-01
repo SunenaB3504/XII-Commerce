@@ -59,12 +59,23 @@ XII-Commerce/
 ├── components/           # Reusable UI components
 ├── data/                # Static content and data files
 │   ├── [subject]/       # Subject-specific question papers
+│   │   ├── sample-paper-2025.ts         # Main file
+│   │   ├── sample-paper-2025-q17-20.ts  # Modular batch files
+│   │   ├── sample-paper-2025-q21-22.ts  # (for large papers 30+ questions)
+│   │   └── ...
 │   ├── learning-content/ # Structured learning modules
 │   └── index.ts         # Central data aggregation
 ├── docs/                # Documentation
 ├── types.ts             # TypeScript type definitions
 └── [config files]       # Vite, TypeScript, package configs
 ```
+
+### Modular Question Papers
+
+For maintainability, large question papers (30+ questions) use a modular approach:
+- **Main file**: Contains questions 1-16 and imports from batch files
+- **Batch files**: Separate files for question ranges (e.g., Q17-20, Q21-22)
+- **Benefits**: Better version control, easier collaboration, reduced merge conflicts
 
 ## 🎨 Features
 
