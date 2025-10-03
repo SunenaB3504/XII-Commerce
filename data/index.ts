@@ -3,6 +3,7 @@ import { accountancyBoardExam67_4_1 } from './accountancy/board-exam-67-4-1';
 import { accountancyBoardExam67_5_3 } from './accountancy/board-exam-67-5-3';
 import { accountancyBoardExam67_3_1 } from './accountancy/board-exam-67-3-1';
 import { accountancyBoardExam67_4_3 } from './accountancy/board-exam-67-4-3';
+import samplePaper2024 from './accountancy/sample-paper-2024';
 import { businessStudiesSamplePaper2025 } from './business-studies/sample-paper-2025';
 import { businessStudiesBoardExam66_1_1 } from './business-studies/board-exam-66-1-1';
 import { businessStudiesBoardExam66_1_2 } from './business-studies/board-exam-66-1-2';
@@ -24,6 +25,7 @@ export const subjects: Subject[] = [
     name: 'Accountancy', 
     questionPapers: [
       accountancySamplePaper2025, 
+      samplePaper2024,
       accountancyBoardExam67_4_1, 
       accountancyBoardExam67_5_3,
       accountancyBoardExam67_3_1,

@@ -89,7 +89,7 @@ const QuestionView: React.FC<QuestionViewProps> = ({ question }) => {
                   </div>
                   <h4 className="text-2xl font-black text-white drop-shadow-lg">Correct Answer!</h4>
                 </div>
-                <div className="text-white text-xl font-bold bg-white/20 backdrop-blur-sm rounded-2xl p-5 border-2 border-white/40">
+                <div className="text-xl font-bold bg-white/20 backdrop-blur-sm rounded-2xl p-5 border-2 border-white/40">
                   {question.solution}
                 </div>
               </div>
