@@ -51,6 +51,8 @@ const paper: QuestionPaper = {
       marks: 3,
       question: React.createElement(React.Fragment, null,
         React.createElement('p', { className: 'font-semibold' }, 'P, Q and R were partners with fixed capitals of ₹40,000, ₹32,000 and ₹24,000. After distributing profit of ₹48,000 in ratio 3:1:1 it was observed that interest on capital was provided at 10% instead of 8% and salary of ₹12,000 was credited to P instead of Q. Pass a single rectifying journal entry in the beginning of next year.'),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'Cheese and Slice are equal partners. Their capitals as on April 01, 2022 were Rs. 50,000 and Rs. 1,00,000 respectively. After the accounts for the financial year ending March 31, 2023 have been prepared, it is observed that interest on capital @ 6% per annum and salary to Cheese @ ₹5,000 per annum, as provided in the partnership deed has not been credited to the partners\' capital accounts before distribution of profits. You are required to give necessary rectifying entries using P&L adjustment account.')
       ),
       solution: React.createElement(React.Fragment, null,
         React.createElement('h4', { className: 'font-bold text-lg mb-2' }, 'Working (as per MS)'),
@@ -117,6 +119,8 @@ const paper: QuestionPaper = {
       marks: 3,
       question: React.createElement(React.Fragment, null,
         React.createElement('p', { className: 'font-semibold' }, 'Pioneer Fitness Ltd. took over the running business of Healthy World Ltd. having assets of ₹10,00,000 and liabilities of ₹1,70,000 by issuing 8,000 8% Debentures of ₹100 each at 5% premium redeemable after 6 years @ ₹110 and cheque for ₹50,000. Pass the journal entries in the books of Pioneer Fitness Ltd.'),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'Lilly Ltd. forfeited 100 shares of ₹10 each issued at 10% premium (₹8 called up) on which a shareholder did not pay ₹3 of allotment (including premium) and first call of ₹2. Out of these 60 shares were reissued to Ram as fully paid for ₹8 per share and 20 shares to Suraj as fully paid up @ ₹12 per share at different intervals of time. Prepare Share Forfeiture account.')
       ),
       solution: React.createElement(React.Fragment, null,
         React.createElement('h4', { className: 'font-bold text-lg mb-2' }, 'Journal Entries (as per MS)'),

@@ -10,6 +10,8 @@ const paper: QuestionPaper = {
       marks: 6,
       question: React.createElement(React.Fragment, null,
         React.createElement('p', { className: 'font-semibold' }, 'The Directors of Rockstar Ltd. invited applications for 2,00,000 Shares of ₹10 each, issued at 20% premium. Share was payable as ₹5 on application, ₹4 (including premium) on allotment and balance on call. Public had applied for 3,20,000 shares out of which applications for 20,000 shares were rejected and remaining were allotted on pro-rata basis. Simba, an applicant of 15,000 shares failed to pay allotment and call money. His shares were forfeited and out of these 6,000 shares were reissued at a discount of ₹2 per share. Journalise.'),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'Shaktimaan Ltd. invited applications for issuing 1,00,000 Shares of ₹10 each at a premium of ₹2 per share. The amount was payable as ₹4 on application (including premium); ₹5 on Allotment and balance on call. Applications were received shares for 1,80,000 of which Applications for 30,000 shares were rejected and remaining applicants were allotted on pro-rata basis. Manthan, holding 5,000 shares failed to pay call money and his shares were forfeited. Out of these 2,000 shares were re-issued at premium of ₹3 per share. Prepare Cash Book and pass necessary entries.')
       ),
       solution: React.createElement(React.Fragment, null,
         React.createElement('h4', { className: 'font-bold text-lg mb-2' }, 'Journal Entries (MS summary for Rockstar Ltd.)'),

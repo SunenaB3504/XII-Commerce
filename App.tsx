@@ -6,8 +6,9 @@ import SubjectTabs from './components/SubjectTabs';
 import PaperSelector from './components/PaperSelector';
 import ModeSelector from './components/ModeSelector';
 import LearningContentView from './components/LearningContentView';
+import { MCQTest, useTestHistory } from './MCQTest';
 
-type ViewMode = 'papers' | 'learn';
+type ViewMode = 'papers' | 'learn' | 'test';
 
 const App: React.FC = () => {
   const [selectedSubjectName, setSelectedSubjectName] = useState<string>(subjects[0].name);
@@ -21,6 +22,9 @@ const App: React.FC = () => {
   const [selectedQuestionId, setSelectedQuestionId] = useState<string | null>(null);
 
   const [selectedChapter, setSelectedChapter] = useState<string | null>(learningModules[0]?.chapter || null);
+
+  // Test history for MCQ assessments
+  const { testHistory, addTestResult } = useTestHistory();
 
   useEffect(() => {
     const firstPaper = currentSubject.questionPapers[0];
@@ -54,6 +58,11 @@ const App: React.FC = () => {
   const handleSelectChapter = useCallback((chapter: string) => {
     setSelectedChapter(chapter);
   }, []);
+
+  const handleTestComplete = useCallback((result: any) => {
+    addTestResult(result);
+    console.log('Test completed:', result);
+  }, [addTestResult]);
 
   const currentPaper = availablePapers.find(p => p.name === selectedPaperName);
   const currentQuestions = currentPaper?.questions || [];
@@ -128,7 +137,46 @@ const App: React.FC = () => {
             {viewMode === 'learn' && selectedModule && (
               <LearningContentView key={selectedModule.chapter} module={selectedModule} />
             )}
-            {!selectedQuestion && !selectedModule && (
+            {viewMode === 'test' && (
+              <div className="bg-white p-8 rounded-lg shadow-md">
+                <MCQTest
+                  questionCount={20}
+                  studentName="Commerce Student"
+                  onTestComplete={handleTestComplete}
+                />
+                
+                {/* Test History */}
+                {testHistory.length > 0 && (
+                  <div className="mt-8 border-t pt-6">
+                    <h3 className="text-xl font-bold mb-4 text-slate-800">Recent Test Results</h3>
+                    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                      {testHistory.slice(-6).reverse().map((test, index) => (
+                        <div key={index} className="bg-slate-50 p-4 rounded-lg border">
+                          <div className="flex justify-between items-center mb-2">
+                            <span className="font-semibold">Test {testHistory.length - index}</span>
+                            <span className={`px-2 py-1 rounded text-sm font-bold ${
+                              test.performanceLevel === 'Excellent' ? 'bg-green-100 text-green-800' :
+                              test.performanceLevel === 'Good' ? 'bg-blue-100 text-blue-800' :
+                              test.performanceLevel === 'Average' ? 'bg-yellow-100 text-yellow-800' :
+                              'bg-red-100 text-red-800'
+                            }`}>
+                              {test.performanceLevel}
+                            </span>
+                          </div>
+                          <div className="text-sm text-slate-600">
+                            Score: {test.correctAnswers}/{test.totalQuestions} ({test.percentage}%)
+                          </div>
+                          <div className="text-xs text-slate-500 mt-1">
+                            {new Date(test.timestamp).toLocaleDateString()}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+            {!selectedQuestion && !selectedModule && viewMode !== 'test' && (
                <div className="bg-white p-8 rounded-lg shadow-md flex items-center justify-center h-full">
                 <p className="text-xl text-slate-500">Select an item from the list to get started!</p>
               </div>

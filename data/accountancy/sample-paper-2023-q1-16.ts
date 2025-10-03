@@ -45,25 +45,41 @@ const paper: QuestionPaper = {
           React.createElement('li', null, 'b) ₹9,000'),
           React.createElement('li', null, 'c) ₹16,000'),
           React.createElement('li', null, 'd) ₹30,000')
+        ),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'On 1st April 2022, Galaxy ltd. had a balance of ₹8,00,000 in Securities Premium account. During the year company issued 20,000 Equity shares of ₹10 each as bonus shares and used the balance amount to write off Loss on issue of Debenture on account of issue of 2,00,000, 9% Debentures of ₹100 each at a discount of 10% redeemable @ 5% Premium. The amount to be charged to Statement of P&L for the year for Loss on issue of Debentures would be:'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) ₹30,00,000.'),
+          React.createElement('li', null, 'b) ₹22,00,000.'),
+          React.createElement('li', null, 'c) ₹24,00,000.'),
+          React.createElement('li', null, 'd) ₹20,00,000.')
         )
       ),
-      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: b'),
-      explanation: React.createElement('p', null, 'Marking scheme indicates option b (₹9,000) as minimum amount to be collected on re-issue of remaining shares.')
+      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: b for first part, c for OR'),
+      explanation: React.createElement('p', null, 'First part: Marking scheme indicates option b (₹9,000) as minimum amount to be collected on re-issue of remaining shares. OR: Loss on issue of debentures = ₹24,00,000 as per marking scheme.')
     },
     {
       id: '4',
       marks: 1,
       question: React.createElement(React.Fragment, null,
-        React.createElement('p', { className: 'font-semibold' }, 'A, B and C who were sharing profits and losses in the ratio of 4:3:2 decided to share the future profits and losses in the ratio of 2:3:4 with effect from 1st April 2023. At the time of reconstitution, a certain amount of Claim on workmen compensation was determined for which B’s share of loss amounted to ₹5,000. The Claim for workmen compensation would be:'),
+        React.createElement('p', { className: 'font-semibold' }, 'A, B and C who were sharing profits and losses in the ratio of 4:3:2 decided to share the future profits and losses in the ratio of 2:3:4 with effect from 1st April 2023. At the time of reconstitution, a certain amount of Claim on workmen compensation was determined for which B\'s share of loss amounted to ₹5,000. The Claim for workmen compensation would be:'),
         React.createElement('ul', { className: 'list-none pl-6 mt-2' },
           React.createElement('li', null, 'a) ₹15,000'),
           React.createElement('li', null, 'b) ₹70,000'),
           React.createElement('li', null, 'c) ₹50,000'),
           React.createElement('li', null, 'd) ₹80,000')
+        ),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'A, B and C are in partnership business. A used ₹2,00,000 belonging to the firm without the information to other partners and made a profit of ₹35,000 by using this amount. Which decision should be taken by the firm to rectify this situation?'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) A need to return only ₹2,00,000 to the firm.'),
+          React.createElement('li', null, 'b) A is required to return ₹35,000 to the firm.'),
+          React.createElement('li', null, 'c) A is required to pay back ₹35,000 only equally to B and C.'),
+          React.createElement('li', null, 'd) A need to return ₹2,35,000 to the firm.')
         )
       ),
-      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d'),
-      explanation: React.createElement('p', null, "MS shows option d) ₹80,000 or alternatively the OR option's answer; include the correct value as per scheme.")
+      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d for first part, d for OR'),
+      explanation: React.createElement('p', null, 'First part: MS shows option d) ₹80,000. OR: A must return ₹2,35,000 (₹2,00,000 + ₹35,000 profit) as per marking scheme.')
     },
     {
       id: '5',
@@ -90,10 +106,18 @@ const paper: QuestionPaper = {
           React.createElement('li', null, 'b) ₹10,00,000'),
           React.createElement('li', null, 'c) ₹9,60,000'),
           React.createElement('li', null, 'd) ₹6,40,000')
+        ),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'Which of the following statements is incorrect about debentures?'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) Interest on debentures is an appropriation of profits.'),
+          React.createElement('li', null, 'b) Debenture holders are the creditors of a company.'),
+          React.createElement('li', null, 'c) Debentures can be issued to vendors at discount.'),
+          React.createElement('li', null, 'd) Interest is not paid on Debentures issued as Collateral Security.')
         )
       ),
-      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: b'),
-      explanation: React.createElement('p', null, 'MS indicates ₹10,00,000 credited to 6% Debentures account.')
+      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: b for first part, d for OR'),
+      explanation: React.createElement('p', null, 'First part: MS indicates ₹10,00,000 credited to 6% Debentures account. OR: Statement d is incorrect - interest is paid on collateral security debentures too.')
     },
     {
       id: '7',
@@ -228,16 +252,24 @@ const paper: QuestionPaper = {
       id: '15',
       marks: 1,
       question: React.createElement(React.Fragment, null,
-        React.createElement('p', { className: 'font-semibold' }, 'A and B are partners. B draws a fixed amount at the end of every quarter. Interest on drawings is charged @15% p.a. At the end of the year interest on B’s drawings amounted to ₹9,000. Drawings of B were:'),
+        React.createElement('p', { className: 'font-semibold' }, 'A and B are partners. B draws a fixed amount at the end of every quarter. Interest on drawings is charged @15% p.a. At the end of the year interest on B\'s drawings amounted to ₹9,000. Drawings of B were:'),
         React.createElement('ul', { className: 'list-none pl-6 mt-2' },
           React.createElement('li', null, 'a) ₹24,000 per quarter.'),
           React.createElement('li', null, 'b) ₹40,000 per quarter'),
           React.createElement('li', null, 'c) ₹30,000 per quarter'),
           React.createElement('li', null, 'd) ₹80,000 per quarter')
+        ),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'Shyam, Gopal & Arjun are partners carrying on garment business. Shyam withdrew ₹ 10,000 in the beginning of each quarter. Gopal, withdrew garments amounting to ₹ 15,000 to distribute it to flood victims, and Arjun withdrew ₹ 20,000 from his capital account. The partnership deed provides for interest on drawings @ 10% p.a. The interest on drawing charged from Shyam, Gopal & Arjun at the end of the year will be'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) Shyam- ₹ 4,800; Gopal- ₹  1,000; Arjun- ₹  2,000.'),
+          React.createElement('li', null, 'b) Shyam- ₹ 4,800; Gopal- ₹  1,000; Arjun- ₹  2,000.'),
+          React.createElement('li', null, 'c) Shyam- ₹ 2,500; Gopal- ₹  750; Arjun- Nil.'),
+          React.createElement('li', null, 'd) Shyam- ₹  4,800; Gopal- Nil; Arjun- Nil.')
         )
       ),
-      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: b'),
-      explanation: React.createElement('p', null, 'MS: ₹40,000 per quarter (option b).')
+      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: b for first part, d for OR'),
+      explanation: React.createElement('p', null, 'First part: MS: ₹40,000 per quarter (option b). OR: Only Shyam and Arjun are charged interest on drawings as per marking scheme.')
     },
     {
       id: '16',

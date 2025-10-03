@@ -38,10 +38,18 @@ const paper: QuestionPaper = {
           React.createElement('li', null, 'b) Issue of Debentures of ₹3,00,000 to Vendors from whom Machinery was purchased.'),
           React.createElement('li', null, 'c) Goods purchased on Credit of ₹1,00,000.'),
           React.createElement('li', null, 'd) Issue of Equity Shares of ₹2,00,000.')
+        ),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'Which function results can be displayed in Auto Calculate?'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) SUM and AVERAGE'),
+          React.createElement('li', null, 'b) MAX and LOOK'),
+          React.createElement('li', null, 'c) LABEL and AVERAGE'),
+          React.createElement('li', null, 'd) MIN and BLANK')
         )
       ),
-      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d'),
-      explanation: React.createElement('p', null, 'MS: Issue of Equity Shares decreases Debt-Equity ratio.')
+      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d for first part, a for OR'),
+      explanation: React.createElement('p', null, 'First part: MS: Issue of Equity Shares decreases Debt-Equity ratio. OR: SUM and AVERAGE functions can be displayed in Auto Calculate.')
     },
     {
       id: '29',
@@ -78,10 +86,18 @@ const paper: QuestionPaper = {
           React.createElement('li', null, 'Dividend received during the year was ₹20,000.'),
           React.createElement('li', null, 'Dividend Proposed for the year 2021-22 was ₹50,000 but only ₹20,000 was approved by the Shareholders.')
         ),
-        React.createElement('p', { className: 'mt-2 font-semibold' }, 'Find out the cash flow from Financing Activities.')
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'Find out the cash flow from Financing Activities.'),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'In Excel, the chart tools provide three different options, and for formatting.'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) Layout, Format, Data Maker'),
+          React.createElement('li', null, 'b) Design, Layout, Format'),
+          React.createElement('li', null, 'c) Format, Layout, Label'),
+          React.createElement('li', null, 'd) Design, Data Maker, Layout')
+        )
       ),
-      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d'),
-      explanation: React.createElement('p', null, 'MS calculates financing activities to be ₹1,80,000 as per given movements.')
+      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d for first part, b for OR'),
+      explanation: React.createElement('p', null, 'First part: MS calculates financing activities to be ₹1,80,000 as per given movements. OR: Design, Layout, Format are the three options.')
     },
     {
       id: '31',
