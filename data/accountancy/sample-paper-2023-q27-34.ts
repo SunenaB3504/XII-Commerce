@@ -71,9 +71,83 @@ const paper: QuestionPaper = {
         React.createElement('p', { className: 'font-semibold' }, 'Prepare a Cash Flow Statement from the given Balance Sheets of Arya Ltd and additional information.'),
       ),
       solution: React.createElement(React.Fragment, null,
-        React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer (MS summary): Cash from Operating Activities (A)=₹2,07,000; Investing (B)= (4,35,000); Financing (C)=2,40,000; Net Cash Flow = closing balance ₹45,000 with working notes as per MS.'),
+        React.createElement('h4', { className: 'font-bold text-lg mb-2' }, 'Cash Flow Statement for the year ended March 31, 2023 (as per MS)'),
+        React.createElement('table', { className: 'border-collapse border border-gray-300 w-full mt-2 text-sm' },
+          React.createElement('thead', null,
+            React.createElement('tr', null,
+              React.createElement('th', { className: 'border border-gray-300 p-2 bg-gray-100 text-gray-900' }, 'Particulars'),
+              React.createElement('th', { className: 'border border-gray-300 p-2 bg-gray-100 text-gray-900' }, 'Amount (₹)')
+            )
+          ),
+          React.createElement('tbody', null,
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2 font-semibold' }, 'Cash from Operating Activities (A)'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '2,07,000')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2 font-semibold' }, 'Cash from Investing Activities (B)'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '(4,35,000)')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2 font-semibold' }, 'Cash from Financing Activities (C)'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '2,40,000')
+            ),
+            React.createElement('tr', { className: 'font-bold bg-gray-50' },
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Net Cash Flow (A+B+C)'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '12,000')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Add: Opening Cash & Cash Equivalents'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '33,000')
+            ),
+            React.createElement('tr', { className: 'font-bold bg-gray-50' },
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Closing Cash & Cash Equivalents'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '45,000')
+            )
+          )
+        ),
+
+        React.createElement('h5', { className: 'font-bold text-md mt-4' }, 'Working Notes (as per MS)'),
+        React.createElement('table', { className: 'border-collapse border border-gray-300 w-full mt-2 text-sm' },
+          React.createElement('tbody', null,
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Net Profits before Tax and Extraordinary Items (per MS)'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '1,07,000')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Add: Depreciation on Plant and Machinery'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '1,20,000')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Add: Interest on Debentures'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '10,000')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2 font-semibold' }, 'Cash from Operations before WC changes'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '2,37,000')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Add: Increase in Trade Payables'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '18,000')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Less: Decrease in Trade Receivables'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '(1,74,000)')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Less: Increase in Inventory'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '(2,07,000)')
+            ),
+            React.createElement('tr', { className: 'font-semibold bg-gray-50' },
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Cash from Operations (After WC changes)'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '2,22,000')
+            )
+          )
+        )
       ),
-      explanation: React.createElement('p', null, 'MS provides full cash flow computations including adjustments, depreciation and gains on sale of investments.')
+      explanation: React.createElement(React.Fragment, null,
+        React.createElement('p', null, 'MS: Full cash flow statement along with working notes (depreciation, gain on sale, interest and changes in working capital) leads to closing cash ₹45,000. Render the same tables above for exact match.')
+      )
     }
   ],
 };
