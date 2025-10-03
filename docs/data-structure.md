@@ -4,6 +4,20 @@
 
 The application uses a structured TypeScript-based data system to organize educational content. All content is statically typed and modularized for maintainability and scalability.
 
+## Content Authenticity & Accuracy
+
+### Verbatim Content Policy
+- **Official CBSE Sources**: All Sample Question Papers (SQP) and Marking Schemes (MS) must be maintained verbatim with official CBSE PDF files
+- **Complete Preservation**: Include all multiple choice options, OR parts, and detailed financial data exactly as published by CBSE
+- **No Modifications**: Content must not be rephrased, abbreviated, or modified - maintain exact wording and formatting from official sources
+- **Source Verification**: Always cross-reference with official CBSE PDFs stored in the `RawContent/` directory
+
+### Content Standards
+- **100% Accuracy**: Content must match official CBSE sources exactly
+- **Complete Coverage**: All questions, options, and data must be included without omissions
+- **Professional Format**: Maintain proper accounting and financial statement formatting as per CBSE standards
+- **Educational Integrity**: Solutions follow official CBSE marking schemes with comprehensive explanations
+
 ## Core Type Definitions
 
 ### Question Interface

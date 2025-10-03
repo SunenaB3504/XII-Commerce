@@ -4,6 +4,25 @@
 
 This guide provides detailed instructions for adding new educational content to Neil's Commerce Prep. All contributions must follow the established data structure and formatting guidelines.
 
+## Content Authenticity & Accuracy
+
+### Verbatim Content Policy
+- **Official CBSE Content**: All Sample Question Papers (SQP) and Marking Schemes (MS) must be maintained verbatim with official CBSE PDF files
+- **Complete Accuracy**: Include all multiple choice options, OR parts, and detailed financial data exactly as published by CBSE
+- **No Modifications**: Do not rephrase, abbreviate, or modify official CBSE content - maintain exact wording and formatting
+- **Source Verification**: Always cross-reference with official CBSE PDFs before adding or updating content
+
+### Content Sources
+- **Primary Source**: Official CBSE Sample Question Papers and Marking Schemes (PDF format)
+- **Raw Content Directory**: Extracted text from official PDFs stored in `RawContent/` directory for reference
+- **Official Solutions**: Use CBSE marking schemes for all solutions and explanations
+
+### Quality Standards
+- **100% Accuracy**: Content must match official CBSE sources exactly
+- **Complete Coverage**: All questions, options, and data must be included
+- **Professional Format**: Maintain proper accounting and financial statement formatting
+- **Educational Value**: Ensure solutions are comprehensive and follow CBSE standards
+
 ## Content Types
 
 ### Question Papers
