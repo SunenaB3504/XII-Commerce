@@ -132,7 +132,8 @@ export const economicsBoardExam58_5_2: QuestionPaper = {
       id: '9',
       marks: 1,
       question: React.createElement(React.Fragment, null,
-        React.createElement("p", { className: "font-semibold" }, "Read the following statements carefully : Statement 1: Money supply (M₁) in India does not include 'demand deposits' with commercial banks. Statement 2: Money supply (M₁) refers to, assets available with the Commercial Banks during a particular period of time."),
+        React.createElement("p", { className: "font-semibold" }, "Read the following statements carefully : Statement 1: Money supply (M₁) in India does not include 'demand deposits' with commercial banks. Statement 2: Money supply (M₁) refers to, assets available with the Commercial Banks during a particular period of time.")
+      ),
       solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: (d) Both statements 1 and 2 are false."),
       explanation: React.createElement(React.Fragment, null,
         React.createElement("p", { className: "mt-2" }, "Statement 1 is false because the M1 measure of money supply explicitly includes demand deposits held by the public with commercial banks. Statement 2 is false because money supply refers to the stock of money held by the public, not the total assets of commercial banks.")

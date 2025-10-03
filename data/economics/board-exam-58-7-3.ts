@@ -48,7 +48,8 @@ export const economicsBoardExam58_7_3: QuestionPaper = {
       id: '5',
       marks: 1,
       question: React.createElement(React.Fragment, null,
-        React.createElement("p", { className: "font-semibold" }, "Read the following statements carefully: Statement 1: Keeping other things constant, there exists positive correlation between the price of foreign exchange and its demand. Statement 2: The foreign exchange rate indicates a country's purchasing power in international markets."),
+        React.createElement("p", { className: "font-semibold" }, "Read the following statements carefully: Statement 1: Keeping other things constant, there exists positive correlation between the price of foreign exchange and its demand. Statement 2: The foreign exchange rate indicates a country's purchasing power in international markets.")
+      ),
       solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: (D) Both Statements 1 and 2 are false."),
       explanation: React.createElement(React.Fragment, null,
         React.createElement("p", { className: "mt-2" }, "Statement 1 is false. There is an inverse (negative) relationship between the price of foreign exchange and its demand. When the exchange rate rises, foreign goods become more expensive, so demand for them (and for foreign currency) falls. Statement 2 is also false. The Real Exchange Rate, not the nominal foreign exchange rate, indicates a country's purchasing power.")
