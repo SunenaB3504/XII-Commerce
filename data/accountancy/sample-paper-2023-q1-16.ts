@@ -32,8 +32,8 @@ const paper: QuestionPaper = {
           React.createElement('li', null, 'd) A is incorrect but R is correct.')
         )
       ),
-      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: c'),
-      explanation: React.createElement('p', null, 'As per MS, A is correct but R is incorrect. Interest on loan may be claimed but specific deed provisions override Act provisions.')
+      solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d'),
+      explanation: React.createElement('p', null, 'MS: A is incorrect but R is correct — in absence of a deed, the Act provisions apply making R the correct statement.')
     },
     {
       id: '3',
@@ -68,9 +68,17 @@ const paper: QuestionPaper = {
     {
       id: '5',
       marks: 1,
-      question: React.createElement('p', { className: 'font-semibold' }, 'Interest on Partner’s loan is credited to:'),
+      question: React.createElement(React.Fragment, null,
+        React.createElement('p', { className: 'font-semibold' }, 'Interest on Partner\'s loan is credited to:'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) Partner\'s Fixed capital account.'),
+          React.createElement('li', null, 'b) Partner\'s Current account.'),
+          React.createElement('li', null, 'c) Partner\'s Loan Account.'),
+          React.createElement('li', null, 'd) Partner\'s Drawings Account.')
+        )
+      ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: c'),
-      explanation: React.createElement('p', null, 'MS: Partner’s Loan Account is credited for interest on partner loan.')
+      explanation: React.createElement('p', null, 'MS: Partner\'s Loan Account is credited for interest on partner loan.')
     },
     {
       id: '6',
@@ -91,12 +99,13 @@ const paper: QuestionPaper = {
       id: '7',
       marks: 1,
       question: React.createElement(React.Fragment, null,
-        React.createElement('p', { className: 'font-semibold' }, 'Assertion: A Company is Registered with an authorised Capital... (full A/R question omitted for brevity)'),
+        React.createElement('p', { className: 'font-semibold' }, 'Assertion (A) : - A Company is Registered with an authorised Capital of 5,00,000 Equity Shares of ₹10 each of which 2,00,000 Equity shares were issued and subscribed. All the money had been called up except ₹2 per share which was declared as \'Reserve Capital\'. The Share Capital reflected in balance sheet as \'Subscribed and Fully paid up\' will be Zero.'),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'Reason ( R ) :- Reserve Capital can be called up only at the time of winding up of the company.'),
         React.createElement('ul', { className: 'list-none pl-6 mt-2' },
-          React.createElement('li', null, 'a) Both Assertion (A) and Reason (R) are Correct and Reason (R) is the correct explanation of Assertion (A)'),
-          React.createElement('li', null, 'b) Both Assertion (A) and Reason (R) are Correct, but Reason (R) is not the correct explanation of Assertion (A)'),
-          React.createElement('li', null, 'c) Assertion (A) is incorrect, but Reason (R) is Correct.'),
-          React.createElement('li', null, 'd) Assertion (A) is correct, but Reason (R) is incorrect')
+          React.createElement('li', null, '(a) Both Assertion (A) and Reason (R) are Correct and Reason (R) is the correct explanation of Assertion (A)'),
+          React.createElement('li', null, '(b) Both Assertion (A) and Reason (R) are Correct, but Reason (R) is not the correct explanation of Assertion (A)'),
+          React.createElement('li', null, '(c) Assertion (A) is incorrect, but Reason (R) is Correct.'),
+          React.createElement('li', null, '(d) Assertion (A) is correct, but Reason (R) is incorrect')
         )
       ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: a'),
@@ -106,12 +115,20 @@ const paper: QuestionPaper = {
       id: '8',
       marks: 1,
       question: React.createElement(React.Fragment, null,
-        React.createElement('p', { className: 'font-semibold' }, "G, S and T were partners sharing profits in the ratio 3:2:1. G retired and his dues ... Determine goodwill of the firm."),
+        React.createElement('p', { className: 'font-semibold' }, 'G, S and T were partners sharing profits in the ratio 3:2:1. G retired and his dues towards the firm including Capital balance, Accumulated profits and losses share, Revaluation Gain amounted to ₹5,80,000. G was being paid ₹7,00,000 in full settlement. For giving that additional amount of ₹1,20,000, S was debited for ₹40,000. Determine goodwill of the firm.'),
         React.createElement('ul', { className: 'list-none pl-6 mt-2' },
-          React.createElement('li', null, 'a) ₹1,20,000'),
-          React.createElement('li', null, 'b) ₹80,000'),
-          React.createElement('li', null, 'c) ₹2,40,000'),
-          React.createElement('li', null, 'd) ₹3,60,000')
+          React.createElement('li', null, 'a). ₹1,20,000'),
+          React.createElement('li', null, 'b). ₹80,000'),
+          React.createElement('li', null, 'c). ₹2,40,000'),
+          React.createElement('li', null, 'd). ₹3,60,000')
+        ),
+        React.createElement('p', { className: 'mt-2 font-semibold' }, 'OR'),
+        React.createElement('p', { className: 'mt-2' }, 'Annu, Banu and Chanu are partners, Chanu has been given a guarantee of minimum profit of ₹8,000 by the firm. Firm suffered a loss of ₹5,000 during the year. Capital account of Banu will be ________ by ₹_________.'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) Credited, ₹6,500.'),
+          React.createElement('li', null, 'b) Debited, ₹6,500.'),
+          React.createElement('li', null, 'c) Credited, ₹1,500.'),
+          React.createElement('li', null, 'd) Debited, ₹1,500.')
         )
       ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: c'),
@@ -120,21 +137,45 @@ const paper: QuestionPaper = {
     {
       id: '9',
       marks: 1,
-      question: React.createElement('p', { className: 'font-semibold' }, 'In the Profit & Loss Appropriation account given, the amount to be reflected in blank (1) will be:'),
+      question: React.createElement(React.Fragment, null,
+        React.createElement('p', { className: 'font-semibold' }, 'In the Profit & Loss Appropriation account given, the amount to be reflected in blank (1) will be:'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) ₹37,200'),
+          React.createElement('li', null, 'b) ₹44,700'),
+          React.createElement('li', null, 'c) ₹22,800'),
+          React.createElement('li', null, 'd) ₹20,940')
+        )
+      ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d'),
       explanation: React.createElement('p', null, 'MS gives ₹20,940 as the value for blank (1).')
     },
     {
       id: '10',
       marks: 1,
-      question: React.createElement('p', { className: 'font-semibold' }, 'The amount to be reflected in blank (2) will be:'),
+      question: React.createElement(React.Fragment, null,
+        React.createElement('p', { className: 'font-semibold' }, 'The amount to be reflected in blank (2) will be:'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) ₹62,000.'),
+          React.createElement('li', null, 'b) ₹74,500.'),
+          React.createElement('li', null, 'c) ₹71,400.'),
+          React.createElement('li', null, 'd) ₹70,775.')
+        )
+      ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: c'),
       explanation: React.createElement('p', null, 'MS: ₹71,400 for blank (2).')
     },
     {
       id: '11',
       marks: 1,
-      question: React.createElement('p', { className: 'font-semibold' }, 'In the absence of an agreement, partners are entitled to: (i) Profit share in capital ratio. (ii) Commission for making additional sale. (iii) Interest on Loan & Advances by them to the firm. (iv) Salary for working extra hours. (v) Interest on Capital. Choose the correct option:'),
+      question: React.createElement(React.Fragment, null,
+        React.createElement('p', { className: 'font-semibold' }, 'In the absence of an agreement, partners are entitled to: (i) Profit share in capital ratio. (ii) Commission for making additional sale. (iii) Interest on Loan & Advances by them to the firm. (iv) Salary for working extra hours. (v) Interest on Capital. Choose the correct option:'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) Only i), iv) and v).'),
+          React.createElement('li', null, 'b) Only ii) and iii).'),
+          React.createElement('li', null, 'c) Only iii).'),
+          React.createElement('li', null, 'd) Only i) and iii).')
+        )
+      ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: c'),
       explanation: React.createElement('p', null, 'MS: Only (iii) — partners are entitled to interest on loans in absence of agreement.')
     },
@@ -156,16 +197,32 @@ const paper: QuestionPaper = {
     {
       id: '13',
       marks: 1,
-      question: React.createElement('p', { className: 'font-semibold' }, 'A company forfeited 3,000 shares of ₹10 each, on which only ₹5 per share (including ₹1 premium) has been paid. Out of these few shares were re-issued at a discount of ₹1 per share were and ₹6,000 were transferred to Capital Reserve. How many shares were re-issued?'),
+      question: React.createElement(React.Fragment, null,
+        React.createElement('p', { className: 'font-semibold' }, 'A company forfeited 3,000 shares of ₹10 each, on which only ₹5 per share (including ₹1 premium) has been paid. Out of these few shares were re-issued at a discount of ₹1 per share were and ₹6,000 were transferred to Capital Reserve. How many shares were re-issued?'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) 3,000 shares'),
+          React.createElement('li', null, 'b) 1,000 shares'),
+          React.createElement('li', null, 'c) 2,000 shares'),
+          React.createElement('li', null, 'd) 1,500 shares')
+        )
+      ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: c'),
       explanation: React.createElement('p', null, 'MS: 2,000 shares were re-issued.')
     },
     {
       id: '14',
       marks: 1,
-      question: React.createElement('p', { className: 'font-semibold' }, 'X and Y are partners in a firm with capital of ₹18,000 and ₹20,000. Z brings ₹10,000 for his share of goodwill and he is required to bring proportionate capital for 1/3rd share in profits. The capital contribution of Z will be:'),
+      question: React.createElement(React.Fragment, null,
+        React.createElement('p', { className: 'font-semibold' }, 'X and Y are partners in a firm with capital of ₹18,000 and ₹20,000. Z brings ₹10,000 for his share of goodwill and he is required to bring proportionate capital for 1/3rd share in profits. The capital contribution of Z will be:'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) ₹24,000.'),
+          React.createElement('li', null, 'b) ₹19,000.'),
+          React.createElement('li', null, 'c) ₹12,667.'),
+          React.createElement('li', null, 'd) ₹14,000.')
+        )
+      ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: a'),
-      explanation: React.createElement('p', null, 'MS indicates ₹24,000 as Z’s capital contribution.')
+      explanation: React.createElement('p', null, 'MS indicates ₹24,000 as Z\'s capital contribution.')
     },
     {
       id: '15',
@@ -185,7 +242,15 @@ const paper: QuestionPaper = {
     {
       id: '16',
       marks: 1,
-      question: React.createElement('p', { className: 'font-semibold' }, 'On the day of dissolution of the firm ‘Roop Brothers’ had partner’s capital amounting to ₹1,50,000 , external liabilities ₹35,000, Cash balance ₹8,000 and P&LA/c(Dr.) ₹7,000. If Realisation expense and loss on Realisation amounted to₹5,000 and ₹25,000 respectively, the amount realised by sale of assets is:'),
+      question: React.createElement(React.Fragment, null,
+        React.createElement('p', { className: 'font-semibold' }, 'On the day of dissolution of the firm \'Roop Brothers\' had partner\'s capital amounting to ₹1,50,000 , external liabilities ₹35,000, Cash balance ₹8,000 and P&LA/c(Dr.) ₹7,000. If Realisation expense and loss on Realisation amounted to₹5,000 and ₹25,000 respectively, the amount realised by sale of assets is:'),
+        React.createElement('ul', { className: 'list-none pl-6 mt-2' },
+          React.createElement('li', null, 'a) ₹1,64,000'),
+          React.createElement('li', null, 'b) ₹1,45,000'),
+          React.createElement('li', null, 'c) ₹1,57,000'),
+          React.createElement('li', null, 'd) ₹1,50,000')
+        )
+      ),
       solution: React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer: d'),
       explanation: React.createElement('p', null, 'MS: ₹1,50,000 is the amount realised by sale of assets as per scheme.')
     }

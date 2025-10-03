@@ -21,13 +21,13 @@ const paper: QuestionPaper = {
             solution: React.createElement(React.Fragment, null,
                 React.createElement("h3", { className: "text-xl font-bold mb-4" }, "Journal Entries"),
                 React.createElement("table", { className: "min-w-full divide-y divide-gray-200" },
-                    React.createElement("thead", { className: "bg-gray-50" },
+                    React.createElement("thead", { className: "bg-gray-50 text-gray-900" },
                         React.createElement("tr", null,
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Date"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Particulars"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "L.F."),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Debit (₹)"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Credit (₹)")
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Date"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Particulars"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "L.F."),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Debit (₹)"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Credit (₹)")
                         )
                     ),
                     React.createElement("tbody", { className: "bg-white divide-y divide-gray-200" },
@@ -95,12 +95,12 @@ const paper: QuestionPaper = {
                 React.createElement("p", { className: "font-semibold" }, "From the following Receipts and Payments Account of a club, prepare Income and Expenditure Account for the year ended March 31, 2025 and the Balance Sheet as on that date:"),
                 React.createElement("h4", { className: "font-semibold mt-4" }, "Receipts and Payments Account for the year ending March 31, 2025"),
                 React.createElement("table", { className: "min-w-full divide-y divide-gray-200 mt-2" },
-                    React.createElement("thead", { className: "bg-gray-50" },
+                    React.createElement("thead", { className: "bg-gray-50 text-gray-900" },
                         React.createElement("tr", null,
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Receipts (₹)"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Amount"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Payments (₹)"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Amount")
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Receipts (₹)"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Amount"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Payments (₹)"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Amount")
                         )
                     ),
                     React.createElement("tbody", { className: "bg-white divide-y divide-gray-200" },
@@ -123,12 +123,12 @@ const paper: QuestionPaper = {
             solution: React.createElement(React.Fragment, null,
                 React.createElement("h3", { className: "text-xl font-bold mb-4" }, "Income and Expenditure Account for the year ended March 31, 2025"),
                 React.createElement("table", { className: "min-w-full divide-y divide-gray-200" },
-                    React.createElement("thead", { className: "bg-gray-50" },
+                    React.createElement("thead", { className: "bg-gray-50 text-gray-900" },
                         React.createElement("tr", null,
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Expenditure (₹)"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Amount"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Income (₹)"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Amount")
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Expenditure (₹)"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Amount"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Income (₹)"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Amount")
                         )
                     ),
                     React.createElement("tbody", { className: "bg-white divide-y divide-gray-200" },
@@ -144,12 +144,12 @@ const paper: QuestionPaper = {
 
                 React.createElement("h3", { className: "text-xl font-bold my-4" }, "Balance Sheet as at March 31, 2025"),
                 React.createElement("table", { className: "min-w-full divide-y divide-gray-200" },
-                    React.createElement("thead", { className: "bg-gray-50" },
+                    React.createElement("thead", { className: "bg-gray-50 text-gray-900" },
                         React.createElement("tr", null,
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Liabilities (₹)"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Amount"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Assets (₹)"),
-                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" }, "Amount")
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Liabilities (₹)"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Amount"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Assets (₹)"),
+                            React.createElement("th", { className: "px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider" }, "Amount")
                         )
                     ),
                     React.createElement("tbody", { className: "bg-white divide-y divide-gray-200" },

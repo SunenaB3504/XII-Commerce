@@ -33,7 +33,7 @@ const paper: QuestionPaper = {
               React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Add: Forfeited shares (2,000 × ₹3)'),
               React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '6,000')
             ),
-            React.createElement('tr', { className: 'font-bold bg-gray-50' },
+            React.createElement('tr', { className: 'font-bold bg-gray-50 text-gray-900' },
               React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Total Share Capital (Note)'),
               React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '7,78,000')
             )
@@ -78,7 +78,8 @@ const paper: QuestionPaper = {
             )
           )
         ),
-        React.createElement('p', { className: 'mt-3' }, 'Refer to MS for full set of realisation entries and related transfer entries to partners\' capital accounts.')
+        React.createElement('h5', { className: 'font-bold mt-3' }, 'Full Realisation Journal Entries (as per MS)'),
+        React.createElement('pre', { className: 'whitespace-pre-wrap bg-gray-50 border border-gray-200 p-3 text-sm text-gray-900' }, `a) Realisation A/c                                  Dr\n         To Sun\'s Capital A/c  (Being Remuneration and expenses payable to Sun)   40,000   40,000\n\nb) Sun\'s Capital A/c                            Dr\n    Kiran\'s Capital A/c                         Dr\n      To Deferred Advertisement Suspense A/c (Being Advertisement Suspense A/c has been debited in partners\' capital account in their profit sharing ratio)   14,000   14,000   28,000\n\nc)(1)  Kiran\'s Capital A/c                                Dr\n         To Realisation A/c  (Being 1/3 of Stock has been taken over by Kiran at 25% discount)  30,000   30,000\nc)(3) Bank A/c                                                Dr\n             To Realisation A/c  (Being Stock Realised)   25,000   25,000\nd) Cash/ Bank A/c                                                 Dr\n  To Realisation A/c  (Being amount realised from unrecorded assets after payment of outstanding bill)   7,000   7,000`)
       ),
       explanation: React.createElement('p', null, 'MS contains stepwise realisation journal entries for each sub-part; use these entries when displaying the full solution in-app.')
     }

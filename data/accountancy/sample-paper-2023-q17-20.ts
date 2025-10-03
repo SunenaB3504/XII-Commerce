@@ -53,8 +53,62 @@ const paper: QuestionPaper = {
         React.createElement('p', { className: 'font-semibold' }, 'P, Q and R were partners with fixed capitals of ₹40,000, ₹32,000 and ₹24,000. After distributing profit of ₹48,000 in ratio 3:1:1 it was observed that interest on capital was provided at 10% instead of 8% and salary of ₹12,000 was credited to P instead of Q. Pass a single rectifying journal entry in the beginning of next year.'),
       ),
       solution: React.createElement(React.Fragment, null,
-        React.createElement('p', { className: 'font-bold text-green-700' }, 'Answer (summary): P’s Capital A/c Dr. ₹11,648; R’s Capital A/c Dr. ₹96; To Q’s Capital A/c ₹11,744 (rectifying entries as per MS).'),
-        React.createElement('p', null, 'MS shows detailed calculation of interest adjustments and salary miscredit leading to the above single entry.')
+        React.createElement('h4', { className: 'font-bold text-lg mb-2' }, 'Working (as per MS)'),
+        React.createElement('table', { className: 'border-collapse border border-gray-300 w-full mt-2 text-sm' },
+          React.createElement('thead', null,
+            React.createElement('tr', null,
+              React.createElement('th', { className: 'border border-gray-300 p-2 bg-gray-100 text-gray-900' }, 'Partners'),
+              React.createElement('th', { className: 'border border-gray-300 p-2 bg-gray-100 text-gray-900' }, 'Interest on Capital (2%)'),
+              React.createElement('th', { className: 'border border-gray-300 p-2 bg-gray-100 text-gray-900' }, '(i) Salary Paid (wrong credit)'),
+              React.createElement('th', { className: 'border border-gray-300 p-2 bg-gray-100 text-gray-900' }, '(ii) Payable'),
+              React.createElement('th', { className: 'border border-gray-300 p-2 bg-gray-100 text-gray-900' }, '(iii) Salary Payable'),
+              React.createElement('th', { className: 'border border-gray-300 p-2 bg-gray-100 text-gray-900' }, '(iv) Excess/Deficiency')
+            )
+          ),
+          React.createElement('tbody', null,
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'P'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '800'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '12,000'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '1,152'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '—'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '11,648 (Excess)')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Q'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '640'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '—'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '384'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '12,000'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '11,744 (Deficiency)')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'R'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '480'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '—'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '384'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '—'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '96 (Excess)')
+            )
+          )
+        ),
+        React.createElement('h5', { className: 'font-bold mt-3' }, 'Journal Entry (as per MS)'),
+        React.createElement('table', { className: 'border-collapse border border-gray-300 w-full mt-2 text-sm' },
+          React.createElement('tbody', null,
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'P\'s Capital A/c Dr.'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '11,648')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'R\'s Capital A/c Dr.'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '96')
+            ),
+            React.createElement('tr', null,
+              React.createElement('td', { className: 'border border-gray-300 p-2' }, 'To Q\'s Capital A/c'),
+              React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '11,744')
+            )
+          )
+        )
       ),
       explanation: React.createElement('p', null, 'Follow MS: compute correct interest at 8% and revert excess; transfer salary from P to Q by adjustment.')
     },
@@ -65,7 +119,7 @@ const paper: QuestionPaper = {
         React.createElement('p', { className: 'font-semibold' }, 'Pioneer Fitness Ltd. took over the running business of Healthy World Ltd. having assets of ₹10,00,000 and liabilities of ₹1,70,000 by issuing 8,000 8% Debentures of ₹100 each at 5% premium redeemable after 6 years @ ₹110 and cheque for ₹50,000. Pass the journal entries in the books of Pioneer Fitness Ltd.'),
       ),
       solution: React.createElement(React.Fragment, null,
-        React.createElement('h4', { className: 'font-bold text-lg mb-2' }, 'Journal Entries (MS)'),
+        React.createElement('h4', { className: 'font-bold text-lg mb-2' }, 'Journal Entries (as per MS)'),
         React.createElement('table', { className: 'border-collapse border border-gray-300 w-full mt-2 text-sm' },
           React.createElement('thead', null,
             React.createElement('tr', null,
@@ -97,7 +151,8 @@ const paper: QuestionPaper = {
             )
           )
         ),
-        React.createElement('p', { className: 'mt-3' }, 'MS also shows subsequent entries: Healthy World Ltd. Dr., Loss on Issue of Debentures A/c Dr., To Debentures A/c, To Securities Premium A/c, To Premium on Redemption A/c, To Bank A/c with amounts as per scheme.')
+        React.createElement('h5', { className: 'font-bold mt-3' }, 'Settlement entries (as per MS)'),
+        React.createElement('pre', { className: 'whitespace-pre-wrap bg-gray-50 border border-gray-200 p-3 text-sm text-gray-900' }, "Healthy World Ltd. Dr.\nLoss on issue of Debentures A/c Dr.\n    To 8% Debentures A/c\n    To Securities Premium A/c\n    To Premium on redemption A/c\n    To Bank A/c\n(Being Purchase consideration discharged by issue of Debentures and in Cash)\nDr amounts: 8,90,000 ; Loss on issue: 60,000 ; Credits: Debentures 8,00,000 ; Securities Premium 40,000 ; Bank 50,000\n\n(Alternate working in MS also lists equivalent distribution of amounts.)")
       ),
       explanation: React.createElement(React.Fragment, null,
         React.createElement('p', null, 'MS provides the detailed takeover journal entries and related loss on issue of debentures entries; replicate these in full when creating final answer display.')
@@ -155,7 +210,7 @@ const paper: QuestionPaper = {
               React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '3'),
               React.createElement('td', { className: 'border border-gray-300 p-2 text-right' }, '1,59,000')
             ),
-            React.createElement('tr', { className: 'font-bold bg-gray-50' },
+            React.createElement('tr', { className: 'font-bold bg-gray-50 text-gray-900' },
               React.createElement('td', { className: 'border border-gray-300 p-2' }, 'Total'),
               React.createElement('td', { className: 'border border-gray-300 p-2' }, ''),
               React.createElement('td', { className: 'border border-gray-300 p-2' }, ''),
