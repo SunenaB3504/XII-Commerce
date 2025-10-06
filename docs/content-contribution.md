@@ -31,6 +31,346 @@ Structured assessment materials with questions, solutions, and explanations.
 ### Learning Modules
 Comprehensive study materials organized by chapters with concepts, examples, and case studies.
 
+### Challenge Mode Papers
+Interactive timed testing content using authentic CBSE Sample Question Papers (SQP) and Marking Schemes (MS) for comprehensive exam preparation.
+
+## Adding Challenge Mode Papers
+
+### Overview
+Challenge Mode transforms official CBSE content into interactive 3-hour timed testing experiences. Content must be extracted verbatim from official CBSE SQP and MS PDFs to ensure authenticity and accuracy.
+
+### Step 1: Content Source Verification
+- **Official CBSE PDFs Only**: Use only official CBSE Sample Question Papers and Marking Schemes
+- **Raw Content Reference**: Extract text from PDFs using the provided extraction tools
+- **Year Coverage**: Create challenges for 5-year period (2021-2025) when available
+- **Complete Accuracy**: Maintain exact wording, formatting, and solutions from official sources
+
+### Step 2: Create Challenge Paper Structure
+
+#### Main Challenge File
+Create the main challenge file in the subject directory:
+
+```
+data/[subject]/[subject]-challenge-[year].ts
+```
+
+**Example Structure:**
+```typescript
+import { ChallengePaper } from '../../types';
+import React from 'react';
+import { questions17to22 } from './q17-22';
+import { questions23to26 } from './q23-26';
+import { questions27to34 } from './q27-34';
+
+export const businessStudiesChallenge2025: ChallengePaper = {
+  id: 'business-studies-challenge-2025',
+  subject: 'Business Studies',
+  year: 2025,
+  title: 'CBSE Business Studies Challenge Paper 2025',
+  timeLimit: 180, // 3 hours in minutes
+  totalMarks: 80,
+  questions: [
+    // Questions 1-16: 1-mark MCQs (inline for better performance)
+    {
+      id: '1',
+      number: 1,
+      type: 'short',
+      marks: 1,
+      content: React.createElement(React.Fragment, null,
+        React.createElement("p", { className: "font-semibold mb-4" }, "Question text from official CBSE SQP..."),
+        React.createElement("ul", { className: "list-none pl-6 space-y-2" },
+          React.createElement("li", null, "a) Option 1"),
+          React.createElement("li", null, "b) Option 2"),
+          React.createElement("li", null, "c) Option 3"),
+          React.createElement("li", null, "d) Option 4")
+        )
+      ),
+      solution: React.createElement(React.Fragment, null,
+        React.createElement("div", { className: "bg-green-50 p-4 rounded-lg border-l-4 border-green-500" },
+          React.createElement("h4", { className: "font-bold text-green-800 mb-2" }, "Correct Answer"),
+          React.createElement("p", { className: "font-semibold text-green-700" }, "a) Option 1"),
+          React.createElement("h4", { className: "font-bold text-green-800 mt-4 mb-2" }, "Marking Scheme"),
+          React.createElement("p", { className: "text-green-700" }, "1 mark for correct option selection")
+        )
+      ),
+      metadata: {
+        topic: 'Nature and Significance of Management',
+        difficulty: 'easy',
+        chapter: 1
+      }
+    },
+    // ... questions 2-16
+
+    // Questions 17-34: Spread from batch files
+    ...questions17to22,
+    ...questions23to26,
+    ...questions27to34
+  ],
+  metadata: {
+    source: 'CBSE Sample Paper 2025-26',
+    markingScheme: 'CBSE Marking Scheme 2025-26',
+    totalQuestions: 34,
+    sections: [
+      { name: 'Section A', questions: '1-16', marks: 1, totalMarks: 16 },
+      { name: 'Section B', questions: '17-22', marks: 3, totalMarks: 18 },
+      { name: 'Section C', questions: '23-26', marks: 4, totalMarks: 16 },
+      { name: 'Section D', questions: '27-34', marks: 6, totalMarks: 30 }
+    ]
+  }
+};
+```
+
+#### Batch Files for Large Questions
+Create modular batch files for questions 17+ (3-mark and above):
+
+```
+data/[subject]/q[range].ts
+```
+
+**Example Batch File:**
+```typescript
+import { ChallengeQuestion } from '../../types';
+import React from 'react';
+
+export const questions17to22: ChallengeQuestion[] = [
+  {
+    id: '17',
+    number: 17,
+    type: 'short',
+    marks: 3,
+    content: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold mb-4" }, "Explain the concept of 'Management as an Art' with any three features.")
+    ),
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
+        React.createElement("div", { className: "space-y-2" },
+          React.createElement("p", null, React.createElement("strong", null, "Management as an Art has the following features:")),
+          React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+            React.createElement("li", null, React.createElement("strong", null, "Personalized Application:")),
+            React.createElement("li", null, React.createElement("strong", null, "Creativity:")),
+            React.createElement("li", null, React.createElement("strong", null, "Practical Knowledge:"))
+          )
+        ),
+        React.createElement("h4", { className: "font-bold text-blue-800 mt-4 mb-2" }, "Marking Scheme"),
+        React.createElement("div", { className: "bg-gray-50 p-3 rounded text-sm" },
+          React.createElement("ul", { className: "space-y-1" },
+            React.createElement("li", null, "1 mark for each correct feature with explanation"),
+            React.createElement("li", null, "Total: 3 marks")
+          )
+        )
+      )
+    ),
+    metadata: {
+      topic: 'Nature and Significance of Management',
+      difficulty: 'medium',
+      chapter: 1,
+      subTopic: 'Management as Art'
+    }
+  },
+  // ... questions 18-22
+];
+```
+
+### Step 3: Content Formatting Guidelines
+
+#### Question Content Structure
+- **Exact CBSE Wording**: Copy questions verbatim from official SQP
+- **Complete Options**: Include all multiple choice options (a, b, c, d)
+- **OR Questions**: Include both parts of OR questions as separate entries
+- **Financial Data**: Maintain exact numerical values and currency formatting
+
+#### Solution Format by Question Type
+
+**1-Mark MCQs (Q1-16)**:
+- Green highlight box for correct answer
+- Brief marking scheme reference
+- Clear indication of correct option
+
+**3/4/6-Mark Questions**:
+- Blue highlight box for detailed answers
+- Structured response format
+- Complete marking scheme breakdown
+- Step-by-step solutions for calculations
+- Professional table formatting for financial statements
+
+#### Table Formatting (Critical)
+```typescript
+// Journal Entry Table
+React.createElement("table", { className: "border-collapse border border-gray-300 w-full mt-4" },
+  React.createElement("thead", null,
+    React.createElement("tr", null,
+      React.createElement("th", { className: "border border-gray-300 p-2 font-bold bg-gray-100 text-gray-900" }, "Date"),
+      React.createElement("th", { className: "border border-gray-300 p-2 font-bold bg-gray-100 text-gray-900" }, "Particulars"),
+      React.createElement("th", { className: "border border-gray-300 p-2 text-right font-bold bg-gray-100 text-gray-900" }, "Debit (₹)"),
+      React.createElement("th", { className: "border border-gray-300 p-2 text-right font-bold bg-gray-100 text-gray-900" }, "Credit (₹)")
+    )
+  ),
+  React.createElement("tbody", null,
+    React.createElement("tr", null,
+      React.createElement("td", { className: "border border-gray-300 p-2" }, "2024-01-01"),
+      React.createElement("td", { className: "border border-gray-300 p-2" }, "Cash A/c Dr."),
+      React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "50,000"),
+      React.createElement("td", { className: "border border-gray-300 p-2" }, "")
+    )
+  )
+)
+```
+
+**Critical Table Rules:**
+- Always include `text-gray-900` on colored backgrounds
+- Right-align number columns with `text-right`
+- Use proper header styling for visibility
+
+### Step 4: Metadata and Classification
+
+#### Question Metadata
+```typescript
+metadata: {
+  topic: 'Nature and Significance of Management', // Main topic
+  difficulty: 'easy' | 'medium' | 'hard',        // Based on CBSE classification
+  chapter: 1,                                    // Chapter number
+  subTopic: 'Management as Art'                  // Optional sub-topic
+}
+```
+
+#### Difficulty Guidelines
+- **Easy**: Direct recall, basic concepts (1-mark questions)
+- **Medium**: Application, analysis (3-4 mark questions)
+- **Hard**: Evaluation, complex calculations (6-mark questions)
+
+#### Challenge Paper Metadata
+```typescript
+metadata: {
+  source: 'CBSE Sample Paper 2025-26',
+  markingScheme: 'CBSE Marking Scheme 2025-26',
+  totalQuestions: 34,
+  sections: [
+    { name: 'Section A', questions: '1-16', marks: 1, totalMarks: 16 },
+    { name: 'Section B', questions: '17-22', marks: 3, totalMarks: 18 },
+    { name: 'Section C', questions: '23-26', marks: 4, totalMarks: 16 },
+    { name: 'Section D', questions: '27-34', marks: 6, totalMarks: 30 }
+  ]
+}
+```
+
+### Step 5: Update Data Index
+
+Add the new challenge paper to the subject's data in `data/index.ts`:
+
+```typescript
+import { businessStudiesChallenge2025 } from './business-studies/business-studies-challenge-2025';
+// ... other imports
+
+export const subjects: Subject[] = [
+  {
+    name: 'Business Studies',
+    questionPapers: [
+      // ... existing question papers
+    ],
+    learningModules: businessStudiesLearningModules,
+    challengePapers: [
+      businessStudiesChallenge2025,  // Add new challenge paper
+      // Future: challenge2024, challenge2023, etc.
+    ]
+  },
+  // ... other subjects
+];
+```
+
+## Challenge Mode Quality Assurance
+
+### Content Accuracy Checklist
+- [ ] Questions copied verbatim from official CBSE SQP PDF
+- [ ] Solutions follow official CBSE marking scheme exactly
+- [ ] All options included for multiple choice questions
+- [ ] Financial data and calculations match official sources
+- [ ] OR questions included as separate entries
+- [ ] No modifications to official content wording
+
+### Technical Validation
+- [ ] TypeScript compilation succeeds without errors
+- [ ] All React elements properly formatted
+- [ ] Question IDs are unique and sequential
+- [ ] Marks allocation matches CBSE scheme
+- [ ] Metadata fields complete and accurate
+- [ ] Batch file imports working correctly
+
+### Functional Testing
+- [ ] Challenge loads in application interface
+- [ ] Timer starts and counts down correctly
+- [ ] Question navigation works properly
+- [ ] Answer submission functions
+- [ ] Solution reveal displays correctly
+- [ ] Progress tracking updates accurately
+- [ ] Results calculation produces valid scores
+
+### Scoring Validation
+- [ ] Answer evaluation matches marking scheme
+- [ ] Partial credit awarded appropriately
+- [ ] Performance analytics generate correctly
+- [ ] Recommendations based on actual performance
+- [ ] Difficulty classification accurate
+
+## PDF Content Extraction Workflow
+
+### Step 1: Prepare Source PDFs
+- Obtain official CBSE SQP and MS PDFs
+- Store in `RawContent/[Subject]/SQP/` and `RawContent/[Subject]/MS/` directories
+- Name files clearly: `business-studies-sqp-2025.pdf`, `business-studies-ms-2025.pdf`
+
+### Step 2: Extract Content
+Use the provided Python extraction script:
+
+```bash
+# Extract SQP content
+python scripts/extract_challenge_content.py "RawContent/BusinessStudies/SQP/business-studies-sqp-2025.pdf"
+
+# Extract MS content
+python scripts/extract_challenge_content.py "RawContent/BusinessStudies/MS/business-studies-ms-2025.pdf"
+```
+
+### Step 3: Process Extracted Text
+- Review extracted text for accuracy
+- Identify question boundaries and structure
+- Map solutions to corresponding questions
+- Note any formatting issues for manual correction
+
+### Step 4: Create TypeScript Files
+- Convert extracted content to React elements
+- Apply proper formatting and styling
+- Test rendering in development environment
+- Validate against original PDF sources
+
+## Maintenance and Updates
+
+### Annual Content Updates
+- Add new SQP content as CBSE releases them
+- Maintain 5-year rolling archive (current year + 4 previous)
+- Update metadata and classifications as needed
+- Refresh difficulty assessments based on student performance
+
+### Quality Monitoring
+- Track student performance data for content improvement
+- Identify commonly missed questions for review
+- Update solutions based on CBSE clarifications
+- Maintain consistency across year-over-year content
+
+### Technical Maintenance
+- Update type definitions as features evolve
+- Optimize batch file loading for performance
+- Enhance scoring algorithms based on feedback
+- Improve content extraction tools
+
+---
+
+**Challenge Mode Content Standards:**
+- **100% Authenticity**: Only official CBSE content accepted
+- **Complete Accuracy**: Exact reproduction of SQP and MS
+- **Educational Value**: Comprehensive solutions with marking schemes
+- **Technical Quality**: Proper formatting and error-free code
+- **Testing Ready**: Fully functional in Challenge Mode interface
+
 ## Adding Question Papers
 
 ### Step 1: Create Question Paper File

@@ -13,7 +13,11 @@ A comprehensive study tool for CBSE Class XII Commerce students, featuring inter
 - **Complete Question Presentation**: Includes all multiple choice options, OR parts, and detailed financial data exactly as published by CBSE
 - **Official Solutions**: Comprehensive solutions following official CBSE marking schemes with proper accounting formats
 
-### Latest Updates (v1.2.0)
+### Latest Updates (v1.3.0)
+- ✅ **Challenge Mode Launch**: Interactive timed testing system for Business Studies with authentic CBSE SQP and MS content from 2021-2025
+- ✅ **Modular Challenge Content**: 2025 Business Studies challenge paper with 34 questions, organized in modular batch files
+- ✅ **Advanced Scoring System**: Comprehensive evaluation with performance analytics, recommendations, and detailed feedback
+- ✅ **Interactive Testing Experience**: 3-hour timed sessions with progress tracking, answer submission, and solution reveal
 - ✅ **Official CBSE Marking Scheme Integration**: Accountancy Sample Paper 2025-26 updated with comprehensive solutions from official CBSE marking scheme
 - ✅ **Enhanced Solutions**: Detailed journal entries, balance sheets, financial statements with step-by-step working notes
 - ✅ **Professional Formatting**: Properly formatted accounting tables with clear visibility
@@ -73,6 +77,8 @@ XII-Commerce/
 │   │   ├── sample-paper-2025.ts         # Main file
 │   │   ├── sample-paper-2025-q17-20.ts  # Modular batch files
 │   │   ├── sample-paper-2025-q21-22.ts  # (for large papers 30+ questions)
+│   │   ├── [subject]-challenge-2025.ts  # Challenge Mode papers
+│   │   ├── q17-22.ts                    # Challenge question batches
 │   │   └── ...
 │   ├── learning-content/ # Structured learning modules
 │   └── index.ts         # Central data aggregation
@@ -90,6 +96,7 @@ For maintainability, large question papers (30+ questions) use a modular approac
 
 ## 🎨 Features
 
+- **Challenge Mode**: Interactive timed testing system with authentic CBSE SQP and MS content from 5 years (2021-2025), featuring 3-hour sessions, real-time scoring, and performance analytics
 - **Official CBSE Solutions**: Sample papers include comprehensive solutions following official CBSE marking schemes
 - **Verbatim Content Accuracy**: SQP and MS content maintained exactly as published in official CBSE PDF files
 - **Complete Question Papers**: All questions include full options, OR parts, and required financial data

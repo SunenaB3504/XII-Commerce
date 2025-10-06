@@ -4,7 +4,18 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 
 ## 📚 Documentation Overview
 
-**Latest Update (v2.0.0)**: Complete MCQ Assessment System with 120 questions, customizable testing, and comprehensive analytics for CBSE Accountancy exam preparation.
+**Latest Update (v2.1.0)**: Challenge Mode implementation with interactive timed testing system, comprehensive scoring analytics, and modular content architecture for authentic CBSE exam preparation.
+
+### 🏆 [Challenge Mode System](./challenge-mode.md) **NEW**
+**Interactive timed testing platform with authentic CBSE content**
+- Complete Challenge Mode architecture and implementation
+- Interactive 3-hour timed testing sessions with progress tracking
+- Advanced scoring system with performance analytics and recommendations
+- Modular content organization for 5-year CBSE SQP/MS content (2021-2025)
+- Question batching system for large challenge papers (30+ questions)
+- Content extraction workflow from official CBSE PDFs
+- Integration with existing app navigation and data structures
+- Testing protocols and quality assurance for challenge content
 
 ### 📊 [MCQ Assessment System](./assessment-system.md)
 **Complete testing platform with advanced features**
@@ -194,10 +205,10 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 
 ## 📊 Documentation Stats
 
-- **Total Documents**: 8 comprehensive guides
-- **Coverage**: Assessment, Architecture, Design, Development, Content, Deployment
-- **Last Major Update**: October 2025 (v2.0.0 - MCQ Assessment System)
-- **Version**: 2.0
+- **Total Documents**: 9 comprehensive guides
+- **Coverage**: Challenge Mode, Assessment, Architecture, Design, Development, Content, Deployment
+- **Last Major Update**: October 2025 (v2.1.0 - Challenge Mode System)
+- **Version**: 2.1
 
 ---
 

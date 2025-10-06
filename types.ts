@@ -43,3 +43,56 @@ export interface Subject {
   questionPapers: QuestionPaper[];
   learningModules?: LearningModule[];
 }
+
+// Challenge Mode Types
+export interface ChallengeMetadata {
+  year: number;
+  paperType: 'main' | 'comptt' | 'term2';
+  difficulty: 'easy' | 'medium' | 'hard';
+  topic: string;
+  subTopic?: string;
+  bloomLevel: 'remembering' | 'understanding' | 'applying' | 'analyzing' | 'evaluating' | 'creating';
+  estimatedTime: number; // in seconds
+  commonMistakes?: string[];
+  markingTips?: string[];
+}
+
+export interface ChallengeQuestion extends Question {
+  challengeData?: ChallengeMetadata;
+}
+
+export interface ChallengeSession {
+  id: string;
+  paperId: string;
+  subject: string;
+  startTime: Date;
+  timeLimit?: number; // in minutes
+  answers: { [questionId: string]: any };
+  completed: boolean;
+  score?: number;
+  timeSpent?: number;
+}
+
+export interface ChallengeResult {
+  sessionId: string;
+  totalQuestions: number;
+  correctAnswers: number;
+  score: number;
+  percentage: number;
+  timeSpent: number;
+  questionBreakdown: {
+    questionId: string;
+    correct: boolean;
+    timeSpent: number;
+    marks: number;
+  }[];
+}
+
+export interface ChallengePaper extends QuestionPaper {
+  challengeMode: true;
+  timeLimit: number; // in minutes
+  totalMarks: number;
+  year: number;
+  paperType: 'main' | 'comptt' | 'term2';
+  questions: ChallengeQuestion[];
+}

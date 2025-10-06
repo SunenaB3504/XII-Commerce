@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ViewMode = 'papers' | 'learn' | 'test';
+type ViewMode = 'papers' | 'learn' | 'test' | 'challenge';
 
 interface ModeSelectorProps {
   currentMode: ViewMode;
@@ -47,18 +47,18 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ currentMode, onSetMode, sho
         )}
 
         <button
-          onClick={() => onSetMode('test')}
+          onClick={() => onSetMode('challenge')}
           className={`flex-1 px-6 py-5 rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 transform focus:outline-none focus:ring-4 focus:ring-yellow-400 ${
-            currentMode === 'test'
-              ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-2xl scale-105 border-4 border-white'
+            currentMode === 'challenge'
+              ? 'bg-gradient-to-r from-red-500 to-pink-500 text-white shadow-2xl scale-105 border-4 border-white'
               : 'bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 hover:scale-105 hover:shadow-lg border-2 border-slate-300'
           }`}
         >
           <div className="flex flex-col items-center gap-2">
-            <span className="text-3xl">📝</span>
-            <span>Assessment Mode</span>
-            <span className="text-xs font-semibold opacity-90">Test Knowledge!</span>
-            {currentMode === 'test' && <span className="text-xl animate-bounce">🎯</span>}
+            <span className="text-3xl">⚡</span>
+            <span>True Challenge</span>
+            <span className="text-xs font-semibold opacity-90">Timed SQP Tests!</span>
+            {currentMode === 'challenge' && <span className="text-xl animate-bounce">🔥</span>}
           </div>
         </button>
       </div>

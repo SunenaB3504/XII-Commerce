@@ -7,8 +7,10 @@ import PaperSelector from './components/PaperSelector';
 import ModeSelector from './components/ModeSelector';
 import LearningContentView from './components/LearningContentView';
 import { MCQTest, useTestHistory } from './MCQTest';
+import ChallengeView from './components/ChallengeView';
+import type { ChallengeResult } from './types';
 
-type ViewMode = 'papers' | 'learn' | 'test';
+type ViewMode = 'papers' | 'learn' | 'test' | 'challenge';
 
 const App: React.FC = () => {
   const [selectedSubjectName, setSelectedSubjectName] = useState<string>(subjects[0].name);
@@ -25,6 +27,9 @@ const App: React.FC = () => {
 
   // Test history for MCQ assessments
   const { testHistory, addTestResult } = useTestHistory();
+
+  // Challenge results
+  const [challengeResults, setChallengeResults] = useState<ChallengeResult[]>([]);
 
   useEffect(() => {
     const firstPaper = currentSubject.questionPapers[0];
@@ -63,6 +68,11 @@ const App: React.FC = () => {
     addTestResult(result);
     console.log('Test completed:', result);
   }, [addTestResult]);
+
+  const handleChallengeComplete = useCallback((result: ChallengeResult) => {
+    setChallengeResults(prev => [result, ...prev]);
+    console.log('Challenge completed:', result);
+  }, []);
 
   const currentPaper = availablePapers.find(p => p.name === selectedPaperName);
   const currentQuestions = currentPaper?.questions || [];
@@ -176,7 +186,13 @@ const App: React.FC = () => {
                 )}
               </div>
             )}
-            {!selectedQuestion && !selectedModule && viewMode !== 'test' && (
+            {viewMode === 'challenge' && currentPaper && (
+              <ChallengeView
+                paper={currentPaper as any} // Type assertion for now
+                onChallengeComplete={handleChallengeComplete}
+              />
+            )}
+            {!selectedQuestion && !selectedModule && viewMode !== 'test' && viewMode !== 'challenge' && (
                <div className="bg-white p-8 rounded-lg shadow-md flex items-center justify-center h-full">
                 <p className="text-xl text-slate-500">Select an item from the list to get started!</p>
               </div>
