@@ -2,7 +2,7 @@ import React from 'react';
 import type { Question, LearningModule } from '../types';
 
 interface SidebarProps {
-  mode: 'papers' | 'learn' | 'test';
+  mode: 'papers' | 'learn' | 'test' | 'challenge';
   questions: Pick<Question, 'id' | 'marks'>[];
   currentQuestionId: string | null;
   onSelectQuestion: (id: string) => void;
@@ -20,8 +20,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   currentChapter,
   onSelectChapter
 }) => {
-  const completedCount = mode === 'papers' ? Math.floor(questions.length * 0.6) : mode === 'learn' ? Math.floor(chapters.length * 0.4) : 0;
-  const totalCount = mode === 'papers' ? questions.length : mode === 'learn' ? chapters.length : 1;
+  const completedCount = mode === 'papers' ? Math.floor(questions.length * 0.6) : mode === 'learn' ? Math.floor(chapters.length * 0.4) : mode === 'challenge' ? Math.floor(questions.length * 0.3) : 0;
+  const totalCount = mode === 'papers' ? questions.length : mode === 'learn' ? chapters.length : mode === 'challenge' ? questions.length : 1;
   const progress = Math.round((completedCount / totalCount) * 100);
 
   // Generate unique ID for this component instance to avoid CSS conflicts
@@ -37,14 +37,14 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-6">
-              <span className="text-2xl transform -rotate-6">{mode === 'papers' ? '🎯' : mode === 'learn' ? '📚' : '📝'}</span>
+              <span className="text-2xl transform -rotate-6">{mode === 'papers' ? '🎯' : mode === 'learn' ? '📚' : mode === 'challenge' ? '⚡' : '📝'}</span>
             </div>
             <div>
               <h2 className="text-xl font-black text-slate-800">
-                {mode === 'papers' ? 'Challenges' : mode === 'learn' ? 'Chapters' : 'Assessment'}
+                {mode === 'papers' ? 'Challenges' : mode === 'learn' ? 'Chapters' : mode === 'challenge' ? 'Timed Challenge' : 'Assessment'}
               </h2>
               <p className="text-sm font-bold text-purple-600">
-                {mode === 'papers' ? 'Pick your battle!' : mode === 'learn' ? 'Select & study!' : 'Test your knowledge!'}
+                {mode === 'papers' ? 'Pick your battle!' : mode === 'learn' ? 'Select & study!' : mode === 'challenge' ? 'Beat the clock!' : 'Test your knowledge!'}
               </p>
             </div>
           </div>
@@ -148,54 +148,50 @@ const Sidebar: React.FC<SidebarProps> = ({
           </ul>
         )}
 
-        {mode === 'test' && (
+        {mode === 'challenge' && (
           <div className="space-y-4">
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-2xl border-2 border-green-200">
-              <h3 className="font-bold text-green-800 mb-2">📊 Test Statistics</h3>
+            <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-2xl border-2 border-orange-200">
+              <h3 className="font-bold text-orange-800 mb-2">⚡ Challenge Mode</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-green-700">Questions per test:</span>
-                  <span className="font-bold text-green-800">20</span>
+                  <span className="text-orange-700">Questions:</span>
+                  <span className="font-bold text-orange-800">{questions.length}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-green-700">Time limit:</span>
-                  <span className="font-bold text-green-800">30 mins</span>
+                  <span className="text-orange-700">Time limit:</span>
+                  <span className="font-bold text-orange-800">30 mins</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-green-700">Weighted by importance:</span>
-                  <span className="font-bold text-green-800">Yes</span>
+                  <span className="text-orange-700">Difficulty:</span>
+                  <span className="font-bold text-orange-800">Adaptive</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-2xl border-2 border-blue-200">
-              <h3 className="font-bold text-blue-800 mb-2">🎯 Test Tips</h3>
-              <ul className="text-sm text-blue-700 space-y-1">
-                <li>• Read questions carefully</li>
-                <li>• Manage your time wisely</li>
+            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-2xl border-2 border-yellow-200">
+              <h3 className="font-bold text-yellow-800 mb-2">� Challenge Rules</h3>
+              <ul className="text-sm text-yellow-700 space-y-1">
+                <li>• Answer quickly for bonus points</li>
+                <li>• Wrong answers cost time</li>
                 <li>• Skip difficult questions</li>
-                <li>• Review before submitting</li>
+                <li>• Beat your personal best!</li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-2xl border-2 border-purple-200">
-              <h3 className="font-bold text-purple-800 mb-2">📈 Performance Levels</h3>
+            <div className="bg-gradient-to-r from-red-50 to-pink-50 p-4 rounded-2xl border-2 border-red-200">
+              <h3 className="font-bold text-red-800 mb-2">� Rewards</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-purple-700">Excellent:</span>
-                  <span className="font-bold text-green-600">85%+</span>
+                  <span className="text-red-700">Perfect Score:</span>
+                  <span className="font-bold text-green-600">🏆 Trophy</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-purple-700">Good:</span>
-                  <span className="font-bold text-blue-600">75-84%</span>
+                  <span className="text-red-700">Speed Demon:</span>
+                  <span className="font-bold text-blue-600">⚡ Badge</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-purple-700">Average:</span>
-                  <span className="font-bold text-yellow-600">60-74%</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-purple-700">Needs Work:</span>
-                  <span className="font-bold text-red-600">&lt;60%</span>
+                  <span className="text-red-700">Streak Master:</span>
+                  <span className="font-bold text-purple-600">🔥 Badge</span>
                 </div>
               </div>
             </div>

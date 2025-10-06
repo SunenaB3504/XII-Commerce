@@ -18,7 +18,7 @@ import { businessStudiesChallenge2024 } from './business-studies/business-studie
 import { businessStudiesChallenge2023 } from './business-studies/business-studies-challenge-2023';
 import { businessStudiesChallenge2022 } from './business-studies/business-studies-challenge-2022';
 import { businessStudiesChallenge2021 } from './business-studies/business-studies-challenge-2021';
-import { economicsSamplePaper2025 } from './economics/sample-paper-2025';
+import { economicsSamplePaper2025 } from './economics/economics-sample-paper-2025';
 import { economicsBoardExam58_5_1_term } from './economics/board-exam-58-5-1-term';
 import { economicsBoardExam58_5_3 } from './economics/board-exam-58-5-3';
 import { economicsBoardExam58_4_3 } from './economics/board-exam-58-4-3';

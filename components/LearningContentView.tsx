@@ -118,7 +118,7 @@ const LearningContentView: React.FC<LearningContentViewProps> = ({ module }) => 
               </div>
               <div>
                 <h2 className="text-3xl font-black text-slate-900">{module.title}</h2>
-                <p className="text-teal-600 font-bold mt-2 text-base">Chapter {module.chapter} • {module.subject} 🎯</p>
+                <p className="text-teal-600 font-bold mt-2 text-base">Chapter {module.chapter} • {module.title} 🎯</p>
               </div>
             </div>
             <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-sm font-black px-5 py-3 rounded-2xl shadow-2xl border-2 border-yellow-300">

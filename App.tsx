@@ -165,19 +165,19 @@ const App: React.FC = () => {
                           <div className="flex justify-between items-center mb-2">
                             <span className="font-semibold">Test {testHistory.length - index}</span>
                             <span className={`px-2 py-1 rounded text-sm font-bold ${
-                              test.performanceLevel === 'Excellent' ? 'bg-green-100 text-green-800' :
-                              test.performanceLevel === 'Good' ? 'bg-blue-100 text-blue-800' :
-                              test.performanceLevel === 'Average' ? 'bg-yellow-100 text-yellow-800' :
+                              test.performanceLevel === 'excellent' ? 'bg-green-100 text-green-800' :
+                              test.performanceLevel === 'good' ? 'bg-blue-100 text-blue-800' :
+                              test.performanceLevel === 'average' ? 'bg-yellow-100 text-yellow-800' :
                               'bg-red-100 text-red-800'
                             }`}>
-                              {test.performanceLevel}
+                              {test.performanceLevel.charAt(0).toUpperCase() + test.performanceLevel.slice(1)}
                             </span>
                           </div>
                           <div className="text-sm text-slate-600">
-                            Score: {test.correctAnswers}/{test.totalQuestions} ({test.percentage}%)
+                            Score: {test.score}/{test.totalQuestions} ({test.percentage}%)
                           </div>
                           <div className="text-xs text-slate-500 mt-1">
-                            {new Date(test.timestamp).toLocaleDateString()}
+                            {new Date(test.testDate).toLocaleDateString()}
                           </div>
                         </div>
                       ))}

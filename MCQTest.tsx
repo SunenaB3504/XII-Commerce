@@ -387,9 +387,8 @@ export const MCQTest: React.FC<MCQTestProps> = ({
       {/* Progress Bar */}
       <div className="w-full bg-gray-200 rounded-full h-2 mb-6">
         <div
-          className="bg-blue-600 h-2 rounded-full transition-all duration-300 progress-fill"
-          // eslint-disable-next-line react/style-prop-object
-          style={{ '--progress-width': `${((currentQuestion + 1) / questions.length) * 100}%` } as React.CSSProperties}
+          className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+          style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
         />
       </div>
 

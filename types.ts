@@ -17,21 +17,21 @@ export interface Concept {
   title: string;
   content: ReactNode;
   examFocus?: boolean;
-  mnemonic?: string;
+  mnemonic?: ReactNode;
   // FIX: Changed type from string to ReactNode to allow JSX elements.
   example?: ReactNode;
 }
 
 export interface CaseStudy {
   title: string;
-  scenario: string;
+  scenario: ReactNode;
   analysis: ReactNode;
 }
 
 export interface LearningModule {
   chapter: string;
   title: string;
-  overview: string;
+  overview: ReactNode;
   keyConcepts: Concept[];
   keywords: { term: string; definition: string }[];
   caseStudies: CaseStudy[];

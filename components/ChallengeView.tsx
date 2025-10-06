@@ -17,13 +17,13 @@ const ChallengeView: React.FC<ChallengeViewProps> = ({
     paperId: paper.name,
     subject: 'Business Studies',
     startTime: new Date(),
-    timeLimit: paper.timeLimit,
+    timeLimit: paper.timeLimit || 180, // Default 3 hours
     answers: {},
     completed: false
   });
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [timeRemaining, setTimeRemaining] = useState(paper.timeLimit * 60);
+  const [timeRemaining, setTimeRemaining] = useState((paper.timeLimit || 180) * 60);
   const [showResults, setShowResults] = useState(false);
 
   // Timer logic
@@ -101,7 +101,7 @@ const ChallengeView: React.FC<ChallengeViewProps> = ({
           </div>
           <div>
             <h3 className="text-3xl font-black text-slate-800 mb-1">{paper.name}</h3>
-            <p className="text-red-600 font-bold">Challenge Mode - {paper.year} {paper.paperType.toUpperCase()}</p>
+            <p className="text-red-600 font-bold">Challenge Mode - {paper.year || '2025'} {paper.paperType?.toUpperCase() || 'MAIN'}</p>
           </div>
         </div>
         <div className="flex items-center gap-3">
@@ -119,7 +119,7 @@ const ChallengeView: React.FC<ChallengeViewProps> = ({
         <div className="bg-slate-200 rounded-full h-4 overflow-hidden">
           <div
             className="bg-gradient-to-r from-red-500 to-pink-500 h-full transition-all duration-300"
-            style={{ width: `${(answeredQuestions / paper.questions.length) * 100}%` }} // eslint-disable-line react/style-prop-object
+            style={{ width: `${(answeredQuestions / paper.questions.length) * 100}%` }}
           ></div>
         </div>
         <p className="text-sm text-slate-600 mt-2 text-center">

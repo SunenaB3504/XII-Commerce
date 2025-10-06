@@ -26,7 +26,7 @@ export const calculateChallengeScore = (
 ): ChallengeResult => {
   let totalScore = 0;
   let correctAnswers = 0;
-  const questionBreakdown = [];
+  const questionBreakdown: { questionId: string; correct: boolean; timeSpent: number; marks: number }[] = [];
 
   questions.forEach(question => {
     const userAnswer = session.answers[question.id];
