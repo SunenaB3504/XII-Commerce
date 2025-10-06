@@ -87,6 +87,223 @@ export const mcqPool: MCQ[] = [
     explanation: 'Junior partner was overpaid. Adjustment entry debits junior partner and credits senior partner.',
     relatedConcepts: ['Past adjustments', 'Profit distribution errors']
   },
+  // Additional Chapter 2 Questions
+  {
+    id: 'C2_007',
+    chapter: 2,
+    topic: 'Fixed Capital Method',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Under fixed capital method, drawings are:',
+    options: ['Debited to capital account', 'Debited to current account', 'Credited to capital account', 'Credited to current account'],
+    correctAnswer: 1,
+    explanation: 'In fixed capital method, drawings are debited to current account to maintain fixed capital balance.',
+    relatedConcepts: ['Fixed capital method', 'Current account']
+  },
+  {
+    id: 'C2_008',
+    chapter: 2,
+    topic: 'Fluctuating Capital',
+    difficulty: 'easy',
+    weightage: 3,
+    question: 'Fluctuating capital method shows:',
+    options: ['Fixed balance', 'Changing balance', 'Zero balance', 'Negative balance'],
+    correctAnswer: 1,
+    explanation: 'Fluctuating capital method shows changing capital balances due to direct entries of profits, losses, and drawings.',
+    relatedConcepts: ['Fluctuating capital method', 'Capital accounts']
+  },
+  {
+    id: 'C2_009',
+    chapter: 2,
+    topic: 'Interest on Capital',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Interest on capital is allowed only if:',
+    options: ['There is profit', 'Partnership deed provides', 'Partners agree', 'Court orders'],
+    correctAnswer: 1,
+    explanation: 'Interest on capital is allowed only if partnership deed specifically provides for it.',
+    relatedConcepts: ['Interest on capital', 'Partnership deed']
+  },
+  {
+    id: 'C2_010',
+    chapter: 2,
+    topic: 'Profit Sharing Ratio',
+    difficulty: 'easy',
+    weightage: 3,
+    question: 'If partnership deed is silent about profit sharing, profits are shared:',
+    options: ['Equally', 'In capital ratio', 'As per interest on capital', 'As decided by court'],
+    correctAnswer: 0,
+    explanation: 'In absence of partnership deed provisions, profits are shared equally among partners.',
+    relatedConcepts: ['Profit sharing ratio', 'Partnership deed']
+  },
+  {
+    id: 'C2_011',
+    chapter: 2,
+    topic: 'Salary to Partner',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Salary to partner is charged to:',
+    options: ['Profit and Loss Account', 'Partners\' Capital Accounts', 'Profit and Loss Appropriation Account', 'Trading Account'],
+    correctAnswer: 2,
+    explanation: 'Salary to partner is an appropriation of profit, hence charged to Profit and Loss Appropriation Account.',
+    relatedConcepts: ['Salary to partner', 'Profit appropriation']
+  },
+  {
+    id: 'C2_012',
+    chapter: 2,
+    topic: 'Commission to Partner',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Commission to partner is calculated on:',
+    options: ['Gross profit', 'Net profit', 'Sales', 'As per partnership deed'],
+    correctAnswer: 3,
+    explanation: 'Commission to partner is calculated as per terms specified in partnership deed.',
+    relatedConcepts: ['Commission to partner', 'Partnership deed']
+  },
+  {
+    id: 'C2_013',
+    chapter: 2,
+    topic: 'Interest on Drawings',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'Partner withdrew ₹12,000 at end of each quarter. Interest @ 12% p.a. on drawings is:',
+    options: ['₹1,080', '₹1,440', '₹1,620', '₹1,800'],
+    correctAnswer: 1,
+    explanation: 'Average period = 3 months. Interest = ₹12,000 × 12% × 3/12 = ₹1,440',
+    relatedConcepts: ['Interest on drawings', 'Average period']
+  },
+  {
+    id: 'C2_014',
+    chapter: 2,
+    topic: 'Guarantee to Partner',
+    difficulty: 'hard',
+    weightage: 5,
+    question: 'A and B share profits 3:1. B is guaranteed ₹30,000. Actual profit ₹80,000. Deficiency borne by A is:',
+    options: ['₹10,000', '₹20,000', '₹15,000', '₹25,000'],
+    correctAnswer: 0,
+    explanation: 'B\'s actual share = (1/4)×₹80,000 = ₹20,000. Guarantee = ₹30,000. Deficiency = ₹10,000 borne by A.',
+    relatedConcepts: ['Guarantee to partner', 'Deficiency sharing']
+  },
+  {
+    id: 'C2_015',
+    chapter: 2,
+    topic: 'Capital Accounts',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'In fixed capital method, interest on capital is credited to:',
+    options: ['Capital account', 'Current account', 'Profit and Loss Account', 'Trading Account'],
+    correctAnswer: 1,
+    explanation: 'In fixed capital method, interest on capital is credited to current account.',
+    relatedConcepts: ['Fixed capital method', 'Current account']
+  },
+  {
+    id: 'C2_016',
+    chapter: 2,
+    topic: 'Profit Distribution',
+    difficulty: 'easy',
+    weightage: 3,
+    question: 'The divisible profit is distributed in:',
+    options: ['Profit sharing ratio', 'Capital ratio', 'Equal ratio', 'As per court order'],
+    correctAnswer: 0,
+    explanation: 'Divisible profit after all appropriations is distributed in profit sharing ratio.',
+    relatedConcepts: ['Profit distribution', 'Profit sharing ratio']
+  },
+  {
+    id: 'C2_017',
+    chapter: 2,
+    topic: 'Interest on Capital',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Interest on capital is calculated on:',
+    options: ['Opening capital', 'Closing capital', 'Average capital', 'As per deed'],
+    correctAnswer: 0,
+    explanation: 'Interest on capital is calculated on opening capital balance unless otherwise specified.',
+    relatedConcepts: ['Interest on capital', 'Capital calculation']
+  },
+  {
+    id: 'C2_018',
+    chapter: 2,
+    topic: 'Drawings',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Drawings reduce:',
+    options: ['Capital only', 'Current account only', 'Both capital and current', 'Neither'],
+    correctAnswer: 2,
+    explanation: 'Drawings reduce both capital and current account balances depending on the method used.',
+    relatedConcepts: ['Drawings', 'Capital accounts']
+  },
+  {
+    id: 'C2_019',
+    chapter: 2,
+    topic: 'Profit and Loss Appropriation',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Profit and Loss Appropriation Account shows:',
+    options: ['Net profit', 'Divisible profit', 'Distributed profit', 'All appropriations'],
+    correctAnswer: 3,
+    explanation: 'Profit and Loss Appropriation Account shows all appropriations like interest, salary, commission, etc.',
+    relatedConcepts: ['Profit and Loss Appropriation Account', 'Profit appropriation']
+  },
+  {
+    id: 'C2_020',
+    chapter: 2,
+    topic: 'Partnership Deed',
+    difficulty: 'easy',
+    weightage: 2,
+    question: 'Partnership deed contains:',
+    options: ['Only profit sharing ratio', 'All terms of partnership', 'Only capital contributions', 'Only business name'],
+    correctAnswer: 1,
+    explanation: 'Partnership deed contains all terms and conditions agreed upon by partners.',
+    relatedConcepts: ['Partnership deed', 'Partnership agreement']
+  },
+  {
+    id: 'C2_021',
+    chapter: 2,
+    topic: 'Current Account',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Current account shows:',
+    options: ['Fixed capital', 'Fluctuations in capital', 'Only drawings', 'Only profits'],
+    correctAnswer: 1,
+    explanation: 'Current account shows fluctuations due to profits, losses, drawings, interest, etc.',
+    relatedConcepts: ['Current account', 'Fluctuating capital']
+  },
+  {
+    id: 'C2_022',
+    chapter: 2,
+    topic: 'Interest Calculation',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'Partner withdrew ₹15,000 on 1st July. Interest @ 10% p.a. for 6 months is:',
+    options: ['₹750', '₹1,500', '₹1,125', '₹2,250'],
+    correctAnswer: 0,
+    explanation: 'Interest = ₹15,000 × 10% × 6/12 = ₹750',
+    relatedConcepts: ['Interest on drawings', 'Time period']
+  },
+  {
+    id: 'C2_023',
+    chapter: 2,
+    topic: 'Profit Sharing',
+    difficulty: 'easy',
+    weightage: 3,
+    question: 'Profit sharing ratio can be changed by:',
+    options: ['One partner', 'Mutual agreement', 'Court order', 'Managing partner'],
+    correctAnswer: 1,
+    explanation: 'Profit sharing ratio can be changed only by mutual agreement of all partners.',
+    relatedConcepts: ['Profit sharing ratio', 'Partnership agreement']
+  },
+  {
+    id: 'C2_024',
+    chapter: 2,
+    topic: 'Capital Ratio',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'If capitals are ₹2,00,000, ₹1,50,000, ₹1,00,000, capital ratio is:',
+    options: ['4:3:2', '2:3:4', '3:2:1', '1:2:3'],
+    correctAnswer: 0,
+    explanation: 'Capital ratio = 2,00,000:1,50,000:1,00,000 = 4:3:2',
+    relatedConcepts: ['Capital ratio', 'Profit sharing ratio']
+  },
 
   // Chapter 3: Partnership Reconstitution (High Priority - 16% weightage)
   {
@@ -136,6 +353,151 @@ export const mcqPool: MCQ[] = [
     correctAnswer: 2,
     explanation: 'Sacrificing ratio = Old share - New share. X: 3/5 - 2/5 = 1/5; Y: 2/5 - 2/5 = 0. Ratio 1:0 or 1:0.',
     relatedConcepts: ['Sacrificing ratio', 'Profit sharing ratio change']
+  },
+  // Additional Chapter 3 Questions
+  {
+    id: 'C3_005',
+    chapter: 3,
+    topic: 'Admission of Partner',
+    difficulty: 'easy',
+    weightage: 4,
+    question: 'On admission of partner, unrecorded assets are:',
+    options: ['Ignored', 'Recorded at market value', 'Recorded at book value', 'Not considered'],
+    correctAnswer: 1,
+    explanation: 'Unrecorded assets are brought into books at market value through revaluation account.',
+    relatedConcepts: ['Revaluation account', 'Unrecorded assets']
+  },
+  {
+    id: 'C3_006',
+    chapter: 3,
+    topic: 'Goodwill Valuation',
+    difficulty: 'medium',
+    weightage: 5,
+    question: 'Goodwill brought by new partner is shared by old partners in:',
+    options: ['New profit sharing ratio', 'Old profit sharing ratio', 'Equal ratio', 'Capital ratio'],
+    correctAnswer: 1,
+    explanation: 'Goodwill brought by new partner is shared by old partners in their old profit sharing ratio.',
+    relatedConcepts: ['Goodwill valuation', 'Profit sharing ratio']
+  },
+  {
+    id: 'C3_007',
+    chapter: 3,
+    topic: 'Revaluation Account',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Increase in value of assets on admission is credited to:',
+    options: ['Asset account', 'Revaluation account', 'Partners\' capital accounts', 'Profit and Loss account'],
+    correctAnswer: 1,
+    explanation: 'Increase in asset values is credited to revaluation account.',
+    relatedConcepts: ['Revaluation account', 'Asset revaluation']
+  },
+  {
+    id: 'C3_008',
+    chapter: 3,
+    topic: 'New Profit Sharing Ratio',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Old ratio 2:1:1, new partner admitted with 1/4 share. New ratio will be:',
+    options: ['3:1:1:1', '2:1:1:1', '1:1:1:1', '4:2:2:1'],
+    correctAnswer: 1,
+    explanation: 'New partner gets 1/4 share, remaining 3/4 shared by old partners in 2:1:1 ratio.',
+    relatedConcepts: ['New profit sharing ratio', 'Admission of partner']
+  },
+  {
+    id: 'C3_009',
+    chapter: 3,
+    topic: 'Hidden Goodwill',
+    difficulty: 'hard',
+    weightage: 5,
+    question: 'In case of hidden goodwill, the amount brought by new partner is:',
+    options: ['Credited to goodwill account', 'Debited to goodwill account', 'Shared by old partners', 'Added to capital'],
+    correctAnswer: 2,
+    explanation: 'In hidden goodwill, amount brought extra is shared by old partners as goodwill.',
+    relatedConcepts: ['Hidden goodwill', 'Goodwill treatment']
+  },
+  {
+    id: 'C3_010',
+    chapter: 3,
+    topic: 'Accumulated Profits',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'On admission, accumulated profits are distributed to old partners in:',
+    options: ['New ratio', 'Old ratio', 'Equal ratio', 'Capital ratio'],
+    correctAnswer: 1,
+    explanation: 'Accumulated profits belong to old partners and are distributed in old ratio.',
+    relatedConcepts: ['Accumulated profits', 'Profit distribution']
+  },
+  {
+    id: 'C3_011',
+    chapter: 3,
+    topic: 'Reserve Distribution',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'General reserve on admission is transferred to:',
+    options: ['New partners only', 'Old partners only', 'All partners in new ratio', 'Credited to revaluation'],
+    correctAnswer: 1,
+    explanation: 'General reserve belongs to old partners and is distributed in old ratio.',
+    relatedConcepts: ['General reserve', 'Reserve distribution']
+  },
+  {
+    id: 'C3_012',
+    chapter: 3,
+    topic: 'Capital Adjustment',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'In minimum capital method, excess capital is adjusted through:',
+    options: ['Cash payment', 'Current account', 'Goodwill adjustment', 'Revaluation'],
+    correctAnswer: 1,
+    explanation: 'In minimum capital method, excess capital is adjusted through current accounts.',
+    relatedConcepts: ['Minimum capital method', 'Capital adjustment']
+  },
+  {
+    id: 'C3_013',
+    chapter: 3,
+    topic: 'Premium for Goodwill',
+    difficulty: 'medium',
+    weightage: 5,
+    question: 'Premium for goodwill paid by new partner is:',
+    options: ['Revenue receipt', 'Capital receipt', 'Deferred revenue', 'Operating expense'],
+    correctAnswer: 1,
+    explanation: 'Premium for goodwill is a capital receipt for the firm.',
+    relatedConcepts: ['Premium for goodwill', 'Capital receipt']
+  },
+  {
+    id: 'C3_014',
+    chapter: 3,
+    topic: 'Retirement of Partner',
+    difficulty: 'easy',
+    weightage: 4,
+    question: 'On retirement, gaining ratio is:',
+    options: ['Old ratio - New ratio', 'New ratio - Old ratio', 'Same as old ratio', 'Equal ratio'],
+    correctAnswer: 1,
+    explanation: 'Gaining ratio = New ratio - Old ratio for remaining partners.',
+    relatedConcepts: ['Gaining ratio', 'Retirement of partner']
+  },
+  {
+    id: 'C3_015',
+    chapter: 3,
+    topic: 'Joint Life Policy',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'Surrender value of Joint Life Policy on retirement is:',
+    options: ['Debited to revaluation', 'Credited to revaluation', 'Distributed to retiring partner', 'Shared by all partners'],
+    correctAnswer: 1,
+    explanation: 'Surrender value is credited to revaluation account as profit on asset.',
+    relatedConcepts: ['Joint Life Policy', 'Surrender value']
+  },
+  {
+    id: 'C3_016',
+    chapter: 3,
+    topic: 'Death of Partner',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'On death of partner, Joint Life Policy amount is:',
+    options: ['Paid to legal heirs', 'Distributed to remaining partners', 'Added to capital', 'Debited to revaluation'],
+    correctAnswer: 0,
+    explanation: 'Joint Life Policy amount is paid to legal heirs of deceased partner.',
+    relatedConcepts: ['Death of partner', 'Joint Life Policy']
   },
 
   // Chapter 6: Issue of Shares (High Priority - 14% weightage)
@@ -187,6 +549,127 @@ export const mcqPool: MCQ[] = [
     explanation: 'Forfeited shares can be re-issued at face value, premium, or even discount in some cases.',
     relatedConcepts: ['Re-issue of forfeited shares', 'Share forfeiture']
   },
+  // Additional Chapter 6 Questions
+  {
+    id: 'C6_005',
+    chapter: 6,
+    topic: 'Share Application',
+    difficulty: 'easy',
+    weightage: 4,
+    question: 'Share application money is:',
+    options: ['Liability', 'Asset', 'Revenue', 'Capital'],
+    correctAnswer: 0,
+    explanation: 'Share application money received is a liability until shares are allotted.',
+    relatedConcepts: ['Share application', 'Share allotment']
+  },
+  {
+    id: 'C6_006',
+    chapter: 6,
+    topic: 'Allotment of Shares',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'On allotment of shares, share allotment account is:',
+    options: ['Debited', 'Credited', 'Not affected', 'Closed'],
+    correctAnswer: 1,
+    explanation: 'Share allotment account is credited with the allotment money received.',
+    relatedConcepts: ['Share allotment', 'Share capital']
+  },
+  {
+    id: 'C6_007',
+    chapter: 6,
+    topic: 'Calls on Shares',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'First call money is received through:',
+    options: ['Share application', 'Share allotment', 'Call notice', 'Bank draft'],
+    correctAnswer: 2,
+    explanation: 'First call money is received through call notice sent to shareholders.',
+    relatedConcepts: ['Calls on shares', 'Share calls']
+  },
+  {
+    id: 'C6_008',
+    chapter: 6,
+    topic: 'Discount on Issue',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Discount on issue of shares is:',
+    options: ['Revenue expenditure', 'Capital expenditure', 'Deferred revenue', 'Operating expense'],
+    correctAnswer: 1,
+    explanation: 'Discount on issue of shares is capital expenditure written off over years.',
+    relatedConcepts: ['Discount on shares', 'Capital expenditure']
+  },
+  {
+    id: 'C6_009',
+    chapter: 6,
+    topic: 'Over-subscription',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'In case of over-subscription, excess application money is:',
+    options: ['Refunded', 'Forfeited', 'Adjusted against allotment', 'Added to capital'],
+    correctAnswer: 0,
+    explanation: 'Excess application money in over-subscription is refunded to applicants.',
+    relatedConcepts: ['Over-subscription', 'Share application']
+  },
+  {
+    id: 'C6_010',
+    chapter: 6,
+    topic: 'Under-subscription',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Under-subscription means:',
+    options: ['More applications than shares', 'Less applications than shares', 'Equal applications and shares', 'No applications'],
+    correctAnswer: 1,
+    explanation: 'Under-subscription occurs when applications received are less than shares offered.',
+    relatedConcepts: ['Under-subscription', 'Share issue']
+  },
+  {
+    id: 'C6_011',
+    chapter: 6,
+    topic: 'Calls in Arrears',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Calls in arrears account shows:',
+    options: ['Money received', 'Money not received', 'Total calls made', 'Share capital'],
+    correctAnswer: 1,
+    explanation: 'Calls in arrears account shows the amount of calls not received from shareholders.',
+    relatedConcepts: ['Calls in arrears', 'Share calls']
+  },
+  {
+    id: 'C6_012',
+    chapter: 6,
+    topic: 'Forfeiture of Shares',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'On forfeiture, share capital account is debited with:',
+    options: ['Face value', 'Paid up value', 'Called up value', 'Market value'],
+    correctAnswer: 1,
+    explanation: 'On forfeiture, share capital account is debited with paid-up value.',
+    relatedConcepts: ['Forfeiture of shares', 'Share capital']
+  },
+  {
+    id: 'C6_013',
+    chapter: 6,
+    topic: 'Re-issue of Forfeited Shares',
+    difficulty: 'hard',
+    weightage: 2,
+    question: 'On re-issue of forfeited shares, share forfeiture account is:',
+    options: ['Debited', 'Credited', 'Not affected', 'Closed'],
+    correctAnswer: 1,
+    explanation: 'Share forfeiture account is credited with the amount received on re-issue.',
+    relatedConcepts: ['Re-issue of shares', 'Share forfeiture account']
+  },
+  {
+    id: 'C6_014',
+    chapter: 6,
+    topic: 'Issue at Premium',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Securities premium can be used for:',
+    options: ['Dividend payment', 'Writing off preliminary expenses', 'Reducing share capital', 'All of the above'],
+    correctAnswer: 3,
+    explanation: 'Securities premium can be used for various purposes as specified in Companies Act.',
+    relatedConcepts: ['Securities premium', 'Premium utilization']
+  },
 
   // Chapter 4: Dissolution (Medium Priority - 10% weightage)
   {
@@ -225,6 +708,91 @@ export const mcqPool: MCQ[] = [
     explanation: 'Deficiency of insolvent partner is shared by solvent partners in their profit sharing ratio.',
     relatedConcepts: ['Insolvent partner', 'Deficiency sharing']
   },
+  // Additional Chapter 4 Questions
+  {
+    id: 'C4_004',
+    chapter: 4,
+    topic: 'Dissolution Process',
+    difficulty: 'easy',
+    weightage: 3,
+    question: 'Dissolution of partnership firm means:',
+    options: ['Change in profit sharing ratio', 'Admission of new partner', 'Complete closure of business', 'Retirement of partner'],
+    correctAnswer: 2,
+    explanation: 'Dissolution means complete closure and winding up of partnership business.',
+    relatedConcepts: ['Dissolution of partnership', 'Winding up']
+  },
+  {
+    id: 'C4_005',
+    chapter: 4,
+    topic: 'Realization Account',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Realization account is prepared to:',
+    options: ['Calculate profit on dissolution', 'Record sale of assets and payment of liabilities', 'Distribute assets among partners', 'Calculate goodwill'],
+    correctAnswer: 1,
+    explanation: 'Realization account records the sale of assets and payment of external liabilities.',
+    relatedConcepts: ['Realization account', 'Dissolution accounts']
+  },
+  {
+    id: 'C4_006',
+    chapter: 4,
+    topic: 'Bankruptcy of Partner',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'When partner becomes bankrupt, his capital deficiency is:',
+    options: ['Written off', 'Borne by other partners', 'Added to assets', 'Ignored'],
+    correctAnswer: 1,
+    explanation: 'Capital deficiency of bankrupt partner is borne by solvent partners in profit sharing ratio.',
+    relatedConcepts: ['Bankruptcy of partner', 'Capital deficiency']
+  },
+  {
+    id: 'C4_007',
+    chapter: 4,
+    topic: 'Asset Distribution',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'On dissolution, assets are distributed in the order of:',
+    options: ['Realization, payment of liabilities, partners\' capital', 'Partners\' capital, realization, liabilities', 'Liabilities, realization, partners\' capital', 'Realization, partners\' capital, liabilities'],
+    correctAnswer: 0,
+    explanation: 'First realize assets, then pay external liabilities, then distribute remaining to partners.',
+    relatedConcepts: ['Asset distribution', 'Dissolution procedure']
+  },
+  {
+    id: 'C4_008',
+    chapter: 4,
+    topic: 'Loss on Realization',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Loss on realization is distributed to partners in:',
+    options: ['Equal ratio', 'Capital ratio', 'Profit sharing ratio', 'As per court order'],
+    correctAnswer: 2,
+    explanation: 'Loss on realization is distributed to partners in their profit sharing ratio.',
+    relatedConcepts: ['Loss on realization', 'Profit sharing ratio']
+  },
+  {
+    id: 'C4_009',
+    chapter: 4,
+    topic: 'Partners\' Loan',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Partner\'s loan is treated as:',
+    options: ['External liability', 'Internal liability', 'Capital', 'Revenue'],
+    correctAnswer: 0,
+    explanation: 'Partner\'s loan is treated as external liability and paid before capital.',
+    relatedConcepts: ['Partner\'s loan', 'External liability']
+  },
+  {
+    id: 'C4_010',
+    chapter: 4,
+    topic: 'Dissolution Expenses',
+    difficulty: 'easy',
+    weightage: 2,
+    question: 'Dissolution expenses are borne by:',
+    options: ['Partners equally', 'Partners in profit sharing ratio', 'The firm', 'Government'],
+    correctAnswer: 1,
+    explanation: 'Dissolution expenses are borne by partners in their profit sharing ratio.',
+    relatedConcepts: ['Dissolution expenses', 'Expense sharing']
+  },
 
   // Chapter 7: Debentures (Medium Priority - 8% weightage)
   {
@@ -262,6 +830,67 @@ export const mcqPool: MCQ[] = [
     correctAnswer: 2,
     explanation: 'Companies can redeem debentures using various methods as per Companies Act.',
     relatedConcepts: ['Debenture redemption', 'Redemption methods']
+  },
+  // Additional Chapter 7 Questions
+  {
+    id: 'C7_004',
+    chapter: 7,
+    topic: 'Types of Debentures',
+    difficulty: 'easy',
+    weightage: 3,
+    question: 'Debentures which can be converted into shares are called:',
+    options: ['Convertible debentures', 'Non-convertible debentures', 'Redeemable debentures', 'Irredeemable debentures'],
+    correctAnswer: 0,
+    explanation: 'Convertible debentures can be converted into equity shares at a future date.',
+    relatedConcepts: ['Convertible debentures', 'Types of debentures']
+  },
+  {
+    id: 'C7_005',
+    chapter: 7,
+    topic: 'Debenture Interest',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Debenture interest is:',
+    options: ['Tax deductible', 'Not tax deductible', 'Partially deductible', 'Depends on company'],
+    correctAnswer: 0,
+    explanation: 'Debenture interest is tax deductible expense for the company.',
+    relatedConcepts: ['Debenture interest', 'Tax treatment']
+  },
+  {
+    id: 'C7_006',
+    chapter: 7,
+    topic: 'Debenture Trust Deed',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Debenture trust deed contains:',
+    options: ['Only interest rate', 'Terms and conditions of debentures', 'Only redemption date', 'Only face value'],
+    correctAnswer: 1,
+    explanation: 'Debenture trust deed contains all terms and conditions of the debenture issue.',
+    relatedConcepts: ['Debenture trust deed', 'Debenture terms']
+  },
+  {
+    id: 'C7_007',
+    chapter: 7,
+    topic: 'Secured Debentures',
+    difficulty: 'hard',
+    weightage: 2,
+    question: 'Secured debentures have charge on:',
+    options: ['Only movable assets', 'Only immovable assets', 'Both movable and immovable assets', 'No charge'],
+    correctAnswer: 2,
+    explanation: 'Secured debentures have charge on both movable and immovable assets of the company.',
+    relatedConcepts: ['Secured debentures', 'Asset charge']
+  },
+  {
+    id: 'C7_008',
+    chapter: 7,
+    topic: 'Debenture Redemption Reserve',
+    difficulty: 'hard',
+    weightage: 2,
+    question: 'Debenture Redemption Reserve is created for:',
+    options: ['All companies', 'Private companies only', 'Public companies issuing debentures', 'Foreign companies'],
+    correctAnswer: 2,
+    explanation: 'DRR is created by public companies issuing debentures for redemption.',
+    relatedConcepts: ['Debenture Redemption Reserve', 'Debenture redemption']
   },
 
   // Chapter 9: Financial Analysis (Medium Priority - 12% weightage)
@@ -313,6 +942,103 @@ export const mcqPool: MCQ[] = [
     explanation: 'Receipt from debtors (collection of receivables) is operating cash flow.',
     relatedConcepts: ['Cash flow statement', 'Operating activities']
   },
+  // Additional Chapter 9 Questions
+  {
+    id: 'C9_005',
+    chapter: 9,
+    topic: 'Working Capital',
+    difficulty: 'easy',
+    weightage: 3,
+    question: 'Working capital is:',
+    options: ['Fixed Assets - Current Assets', 'Current Assets - Current Liabilities', 'Fixed Assets + Current Assets', 'Share Capital + Reserves'],
+    correctAnswer: 1,
+    explanation: 'Working capital = Current Assets - Current Liabilities.',
+    relatedConcepts: ['Working capital', 'Current assets']
+  },
+  {
+    id: 'C9_006',
+    chapter: 9,
+    topic: 'Current Ratio',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Ideal current ratio is:',
+    options: ['1:1', '2:1', '3:1', '4:1'],
+    correctAnswer: 1,
+    explanation: 'Ideal current ratio is 2:1, meaning current assets should be twice current liabilities.',
+    relatedConcepts: ['Current ratio', 'Ideal ratio']
+  },
+  {
+    id: 'C9_007',
+    chapter: 9,
+    topic: 'Liquid Ratio',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Liquid ratio is also known as:',
+    options: ['Current ratio', 'Quick ratio', 'Absolute ratio', 'Cash ratio'],
+    correctAnswer: 1,
+    explanation: 'Liquid ratio is also called quick ratio or acid test ratio.',
+    relatedConcepts: ['Liquid ratio', 'Quick ratio']
+  },
+  {
+    id: 'C9_008',
+    chapter: 9,
+    topic: 'Debt-Equity Ratio',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Debt-equity ratio indicates:',
+    options: ['Profitability', 'Liquidity', 'Solvency', 'Activity'],
+    correctAnswer: 2,
+    explanation: 'Debt-equity ratio indicates long-term solvency of the business.',
+    relatedConcepts: ['Debt-equity ratio', 'Solvency ratios']
+  },
+  {
+    id: 'C9_009',
+    chapter: 9,
+    topic: 'Gross Profit Ratio',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'Gross profit ratio is calculated as:',
+    options: ['Gross Profit / Sales × 100', 'Net Profit / Sales × 100', 'Gross Profit / Cost of Goods Sold × 100', 'Net Profit / Capital × 100'],
+    correctAnswer: 0,
+    explanation: 'Gross profit ratio = (Gross Profit / Sales) × 100',
+    relatedConcepts: ['Gross profit ratio', 'Profitability ratios']
+  },
+  {
+    id: 'C9_010',
+    chapter: 9,
+    topic: 'Net Profit Ratio',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'Net profit ratio measures:',
+    options: ['Operational efficiency', 'Overall profitability', 'Liquidity position', 'Solvency position'],
+    correctAnswer: 1,
+    explanation: 'Net profit ratio measures overall profitability of the business.',
+    relatedConcepts: ['Net profit ratio', 'Profitability ratios']
+  },
+  {
+    id: 'C9_011',
+    chapter: 9,
+    topic: 'Inventory Turnover Ratio',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'Inventory turnover ratio is:',
+    options: ['Cost of Goods Sold / Inventory', 'Sales / Inventory', 'Inventory / Cost of Goods Sold', 'Inventory / Sales'],
+    correctAnswer: 0,
+    explanation: 'Inventory turnover ratio = Cost of Goods Sold / Average Inventory',
+    relatedConcepts: ['Inventory turnover ratio', 'Activity ratios']
+  },
+  {
+    id: 'C9_012',
+    chapter: 9,
+    topic: 'Return on Investment',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'ROI is calculated as:',
+    options: ['Net Profit / Sales × 100', 'Net Profit / Capital Employed × 100', 'Sales / Capital Employed × 100', 'Profit / Investment × 100'],
+    correctAnswer: 1,
+    explanation: 'ROI = (Net Profit / Capital Employed) × 100',
+    relatedConcepts: ['Return on investment', 'Profitability ratios']
+  },
 
   // Chapter 1: Theory (Low Priority - 4% weightage)
   {
@@ -338,6 +1064,31 @@ export const mcqPool: MCQ[] = [
     correctAnswer: 1,
     explanation: 'AS 1 deals with Disclosure of Accounting Policies.',
     relatedConcepts: ['Accounting standards', 'Disclosure requirements']
+  },
+  // Additional Chapter 1 Questions
+  {
+    id: 'C1_003',
+    chapter: 1,
+    topic: 'Business Entity Concept',
+    difficulty: 'easy',
+    weightage: 2,
+    question: 'Business Entity concept means:',
+    options: ['Business and owner are same', 'Business and owner are separate', 'Business owns everything', 'Owner owns business'],
+    correctAnswer: 1,
+    explanation: 'Business Entity concept treats business as separate from its owners.',
+    relatedConcepts: ['Business entity concept', 'Accounting assumptions']
+  },
+  {
+    id: 'C1_004',
+    chapter: 1,
+    topic: 'Money Measurement Concept',
+    difficulty: 'easy',
+    weightage: 2,
+    question: 'Money Measurement concept records only:',
+    options: ['All transactions', 'Monetary transactions', 'Non-monetary transactions', 'Cash transactions only'],
+    correctAnswer: 1,
+    explanation: 'Only those transactions which can be measured in monetary terms are recorded.',
+    relatedConcepts: ['Money measurement concept', 'Accounting assumptions']
   },
 
   // Chapter 5: NPO (Low Priority - 6% weightage)
@@ -365,6 +1116,55 @@ export const mcqPool: MCQ[] = [
     explanation: 'Income and Expenditure Account shows surplus (income > expenditure) or deficit.',
     relatedConcepts: ['Income and expenditure account', 'NPO final accounts']
   },
+  // Additional Chapter 5 Questions
+  {
+    id: 'C5_003',
+    chapter: 5,
+    topic: 'Balance Sheet of NPO',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'In NPO Balance Sheet, capital fund is:',
+    options: ['Liability', 'Asset', 'Revenue', 'Expense'],
+    correctAnswer: 0,
+    explanation: 'Capital fund in NPO Balance Sheet appears on the liabilities side.',
+    relatedConcepts: ['Balance sheet of NPO', 'Capital fund']
+  },
+  {
+    id: 'C5_004',
+    chapter: 5,
+    topic: 'Subscription Income',
+    difficulty: 'easy',
+    weightage: 2,
+    question: 'Subscription received in advance is:',
+    options: ['Income', 'Liability', 'Asset', 'Expense'],
+    correctAnswer: 1,
+    explanation: 'Subscription received in advance is a liability until earned.',
+    relatedConcepts: ['Subscription income', 'Advance income']
+  },
+  {
+    id: 'C5_005',
+    chapter: 5,
+    topic: 'Life Membership Fee',
+    difficulty: 'hard',
+    weightage: 2,
+    question: 'Life membership fee is treated as:',
+    options: ['Revenue income', 'Capital receipt', 'Liability', 'Expense'],
+    correctAnswer: 1,
+    explanation: 'Life membership fee is a capital receipt as it is received once for lifetime membership.',
+    relatedConcepts: ['Life membership fee', 'Capital receipt']
+  },
+  {
+    id: 'C5_006',
+    chapter: 5,
+    topic: 'Entrance Fees',
+    difficulty: 'medium',
+    weightage: 2,
+    question: 'Entrance fees received by NPO are:',
+    options: ['Revenue income', 'Capital receipt', 'Liability', 'Expense'],
+    correctAnswer: 1,
+    explanation: 'Entrance fees are capital receipts as they are received once at the time of admission.',
+    relatedConcepts: ['Entrance fees', 'Capital receipt']
+  },
 
   // Chapter 8: Debenture Redemption (Low Priority - 6% weightage)
   {
@@ -390,6 +1190,55 @@ export const mcqPool: MCQ[] = [
     correctAnswer: 0,
     explanation: 'Premium on redemption is a loss charged to Profit and Loss Account.',
     relatedConcepts: ['Premium on redemption', 'Debenture redemption loss']
+  },
+  // Additional Chapter 8 Questions
+  {
+    id: 'C8_003',
+    chapter: 8,
+    topic: 'Redemption by Purchase',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'When debentures are purchased in open market for redemption:',
+    options: ['Profit is credited to Profit and Loss Account', 'Profit is transferred to Capital Reserve', 'Loss is charged to Profit and Loss Account', 'No profit or loss'],
+    correctAnswer: 1,
+    explanation: 'Profit on purchase of own debentures is transferred to Capital Reserve.',
+    relatedConcepts: ['Redemption by purchase', 'Capital reserve']
+  },
+  {
+    id: 'C8_004',
+    chapter: 8,
+    topic: 'Redemption by Draw',
+    difficulty: 'medium',
+    weightage: 2,
+    question: 'In redemption by draw, selected debentures are redeemed at:',
+    options: ['Face value only', 'Premium only', 'Face value or premium', 'Market value'],
+    correctAnswer: 2,
+    explanation: 'In redemption by draw, selected debentures are redeemed at face value or premium as per terms.',
+    relatedConcepts: ['Redemption by draw', 'Debenture redemption']
+  },
+  {
+    id: 'C8_005',
+    chapter: 8,
+    topic: 'Redemption by Conversion',
+    difficulty: 'hard',
+    weightage: 3,
+    question: 'When debentures are converted into shares:',
+    options: ['No journal entry required', 'Debentures account is credited', 'Shares account is debited', 'Both B and C'],
+    correctAnswer: 3,
+    explanation: 'On conversion, debentures are cancelled and shares are issued.',
+    relatedConcepts: ['Redemption by conversion', 'Debenture conversion']
+  },
+  {
+    id: 'C8_006',
+    chapter: 8,
+    topic: 'Sinking Fund',
+    difficulty: 'hard',
+    weightage: 2,
+    question: 'Sinking fund investments are shown in Balance Sheet as:',
+    options: ['Current assets', 'Fixed assets', 'Investments', 'Current liabilities'],
+    correctAnswer: 2,
+    explanation: 'Sinking fund investments are shown under investments in Balance Sheet.',
+    relatedConcepts: ['Sinking fund', 'Investments']
   }
 ];
 

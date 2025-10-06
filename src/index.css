@@ -5,3 +5,8 @@
 @source "../components";
 @source "..";
 @source "../*.tsx";
+
+/* Progress bar styles */
+.progress-fill {
+  width: var(--progress-width, 0%);
+}
