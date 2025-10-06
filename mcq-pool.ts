@@ -1239,6 +1239,248 @@ export const mcqPool: MCQ[] = [
     correctAnswer: 2,
     explanation: 'Sinking fund investments are shown under investments in Balance Sheet.',
     relatedConcepts: ['Sinking fund', 'Investments']
+  },
+
+  // Chapter 10: Accounting Ratios (High Priority - 15% weightage)
+  {
+    id: 'C10_001',
+    chapter: 10,
+    topic: 'Current Ratio',
+    difficulty: 'easy',
+    weightage: 4,
+    question: 'Current Ratio of 2.5:1 indicates:',
+    options: ['Current Assets are 2.5 times Current Liabilities', 'Current Liabilities are 2.5 times Current Assets', 'Fixed Assets are 2.5 times Current Assets', 'Current Assets are 2.5 times Fixed Assets'],
+    correctAnswer: 0,
+    explanation: 'Current Ratio = Current Assets ÷ Current Liabilities. A ratio of 2.5:1 means Current Assets are 2.5 times Current Liabilities.',
+    relatedConcepts: ['Current ratio', 'Liquidity ratios']
+  },
+  {
+    id: 'C10_002',
+    chapter: 10,
+    topic: 'Quick Ratio',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Quick Ratio is also known as:',
+    options: ['Current Ratio', 'Acid-Test Ratio', 'Cash Ratio', 'Working Capital Ratio'],
+    correctAnswer: 1,
+    explanation: 'Quick Ratio is also called Acid-Test Ratio as it measures immediate liquidity excluding inventory.',
+    relatedConcepts: ['Quick ratio', 'Acid-test ratio']
+  },
+  {
+    id: 'C10_003',
+    chapter: 10,
+    topic: 'Debt-Equity Ratio',
+    difficulty: 'easy',
+    weightage: 4,
+    question: 'A Debt-Equity Ratio of 1:1 is considered:',
+    options: ['Highly risky', 'Conservative', 'Balanced', 'Aggressive'],
+    correctAnswer: 2,
+    explanation: 'A Debt-Equity Ratio of 1:1 indicates balanced capital structure with equal proportion of debt and equity.',
+    relatedConcepts: ['Debt-equity ratio', 'Capital structure']
+  },
+  {
+    id: 'C10_004',
+    chapter: 10,
+    topic: 'Gross Profit Ratio',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Gross Profit Ratio indicates:',
+    options: ['Overall profitability', 'Manufacturing efficiency', 'Operational efficiency', 'Return on investment'],
+    correctAnswer: 1,
+    explanation: 'Gross Profit Ratio shows manufacturing or trading efficiency by relating gross profit to sales.',
+    relatedConcepts: ['Gross profit ratio', 'Manufacturing efficiency']
+  },
+  {
+    id: 'C10_005',
+    chapter: 10,
+    topic: 'Net Profit Ratio',
+    difficulty: 'medium',
+    weightage: 4,
+    question: 'Net Profit Ratio is calculated as:',
+    options: ['Net Profit ÷ Sales × 100', 'Gross Profit ÷ Sales × 100', 'Net Profit ÷ Capital × 100', 'Sales ÷ Net Profit × 100'],
+    correctAnswer: 0,
+    explanation: 'Net Profit Ratio = (Net Profit ÷ Revenue from Operations) × 100',
+    relatedConcepts: ['Net profit ratio', 'Overall profitability']
+  },
+  {
+    id: 'C10_006',
+    chapter: 10,
+    topic: 'Inventory Turnover Ratio',
+    difficulty: 'hard',
+    weightage: 5,
+    question: 'If cost of goods sold is ₹6,00,000 and average inventory is ₹1,00,000, inventory turnover ratio is:',
+    options: ['6 times', '5 times', '7 times', '4 times'],
+    correctAnswer: 0,
+    explanation: 'Inventory Turnover Ratio = Cost of Goods Sold ÷ Average Inventory = ₹6,00,000 ÷ ₹1,00,000 = 6 times',
+    relatedConcepts: ['Inventory turnover ratio', 'Inventory management']
+  },
+  {
+    id: 'C10_007',
+    chapter: 10,
+    topic: 'Return on Investment',
+    difficulty: 'hard',
+    weightage: 5,
+    question: 'ROI is calculated as:',
+    options: ['Net Profit ÷ Capital Employed × 100', 'Profit before Interest & Tax ÷ Capital Employed × 100', 'Net Profit ÷ Sales × 100', 'Profit before Tax ÷ Sales × 100'],
+    correctAnswer: 1,
+    explanation: 'ROI = (Profit before Interest and Tax ÷ Capital Employed) × 100',
+    relatedConcepts: ['Return on investment', 'Capital employed']
+  },
+  {
+    id: 'C10_008',
+    chapter: 10,
+    topic: 'Current Assets Calculation',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Which of the following is NOT a current asset?',
+    options: ['Cash', 'Inventory', 'Debtors', 'Fixed Assets'],
+    correctAnswer: 3,
+    explanation: 'Fixed Assets are long-term assets, not current assets. Current assets include cash, inventory, debtors, etc.',
+    relatedConcepts: ['Current assets', 'Balance sheet classification']
+  },
+  {
+    id: 'C10_009',
+    chapter: 10,
+    topic: 'Proprietary Ratio',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Proprietary Ratio shows:',
+    options: ['Proportion of debt in financing', 'Proportion of equity in total assets', 'Proportion of current assets', 'Proportion of fixed assets'],
+    correctAnswer: 1,
+    explanation: 'Proprietary Ratio = Shareholders\' Funds ÷ Total Assets, showing proportion of assets financed by owners.',
+    relatedConcepts: ['Proprietary ratio', 'Equity financing']
+  },
+  {
+    id: 'C10_010',
+    chapter: 10,
+    topic: 'Interest Coverage Ratio',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Interest Coverage Ratio of 5 means:',
+    options: ['Company can pay interest 5 times', 'Profit is 5 times interest', 'Assets are 5 times liabilities', 'Sales are 5 times expenses'],
+    correctAnswer: 1,
+    explanation: 'Interest Coverage Ratio = Profit before Interest & Tax ÷ Interest. A ratio of 5 means profit is 5 times the interest expense.',
+    relatedConcepts: ['Interest coverage ratio', 'Debt servicing capacity']
+  },
+  {
+    id: 'C10_011',
+    chapter: 10,
+    topic: 'Working Capital Turnover Ratio',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Working Capital Turnover Ratio indicates:',
+    options: ['How many times working capital is turned over in sales', 'How many times sales exceed working capital', 'Efficiency of working capital utilization', 'All of the above'],
+    correctAnswer: 3,
+    explanation: 'Working Capital Turnover Ratio = Sales ÷ Working Capital, showing efficiency of working capital utilization.',
+    relatedConcepts: ['Working capital turnover', 'Working capital efficiency']
+  },
+  {
+    id: 'C10_012',
+    chapter: 10,
+    topic: 'Trade Receivables Turnover',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Higher Trade Receivables Turnover Ratio indicates:',
+    options: ['Poor collection efficiency', 'Good collection efficiency', 'High credit sales', 'Low credit sales'],
+    correctAnswer: 1,
+    explanation: 'Higher receivables turnover ratio indicates faster collection of receivables, hence better efficiency.',
+    relatedConcepts: ['Trade receivables turnover', 'Collection efficiency']
+  },
+  {
+    id: 'C10_013',
+    chapter: 10,
+    topic: 'Cash Ratio',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Cash Ratio is calculated as:',
+    options: ['Cash ÷ Current Liabilities', 'Cash + Bank ÷ Current Liabilities', 'Cash + Bank + Marketable Securities ÷ Current Liabilities', 'Cash + Receivables ÷ Current Liabilities'],
+    correctAnswer: 2,
+    explanation: 'Cash Ratio = (Cash + Bank + Marketable Securities) ÷ Current Liabilities',
+    relatedConcepts: ['Cash ratio', 'Absolute liquid ratio']
+  },
+  {
+    id: 'C10_014',
+    chapter: 10,
+    topic: 'Return on Equity',
+    difficulty: 'hard',
+    weightage: 5,
+    question: 'ROE is calculated as:',
+    options: ['Net Profit ÷ Sales × 100', 'Net Profit ÷ Shareholders\' Funds × 100', 'Profit before Tax ÷ Shareholders\' Funds × 100', 'Net Profit ÷ Total Assets × 100'],
+    correctAnswer: 1,
+    explanation: 'ROE = (Net Profit after Tax ÷ Shareholders\' Funds) × 100',
+    relatedConcepts: ['Return on equity', 'Shareholders\' return']
+  },
+  {
+    id: 'C10_015',
+    chapter: 10,
+    topic: 'Operating Ratio',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'Operating Ratio is calculated as:',
+    options: ['Operating Cost ÷ Sales × 100', 'Operating Profit ÷ Sales × 100', 'Cost of Goods Sold ÷ Sales × 100', 'Total Expenses ÷ Sales × 100'],
+    correctAnswer: 0,
+    explanation: 'Operating Ratio = (Operating Cost ÷ Revenue from Operations) × 100. Lower ratio indicates better operational efficiency.',
+    relatedConcepts: ['Operating ratio', 'Operational efficiency']
+  },
+  {
+    id: 'C10_016',
+    chapter: 10,
+    topic: 'Fixed Assets Turnover',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Fixed Assets Turnover Ratio measures:',
+    options: ['Efficiency in using fixed assets', 'Liquidity of the firm', 'Profitability of fixed assets', 'Solvency of the firm'],
+    correctAnswer: 0,
+    explanation: 'Fixed Assets Turnover = Revenue from Operations ÷ Fixed Assets, measuring efficiency in utilizing fixed assets.',
+    relatedConcepts: ['Fixed assets turnover', 'Asset utilization']
+  },
+  {
+    id: 'C10_017',
+    chapter: 10,
+    topic: 'Trade Payables Turnover',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'Trade Payables Turnover Ratio indicates:',
+    options: ['How quickly company pays suppliers', 'How quickly company collects from customers', 'How efficiently inventory is managed', 'How profitable the operations are'],
+    correctAnswer: 0,
+    explanation: 'Trade Payables Turnover = Net Credit Purchases ÷ Average Trade Payables, showing payment period to suppliers.',
+    relatedConcepts: ['Trade payables turnover', 'Payment efficiency']
+  },
+  {
+    id: 'C10_018',
+    chapter: 10,
+    topic: 'Earnings Per Share',
+    difficulty: 'hard',
+    weightage: 4,
+    question: 'EPS is calculated as:',
+    options: ['Net Profit ÷ Number of Shares', 'Net Profit available to Equity Shareholders ÷ Number of Equity Shares', 'Total Profit ÷ Number of Shares', 'Profit before Tax ÷ Number of Shares'],
+    correctAnswer: 1,
+    explanation: 'EPS = Net Profit available to Equity Shareholders ÷ Number of Equity Shares Outstanding',
+    relatedConcepts: ['Earnings per share', 'Share value']
+  },
+  {
+    id: 'C10_019',
+    chapter: 10,
+    topic: 'Ratio Analysis Interpretation',
+    difficulty: 'medium',
+    weightage: 3,
+    question: 'A current ratio of 3:1 indicates:',
+    options: ['Very poor liquidity', 'Excellent liquidity', 'Ideal liquidity', 'Dangerous liquidity'],
+    correctAnswer: 1,
+    explanation: 'A current ratio of 3:1 indicates excellent liquidity as current assets are 3 times current liabilities.',
+    relatedConcepts: ['Ratio interpretation', 'Liquidity analysis']
+  },
+  {
+    id: 'C10_020',
+    chapter: 10,
+    topic: 'Comparative Analysis',
+    difficulty: 'easy',
+    weightage: 2,
+    question: 'Ratio analysis helps in:',
+    options: ['Only calculating ratios', 'Comparing with industry standards', 'Only preparing financial statements', 'Only tax calculations'],
+    correctAnswer: 1,
+    explanation: 'Ratio analysis helps in comparing company performance with industry standards, past performance, and competitors.',
+    relatedConcepts: ['Comparative analysis', 'Ratio analysis']
   }
 ];
 
@@ -1253,14 +1495,15 @@ export const getMCQsByDifficulty = (difficulty: 'easy' | 'medium' | 'hard'): MCQ
 export const getWeightedRandomMCQs = (count: number = 20): MCQ[] => {
   // Weight distribution based on chapter importance
   const weights = {
-    2: 0.24, // 24% - High priority
-    3: 0.16, // 16% - High priority
-    6: 0.14, // 14% - High priority
-    9: 0.12, // 12% - Medium priority
-    4: 0.10, // 10% - Medium priority
-    7: 0.08, // 8% - Medium priority
-    5: 0.06, // 6% - Low priority
-    8: 0.06, // 6% - Low priority
+    2: 0.20, // 20% - High priority (Partnership)
+    3: 0.14, // 14% - High priority (Partnership)
+    6: 0.12, // 12% - High priority (Company)
+    10: 0.12, // 12% - High priority (Ratios)
+    9: 0.10, // 10% - Medium priority
+    4: 0.08, // 8% - Medium priority
+    7: 0.07, // 7% - Medium priority
+    5: 0.05, // 5% - Low priority
+    8: 0.05, // 5% - Low priority
     1: 0.04  // 4% - Low priority
   };
 
@@ -1285,4 +1528,54 @@ export const getWeightedRandomMCQs = (count: number = 20): MCQ[] => {
   }
 
   return selectedMCQs.slice(0, count);
+};
+
+export const getCustomChapterMCQs = (selectedChapters: number[], totalCount: number): MCQ[] => {
+  if (selectedChapters.length === 0) {
+    return getWeightedRandomMCQs(totalCount);
+  }
+
+  const selectedMCQs: MCQ[] = [];
+  const questionsPerChapter = Math.floor(totalCount / selectedChapters.length);
+  const remainder = totalCount % selectedChapters.length;
+
+  selectedChapters.forEach((chapter, index) => {
+    const chapterMCQs = getMCQsByChapter(chapter);
+    const targetCount = questionsPerChapter + (index < remainder ? 1 : 0);
+
+    // Randomly select MCQs from this chapter
+    const shuffled = [...chapterMCQs].sort(() => 0.5 - Math.random());
+    selectedMCQs.push(...shuffled.slice(0, Math.min(targetCount, chapterMCQs.length)));
+  });
+
+  // Fill remaining slots with random MCQs from selected chapters if needed
+  while (selectedMCQs.length < totalCount) {
+    const randomChapter = selectedChapters[Math.floor(Math.random() * selectedChapters.length)];
+    const chapterMCQs = getMCQsByChapter(randomChapter);
+    const availableMCQs = chapterMCQs.filter(mcq => !selectedMCQs.find(selected => selected.id === mcq.id));
+
+    if (availableMCQs.length > 0) {
+      const randomMCQ = availableMCQs[Math.floor(Math.random() * availableMCQs.length)];
+      selectedMCQs.push(randomMCQ);
+    } else {
+      break; // No more questions available in selected chapters
+    }
+  }
+
+  return selectedMCQs.slice(0, totalCount);
+};
+
+export const getChapterInfo = () => {
+  return {
+    1: { name: 'Theory', weightage: 4, priority: 'Low' },
+    2: { name: 'Partnership Fundamentals', weightage: 20, priority: 'High' },
+    3: { name: 'Partnership Reconstitution', weightage: 14, priority: 'High' },
+    4: { name: 'Dissolution', weightage: 8, priority: 'Medium' },
+    5: { name: 'NPO', weightage: 5, priority: 'Low' },
+    6: { name: 'Issue of Shares', weightage: 12, priority: 'High' },
+    7: { name: 'Debentures', weightage: 7, priority: 'Medium' },
+    8: { name: 'Debenture Redemption', weightage: 5, priority: 'Low' },
+    9: { name: 'Financial Analysis', weightage: 10, priority: 'Medium' },
+    10: { name: 'Accounting Ratios', weightage: 12, priority: 'High' }
+  };
 };

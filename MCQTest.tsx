@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MCQ, mcqPool, getWeightedRandomMCQs } from './mcq-pool';
+import { MCQ, mcqPool, getWeightedRandomMCQs, getCustomChapterMCQs, getChapterInfo } from './mcq-pool';
 import { MCQAnalyzer, TestResult } from './mcq-analyzer';
 
 interface MCQTestProps {
@@ -20,6 +20,13 @@ export const MCQTest: React.FC<MCQTestProps> = ({
   const [testResult, setTestResult] = useState<TestResult | null>(null);
   const [timeRemaining, setTimeRemaining] = useState(30 * 60); // 30 minutes in seconds
   const [testStarted, setTestStarted] = useState(false);
+
+  // Customization states
+  const [selectedQuestionCount, setSelectedQuestionCount] = useState<number>(20);
+  const [selectedChapters, setSelectedChapters] = useState<number[]>([]);
+  const [showCustomization, setShowCustomization] = useState(true);
+
+  const chapterInfo = getChapterInfo();
 
   useEffect(() => {
     // Generate weighted test questions
@@ -75,34 +82,203 @@ export const MCQTest: React.FC<MCQTestProps> = ({
     }
   };
 
+  const handleChapterToggle = (chapter: number) => {
+    setSelectedChapters(prev =>
+      prev.includes(chapter)
+        ? prev.filter(c => c !== chapter)
+        : [...prev, chapter]
+    );
+  };
+
   const startTest = () => {
+    // Generate questions based on customization
+    const testQuestions = selectedChapters.length > 0
+      ? getCustomChapterMCQs(selectedChapters, selectedQuestionCount)
+      : getWeightedRandomMCQs(selectedQuestionCount);
+
+    setQuestions(testQuestions);
     setTestStarted(true);
+    setShowCustomization(false);
+  };
+
+  const resetCustomization = () => {
+    setSelectedQuestionCount(20);
+    setSelectedChapters([]);
+    setShowCustomization(true);
+    setTestStarted(false);
+    setShowResults(false);
+    setCurrentQuestion(0);
+    setAnswers({});
+    setTimeRemaining(30 * 60);
   };
 
   if (!testStarted) {
     return (
-      <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-center mb-6">CBSE Accountancy MCQ Test</h2>
-        <div className="text-center mb-6">
-          <p className="text-lg mb-2">Welcome, {studentName}!</p>
-          <p className="text-gray-600 mb-4">This test contains {questionCount} questions based on exam weightage</p>
-          <div className="bg-blue-50 p-4 rounded-lg mb-4">
-            <h3 className="font-semibold mb-2">Test Instructions:</h3>
-            <ul className="text-sm text-left space-y-1">
-              <li>• Total time: 30 minutes</li>
-              <li>• Each question carries 1 mark</li>
-              <li>• No negative marking</li>
-              <li>• Questions are weighted by chapter importance</li>
-              <li>• You can navigate between questions</li>
-            </ul>
+
+        {showCustomization ? (
+          <div className="space-y-6">
+            <div className="text-center mb-6">
+              <p className="text-lg mb-2">Welcome, {studentName}!</p>
+              <p className="text-gray-600">Customize your test settings below</p>
+            </div>
+
+            {/* Question Count Selection */}
+            <div className="bg-blue-50 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold mb-4">📊 Number of Questions</h3>
+              <div className="flex justify-center space-x-4">
+                {[10, 20, 50].map(count => (
+                  <button
+                    key={count}
+                    onClick={() => setSelectedQuestionCount(count)}
+                    className={`px-6 py-3 rounded-lg font-semibold transition-colors ${
+                      selectedQuestionCount === count
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50'
+                    }`}
+                  >
+                    {count} Questions
+                  </button>
+                ))}
+              </div>
+              <p className="text-sm text-gray-600 mt-2 text-center">
+                Selected: {selectedQuestionCount} questions
+              </p>
+            </div>
+
+            {/* Chapter Selection */}
+            <div className="bg-green-50 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold mb-4">📚 Chapter Selection</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                Select specific chapters to focus on (leave empty for exam-weighted selection)
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {Object.entries(chapterInfo).map(([chapterNum, info]) => {
+                  const chapter = parseInt(chapterNum);
+                  const isSelected = selectedChapters.includes(chapter);
+                  const questionCount = mcqPool.filter(q => q.chapter === chapter).length;
+
+                  return (
+                    <div
+                      key={chapter}
+                      className={`border-2 rounded-lg p-4 cursor-pointer transition-all ${
+                        isSelected
+                          ? 'border-green-500 bg-green-100'
+                          : 'border-gray-300 hover:border-green-300'
+                      }`}
+                      onClick={() => handleChapterToggle(chapter)}
+                    >
+                      <div className="flex items-start space-x-3">
+                        <input
+                          type="checkbox"
+                          id={`chapter-${chapter}`}
+                          checked={isSelected}
+                          onChange={() => handleChapterToggle(chapter)}
+                          className="mt-1 w-4 h-4 text-green-600"
+                        />
+                        <label htmlFor={`chapter-${chapter}`} className="flex-1 cursor-pointer">
+                          <h4 className="font-semibold">Chapter {chapter}</h4>
+                          <p className="text-sm text-gray-600">{info.name}</p>
+                          <div className="flex justify-between items-center mt-2">
+                            <span className={`text-xs px-2 py-1 rounded ${
+                              info.priority === 'High' ? 'bg-red-100 text-red-800' :
+                              info.priority === 'Medium' ? 'bg-yellow-100 text-yellow-800' :
+                              'bg-gray-100 text-gray-800'
+                            }`}>
+                              {info.priority} Priority
+                            </span>
+                            <span className="text-xs text-gray-500">
+                              {questionCount} questions
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-1">
+                            Weightage: {info.weightage}%
+                          </p>
+                        </label>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {selectedChapters.length > 0 && (
+                <div className="mt-4 p-3 bg-green-200 rounded-lg">
+                  <p className="text-sm font-medium">
+                    Selected Chapters: {selectedChapters.sort().join(', ')}
+                  </p>
+                  <p className="text-xs text-gray-700 mt-1">
+                    Questions will be distributed evenly across selected chapters
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* Test Summary */}
+            <div className="bg-purple-50 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold mb-4">📋 Test Summary</h3>
+              <div className="grid grid-cols-2 gap-4 text-center">
+                <div>
+                  <p className="text-2xl font-bold text-purple-600">{selectedQuestionCount}</p>
+                  <p className="text-sm text-gray-600">Questions</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-purple-600">
+                    {selectedChapters.length > 0 ? selectedChapters.length : 'All'}
+                  </p>
+                  <p className="text-sm text-gray-600">Chapters</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Instructions */}
+            <div className="bg-yellow-50 p-4 rounded-lg">
+              <h3 className="font-semibold mb-2">Test Instructions:</h3>
+              <ul className="text-sm space-y-1">
+                <li>• Total time: 30 minutes</li>
+                <li>• Each question carries 1 mark</li>
+                <li>• No negative marking</li>
+                <li>• Questions are randomized each test</li>
+                <li>• You can navigate between questions</li>
+              </ul>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="text-center space-x-4">
+              <button
+                onClick={startTest}
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                Start Test
+              </button>
+              <button
+                onClick={resetCustomization}
+                className="bg-gray-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors"
+              >
+                Reset Settings
+              </button>
+            </div>
           </div>
-          <button
-            onClick={startTest}
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-          >
-            Start Test
-          </button>
-        </div>
+        ) : (
+          <div className="text-center">
+            <p className="text-lg mb-4">Ready to start your customized test?</p>
+            <div className="space-x-4">
+              <button
+                onClick={startTest}
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700"
+              >
+                Start Test
+              </button>
+              <button
+                onClick={() => setShowCustomization(true)}
+                className="bg-gray-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-600"
+              >
+                Change Settings
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
@@ -212,6 +388,7 @@ export const MCQTest: React.FC<MCQTestProps> = ({
       <div className="w-full bg-gray-200 rounded-full h-2 mb-6">
         <div
           className="bg-blue-600 h-2 rounded-full transition-all duration-300 progress-fill"
+          // eslint-disable-next-line react/style-prop-object
           style={{ '--progress-width': `${((currentQuestion + 1) / questions.length) * 100}%` } as React.CSSProperties}
         />
       </div>
