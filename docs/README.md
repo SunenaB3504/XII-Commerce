@@ -4,7 +4,17 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 
 ## 📚 Documentation Overview
 
-**Latest Update (v1.2.0)**: Official CBSE Marking Scheme integration for Accountancy Sample Paper 2025-26 with comprehensive solutions, professional table formatting, and visibility improvements.
+**Latest Update (v2.0.0)**: Complete MCQ Assessment System with 120 questions, customizable testing, and comprehensive analytics for CBSE Accountancy exam preparation.
+
+### 📊 [MCQ Assessment System](./assessment-system.md)
+**Complete testing platform with advanced features**
+- 120 comprehensive MCQ questions across 10 Accountancy chapters
+- Customizable test settings (10/20/50 questions, chapter selection)
+- Weighted randomization based on exam importance
+- Real-time progress tracking and detailed analytics
+- Performance analysis with personalized recommendations
+- Test history and progress monitoring
+- Technical architecture and implementation details
 
 ### 📋 [Architecture Overview](./architecture.md)
 **Essential for understanding the technical foundation**
@@ -100,6 +110,12 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 4. **Apply Design**: [Design System](./design-system.md)
 5. **Test Locally**: [Setup & Deployment Guide](./setup-deployment.md)
 
+### For Students & Educators
+1. **Start Testing**: [MCQ Assessment System](./assessment-system.md)
+2. **Understand Content**: [Data Structure](./data-structure.md)
+3. **Explore Learning**: [Learning Content Generation Guide](./learning-content-guide.md)
+4. **Navigation Help**: [Visual Design Reference](./visual-design-reference.md)
+
 ### For UI/UX Designers
 1. **Design Principles**: [Design System](./design-system.md)
 2. **Component Patterns**: [Visual Design Reference](./visual-design-reference.md)
@@ -156,6 +172,7 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 ## 🔍 Quick Reference
 
 ### By Topic
+- **Assessment & Testing** → [MCQ Assessment System](./assessment-system.md)
 - **Architecture & Tech Stack** → [Architecture Overview](./architecture.md)
 - **Visual Design & UI** → [Design System](./design-system.md), [Visual Design Reference](./visual-design-reference.md)
 - **Components & Patterns** → [Visual Design Reference](./visual-design-reference.md)
@@ -166,19 +183,21 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 ### By Role
 | Role | Start With |
 |------|-----------|
+| **Students** | Assessment System → Visual Design Reference |
 | **Developer** | Architecture → Development → Visual Reference |
 | **Designer** | Design System → Visual Reference |
 | **Content Writer** | Data Structure → Content Contribution |
 | **DevOps** | Setup & Deployment → Architecture |
+| **Educators** | Assessment System → Data Structure |
 
 ---
 
 ## 📊 Documentation Stats
 
-- **Total Documents**: 7 comprehensive guides
-- **Coverage**: Architecture, Design, Development, Content, Deployment
-- **Last Major Update**: January 2025 (v1.2.0 - CBSE Marking Scheme Integration)
-- **Version**: 1.2
+- **Total Documents**: 8 comprehensive guides
+- **Coverage**: Assessment, Architecture, Design, Development, Content, Deployment
+- **Last Major Update**: October 2025 (v2.0.0 - MCQ Assessment System)
+- **Version**: 2.0
 
 ---
 
@@ -206,7 +225,7 @@ This application serves **CBSE Class XII Commerce students**. All decisions shou
 
 ---
 
-**Last Updated:** January 2025
+**Last Updated:** October 2025
 
 **For contributions**: Follow the guides above and submit a pull request!
 
