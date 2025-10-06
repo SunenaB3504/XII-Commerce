@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
       base: mode === 'production' ? '/XII-Commerce/' : '/',
       server: {
         port: 3000,
-        host: '0.0.0.0',
+        host: true,
       },
       plugins: [react()],
       define: {

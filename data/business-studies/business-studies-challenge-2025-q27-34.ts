@@ -4,121 +4,45 @@ import React from 'react';
 export const challengeQuestions27to34: ChallengeQuestion[] = [
   {
     id: '27',
-    marks: 6,
+    marks: 4,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Prepare a comparative statement showing the increase or decrease in assets, liabilities, and capital between two years. The balances of assets and liabilities as at March 31, 2023 and March 31, 2024 are as follows:"),
-      React.createElement("div", { className: "mt-4 bg-gray-50 p-4 rounded" },
-        React.createElement("table", { className: "border-collapse border border-gray-300 w-full text-sm" },
-          React.createElement("thead", null,
-            React.createElement("tr", { className: "bg-gray-100" },
-              React.createElement("th", { className: "border border-gray-300 p-2 text-left font-bold text-gray-900" }, "Particulars"),
-              React.createElement("th", { className: "border border-gray-300 p-2 text-right font-bold text-gray-900" }, "2023 (₹)"),
-              React.createElement("th", { className: "border border-gray-300 p-2 text-right font-bold text-gray-900" }, "2024 (₹)")
-            )
-          ),
-          React.createElement("tbody", null,
-            React.createElement("tr", null,
-              React.createElement("td", { className: "border border-gray-300 p-2" }, "Fixed Assets"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "8,00,000"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "10,00,000")
-            ),
-            React.createElement("tr", null,
-              React.createElement("td", { className: "border border-gray-300 p-2" }, "Current Assets"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "4,00,000"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "5,00,000")
-            ),
-            React.createElement("tr", null,
-              React.createElement("td", { className: "border border-gray-300 p-2 font-semibold bg-gray-50 text-gray-900" }, "Total Assets"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right font-semibold bg-gray-50 text-gray-900" }, "12,00,000"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right font-semibold bg-gray-50 text-gray-900" }, "15,00,000")
-            ),
-            React.createElement("tr", null,
-              React.createElement("td", { className: "border border-gray-300 p-2" }, "Current Liabilities"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "3,00,000"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "4,00,000")
-            ),
-            React.createElement("tr", null,
-              React.createElement("td", { className: "border border-gray-300 p-2" }, "Capital"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "9,00,000"),
-              React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "11,00,000")
-            )
-          )
-        )
-      )
+      React.createElement("p", { className: "font-semibold" }, "The Marketing Research Manager of 'Trendy Textiles' has been assigned the task of analysing the influence of Generation Z on fashion trends. On studying the forces that affect business, he observed that increased awareness amongst Generation Z, with respect to, environmental protection, preference of individuality over trends, rejection of traditional norms in clothing, greater use of social media have increased the demand for sustainable and innovative styles in clothing, 'Do It Yourself' (DIY) products, promotion of products on various social media platforms by companies."),
+      React.createElement("p", { className: "mt-2" }, "a) In context of the above case, identify and explain the feature of the business environment highlighted above."),
+      React.createElement("p", null, "b) Explain any two features of the business environment, apart from the one identified in part a).")
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold" }, "Comparative Balance Sheet"),
-      React.createElement("table", { className: "border-collapse border border-gray-300 w-full mt-4 text-sm" },
-        React.createElement("thead", null,
-          React.createElement("tr", { className: "bg-gray-100" },
-            React.createElement("th", { className: "border border-gray-300 p-2 text-left font-bold text-gray-900" }, "Particulars"),
-            React.createElement("th", { className: "border border-gray-300 p-2 text-right font-bold text-gray-900" }, "2023 (₹)"),
-            React.createElement("th", { className: "border border-gray-300 p-2 text-right font-bold text-gray-900" }, "2024 (₹)"),
-            React.createElement("th", { className: "border border-gray-300 p-2 text-right font-bold text-gray-900" }, "Increase/Decrease (₹)"),
-            React.createElement("th", { className: "border border-gray-300 p-2 text-right font-bold text-gray-900" }, "%")
-          )
+      React.createElement("h4", { className: "font-bold" }, "Answer:"),
+      React.createElement("p", { className: "mb-2" }, "a) The feature of the business environment highlighted in the case is "),
+      React.createElement("b", null, "Interrelatedness."),
+      React.createElement("p", { className: "mt-2" }, "Different elements or parts of the business environment are closely interrelated. For example, increased awareness amongst Generation Z regarding environmental protection has increased the demand for sustainable clothing. This change in social values (social environment) has influenced consumer preferences and created demand for eco-friendly products, which in turn affects business strategies and product development."),
+      React.createElement("p", { className: "mt-2" }, "b) Any two other features of the business environment are:"),
+      React.createElement("ol", { className: "list-decimal pl-5 mt-2 space-y-3" },
+        React.createElement("li", null,
+          React.createElement("b", null, "Dynamic nature:"),
+          " Business environment is dynamic as it keeps on changing due to technological improvements, shifts in consumer preferences, or entry of new competition in the market. Businesses need to continuously adapt to these changes."
         ),
-        React.createElement("tbody", null,
-          React.createElement("tr", null,
-            React.createElement("td", { className: "border border-gray-300 p-2 font-semibold" }, "Fixed Assets"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "8,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "10,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "2,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "25.00")
-          ),
-          React.createElement("tr", null,
-            React.createElement("td", { className: "border border-gray-300 p-2 font-semibold" }, "Current Assets"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "4,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "5,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "1,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "25.00")
-          ),
-          React.createElement("tr", null,
-            React.createElement("td", { className: "border border-gray-300 p-2 font-bold bg-gray-50 text-gray-900" }, "Total Assets"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right font-bold bg-gray-50 text-gray-900" }, "12,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right font-bold bg-gray-50 text-gray-900" }, "15,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right font-bold bg-gray-50 text-gray-900" }, "3,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right font-bold bg-gray-50 text-gray-900" }, "25.00")
-          ),
-          React.createElement("tr", null,
-            React.createElement("td", { className: "border border-gray-300 p-2 font-semibold" }, "Current Liabilities"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "3,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "4,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "1,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right" }, "33.33")
-          ),
-          React.createElement("tr", null,
-            React.createElement("td", { className: "border border-gray-300 p-2 font-bold bg-green-50 text-gray-900" }, "Capital"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right font-bold bg-green-50 text-gray-900" }, "9,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right font-bold bg-green-50 text-gray-900" }, "11,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right font-bold bg-green-50 text-gray-900" }, "2,00,000"),
-            React.createElement("td", { className: "border border-gray-300 p-2 text-right font-bold bg-green-50 text-gray-900" }, "22.22")
-          )
+        React.createElement("li", null,
+          React.createElement("b", null, "Uncertainty:"),
+          " Business environment is largely uncertain as it is very difficult to predict future happenings, especially when environmental changes are taking place too frequently. This uncertainty makes planning challenging for businesses."
         )
       )
     ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4" }, "Working Notes"),
-      React.createElement("ol", { className: "list-decimal pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Percentage change = (New figure - Old figure) / Old figure × 100"),
-        React.createElement("li", null, "Fixed Assets: (10,00,000 - 8,00,000) / 8,00,000 × 100 = 25%"),
-        React.createElement("li", null, "Current Assets: (5,00,000 - 4,00,000) / 4,00,000 × 100 = 25%"),
-        React.createElement("li", null, "Current Liabilities: (4,00,000 - 3,00,000) / 3,00,000 × 100 = 33.33%"),
-        React.createElement("li", null, "Capital: (11,00,000 - 9,00,000) / 9,00,000 × 100 = 22.22%")
-      )
+      React.createElement("h4", { className: "font-bold text-lg mt-4" }, "Detailed Solution"),
+      React.createElement("p", null, "The case shows how changes in social values (Generation Z preferences) interrelate with business strategies, product development, and marketing approaches. The dynamic and uncertain nature of business environment further complicates decision-making for businesses.")
     ),
     challengeData: {
       year: 2025,
       paperType: 'main',
-      difficulty: 'hard',
-      topic: 'Financial Analysis',
-      bloomLevel: 'applying',
-      estimatedTime: 480,
+      difficulty: 'medium',
+      topic: 'Business Environment',
+      bloomLevel: 'analyzing',
+      estimatedTime: 180,
       markingTips: [
-        "Prepare comparative statement with all columns",
-        "Calculate absolute change (increase/decrease)",
-        "Calculate percentage change correctly",
-        "Show working notes for percentage calculations"
+        "Identify interrelatedness correctly",
+        "Explain with reference to the case",
+        "Explain any two other features clearly",
+        "Use examples where appropriate"
       ]
     }
   },

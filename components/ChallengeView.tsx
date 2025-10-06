@@ -119,7 +119,7 @@ const ChallengeView: React.FC<ChallengeViewProps> = ({
         <div className="bg-slate-200 rounded-full h-4 overflow-hidden">
           <div
             className="bg-gradient-to-r from-red-500 to-pink-500 h-full transition-all duration-300"
-            style={{ width: `${(answeredQuestions / paper.questions.length) * 100}%` }}
+            style={{ width: `${(answeredQuestions / paper.questions.length) * 100}%` }} // eslint-disable-line react/style-prop-object
           ></div>
         </div>
         <p className="text-sm text-slate-600 mt-2 text-center">

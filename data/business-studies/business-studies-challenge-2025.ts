@@ -1,8 +1,8 @@
 import { ChallengePaper } from '../../types';
 import React from 'react';
-import { challengeQuestions17to22 } from './business-studies-challenge-2025-q17-22';
-import { challengeQuestions23to26 } from './business-studies-challenge-2025-q23-26';
-import { challengeQuestions27to34 } from './business-studies-challenge-2025-q27-34';
+import { challengeQuestions17to22 } from './business-studies-challenge-2025-q17-22.ts';
+import { challengeQuestions23to26 } from './business-studies-challenge-2025-q23-26.ts';
+import { challengeQuestions27to34 } from './business-studies-challenge-2025-q27-34.ts';
 
 export const businessStudiesChallenge2025: ChallengePaper = {
   name: 'CBSE Business Studies Challenge 2025 (Main Exam)',
@@ -110,10 +110,10 @@ export const businessStudiesChallenge2025: ChallengePaper = {
           React.createElement("li", null, "d) Statement II is true, Statement I is false.")
         )
       ),
-      solution: React.createElement("p", { className: "font-bold text-green-700" }, "a) Both the statements are true."),
+      solution: React.createElement("p", { className: "font-bold text-green-700" }, "d) Statement II is true, Statement I is false."),
       explanation: React.createElement(React.Fragment, null,
         React.createElement("h4", { className: "font-bold text-lg mt-4" }, "Explanation"),
-        React.createElement("p", null, "Both statements are correct. Values are indeed basic truths formed after research in work situations, and they cannot be neglected while practicing management principles as organizations must fulfill social and ethical responsibilities.")
+        React.createElement("p", null, "Statement I is false because values are formed through experience, practice, and culture, not through research in work situations. Statement II is true because values cannot be neglected while practicing management principles as organizations must fulfill social and ethical responsibilities.")
       ),
       challengeData: {
         year: 2025,
@@ -462,10 +462,10 @@ export const businessStudiesChallenge2025: ChallengePaper = {
           React.createElement("li", null, "d) Dividend decision")
         )
       ),
-      solution: React.createElement("p", { className: "font-bold text-green-700" }, "b) Financing decision"),
+      solution: React.createElement("p", { className: "font-bold text-green-700" }, "a) Long term investment decision"),
       explanation: React.createElement(React.Fragment, null,
         React.createElement("h4", { className: "font-bold text-lg mt-4" }, "Explanation"),
-        React.createElement("p", null, "The decision to spend ₹150 crores on an advertising campaign involves deciding how to finance this expenditure, which is a financing decision.")
+        React.createElement("p", null, "The decision to spend ₹150 crores on an advertising campaign is a long-term investment decision because advertising campaigns are strategic investments that build brand value and generate long-term benefits for the company.")
       ),
       challengeData: {
         year: 2025,

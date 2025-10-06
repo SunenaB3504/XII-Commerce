@@ -21,10 +21,10 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ currentMode, onSetMode, sho
           }`}
         >
           <div className="flex flex-col items-center gap-2">
-            <span className="text-3xl">🎮</span>
-            <span>Challenge Mode</span>
-            <span className="text-xs font-semibold opacity-90">Test Your Skills!</span>
-            {currentMode === 'papers' && <span className="text-xl animate-bounce">⚡</span>}
+            <span className="text-3xl">📄</span>
+            <span>Question Papers</span>
+            <span className="text-xs font-semibold opacity-90">Browse & Practice!</span>
+            {currentMode === 'papers' && <span className="text-xl animate-bounce">📖</span>}
           </div>
         </button>
 
@@ -56,7 +56,7 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ currentMode, onSetMode, sho
         >
           <div className="flex flex-col items-center gap-2">
             <span className="text-3xl">⚡</span>
-            <span>True Challenge</span>
+            <span>Challenge Mode</span>
             <span className="text-xs font-semibold opacity-90">Timed SQP Tests!</span>
             {currentMode === 'challenge' && <span className="text-xl animate-bounce">🔥</span>}
           </div>

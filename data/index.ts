@@ -14,6 +14,10 @@ import { businessStudiesBoardExam66_7_3 } from './business-studies/board-exam-66
 import { businessStudiesBoardExam66_5_3 } from './business-studies/board-exam-66-5-3';
 import { businessStudiesBoardExam66_5_3_Term2 } from './business-studies/board-exam-66-5-3-term2';
 import { businessStudiesChallenge2025 } from './business-studies/business-studies-challenge-2025';
+import { businessStudiesChallenge2024 } from './business-studies/business-studies-challenge-2024';
+import { businessStudiesChallenge2023 } from './business-studies/business-studies-challenge-2023';
+import { businessStudiesChallenge2022 } from './business-studies/business-studies-challenge-2022';
+import { businessStudiesChallenge2021 } from './business-studies/business-studies-challenge-2021';
 import { economicsSamplePaper2025 } from './economics/sample-paper-2025';
 import { economicsBoardExam58_5_1_term } from './economics/board-exam-58-5-1-term';
 import { economicsBoardExam58_5_3 } from './economics/board-exam-58-5-3';
@@ -44,6 +48,10 @@ export const subjects: Subject[] = [
     name: 'Business Studies', 
     questionPapers: [
       businessStudiesChallenge2025,
+      businessStudiesChallenge2024,
+      businessStudiesChallenge2023,
+      businessStudiesChallenge2022,
+      businessStudiesChallenge2021,
       businessStudiesSamplePaper2025, 
       businessStudiesBoardExam66_1_1,
       businessStudiesBoardExam66_1_2,

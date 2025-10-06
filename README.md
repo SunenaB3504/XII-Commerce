@@ -13,9 +13,9 @@ A comprehensive study tool for CBSE Class XII Commerce students, featuring inter
 - **Complete Question Presentation**: Includes all multiple choice options, OR parts, and detailed financial data exactly as published by CBSE
 - **Official Solutions**: Comprehensive solutions following official CBSE marking schemes with proper accounting formats
 
-### Latest Updates (v1.3.0)
-- ✅ **Challenge Mode Launch**: Interactive timed testing system for Business Studies with authentic CBSE SQP and MS content from 2021-2025
-- ✅ **Modular Challenge Content**: 2025 Business Studies challenge paper with 34 questions, organized in modular batch files
+### Latest Updates (v1.4.0)
+- ✅ **Complete Challenge Mode**: Interactive timed testing system for Business Studies with authentic CBSE SQP and MS content from all 5 years (2021-2025)
+- ✅ **Full Challenge Content Library**: 5 complete challenge papers with 34 questions each, organized in modular batch files
 - ✅ **Advanced Scoring System**: Comprehensive evaluation with performance analytics, recommendations, and detailed feedback
 - ✅ **Interactive Testing Experience**: 3-hour timed sessions with progress tracking, answer submission, and solution reveal
 - ✅ **Official CBSE Marking Scheme Integration**: Accountancy Sample Paper 2025-26 updated with comprehensive solutions from official CBSE marking scheme
@@ -77,8 +77,10 @@ XII-Commerce/
 │   │   ├── sample-paper-2025.ts         # Main file
 │   │   ├── sample-paper-2025-q17-20.ts  # Modular batch files
 │   │   ├── sample-paper-2025-q21-22.ts  # (for large papers 30+ questions)
-│   │   ├── [subject]-challenge-2025.ts  # Challenge Mode papers
+│   │   ├── [subject]-challenge-2025.ts  # Challenge Mode papers (2021-2025)
 │   │   ├── q17-22.ts                    # Challenge question batches
+│   │   ├── q23-26.ts                    # Challenge question batches
+│   │   ├── q27-34.ts                    # Challenge question batches
 │   │   └── ...
 │   ├── learning-content/ # Structured learning modules
 │   └── index.ts         # Central data aggregation
