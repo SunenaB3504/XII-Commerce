@@ -4,8 +4,8 @@
 
 This guide documents the comprehensive approach used to create high-quality, exam-focused Study Mode content for the XII-Commerce learning application. The methodology ensures content aligns with CBSE Board Exam standards and helps students score excellent marks.
 
-**Last Updated:** October 1, 2025  
-**Version:** 2.0  
+**Last Updated:** October 6, 2025  
+**Version:** 2.1  
 **Target Exam:** CBSE Board Exams 2026
 
 ---

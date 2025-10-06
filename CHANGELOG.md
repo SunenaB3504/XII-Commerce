@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Chapter 12: Consumer Protection** - Complete learning module for Business Studies
+  - Comprehensive coverage of Consumer Protection Act 2019
+  - Six fundamental consumer rights (Safety, Information, Choose, Heard, Redressal, Education)
+  - Consumer responsibilities and awareness
+  - Three-tier redressal machinery (District, State, National Commissions)
+  - Key protection agencies (CCPA, BIS, FSSAI, Weights & Measures)
+  - 6 detailed key concepts with exam-focused explanations
+  - 20 essential keywords for quick reference
+  - 4 comprehensive case studies including ATM cash shortage, defective products, food adulteration, and misleading advertisements
+  - Quick revision section with exam patterns, critical rules, and mnemonics
+  - Content sourced from official CBSE textbook (lebs203.pdf)
+  - Zero TypeScript compilation errors, fully tested in development environment
+
 ## [1.2.0] - 2025-01-XX
 
 ### Added
