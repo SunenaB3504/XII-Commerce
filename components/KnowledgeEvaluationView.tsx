@@ -117,7 +117,9 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
   // Helper function to extract correct answer from solution
   const extractCorrectAnswer = (solution: any): string => {
     const solutionText = extractText(solution);
-    const match = solutionText.match(/correct answer:\s*([a-d])\)/i) || solutionText.match(/^([a-d])\)/i);
+    // Match patterns: "Correct Answer: B)" or "Correct Answer: B." or just "B)" or "B."
+    const match = solutionText.match(/correct answer:\s*([a-d])[\.\)]/i) || 
+                  solutionText.match(/^([a-d])[\.\)]/i);
     return match ? match[1].toLowerCase() : '';
   };
 
@@ -160,13 +162,6 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
 
     const timeSpent = Math.floor((Date.now() - session.startTime.getTime()) / 1000);
     let correctAnswers = 0;
-
-    // Helper function to extract correct answer from solution
-    const extractCorrectAnswer = (solution: any): string => {
-      const solutionText = extractText(solution);
-      const match = solutionText.match(/correct answer:\s*([a-d])\)/i) || solutionText.match(/^([a-d])\)/i);
-      return match ? match[1].toLowerCase() : '';
-    };
 
     // Calculate chapter-wise and topic-wise performance
     const chapterStats: { 
