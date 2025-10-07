@@ -4676,7 +4676,15 @@ const accountancyChapter5: MCQPoolQuestion[] = [
     difficulty: 'easy',
     examWeightage: 10,
     marks: 1,
-    question: React.createElement("p", { className: "font-semibold" }, "After writing off Loss on Issue of Debentures, balance in Statement of Profit and Loss will be ______."),
+    question: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold" }, "After writing off Loss on Issue of Debentures, balance in Statement of Profit and Loss will be:"),
+      React.createElement("ul", { className: "list-none pl-6 mt-4 space-y-2" },
+        React.createElement("li", null, "A. Debit; ₹ 6,00,000"),
+        React.createElement("li", null, "B. Credit; ₹ 6,00,000"),
+        React.createElement("li", null, "C. Debit; ₹ 4,00,000"),
+        React.createElement("li", null, "D. Credit; ₹ 4,00,000")
+      )
+    ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. Debit; ₹ 6,00,000"),
     explanation: React.createElement("p", { className: "mt-2" }, "The initial debit (loss) balance in the Statement of Profit and Loss was ₹5,00,000. An additional loss of ₹1,00,000 (as calculated in the previous question) was written off from it. Therefore, the new total debit balance will be ₹5,00,000 + ₹1,00,000 = ₹6,00,000.")
   },
@@ -4689,7 +4697,15 @@ const accountancyChapter5: MCQPoolQuestion[] = [
     difficulty: 'medium',
     examWeightage: 10,
     marks: 1,
-    question: React.createElement("p", { className: "font-semibold" }, "Premium on Redemption of Debentures account will have a balance of ______ to be treated as ______ in the first year."),
+    question: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold" }, "Premium on Redemption of Debentures account will have a balance of ______ to be treated as ______ in the first year."),
+      React.createElement("ul", { className: "list-none pl-6 mt-4 space-y-2" },
+        React.createElement("li", null, "A. ₹ 6,00,000; Current Liabilities"),
+        React.createElement("li", null, "B. ₹ 1,20,000; Current Liabilities"),
+        React.createElement("li", null, "C. ₹ 6,00,000; Non-Current Liabilities"),
+        React.createElement("li", null, "D. ₹ 1,20,000; Non-Current Liabilities")
+      )
+    ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: C. ₹ 6,00,000; Non-Current Liabilities"),
     explanation: React.createElement("p", { className: "mt-2" }, "The Premium on Redemption of Debentures is a liability of ₹6,00,000 (calculated in Q12). Since the debentures are to be redeemed at the end of 5 years (which is more than 12 months from the balance sheet date), this liability is classified as a Non-Current Liability under the main head 'Long-term Provisions'.")
   }
