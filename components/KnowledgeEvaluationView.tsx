@@ -41,7 +41,7 @@ const CHAPTER_WEIGHTAGE: { [subject: string]: { [chapter: string]: number } } = 
 const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
   onEvaluationComplete
 }) => {
-  const [currentStep, setCurrentStep] = useState<'setup' | 'evaluation' | 'results'>('setup');
+  const [currentStep, setCurrentStep] = useState<'setup' | 'evaluation' | 'review' | 'results'>('setup');
   const [filters, setFilters] = useState<KnowledgeEvaluationFilters>({
     subject: '',
     chapters: [],
@@ -51,6 +51,7 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
   const [session, setSession] = useState<KnowledgeSession | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [results, setResults] = useState<KnowledgeResult | null>(null);
+  const [showReview, setShowReview] = useState(false);
 
   // Get available chapters for selected subject
   const getAvailableChapters = (subjectName: string) => {
@@ -286,8 +287,12 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
 
     const evaluationResults = calculateResults();
     setResults(evaluationResults);
-    setCurrentStep('results');
+    setCurrentStep('review');
     onEvaluationComplete(evaluationResults);
+  };
+
+  const proceedToResults = () => {
+    setCurrentStep('results');
   };
 
   const resetEvaluation = () => {
@@ -297,6 +302,7 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
     setSession(null);
     setCurrentQuestionIndex(0);
     setResults(null);
+    setShowReview(false);
   };
 
   if (currentStep === 'setup') {
@@ -480,7 +486,7 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
               onClick={submitEvaluation}
               className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-black text-lg rounded-2xl hover:scale-105 transition-transform shadow-2xl"
             >
-              📊 Submit Evaluation
+              📊 Submit & Review Answers
             </button>
           ) : (
             <button
@@ -490,6 +496,154 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
               Next →
             </button>
           )}
+        </div>
+      </div>
+    );
+  }
+
+  if (currentStep === 'review' && results && questions.length > 0) {
+    return (
+      <div className="bg-gradient-to-br from-white via-blue-50 to-purple-50 border-4 border-blue-300 rounded-3xl shadow-2xl p-8 max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-black text-slate-800 mb-4">📝 Answer Review</h2>
+          <p className="text-lg text-slate-600">Review your answers with correct solutions and explanations</p>
+          <div className="mt-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white inline-block px-8 py-4 rounded-2xl shadow-lg">
+            <span className="text-3xl font-black">{results.percentage.toFixed(1)}%</span>
+            <span className="text-lg ml-3">({results.correctAnswers}/{results.totalQuestions} correct)</span>
+          </div>
+        </div>
+
+        {/* Question-by-Question Review */}
+        <div className="space-y-6 mb-8">
+          {questions.map((question, index) => {
+            const userAnswer = session?.answers[index];
+            const correctAnswer = extractCorrectAnswer(question.solution);
+            const isCorrect = userAnswer === correctAnswer;
+
+            return (
+              <div
+                key={index}
+                className={`border-4 rounded-2xl p-6 ${
+                  isCorrect
+                    ? 'border-green-300 bg-gradient-to-br from-green-50 to-emerald-50'
+                    : 'border-red-300 bg-gradient-to-br from-red-50 to-pink-50'
+                }`}
+              >
+                {/* Question Header */}
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <span className="bg-slate-800 text-white font-bold px-4 py-2 rounded-full text-lg">
+                      Q{index + 1}
+                    </span>
+                    {question.chapter && (
+                      <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
+                        Chapter {question.chapter}
+                      </span>
+                    )}
+                    {question.topic && (
+                      <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                        {question.topic}
+                      </span>
+                    )}
+                  </div>
+                  <div
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full font-bold text-lg ${
+                      isCorrect
+                        ? 'bg-green-500 text-white'
+                        : 'bg-red-500 text-white'
+                    }`}
+                  >
+                    <span className="text-2xl">{isCorrect ? '✅' : '❌'}</span>
+                    <span>{isCorrect ? 'Correct' : 'Incorrect'}</span>
+                  </div>
+                </div>
+
+                {/* Question Content */}
+                <div className="bg-white rounded-xl p-5 mb-4 shadow-sm">
+                  <div className="prose max-w-none text-slate-800">
+                    {question.question}
+                  </div>
+                </div>
+
+                {/* Answer Comparison */}
+                <div className="grid md:grid-cols-2 gap-4 mb-4">
+                  {/* Your Answer */}
+                  <div
+                    className={`p-4 rounded-xl border-2 ${
+                      isCorrect
+                        ? 'bg-green-100 border-green-300'
+                        : 'bg-red-100 border-red-300'
+                    }`}
+                  >
+                    <h4 className="font-bold text-sm mb-2 flex items-center gap-2">
+                      <span>{isCorrect ? '✅' : '❌'}</span>
+                      <span>Your Answer:</span>
+                    </h4>
+                    <p className={`font-bold text-lg ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
+                      {userAnswer ? userAnswer.toUpperCase() : 'Not Answered'}
+                    </p>
+                  </div>
+
+                  {/* Correct Answer */}
+                  <div className="p-4 rounded-xl border-2 bg-green-100 border-green-300">
+                    <h4 className="font-bold text-sm mb-2 flex items-center gap-2">
+                      <span>✅</span>
+                      <span>Correct Answer:</span>
+                    </h4>
+                    <p className="font-bold text-lg text-green-800">
+                      {correctAnswer.toUpperCase()}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Solution and Explanation */}
+                <div className="space-y-3">
+                  <div className="bg-gradient-to-r from-green-400 to-emerald-500 text-white p-5 rounded-xl shadow-lg">
+                    <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
+                      <span className="text-2xl">💡</span>
+                      <span>Solution:</span>
+                    </h4>
+                    <div className="text-white bg-white/20 p-3 rounded-lg">
+                      {question.solution}
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-blue-400 to-indigo-500 text-white p-5 rounded-xl shadow-lg">
+                    <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
+                      <span className="text-2xl">🧠</span>
+                      <span>Detailed Explanation:</span>
+                    </h4>
+                    <div className="text-white bg-white/20 p-3 rounded-lg prose prose-invert max-w-none">
+                      {question.explanation}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 border-t-4 border-purple-300 pt-8">
+          <button
+            onClick={proceedToResults}
+            className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-black text-xl rounded-2xl hover:scale-105 transition-transform shadow-2xl"
+          >
+            📊 View Performance Analysis
+          </button>
+          <button
+            onClick={resetEvaluation}
+            className="px-8 py-4 bg-gradient-to-r from-slate-500 to-slate-600 text-white font-bold text-lg rounded-2xl hover:scale-105 transition-transform shadow-lg"
+          >
+            🔄 Take Another Evaluation
+          </button>
+          <button
+            onClick={() => window.print()}
+            className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-bold rounded-2xl hover:scale-105 transition-transform shadow-lg"
+          >
+            🖨️ Print Review
+          </button>
         </div>
       </div>
     );
@@ -677,6 +831,12 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <button
+            onClick={() => setCurrentStep('review')}
+            className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-black text-lg rounded-2xl hover:scale-105 transition-transform shadow-2xl"
+          >
+            📝 Back to Answer Review
+          </button>
           <button
             onClick={resetEvaluation}
             className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-black text-lg rounded-2xl hover:scale-105 transition-transform shadow-2xl"
