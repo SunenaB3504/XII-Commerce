@@ -19,6 +19,9 @@ import { businessStudiesChallenge2023 } from './business-studies/business-studie
 import { businessStudiesChallenge2022 } from './business-studies/business-studies-challenge-2022';
 import { businessStudiesChallenge2021 } from './business-studies/business-studies-challenge-2021';
 import { economicsSamplePaper2025 } from './economics/economics-sample-paper-2025';
+import { economicsSamplePaper2024 } from './economics/economics-sample-paper-2024';
+import { economicsSamplePaper2023 } from './economics/economics-sample-paper-2023';
+import { economicsSamplePaper2022 } from './economics/economics-sample-paper-2022';
 import { economicsBoardExam58_5_1_term } from './economics/board-exam-58-5-1-term';
 import { economicsBoardExam58_5_3 } from './economics/board-exam-58-5-3';
 import { economicsBoardExam58_4_3 } from './economics/board-exam-58-4-3';
@@ -65,6 +68,9 @@ export const subjects: Subject[] = [
     name: 'Economics', 
     questionPapers: [
       economicsSamplePaper2025,
+      economicsSamplePaper2024,
+      economicsSamplePaper2023,
+      economicsSamplePaper2022,
       economicsBoardExam58_5_1_term,
       economicsBoardExam58_5_3,
       economicsBoardExam58_4_3,
