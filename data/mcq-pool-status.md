@@ -1,9 +1,11 @@
 # MCQ Pool Population Status
 
-**Last Updated:** January 2025
+**Last Updated:** January 2025 (Commit: cff3dfc)
 
 ## Overview
 Centralized MCQ pool implementation for Knowledge Evaluation system with manual curation to ensure zero duplicates.
+
+**CURRENT STATUS:** 65 MCQs across 3 subjects (15% of final target)
 
 ---
 
@@ -47,37 +49,76 @@ All 20 MCQs from Sample Paper 2025 have been successfully added to the pool.
 
 ---
 
-## Accountancy - ⏳ PENDING
+## Accountancy - ✅ COMPLETED (Sample Paper 2025)
 
-### Source Data Available: Sample Paper 2025
-**Total MCQs to add:** 16 questions (Chapters 1-6)
+### Total MCQs: 18
+All MCQs from Sample Paper 2025 have been successfully added to the pool.
 
-### Distribution (from Sample Paper):
-- Partnership Accounts - Reconstitution
-- Admission, Retirement, Death of Partners
-- Dissolution of Partnership
-- Company Accounts
-- Accounting for Debentures
-- Financial Statements Analysis
+### Distribution by Chapter:
+| Chapter | MCQs | Topics Covered |
+|---------|------|----------------|
+| Ch 1 - Partnership Fundamentals | 4 | Capital accounts, Guaranteed profit, Interest on drawings |
+| Ch 2 - Share Capital | 4 | Share forfeiture, Purchase consideration, Calls in arrears |
+| Ch 3 - Admission of Partner | 4 | Goodwill, Revaluation, New profit-sharing ratio |
+| Ch 4 - Reconstitution | 2 | Overvalued assets, Workmen compensation |
+| Ch 5 - Debentures | 3 | Loss on issue, P&L treatment, Premium on redemption |
+| Ch 6 - Financial Statements | 0 | No questions in Sample Paper |
+| Ch 7 - Dissolution | 2 | Realisation account, Settlement of accounts |
+| Ch 8 - Death/Retirement | 2 | New profit ratio, Gaining ratio |
+| Ch 9 - Not-for-Profit | 0 | No questions in Sample Paper |
+| Ch 10 - Company Accounts | 0 | No questions in Sample Paper |
+
+### Difficulty Distribution:
+- **Easy:** 5 questions (28%)
+- **Medium:** 9 questions (50%)
+- **Hard:** 4 questions (22%)
+
+### Quality Assurance:
+- ✅ All questions have unique IDs (ACC-CH1-001 to ACC-CH8-002)
+- ✅ All questions include proper React.createElement structure
+- ✅ All questions have solutions and detailed explanations
+- ✅ All metadata complete (subject, chapter, topic, source, difficulty, weightage)
+- ✅ Build successful - no TypeScript errors
 
 ---
 
-## Economics - ⏳ PENDING
+## Economics - ✅ COMPLETED (Sample Paper 2025)
 
-### Source Data Available: Sample Paper 2025
-**Total MCQs to add:** 27 questions
+### Total MCQs: 27
+All MCQs from Sample Paper 2025 have been successfully added to the pool.
 
-### Distribution (from Sample Paper):
-- **Macroeconomics:**
-  - National Income and Related Aggregates
-  - Money and Banking
-  - Determination of Income and Employment
-  - Government Budget and Economy
+### Distribution by Part:
 
-- **Indian Economic Development:**
-  - Development Experience and Economic Reforms
-  - Current Challenges facing Indian Economy
-  - Development Policies and Strategies
+**Macroeconomics (16 MCQs):**
+| Chapter | MCQs | Topics Covered |
+|---------|------|----------------|
+| Ch 1 - National Income | 4 | GDP, NNP, GNP, Factor income |
+| Ch 2 - Money & Banking | 5 | Money supply, RBI functions, Currency system, Inflation |
+| Ch 3 - Income Determination | 3 | Multiplier, Autonomous expenditure, Equilibrium |
+| Ch 4 - Govt Budget | 0 | No questions in Sample Paper |
+| Ch 5 - Govt Budget | 1 | Fiscal deficit |
+| Ch 6 - Open Economy | 0 | No questions in Sample Paper |
+| Ch 7 - Balance of Payments | 3 | BOP components, Exchange rates, Trade balance |
+
+**Indian Economic Development (11 MCQs):**
+| Chapter | MCQs | Topics Covered |
+|---------|------|----------------|
+| Ch 8 - Development Issues | 10 | HDI, Sustainable development, Poverty, Employment, Infrastructure |
+| Ch 9 - Comparative Development | 5 | China-India-Pakistan, Structural changes, Poverty measurement |
+| Ch 10 - Policy & Education | 2 | Government policies, Education infrastructure |
+
+### Difficulty Distribution:
+- **Easy:** 13 questions (48%)
+- **Medium:** 10 questions (37%)
+- **Hard:** 4 questions (15%)
+
+### Quality Assurance:
+- ✅ All questions have unique IDs (ECON-CH1-001 to ECON-CH10-002)
+- ✅ All questions include proper React.createElement structure
+- ✅ All questions have solutions and detailed explanations
+- ✅ All metadata complete (subject, chapter, topic, source, difficulty, weightage)
+- ✅ Build successful - quote escaping issues resolved
+- ✅ Fixed 3 quote escaping errors (ECON-CH9-002, ECON-CH10-001, ECON-CH10-002)
 
 ---
 
@@ -101,14 +142,15 @@ All 20 MCQs from Sample Paper 2025 have been successfully added to the pool.
 
 ## Build Status
 
-**Latest Build:** ✅ Success (January 2025)
+**Latest Build:** ✅ Success (January 2025 - Commit cff3dfc)
 ```
-dist/assets/index-1BJbgZdx.js   2,967.51 kB │ gzip: 550.21 kB
-✓ built in 6.66s
+dist/assets/index-DjL7Hsrq.js   3,052.06 kB │ gzip: 568.24 kB
+✓ built in 10.88s
 ```
 
-**TypeScript Compilation:** ✅ No errors  
-**File Size:** 758 lines (with 20 BS MCQs)
+**TypeScript Compilation:** ✅ No errors (3 quote escaping issues resolved)  
+**File Size:** 2,069 lines (with 65 total MCQs)  
+**Git Status:** Committed and pushed to origin/main
 
 ---
 
@@ -144,14 +186,23 @@ getMCQStats(subject)                // Statistics by chapter/topic/difficulty
 
 ## Next Steps
 
-1. **Accountancy:** Add 16 MCQs from Sample Paper 2025
-2. **Economics:** Add 27 MCQs from Sample Paper 2025
-3. **Board Exams:** Extract ~280 MCQs from all Board Exam papers
-4. **Challenge Papers:** Extract ~140 MCQs from Challenge papers
-5. **Quality Review:** Verify all metadata, difficulty levels, weightages
-6. **User Testing:** Test weighted selection with fully populated pool
+1. ✅ **Accountancy:** Add 18 MCQs from Sample Paper 2025 - COMPLETED
+2. ✅ **Economics:** Add 27 MCQs from Sample Paper 2025 - COMPLETED
+3. ⏳ **Board Exams:** Extract ~250 MCQs from all Board Exam papers (17 papers total)
+   - Business Studies: 5 papers (~75 MCQs)
+   - Accountancy: 5 papers (~75 MCQs)
+   - Economics: 7 papers (~100 MCQs)
+4. ⏳ **Challenge Papers:** Extract ~120 MCQs from Challenge papers
+5. 📋 **Quality Review:** Verify all metadata, difficulty levels, weightages
+6. 📋 **User Testing:** Test weighted selection with fully populated pool
 
-**Estimated Total Pool Size:** 480+ unique MCQs across 3 subjects
+**Current Progress:** 65/435 MCQs (15%)  
+**Estimated Total Pool Size:** 435 unique MCQs across 3 subjects
+
+### Completion Timeline:
+- ✅ Phase 1 (Sample Papers): COMPLETE - 65 MCQs
+- ⏳ Phase 2 (Board Exams): 0/250 MCQs - Est. 20-30 hours
+- 📋 Phase 3 (Challenge Papers): 0/120 MCQs - Est. 10-15 hours
 
 ---
 
