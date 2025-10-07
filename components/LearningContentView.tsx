@@ -163,7 +163,7 @@ const LearningContentView: React.FC<LearningContentViewProps> = ({ module }) => 
                   <SpeechButton isSpeaking={speakingId === conceptId} onClick={() => handleSpeak(conceptId, contentToRead)} />
                 </div>
                 <div className="text-slate-800 mt-2 prose max-w-none text-base leading-relaxed font-medium">{concept.content}</div>
-                {concept.example && <div className="mt-4 p-5 bg-gradient-to-r from-green-400 to-emerald-500 border-4 border-green-300 rounded-2xl text-sm font-bold text-white shadow-lg"><span className="text-lg">💡</span> <span className="font-black">Example: </span>{concept.example}</div>}
+                {concept.example && <div className="mt-4 p-5 bg-gradient-to-r from-green-400 to-emerald-500 border-4 border-green-300 rounded-2xl text-sm font-bold shadow-lg"><span className="text-lg">💡</span> <span className="font-black text-white">Example: </span><div className="text-slate-900">{concept.example}</div></div>}
                 {concept.mnemonic && <div className="mt-4 p-5 bg-gradient-to-r from-purple-400 to-pink-500 border-4 border-purple-300 rounded-2xl text-sm font-bold text-white shadow-lg"><span className="text-lg">🧠</span> <span className="font-black">Remember: </span>{concept.mnemonic}</div>}
               </div>
             )})}
