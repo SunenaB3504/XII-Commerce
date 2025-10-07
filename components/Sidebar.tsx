@@ -2,7 +2,7 @@ import React from 'react';
 import type { Question, LearningModule } from '../types';
 
 interface SidebarProps {
-  mode: 'papers' | 'learn' | 'test' | 'challenge';
+  mode: 'papers' | 'learn' | 'test' | 'challenge' | 'knowledge';
   questions: Pick<Question, 'id' | 'marks'>[];
   currentQuestionId: string | null;
   onSelectQuestion: (id: string) => void;
@@ -20,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   currentChapter,
   onSelectChapter
 }) => {
-  const completedCount = mode === 'papers' ? Math.floor(questions.length * 0.6) : mode === 'learn' ? Math.floor(chapters.length * 0.4) : mode === 'challenge' ? Math.floor(questions.length * 0.3) : 0;
+  const completedCount = mode === 'papers' ? Math.floor(questions.length * 0.6) : mode === 'learn' ? Math.floor(chapters.length * 0.4) : mode === 'challenge' ? Math.floor(questions.length * 0.3) : mode === 'knowledge' ? Math.floor(questions.length * 0.2) : 0;
   const totalCount = mode === 'papers' ? questions.length : mode === 'learn' ? chapters.length : mode === 'challenge' ? questions.length : 1;
   const progress = Math.round((completedCount / totalCount) * 100);
 
@@ -37,14 +37,14 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-6">
-              <span className="text-2xl transform -rotate-6">{mode === 'papers' ? '🎯' : mode === 'learn' ? '📚' : mode === 'challenge' ? '⚡' : '📝'}</span>
+              <span className="text-2xl transform -rotate-6">{mode === 'papers' ? '🎯' : mode === 'learn' ? '📚' : mode === 'challenge' ? '⚡' : mode === 'knowledge' ? '🧠' : '📝'}</span>
             </div>
             <div>
               <h2 className="text-xl font-black text-slate-800">
-                {mode === 'papers' ? 'Challenges' : mode === 'learn' ? 'Chapters' : mode === 'challenge' ? 'Timed Challenge' : 'Assessment'}
+                {mode === 'papers' ? 'Challenges' : mode === 'learn' ? 'Chapters' : mode === 'challenge' ? 'Timed Challenge' : mode === 'knowledge' ? 'Knowledge Assessment' : 'Assessment'}
               </h2>
               <p className="text-sm font-bold text-purple-600">
-                {mode === 'papers' ? 'Pick your battle!' : mode === 'learn' ? 'Select & study!' : mode === 'challenge' ? 'Beat the clock!' : 'Test your knowledge!'}
+                {mode === 'papers' ? 'Pick your battle!' : mode === 'learn' ? 'Select & study!' : mode === 'challenge' ? 'Beat the clock!' : mode === 'knowledge' ? 'Evaluate your understanding!' : 'Test your knowledge!'}
               </p>
             </div>
           </div>
@@ -192,6 +192,56 @@ const Sidebar: React.FC<SidebarProps> = ({
                 <div className="flex justify-between">
                   <span className="text-red-700">Streak Master:</span>
                   <span className="font-bold text-purple-600">🔥 Badge</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {mode === 'knowledge' && (
+          <div className="space-y-4">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-2xl border-2 border-blue-200">
+              <h3 className="font-bold text-blue-800 mb-2">🧠 Knowledge Evaluation</h3>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-blue-700">Assessment Type:</span>
+                  <span className="font-bold text-blue-800">MCQ Pool</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-blue-700">Coverage:</span>
+                  <span className="font-bold text-blue-800">All Chapters</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-blue-700">Analysis:</span>
+                  <span className="font-bold text-blue-800">Detailed</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-2xl border-2 border-indigo-200">
+              <h3 className="font-bold text-indigo-800 mb-2">📊 What You'll Get</h3>
+              <ul className="text-sm text-indigo-700 space-y-1">
+                <li>• Chapter-wise performance analysis</li>
+                <li>• Topic-level insights</li>
+                <li>• Personalized study recommendations</li>
+                <li>• Progress tracking over time</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-2xl border-2 border-purple-200">
+              <h3 className="font-bold text-purple-800 mb-2">🎯 Benefits</h3>
+              <div className="space-y-1 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-purple-700">Identify Weak Areas:</span>
+                  <span className="font-bold text-green-600">📈</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-purple-700">Track Improvement:</span>
+                  <span className="font-bold text-blue-600">📊</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-purple-700">Study Guidance:</span>
+                  <span className="font-bold text-purple-600">🎓</span>
                 </div>
               </div>
             </div>

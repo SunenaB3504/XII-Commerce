@@ -96,3 +96,63 @@ export interface ChallengePaper extends QuestionPaper {
   paperType: 'main' | 'comptt' | 'term2';
   questions: ChallengeQuestion[];
 }
+
+// Knowledge Evaluation Types
+export interface KnowledgeQuestion extends Question {
+  subject: string;
+  chapter?: string;
+  topic?: string;
+  difficulty: 'easy' | 'medium' | 'hard';
+  bloomLevel: 'remembering' | 'understanding' | 'applying' | 'analyzing' | 'evaluating' | 'creating';
+}
+
+export interface KnowledgeEvaluationFilters {
+  subject: string;
+  chapters: string[]; // Empty array means all chapters
+  questionCount: 10 | 20 | 50;
+}
+
+export interface KnowledgeSession {
+  id: string;
+  filters: KnowledgeEvaluationFilters;
+  startTime: Date;
+  answers: { [index: number]: any };
+  completed: boolean;
+  score?: number;
+  timeSpent?: number;
+}
+
+export interface ChapterPerformance {
+  chapter: string;
+  totalQuestions: number;
+  correctAnswers: number;
+  percentage: number;
+  topics: {
+    topic: string;
+    correct: number;
+    total: number;
+    percentage: number;
+  }[];
+  studyRecommendation: 'excellent' | 'good' | 'needs-improvement' | 'requires-focus';
+  weightage?: number; // Exam weightage percentage
+}
+
+export interface KnowledgeResult {
+  sessionId: string;
+  totalQuestions: number;
+  correctAnswers: number;
+  score: number;
+  percentage: number;
+  timeSpent: number;
+  subject: string;
+  chapterPerformance: ChapterPerformance[];
+  overallRecommendation: string;
+  questionBreakdown: {
+    questionId: string;
+    correct: boolean;
+    timeSpent: number;
+    marks: number;
+    chapter: string;
+    topic?: string;
+  }[];
+}

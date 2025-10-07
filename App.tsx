@@ -9,8 +9,9 @@ import LearningContentView from './components/LearningContentView';
 import { MCQTest, useTestHistory } from './MCQTest';
 import ChallengeView from './components/ChallengeView';
 import type { ChallengeResult } from './types';
+import KnowledgeEvaluationView from './components/KnowledgeEvaluationView';
 
-type ViewMode = 'papers' | 'learn' | 'test' | 'challenge';
+type ViewMode = 'papers' | 'learn' | 'test' | 'challenge' | 'knowledge';
 
 const App: React.FC = () => {
   const [selectedSubjectName, setSelectedSubjectName] = useState<string>(subjects[0].name);
@@ -72,6 +73,11 @@ const App: React.FC = () => {
   const handleChallengeComplete = useCallback((result: ChallengeResult) => {
     setChallengeResults(prev => [result, ...prev]);
     console.log('Challenge completed:', result);
+  }, []);
+
+  const handleKnowledgeEvaluationComplete = useCallback((result: any) => {
+    console.log('Knowledge evaluation completed:', result);
+    // You can store the results or show them in a modal
   }, []);
 
   const currentPaper = availablePapers.find(p => p.name === selectedPaperName);
@@ -192,7 +198,12 @@ const App: React.FC = () => {
                 onChallengeComplete={handleChallengeComplete}
               />
             )}
-            {!selectedQuestion && !selectedModule && viewMode !== 'test' && viewMode !== 'challenge' && (
+            {viewMode === 'knowledge' && (
+              <KnowledgeEvaluationView
+                onEvaluationComplete={handleKnowledgeEvaluationComplete}
+              />
+            )}
+            {!selectedQuestion && !selectedModule && viewMode !== 'test' && viewMode !== 'challenge' && viewMode !== 'knowledge' && (
                <div className="bg-white p-8 rounded-lg shadow-md flex items-center justify-center h-full">
                 <p className="text-xl text-slate-500">Select an item from the list to get started!</p>
               </div>

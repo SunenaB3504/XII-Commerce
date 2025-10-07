@@ -4,9 +4,20 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 
 ## 📚 Documentation Overview
 
-**Latest Update (v2.1.0)**: Complete Challenge Mode implementation with verbatim CBSE content verification and comprehensive scoring analytics. All Business Studies challenge papers (2021-2025) verified against official SQP and MS sources for 100% accuracy.
+**Latest Update (October 7, 2025)**: Complete Centralized MCQ Pool implementation for guaranteed zero duplicates in Knowledge Evaluation system. Business Studies challenge papers (2021-2025) verified against official SQP and MS sources for 100% accuracy.
 
-### 🏆 [Challenge Mode System](./challenge-mode.md) **NEW**
+### 🎯 [Centralized MCQ Pool](./centralized-mcq-pool.md) **CURRENT** ✅
+**Single source of truth for all MCQs - Zero duplicates guaranteed**
+- Centralized MCQ repository (`data/mcq-pool.ts`)
+- MCQPoolQuestion interface with rich metadata (subject, chapter, topic, difficulty, weightage)
+- Helper functions for question retrieval (getMCQsBySubject, getWeightedMCQs, etc.)
+- MCQ extractor utility for populating pool from papers
+- Integration with Knowledge Evaluation (no runtime deduplication)
+- Migration plan and population strategy
+- Quality control through manual curation
+- Performance optimization (no text extraction overhead)
+
+### 🏆 [Challenge Mode System](./challenge-mode.md)
 **Interactive timed testing platform with authentic CBSE content**
 - Complete Challenge Mode architecture and implementation
 - Interactive 3-hour timed testing sessions with progress tracking
@@ -26,6 +37,26 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 - Performance analysis with personalized recommendations
 - Test history and progress monitoring
 - Technical architecture and implementation details
+
+### 📋 [Knowledge Evaluation Enhanced](./knowledge-evaluation-enhanced.md) **HISTORICAL**
+**Reference documentation for previous implementation**
+- Runtime deduplication approach (replaced by centralized pool)
+- Weighted selection algorithm (preserved in current version)
+- Chapter-wise and topic-level analysis (preserved)
+- Personalized study recommendations (preserved)
+- Evolution history from basic pooling to centralized pool
+
+### 🔧 [Duplicate MCQ Fix](./duplicate-mcq-fix.md) **HISTORICAL**
+**First fix attempt for duplicate MCQs**
+- Enhanced text extraction to exclude options
+- Runtime deduplication improvements
+- Why it was superseded by centralized pool approach
+
+### 📊 [Chapter 2 MCQ Duplicates Analysis](./chapter2-mcq-duplicates-analysis.md) **HISTORICAL**
+**Problem identification and resolution**
+- Duplicate questions found in Business Studies Chapter 2
+- Root cause analysis
+- Final solution: Centralized MCQ Pool
 
 ### 📋 [Architecture Overview](./architecture.md)
 **Essential for understanding the technical foundation**
@@ -113,6 +144,7 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 2. **Get Running Locally**: [Setup & Deployment Guide](./setup-deployment.md)
 3. **Learn Coding Standards**: [Development Guide](./development-guide.md)
 4. **Use Visual Patterns**: [Visual Design Reference](./visual-design-reference.md)
+5. **Understand MCQ System**: [Centralized MCQ Pool](./centralized-mcq-pool.md) ✅
 
 ### For Content Contributors
 1. **Understand Format**: [Data Structure](./data-structure.md)
@@ -120,6 +152,7 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 3. **Add Materials**: [Content Contribution Guide](./content-contribution.md)
 4. **Apply Design**: [Design System](./design-system.md)
 5. **Test Locally**: [Setup & Deployment Guide](./setup-deployment.md)
+6. **Add MCQs to Pool**: [Centralized MCQ Pool](./centralized-mcq-pool.md) ✅
 
 ### For Students & Educators
 1. **Start Testing**: [MCQ Assessment System](./assessment-system.md)
@@ -136,6 +169,13 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 ---
 
 ## 📋 Common Tasks
+
+### Adding New MCQs to Knowledge Evaluation ✅
+1. Review [Centralized MCQ Pool](./centralized-mcq-pool.md)
+2. Use `data/mcq-extractor.ts` to extract from papers
+3. Manually review and add to `data/mcq-pool.ts`
+4. Assign unique IDs and verify chapter/topic
+5. Test in Knowledge Evaluation mode
 
 ### Adding a New Feature
 1. Plan using [Architecture Overview](./architecture.md)
@@ -183,13 +223,17 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 ## 🔍 Quick Reference
 
 ### By Topic
+- **MCQ Pool & Deduplication** → [Centralized MCQ Pool](./centralized-mcq-pool.md) ✅
+- **Knowledge Evaluation** → [Centralized MCQ Pool](./centralized-mcq-pool.md), [Knowledge Evaluation Enhanced](./knowledge-evaluation-enhanced.md)
 - **Assessment & Testing** → [MCQ Assessment System](./assessment-system.md)
+- **Challenge Mode** → [Challenge Mode System](./challenge-mode.md)
 - **Architecture & Tech Stack** → [Architecture Overview](./architecture.md)
 - **Visual Design & UI** → [Design System](./design-system.md), [Visual Design Reference](./visual-design-reference.md)
 - **Components & Patterns** → [Visual Design Reference](./visual-design-reference.md)
 - **Content & Data** → [Data Structure](./data-structure.md), [Content Contribution](./content-contribution.md)
 - **Development & Code** → [Development Guide](./development-guide.md)
 - **Setup & Deploy** → [Setup & Deployment](./setup-deployment.md)
+- **Historical Reference** → [Duplicate MCQ Fix](./duplicate-mcq-fix.md), [Chapter 2 Analysis](./chapter2-mcq-duplicates-analysis.md)
 
 ### By Role
 | Role | Start With |
@@ -205,16 +249,42 @@ This directory contains comprehensive documentation for the **Neil's Commerce Pr
 
 ## 📊 Documentation Stats
 
-- **Total Documents**: 9 comprehensive guides
-- **Coverage**: Challenge Mode, Assessment, Architecture, Design, Development, Content, Deployment
-- **Last Major Update**: October 2025 (v2.1.0 - Challenge Mode System)
-- **Version**: 2.1
+- **Total Documents**: 12 comprehensive guides (9 active + 3 historical)
+- **Coverage**: MCQ Pool, Challenge Mode, Assessment, Architecture, Design, Development, Content, Deployment
+- **Last Major Update**: October 7, 2025 (Centralized MCQ Pool Implementation)
+- **Version**: 2.2
+- **Active Docs**: 9 | **Historical Docs**: 3
+
+---
+
+## 📌 Recent Changes (October 7, 2025)
+
+### ✅ Implemented: Centralized MCQ Pool
+- Created `data/mcq-pool.ts` - Single source of truth for all MCQs
+- Created `data/mcq-extractor.ts` - Utility for extracting MCQs from papers
+- Updated `KnowledgeEvaluationView.tsx` - Removed 200+ lines of deduplication code
+- **Result**: Guaranteed zero duplicates, better maintainability
+
+### 📚 Documentation Added
+- **NEW**: [centralized-mcq-pool.md](./centralized-mcq-pool.md) - Complete implementation guide
+- **NEW**: [DOCUMENTATION-INDEX.md](./DOCUMENTATION-INDEX.md) - Documentation navigator
+- **UPDATED**: [knowledge-evaluation-enhanced.md](./knowledge-evaluation-enhanced.md) - Historical reference
+- **UPDATED**: [duplicate-mcq-fix.md](./duplicate-mcq-fix.md) - First fix attempt
+- **UPDATED**: [chapter2-mcq-duplicates-analysis.md](./chapter2-mcq-duplicates-analysis.md) - Problem analysis
+
+### 🏗️ Build Status
+- ✅ Build successful: `dist/assets/index-Bh0i7Pj-.js`
+- ✅ TypeScript compilation: No errors
+- ✅ Business Studies Ch2: 3 unique questions in pool
+- ⏳ Remaining chapters: To be populated
 
 ---
 
 ## 🆘 Need Help?
 
+- **Documentation Index**: Check [DOCUMENTATION-INDEX.md](./DOCUMENTATION-INDEX.md) for quick navigation
 - **Documentation Issues**: Create a GitHub issue
+- **MCQ Pool Questions**: Check [Centralized MCQ Pool](./centralized-mcq-pool.md)
 - **Code Questions**: Check [Development Guide](./development-guide.md)
 - **Design Questions**: Check [Visual Design Reference](./visual-design-reference.md)
 - **External Resources**:
@@ -236,7 +306,7 @@ This application serves **CBSE Class XII Commerce students**. All decisions shou
 
 ---
 
-**Last Updated:** October 2025
+**Last Updated:** October 7, 2025 (v2.2 - Centralized MCQ Pool)
 
 **For contributions**: Follow the guides above and submit a pull request!
 
