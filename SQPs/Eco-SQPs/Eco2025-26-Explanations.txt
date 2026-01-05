@@ -26,3 +26,52 @@ The statement is **justified**. The Reserve Ratio acts as a mathematical and leg
 2.  **Banking Operations:** It facilitates various banking operations for the state, including exchanges and remittances.
 3.  **Crisis Management:** Crucially, during financial crises, the RBI provides credit to the government. This ensures the smooth functioning of the government and supports the state in managing its financial obligations effectively when revenue streams might be stressed.
 
+Based on the **Sample Question Paper (SQP) 2025-26** and the **Marking Scheme**, Question 13 is a 4-mark question in the **Macroeconomics** section. It provides an internal choice between a case study on income classification and a theoretical question on the Expenditure Method.
+
+Here is the detailed explanation for both parts:
+
+### **Option A: Classification of Income (Case Study)**
+
+**The Question:**
+Ms. Sarika is a retired employee receiving income from three sources:
+1.  **Rental income** from property.
+2.  **Interest income** from fixed deposits.
+3.  **Cash transfers** from family members abroad.
+You are asked to classify these as **factor income** or **transfer income** with reasons.
+
+**Detailed Explanation:**
+
+*   **Rent and Interest:**
+    *   **Classification:** These are classified as **Factor Income**.
+    *   **Reasoning:** Factor income is defined as income earned by the owners of factors of production (Land, Labour, Capital, Enterprise) in exchange for rendering productive services.
+        *   **Rent** is the reward for the factor **Land** (or property).
+        *   **Interest** is the reward for the factor **Capital** (investment in fixed deposits).
+        *   Since Ms. Sarika provided her property and capital to the economy, these earnings are "earned" rewards for productive services.
+
+*   **Cash Transfers:**
+    *   **Classification:** These are classified as **Transfer Income**.
+    *   **Reasoning:** Transfer income refers to receipts which are received without rendering any productive service in return. They are "unilateral" or one-sided transfers. Since Ms. Sarika received this cash from family abroad as a gift or help without providing any good or service in exchange, it is transfer income.
+
+---
+
+### **Option B: Expenditure Method of GDP**
+
+**The Question:**
+“Under the Expenditure Method, the value of Gross Domestic Product (GDP) can be estimated by adding the final expenditure incurred by all the sectors of an economy.” In the light of the given statement, explain the expenditure incurred by any two sectors.
+
+**Detailed Explanation:**
+
+The Expenditure Method calculates GDP by summing up the final expenditures on goods and services. The Marking Scheme highlights two specific components, though there are four main sectors in the economy (Households, Firms, Government, and External Sector).
+
+Here is the explanation of the two sectors provided in the solution:
+
+1.  **Private Final Consumption Expenditure (PFCE):**
+    *   **Who incurs it:** This is the expenditure incurred by **households** and **non-profit institutions serving households**.
+    *   **What it includes:** It covers the final consumption of goods (both durable and non-durable) and services. For example, spending on food, clothing, and electronics by individuals falls under this category. This usually constitutes the largest component of aggregate demand.
+
+2.  **Net Exports (External Sector):**
+    *   **Who incurs it:** This represents the foreign sector's net demand for domestic goods.
+    *   **How it is calculated:** It refers to the excess of the value of **exports** (goods and services produced domestically and sold abroad) over the value of **imports** (goods and services bought from abroad) during an accounting year.
+    *   **Formula:** $Net \ Exports = Exports (X) - Imports (M)$.
+
+*(Note: While the Marking Scheme details the two above, the other two valid components under this method are **Government Final Consumption Expenditure (GFCE)** incurred by the government, and **Gross Domestic Capital Formation (Investment)** incurred by firms).*
