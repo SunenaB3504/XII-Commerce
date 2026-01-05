@@ -5,7 +5,7 @@ import { challengeQuestions23to26 } from './business-studies-challenge-2025-q23-
 import { challengeQuestions27to34 } from './business-studies-challenge-2025-q27-34.ts';
 
 export const businessStudiesChallenge2025: ChallengePaper = {
-  name: 'CBSE Business Studies Challenge 2025 (Main Exam)',
+  name: 'CBSE Sample Paper 2025-26',
   challengeMode: true,
   timeLimit: 180, // 3 hours
   totalMarks: 80,

@@ -2,7 +2,7 @@ import { ChallengePaper } from '../../types';
 import React from 'react';
 
 export const businessStudiesChallenge2021: ChallengePaper = {
-  name: 'CBSE Business Studies Challenge 2021 (Term II)',
+  name: 'CBSE Board Exam 2021 (Term II)',
   challengeMode: true,
   timeLimit: 120, // 2 hours for Term II paper
   totalMarks: 40,

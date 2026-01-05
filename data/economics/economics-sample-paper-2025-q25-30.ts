@@ -1,199 +1,182 @@
+
 import { Question } from '../../types';
 import React from 'react';
 
 export const questions25to30: Question[] = [
   {
     id: '25',
-    marks: 4,
+    marks: 1,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Circular Flow of Income' in a two-sector economy with the help of a suitable diagram."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Circular Flow of Income' in a three-sector economy with the help of a suitable diagram.")
-    ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, "The circular flow of income refers to the flow of money and goods/services between different sectors of the economy. In a two-sector economy, there are only two sectors: households and firms."),
-        React.createElement("p", { className: "mt-2" }, "Households provide factor services (land, labour, capital, and entrepreneurship) to firms and receive factor payments (rent, wages, interest, and profit) in return. This constitutes the factor market."),
-        React.createElement("p", { className: "mt-2" }, "Firms produce goods and services using the factor services provided by households and sell them to households in the goods market. Households spend their income on the purchase of goods and services from firms."),
-        React.createElement("p", { className: "mt-2" }, "Thus, the money flows from households to firms as consumption expenditure and flows back from firms to households as factor payments, completing the circular flow."),
-        React.createElement("img", { src: "https://storage.googleapis.com/aiedu-dev-images-mirror/aistudio/21.png", alt: "Circular Flow in Two-Sector Economy", className: "my-4 rounded-lg" })
+      React.createElement("p", { className: "font-semibold" }, "From the set of terms given in Column I and corresponding facts given in Column II, choose the correct pair of statements:"),
+      React.createElement("table", { className: "min-w-full border mt-4 text-sm" },
+        React.createElement("thead", null,
+          React.createElement("tr", { className: "bg-gray-100" },
+            React.createElement("th", { className: "border p-2" }, "Column I"),
+            React.createElement("th", { className: "border p-2" }, "Column II")
+          )
+        ),
+        React.createElement("tbody", null,
+          React.createElement("tr", null,
+            React.createElement("td", { className: "border p-2" }, "(a) Animal Husbandry"),
+            React.createElement("td", { className: "border p-2" }, "i Instability in income")
+          ),
+          React.createElement("tr", null,
+            React.createElement("td", { className: "border p-2" }, "(b) Fisheries"),
+            React.createElement("td", { className: "border p-2" }, "ii Mixed crop-livestock farming system")
+          ),
+          React.createElement("tr", null,
+            React.createElement("td", { className: "border p-2" }, "(c) Horticulture"),
+            React.createElement("td", { className: "border p-2" }, "iii India is the second-largest producer of fruits and vegetables in the world")
+          ),
+          React.createElement("tr", null,
+            React.createElement("td", { className: "border p-2" }, "(d) Agro-processing industry"),
+            React.createElement("td", { className: "border p-2" }, "iv Iron and steel industry")
+          )
+        )
+      ),
+      React.createElement("ul", { className: "list-none pl-6 mt-4 space-y-2" },
+        React.createElement("li", null, "A. (a)-i"),
+        React.createElement("li", null, "B. (b)-ii"),
+        React.createElement("li", null, "C. (c)-iii"),
+        React.createElement("li", null, "D. (d)-iv")
       )
     ),
+    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: C. (c)-iii"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Explanation of flow from households to firms: 1 mark"),
-        React.createElement("li", null, "Explanation of flow from firms to households: 1 mark"),
-        React.createElement("li", null, "Explanation of real flow: 1 mark"),
-        React.createElement("li", null, "Diagram: 1 mark")
-      )
+      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
+      React.createElement("p", { className: "mt-2" }, "Horticulture indeed makes India the second-largest producer of fruits and vegetables globally. Animal Husbandry relates to livestock (ii), Fisheries doesn't specifically mean mixed farming, and Agro-processing is not Iron and Steel (iv).")
     )
   },
   {
     id: '26',
-    marks: 4,
+    marks: 1,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Investment Multiplier' with the help of a numerical example."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Consumption Function' with the help of a numerical example.")
-    ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, "The investment multiplier explains how an initial increase in investment leads to a larger increase in national income. It shows the relationship between investment and the resulting change in income."),
-        React.createElement("p", { className: "mt-2" }, "The formula for investment multiplier (k) is:"),
-        React.createElement("p", { className: "ml-4 font-mono bg-gray-100 p-2 rounded" }, "k = 1 / (1 - MPC)"),
-        React.createElement("p", { className: "mt-2" }, "Where MPC is Marginal Propensity to Consume."),
-        React.createElement("p", { className: "mt-2" }, "Numerical Example: Suppose MPC = 0.8 and there is an increase in investment by ₹100 crore."),
-        React.createElement("p", { className: "mt-2" }, "Investment Multiplier (k) = 1 / (1 - 0.8) = 1 / 0.2 = 5"),
-        React.createElement("p", { className: "mt-2" }, "Total increase in income = k × Increase in investment = 5 × ₹100 crore = ₹500 crore"),
-        React.createElement("p", { className: "mt-2" }, "The process works through successive rounds of spending:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
-          React.createElement("li", null, "Round 1: Increase in investment = ₹100 crore → Increase in income = ₹100 crore"),
-          React.createElement("li", null, "Round 2: Consumption from additional income = 0.8 × ₹100 = ₹80 crore → Increase in income = ₹80 crore"),
-          React.createElement("li", null, "Round 3: Consumption from additional income = 0.8 × ₹80 = ₹64 crore → Increase in income = ₹64 crore"),
-          React.createElement("li", null, "And so on..."),
-          React.createElement("li", null, "Total increase in income = ₹100 + ₹80 + ₹64 + ... = ₹500 crore")
-        )
+      React.createElement("p", { className: "font-semibold" }, "________ is the measure being taken to create orderly and transparent marketing conditions."),
+      React.createElement("p", { className: "mt-2 font-sm text-gray-600" }, "(Choose the correct option to fill up the blank)"),
+      React.createElement("ul", { className: "list-none pl-6 mt-4 space-y-2" },
+        React.createElement("li", null, "A. Cooperative marketing"),
+        React.createElement("li", null, "B. Assurance of Minimum Support Price (MSP)"),
+        React.createElement("li", null, "C. Provision of infrastructural development"),
+        React.createElement("li", null, "D. Regulation of markets")
       )
     ),
+    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: D. Regulation of markets"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Definition of Investment Multiplier: 1 mark"),
-        React.createElement("li", null, "Formula: 1 mark"),
-        React.createElement("li", null, "Numerical example with calculation: 2 marks")
-      )
+      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
+      React.createElement("p", { className: "mt-2" }, "Regulation of markets is explicitly aimed at creating orderly and transparent conditions to protect farmers from malpractices.")
     )
   },
   {
     id: '27',
-    marks: 4,
+    marks: 1,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Revenue Expenditure' and 'Capital Expenditure' with suitable examples."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Revenue Receipts' and 'Capital Receipts' with suitable examples.")
-    ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, "Revenue Expenditure refers to those expenditures of the government which neither create assets nor reduce liabilities. These expenditures are recurring in nature and are incurred for the normal functioning of the government."),
-        React.createElement("p", { className: "mt-2" }, "Examples of Revenue Expenditure:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
-          React.createElement("li", null, "Payment of salaries to government employees"),
-          React.createElement("li", null, "Payment of interest on loans"),
-          React.createElement("li", null, "Expenditure on maintenance of public buildings"),
-          React.createElement("li", null, "Expenditure on subsidies")
-        ),
-        React.createElement("p", { className: "mt-2" }, "Capital Expenditure refers to those expenditures of the government which either create assets or reduce liabilities. These expenditures are non-recurring in nature and are incurred for the development and expansion of the economy."),
-        React.createElement("p", { className: "mt-2" }, "Examples of Capital Expenditure:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
-          React.createElement("li", null, "Expenditure on construction of roads and bridges"),
-          React.createElement("li", null, "Expenditure on purchase of machinery and equipment"),
-          React.createElement("li", null, "Expenditure on repayment of loans"),
-          React.createElement("li", null, "Expenditure on investment in public enterprises")
-        )
+      React.createElement("p", { className: "font-semibold" }, "Read the following statements carefully:"),
+      React.createElement("p", { className: "mt-2" }, React.createElement("span", { className: "font-bold" }, "Statement 1:"), " Great Leap Forward (GLF) campaign met with many problems like severe drought, conflict with Russia etc."),
+      React.createElement("p", { className: "mt-2" }, React.createElement("span", { className: "font-bold" }, "Statement 2:"), " Under agricultural reforms, commune lands were allocated to individual households for ownership, who were allowed to keep all post-tax income."),
+      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "In light of the given statements, choose the correct option from the following:"),
+      React.createElement("ul", { className: "list-none pl-6 mt-4 space-y-2" },
+        React.createElement("li", null, "A. Statement 1 is true and Statement 2 is false."),
+        React.createElement("li", null, "B. Statement 1 is false and Statement 2 is true."),
+        React.createElement("li", null, "C. Both Statements 1 and 2 are true."),
+        React.createElement("li", null, "D. Both Statements 1 and 2 are false.")
       )
     ),
+    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. Statement 1 is true and Statement 2 is false."),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Definition of Revenue Expenditure: 1 mark"),
-        React.createElement("li", null, "Examples of Revenue Expenditure: 1 mark"),
-        React.createElement("li", null, "Definition of Capital Expenditure: 1 mark"),
-        React.createElement("li", null, "Examples of Capital Expenditure: 1 mark")
-      )
+      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
+      React.createElement("p", { className: "mt-2" }, "The Great Leap Forward (GLF) campaign in China did face severe problems including drought. However, in the agricultural reforms, while commune lands were divided into small plots and allocated for use, ownership was NOT transferred to households; they were only allowed to keep the income. Thus, Statement 2 is false.")
     )
   },
   {
     id: '28',
-    marks: 4,
+    marks: 3,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Primary Functions' of money."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Secondary Functions' of money.")
+      React.createElement("p", { className: "font-semibold italic" }, "\"Pakistan was maintaining a healthy economic growth momentum of 6.3% till 1990s, however it lost its track of economic growth falling to 5.3% between 2015-17.\""),
+      React.createElement("p", { className: "mt-2" }, "Do you agree with the given statement? Justify your answer with valid arguments.")
     ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, "The primary functions of money are the basic functions that money must perform to serve as money. These functions are:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
-          React.createElement("li", null, React.createElement("strong", null, "Medium of Exchange: "), "Money acts as a medium of exchange, facilitating the exchange of goods and services. It eliminates the need for barter system and makes transactions easier."),
-          React.createElement("li", null, React.createElement("strong", null, "Unit of Account: "), "Money serves as a unit of account or measure of value. It provides a common measure for expressing the value of goods and services in terms of money."),
-          React.createElement("li", null, React.createElement("strong", null, "Store of Value: "), "Money serves as a store of value, allowing people to store purchasing power for future use. It can be kept for future transactions without losing its value.")
-        )
-      )
+    solution: React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
+      React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
+      React.createElement("p", null, "Yes. Pakistan maintained healthy growth rate till 1990s owing to the introduction of various policies such as Green Revolution and import substitution-based industrialisation."),
+      React.createElement("p", { className: "mt-2" }, "However, later it faced slowdown to the magnitude of 5.3 % between 2015-17, due to several interconnected factors such as agricultural growth and food supply which were largely dependent on favourable harvest rather than a systematic process of technological advancement. Moreover, political instability, excessive reliance on remittances, and dependence on foreign aid, significantly hindered Pakistan's economic progress.")
     ),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Medium of Exchange: 1 mark"),
-        React.createElement("li", null, "Unit of Account: 1 mark"),
-        React.createElement("li", null, "Store of Value: 2 marks")
-      )
-    )
+    explanation: React.createElement("p", null, "Justification with valid arguments: 3 Marks.")
   },
   {
     id: '29',
-    marks: 4,
+    marks: 3,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Current Account' of the Balance of Payments with its components."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Capital Account' of the Balance of Payments with its components.")
+      React.createElement("p", { className: "font-semibold mb-2" }, "(A) \"Edward Barbier defined Sustainable Development as a strategy which is directly concerned with increasing the material standard of living of the poor at the grass root level.\""),
+      React.createElement("p", null, "Elaborate the given statement."),
+      React.createElement("div", { className: "my-4 text-center font-bold text-gray-500" }, "OR"),
+      React.createElement("p", { className: "font-semibold mb-2" }, "(B) Distinguish between self-employed and hired workers with the help of a suitable example.")
     ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, "The Current Account of the Balance of Payments records all those international economic transactions of a country that occur within a given period of time, usually a year, and involve a change in the ownership of goods, services, and income transfers."),
-        React.createElement("p", { className: "mt-2" }, "The components of Current Account are:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
-          React.createElement("li", null, React.createElement("strong", null, "Balance of Trade: "), "It records the value of exports and imports of visible items (goods) of a country."),
-          React.createElement("li", null, React.createElement("strong", null, "Balance of Services: "), "It records the value of exports and imports of invisible items (services) like tourism, shipping, insurance, etc."),
-          React.createElement("li", null, React.createElement("strong", null, "Balance of Income: "), "It records the income received from abroad (like interest, dividends, profits) and payments made abroad."),
-          React.createElement("li", null, React.createElement("strong", null, "Balance of Transfers: "), "It records unilateral transfers like gifts, remittances, foreign aid, etc., received from or paid to abroad.")
+    solution: React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
+      React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
+      React.createElement("div", { className: "mb-4" },
+        React.createElement("p", { className: "font-semibold" }, "(A) Sustainable Development:"),
+        React.createElement("p", null, "Sustainable Development, seeks to meet the basic needs of the present generation without compromising the needs of the future generations. As per Edward Barbier, it must be used to increase the standard of living of the poor through measurable increase in income, educational and health services, sanitation, etc. The aim of Sustainable Development should be to reduce absolute poverty by creating livelihoods while minimizing resource depletion, environmental harm, cultural disruption, and social instability.")
+      ),
+      React.createElement("div", { className: "relative flex py-2 items-center" },
+        React.createElement("div", { className: "flex-grow border-t border-gray-400" }),
+        React.createElement("span", { className: "flex-shrink-0 mx-4 text-gray-400 font-bold" }, "OR"),
+        React.createElement("div", { className: "flex-grow border-t border-gray-400" })
+      ),
+      React.createElement("div", null,
+        React.createElement("p", { className: "font-semibold" }, "(B) Distinction:"),
+        React.createElement("ul", { className: "list-disc pl-5" },
+          React.createElement("li", null, React.createElement("span", { className: "font-bold" }, "Self-Employed:"), " People, who own and operate an enterprise to earn their livelihood are known as self-employed workers. For example, a cement shop owner."),
+          React.createElement("li", { className: "mt-2" }, React.createElement("span", { className: "font-bold" }, "Whereas;")),
+          React.createElement("li", { className: "mt-2" }, React.createElement("span", { className: "font-bold" }, "Hired Workers:"), " A hired worker is someone who is employed by another person/organization and receives compensation in the form of a salary/wage. For example, an employee working as a graphic designer at a marketing agency.")
         )
       )
     ),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Definition of Current Account: 1 mark"),
-        React.createElement("li", null, "Components (any four): 3 marks (½ mark each)")
-      )
-    )
+    explanation: React.createElement("p", null, "Part A: Meaning of Sustainable Development (3 Marks). OR Part B: Distinction (3 Marks).")
   },
   {
     id: '30',
     marks: 4,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Demand-Pull Inflation' with the help of a suitable diagram."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Cost-Push Inflation' with the help of a suitable diagram.")
+      React.createElement("p", { className: "font-semibold mb-2" }, "(A) \"The introduction of Railways affected the structure of the Indian economy in two important ways.\""),
+      React.createElement("p", null, "Justify the given statement, with valid explanation."),
+      React.createElement("div", { className: "my-4 text-center font-bold text-gray-500" }, "OR"),
+      React.createElement("p", { className: "font-semibold mb-2" }, "(B) Refer to the given information carefully:"),
+      React.createElement("div", { className: "flex justify-center my-4" },
+        React.createElement("img", { src: "/eco_sqp_q30b_life_expectancy.png", alt: "Table: Expectation of Life at Birth", className: "max-w-full h-auto rounded border" })
+      ),
+      React.createElement("p", { className: "mt-2" }, "Answer the following questions on the basis of the given information and common understanding:"),
+      React.createElement("ul", { className: "list-decimal pl-5 mt-2" },
+        React.createElement("li", null, "Identify and define the demographic indicator given in the above table."),
+        React.createElement("li", null, "List any two such demographic indicators."),
+        React.createElement("li", null, "State the stage of demographic transition India entered in 1921.")
+      )
     ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, "Demand-pull inflation occurs when the Aggregate Demand (AD) increases at a faster rate than the Aggregate Supply (AS), leading to a rise in the general price level."),
-        React.createElement("p", { className: "mt-2" }, "In the given diagram, initially the economy is in equilibrium at point E where AD intersects AS at the full employment level of output (Yf)."),
-        React.createElement("p", { className: "mt-2" }, "When AD increases from AD to AD1, it intersects AS at point E1, resulting in a higher level of output (Y1) and higher price level (P1). This leads to demand-pull inflation."),
-        React.createElement("p", { className: "mt-2" }, "The causes of demand-pull inflation include:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
-          React.createElement("li", null, "Increase in consumption expenditure"),
-          React.createElement("li", null, "Increase in investment expenditure"),
-          React.createElement("li", null, "Increase in government expenditure"),
-          React.createElement("li", null, "Increase in export earnings")
+    solution: React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
+      React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
+      React.createElement("div", { className: "mb-4" },
+        React.createElement("p", { className: "font-semibold" }, "(A) Impact of Railways:"),
+        React.createElement("p", null, "The introduction of railways affected the structure of the Indian economy in two important ways:"),
+        React.createElement("ul", { className: "list-disc pl-5 mt-2" },
+          React.createElement("li", null, "It enabled people to undertake long distance travel and thereby breaking geographical and cultural barriers."),
+          React.createElement("li", null, "It fostered commercialisation of Indian agriculture which adversely affected the self-sufficiency of the village economies in India.")
+        )
+      ),
+      React.createElement("div", { className: "relative flex py-2 items-center" },
+        React.createElement("div", { className: "flex-grow border-t border-gray-400" }),
+        React.createElement("span", { className: "flex-shrink-0 mx-4 text-gray-400 font-bold" }, "OR"),
+        React.createElement("div", { className: "flex-grow border-t border-gray-400" })
+      ),
+      React.createElement("div", null,
+        React.createElement("p", { className: "font-semibold" }, "(B) Demographic Indicators:"),
+        React.createElement("p", null, React.createElement("strong", null, "(I) "), "The demographic indicator given in the table is Life Expectancy. Life Expectancy refers to the average number of years a person is expected to live."),
+        React.createElement("p", { className: "mt-4" }, React.createElement("img", { src: "/eco_sqp_q30b_life_expectancy.png", alt: "Life Expectancy Chart", className: "w-full max-w-md mx-auto border rounded shadow" })),
+        React.createElement("p", { className: "mt-4" }, React.createElement("strong", null, "(II) "), "Two demographic indicators are:"),
+        React.createElement("ul", { className: "list-disc pl-5 mt-1" },
+          React.createElement("li", null, "Infant Mortality Rate"),
+          React.createElement("li", null, "Literacy Rate")
         ),
-        React.createElement("img", { src: "https://storage.googleapis.com/aiedu-dev-images-mirror/aistudio/22.png", alt: "Demand-Pull Inflation Diagram", className: "my-4 rounded-lg" })
+        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "(III) "), "India entered the second stage of demographic transition in 1921.")
       )
     ),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Definition of Demand-pull inflation: 1 mark"),
-        React.createElement("li", null, "Explanation with diagram: 2 marks"),
-        React.createElement("li", null, "Causes: 1 mark")
-      )
-    )
+    explanation: React.createElement("p", null, "Part A: Two impacts (2+2 marks). OR Part B: (I) Identification (1) + Definition (1), (II) Two indicators (1), (III) Year (1).")
   }
 ];

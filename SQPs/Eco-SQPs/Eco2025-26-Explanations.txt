@@ -1,0 +1,28 @@
+Based on the Sample Question Paper (SQP) 2025-26 and its Marking Scheme, Question 12 is a 3-mark question in the Macroeconomics section involving an internal choice. Here is the detailed explanation for both options:
+
+### **Option A: Limitation on Credit Creation**
+
+**Question:**
+“The statutory requirement of the Reserve Ratio (RR) acts as a limit to the amount of credit that banks can create.” Justify the given statement with the valid explanation.
+
+**Detailed Explanation:**
+The statement is **justified**. The Reserve Ratio acts as a mathematical and legal limit on the money multiplier process for the following reasons:
+
+1.  **Definition of Reserve Ratio:** The Reserve Ratio refers to the specific percentage of deposits that every commercial bank is legally required to keep as reserves (either as cash with themselves or with the Central Bank).
+2.  **Constraint on Lending:** Commercial banks cannot lend the entirety of the deposits they receive. They must hold the required Reserve Ratio portion, and only the *remaining* rest of the deposits can be utilized to extend loans to the public.
+3.  **Control Mechanism:** This ratio is fixed by the Central Bank (Reserve Bank of India) specifically to avoid the situation of ‘over lending’ by commercial banks. Since this is legally binding, it restricts the money multiplier ($\frac{1}{\text{Reserve Ratio}}$), effectively capping the total volume of credit the banking system can generate from a given initial deposit,.
+
+---
+
+### **Option B: RBI as Banker to the Government**
+
+**Question:**
+“The Reserve Bank of India (RBI) provides several banking services to the Government.” Do you agree with the given statement? Give valid explanation in support of your answer.
+
+**Detailed Explanation:**
+**Yes**, I agree with the statement. The Reserve Bank of India acts as the **Banker to the Government**, performing vital financial services similar to those a commercial bank performs for its customers:
+
+1.  **Managing Accounts:** The RBI manages the government's accounts, receives deposits, and processes payments on behalf of the government.
+2.  **Banking Operations:** It facilitates various banking operations for the state, including exchanges and remittances.
+3.  **Crisis Management:** Crucially, during financial crises, the RBI provides credit to the government. This ensures the smooth functioning of the government and supports the state in managing its financial obligations effectively when revenue streams might be stressed.
+

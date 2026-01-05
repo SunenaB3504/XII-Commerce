@@ -6,7 +6,7 @@ import { questions23to26 } from './sample-paper-2022-q23-26.ts';
 import { questions27to34 } from './sample-paper-2022-q27-34.ts';
 
 const samplePaper2022: QuestionPaper = {
-  name: 'CBSE Accountancy Sample Question Paper 2022-23',
+  name: 'CBSE Sample Paper 2022-23',
   questions: [
     ...paper1to16.questions,
     ...questions17to20,

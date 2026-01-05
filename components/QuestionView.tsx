@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import type { Question } from '../types';
 
 interface QuestionViewProps {
@@ -7,6 +7,36 @@ interface QuestionViewProps {
 
 const QuestionView: React.FC<QuestionViewProps> = ({ question }) => {
   const [showSolution, setShowSolution] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const explanationRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Cleanup speech on unmount
+    return () => {
+      window.speechSynthesis.cancel();
+    };
+  }, []);
+
+  const handleSpeak = () => {
+    if (isSpeaking) {
+      window.speechSynthesis.cancel();
+      setIsSpeaking(false);
+    } else {
+      if (explanationRef.current) {
+        // Cancel any existing speech first
+        window.speechSynthesis.cancel();
+
+        const text = explanationRef.current.innerText;
+        const utterance = new SpeechSynthesisUtterance(text);
+
+        utterance.onend = () => setIsSpeaking(false);
+        utterance.onerror = () => setIsSpeaking(false);
+
+        window.speechSynthesis.speak(utterance);
+        setIsSpeaking(true);
+      }
+    }
+  };
 
   // For better aesthetics, we inject the keyframes for animations.
   const style = `
@@ -95,13 +125,22 @@ const QuestionView: React.FC<QuestionViewProps> = ({ question }) => {
               </div>
 
               <div className="bg-gradient-to-r from-blue-400 to-indigo-500 border-4 border-blue-300 rounded-3xl p-6 shadow-2xl">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
-                    <span className="text-3xl">🧠</span>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
+                      <span className="text-3xl">🧠</span>
+                    </div>
+                    <h4 className="text-2xl font-black text-white drop-shadow-lg">How It Works</h4>
                   </div>
-                  <h4 className="text-2xl font-black text-white drop-shadow-lg">How It Works</h4>
+                  <button
+                    onClick={handleSpeak}
+                    className={`bg-white/20 hover:bg-white/30 text-white p-2 rounded-xl transition-all border-2 border-white/40 shadow-lg active:scale-95 ${isSpeaking ? 'animate-pulse ring-2 ring-white' : ''}`}
+                    title={isSpeaking ? "Stop Reading" : "Read Aloud"}
+                  >
+                    <span className="text-2xl">{isSpeaking ? '⏹️' : '🔊'}</span>
+                  </button>
                 </div>
-                <div className="prose prose-slate max-w-none text-white text-base leading-relaxed font-medium bg-white/20 backdrop-blur-sm rounded-2xl p-5 border-2 border-white/40">
+                <div ref={explanationRef} className="prose prose-slate max-w-none text-white text-base leading-relaxed font-medium bg-white/20 backdrop-blur-sm rounded-2xl p-5 border-2 border-white/40">
                   {question.explanation}
                 </div>
               </div>

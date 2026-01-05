@@ -5,7 +5,7 @@ import { challengeQuestions23to26_2022 } from './business-studies-challenge-2022
 import { challengeQuestions27to34_2022 } from './business-studies-challenge-2022-q27-34.ts';
 
 export const businessStudiesChallenge2022: ChallengePaper = {
-  name: 'CBSE Business Studies Challenge 2022 (Main Exam)',
+  name: 'CBSE Board Exam 2022',
   challengeMode: true,
   timeLimit: 180, // 3 hours
   totalMarks: 80,

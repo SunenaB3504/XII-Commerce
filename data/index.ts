@@ -32,30 +32,29 @@ import { accountancyLearningModules } from './learning-content/accountancy';
 import type { Subject } from '../types';
 
 export const subjects: Subject[] = [
-  { 
-    name: 'Accountancy', 
-  questionPapers: [
-  accountancySamplePaper2025, 
-  samplePaper2024,
-  samplePaper2023,
-  samplePaper2022,
-  accountancySamplePaper2021,
-      accountancyBoardExam67_4_1, 
+  {
+    name: 'Accountancy',
+    questionPapers: [
+      accountancySamplePaper2025,
+      samplePaper2024,
+      samplePaper2023,
+      samplePaper2022,
+      accountancySamplePaper2021,
+      accountancyBoardExam67_4_1,
       accountancyBoardExam67_5_3,
       accountancyBoardExam67_3_1,
       accountancyBoardExam67_4_3
     ],
     learningModules: accountancyLearningModules,
   },
-  { 
-    name: 'Business Studies', 
+  {
+    name: 'Business Studies',
     questionPapers: [
       businessStudiesChallenge2025,
       businessStudiesChallenge2024,
       businessStudiesChallenge2023,
       businessStudiesChallenge2022,
       businessStudiesChallenge2021,
-      businessStudiesSamplePaper2025, 
       businessStudiesBoardExam66_1_1,
       businessStudiesBoardExam66_1_2,
       businessStudiesBoardExam66_7_3,
@@ -64,8 +63,8 @@ export const subjects: Subject[] = [
     ],
     learningModules: businessStudiesLearningModules,
   },
-  { 
-    name: 'Economics', 
+  {
+    name: 'Economics',
     questionPapers: [
       economicsSamplePaper2025,
       economicsSamplePaper2024,

@@ -1,161 +1,158 @@
+
 import { Question } from '../../types';
 import React from 'react';
 
 export const questions31to34: Question[] = [
   {
     id: '31',
-    marks: 6,
+    marks: 4,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Central Bank' as a banker to the government. Also, explain any four other functions of the Central Bank."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Central Bank' as a banker to the commercial banks. Also, explain any four other functions of the Central Bank.")
+      React.createElement("p", { className: "font-semibold mb-2" }, "(I) \"India has been a part of many regional and global economic groupings such as G20, SAARC, BRICS etc.\""),
+      React.createElement("p", { className: "mb-2" }, "In the light of the given statement, briefly explain the importance of regional and global economic groupings. (3 marks)"),
+      React.createElement("p", { className: "font-semibold" }, "(II) Define 'Special Economic Zone'. (1 mark)")
     ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, "As a banker to the government, the Central Bank performs the following functions:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
-          React.createElement("li", null, React.createElement("strong", null, "Accepts Deposits: "), "The Central Bank accepts deposits from the government and maintains their accounts."),
-          React.createElement("li", null, React.createElement("strong", null, "Makes Payments: "), "The Central Bank makes payments on behalf of the government and handles its transactions."),
-          React.createElement("li", null, React.createElement("strong", null, "Provides Loans: "), "The Central Bank provides short-term loans to the government to meet its temporary financial needs."),
-          React.createElement("li", null, React.createElement("strong", null, "Manages Public Debt: "), "The Central Bank manages the public debt by issuing government securities and handling their redemption."),
-          React.createElement("li", null, React.createElement("strong", null, "Advisory Role: "), "The Central Bank advises the government on monetary and financial matters.")
-        ),
-        React.createElement("p", { className: "mt-4" }, "Other functions of the Central Bank are:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
-          React.createElement("li", null, React.createElement("strong", null, "Banker to Commercial Banks: "), "The Central Bank acts as a banker to commercial banks by accepting their deposits, providing loans, and acting as their clearing house."),
-          React.createElement("li", null, React.createElement("strong", null, "Controller of Credit: "), "The Central Bank controls the credit creation by commercial banks through various quantitative and qualitative measures."),
-          React.createElement("li", null, React.createElement("strong", null, "Custodian of Foreign Exchange Reserves: "), "The Central Bank maintains foreign exchange reserves and manages exchange rate."),
-          React.createElement("li", null, React.createElement("strong", null, "Issuer of Currency: "), "The Central Bank issues currency notes and coins and maintains their circulation.")
-        )
+    solution: React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 space-y-4" },
+      React.createElement("div", null,
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (I)"),
+        React.createElement("p", null, "Regional and global economic groupings like G-20, SAARC, BRICS etc., play a vital role for developing nations like India as they help them to understand the developmental processes pursued by their neighbouring nations to better comprehend their own strengths and weaknesses vis-à-vis their neighbours. Moreover, in the unfolding process of globalisation, as developing nations face competition not only from developed nations but also amongst themselves such groupings help them to flourish well in a shared environment.")
+      ),
+      React.createElement("div", { className: "border-t border-blue-200 pt-4" },
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (II)"),
+        React.createElement("p", null, "Special Economic Zone is a geographical region that has economic laws different from a country’s typical economic laws.")
       )
     ),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Banker to government (any four points): 3 marks (½ mark each)"),
-        React.createElement("li", null, "Any four other functions: 3 marks (½ mark each)")
-      )
+    explanation: React.createElement("div", null,
+      React.createElement("p", null, "1. Role of Regional/Global Groupings (3 Marks)."),
+      React.createElement("p", null, "2. Meaning of SEZ (1 Mark).")
     )
   },
   {
     id: '32',
-    marks: 6,
+    marks: 4,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Expenditure Method' of measuring National Income with its components."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Income Method' of measuring National Income with its components.")
+      React.createElement("p", { className: "font-semibold" }, "Refer to the given image carefully:"),
+      React.createElement("div", { className: "flex justify-center my-4" },
+        React.createElement("img", { src: "/eco_sqp_q32_farming.png", alt: "Panel A: Conventional Farming vs Panel B: Organic Farming", className: "max-w-full h-auto rounded border" })
+      ),
+      React.createElement("p", { className: "mt-2" }, "Answer the following questions on the basis of the given image:"),
+      React.createElement("p", { className: "font-semibold mt-2" }, "(I) Identify the type of farming in Panel A and Panel B. (1 mark)"),
+      React.createElement("p", { className: "font-semibold mt-2" }, "(II) Explain any one advantage and disadvantage of the type of farming in Panel B over Panel A. (3 marks)")
     ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, "The Expenditure Method measures national income by adding up all the final expenditures incurred by all the sectors of the economy during a given period of time. It is also known as the Outlay Method."),
-        React.createElement("p", { className: "mt-2" }, "The formula for calculating GDP by Expenditure Method is:"),
-        React.createElement("p", { className: "ml-4 font-mono bg-gray-100 p-2 rounded" }, "GDP = C + I + G + (X - M)"),
-        React.createElement("p", { className: "mt-2" }, "Where:"),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
-          React.createElement("li", null, React.createElement("strong", null, "C (Consumption Expenditure): "), "It includes expenditure incurred by households on consumption of goods and services. It is the largest component of aggregate demand."),
-          React.createElement("li", null, React.createElement("strong", null, "I (Investment Expenditure): "), "It includes expenditure incurred by firms on purchase of capital goods and construction of buildings and structures. It also includes changes in inventories."),
-          React.createElement("li", null, React.createElement("strong", null, "G (Government Expenditure): "), "It includes expenditure incurred by the government on purchase of goods and services and investment in public works. It does not include transfer payments."),
-          React.createElement("li", null, React.createElement("strong", null, "X - M (Net Exports): "), "It is the difference between exports (X) and imports (M). Exports refer to expenditure incurred by foreigners on domestically produced goods and services, while imports refer to expenditure incurred by domestic residents on foreign goods and services.")
+    solution: React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 space-y-4" },
+      React.createElement("div", null,
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (I)"),
+        React.createElement("p", null, "The type of farming indicated in Panel A is Conventional Farming, whereas, the type of farming in Panel B is Organic Farming.")
+      ),
+      React.createElement("div", { className: "border-t border-blue-200 pt-4" },
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (II)"),
+        React.createElement("p", null, React.createElement("strong", null, "Advantage of Organic Farming over Conventional Farming:")),
+        React.createElement("ul", { className: "list-disc pl-5 mt-1" },
+          React.createElement("li", null, "Organic farming is the system of farming that relies upon the use of organic inputs for cultivation such as organic manures and composts. Its chemical free nature helps in soil conservation.")
         ),
-        React.createElement("p", { className: "mt-2" }, "To arrive at National Income, we need to make adjustments for depreciation and net indirect taxes.")
+        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "Disadvantage of Organic Farming over Conventional Farming:")),
+        React.createElement("ul", { className: "list-disc pl-5 mt-1" },
+          React.createElement("li", null, "Yields from organic farming are lesser than the conventional farming. Therefore, small and marginal farmers may find it difficult to adapt to large scale production.")
+        )
       )
     ),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Definition of Expenditure Method: 1 mark"),
-        React.createElement("li", null, "Formula: 1 mark"),
-        React.createElement("li", null, "Explanation of components (C, I, G, X-M): 4 marks (1 mark each)")
-      )
+    explanation: React.createElement("div", null,
+      React.createElement("p", null, "1. Identification (1+1 marks)."),
+      React.createElement("p", null, "2. Advantage and Disadvantage (2+2 marks).")
     )
   },
   {
     id: '33',
     marks: 6,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Fixed Exchange Rate System' and 'Flexible Exchange Rate System' with their merits and demerits."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Managed Floating Exchange Rate System' and 'Pegged Exchange Rate System' with their merits and demerits.")
+      React.createElement("div", { className: "mb-4" },
+        React.createElement("p", { className: "font-semibold mb-2" }, "(A) (I) \"Government made a fresh statement of policy on the 30th April, 1956 which will help speeding up industrialisation...\""),
+        React.createElement("p", { className: "italic text-sm text-gray-500 mb-2" }, "(Source: Planning Commission)"),
+        React.createElement("p", null, "In the light of the given text and common understanding, comment upon the classification of industries under the revised policy. (3 marks)"),
+        React.createElement("p", { className: "font-semibold mt-4 mb-2" }, "(II) \"The implementation of land ceiling legislation in India encountered several challenges that hindered its effectiveness.\""),
+        React.createElement("p", null, "Do you agree with the given statement? Give valid reasons in support of your answer. (3 marks)")
+      ),
+      React.createElement("div", { className: "my-4 text-center font-bold text-gray-500" }, "OR"),
+      React.createElement("div", null,
+        React.createElement("p", { className: "font-semibold mb-2" }, "(B) (I) \"The process of globalisation through liberalisation and privatisation has produced positive, as well as, negative results for India.\""),
+        React.createElement("p", null, "Do you agree with the given statement? Give valid explanation in support of your answer. (4 marks)"),
+        React.createElement("p", { className: "font-semibold mt-4 mb-2" }, "(II) \"The Government of India was compelled to introduce the economic reforms of 1991.\""),
+        React.createElement("p", null, "State any two reasons behind the introduction of Economic Reforms of 1991. (2 marks)")
+      )
     ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, React.createElement("strong", null, "Fixed Exchange Rate System:")),
-        React.createElement("p", { className: "mt-2" }, "Under this system, the exchange rate is fixed by the government or the central bank and is not allowed to fluctuate. The central bank maintains the fixed rate by buying and selling foreign currencies."),
-        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "Merits:")),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
-          React.createElement("li", null, "Promotes international trade and investment due to certainty in exchange rates"),
-          React.createElement("li", null, "Prevents speculation in foreign exchange markets"),
-          React.createElement("li", null, "Helps in controlling inflation")
+    solution: React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 space-y-4" },
+      React.createElement("div", null,
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (A)"),
+        React.createElement("p", { className: "font-semibold" }, "(I) Industrial Policy Resolution 1956:"),
+        React.createElement("ul", { className: "list-disc pl-5 mt-1 space-y-1" },
+          React.createElement("li", null, "The industries were classified under three heads as per Industrial Policy Resolution 1956:"),
+          React.createElement("li", null, "The first category, comprised industries which would be exclusively owned by the government."),
+          React.createElement("li", null, "The second category, private sector could supplement the efforts of the public sector, with the government taking the sole responsibility for starting new units."),
+          React.createElement("li", null, "The third category consisted of the remaining industries which were left in the hands of private sector.")
         ),
-        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "Demerits:")),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
-          React.createElement("li", null, "Requires large foreign exchange reserves"),
-          React.createElement("li", null, "May lead to balance of payments problems if the fixed rate is unrealistic"),
-          React.createElement("li", null, "Lack of automatic adjustment mechanism")
-        ),
-        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "Flexible Exchange Rate System:")),
-        React.createElement("p", { className: "mt-2" }, "Under this system, the exchange rate is determined by the forces of demand and supply in the foreign exchange market without any government intervention."),
-        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "Merits:")),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
-          React.createElement("li", null, "Automatic adjustment to balance of payments disequilibrium"),
-          React.createElement("li", null, "No need for foreign exchange reserves"),
-          React.createElement("li", null, "Promotes economic independence")
-        ),
-        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "Demerits:")),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
-          React.createElement("li", null, "Encourages speculation in foreign exchange markets"),
-          React.createElement("li", null, "May lead to uncertainty in international trade"),
-          React.createElement("li", null, "May cause inflationary or deflationary pressures")
+        React.createElement("p", { className: "mt-2 font-semibold" }, "(II) Land Ceiling Implementation:"),
+        React.createElement("p", null, "Yes. A few former Zamindars, used legislative loopholes to continue to own large areas of land. Tenants were evicted and the landowners claimed to be self-cultivators. The big landlords delayed its implementation; by challenging it in the courts. They used this delay to register their lands in the name of close relatives, thereby escaping from the legislation. Consequently, creating hindrances in the successful implementation of land ceiling reforms.")
+      ),
+      React.createElement("div", { className: "relative flex py-2 items-center" },
+        React.createElement("div", { className: "flex-grow border-t border-gray-400" }),
+        React.createElement("span", { className: "flex-shrink-0 mx-4 text-gray-400 font-bold" }, "OR"),
+        React.createElement("div", { className: "flex-grow border-t border-gray-400" })
+      ),
+      React.createElement("div", null,
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (B)"),
+        React.createElement("p", { className: "font-semibold" }, "(I) Globalisation Results:"),
+        React.createElement("p", null, "Yes, the process of globalisation has yielded both positive, as well as, negative results for India. It is argued that globalization serves as an opportunity for developing countries like India to access the capital and technology of the global markets."),
+        React.createElement("p", { className: "mt-2" }, "However, some critics argue that globalisation primarily benefits developed nations, and undermines the welfare of people in underdeveloped countries thereby exacerbating economic disparities. In the context of India, the reforms of the 1990’s mainly benefited high-income groups and select service sectors instead of crucial areas like agriculture and industry."),
+        React.createElement("p", { className: "mt-2 font-semibold" }, "(II) Reasons for 1991 Reforms:"),
+        React.createElement("ul", { className: "list-disc pl-5 mt-1" },
+          React.createElement("li", null, "High rate of inflation"),
+          React.createElement("li", null, "Huge Balance of Payments Deficit")
         )
       )
     ),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Explanation of Fixed Exchange Rate System: 1 mark"),
-        React.createElement("li", null, "Merits of Fixed Exchange Rate: 1 mark"),
-        React.createElement("li", null, "Demerits of Fixed Exchange Rate: 1 mark"),
-        React.createElement("li", null, "Explanation of Flexible Exchange Rate System: 1 mark"),
-        React.createElement("li", null, "Merits of Flexible Exchange Rate: 1 mark"),
-        React.createElement("li", null, "Demerits of Flexible Exchange Rate: 1 mark")
-      )
-    )
+    explanation: React.createElement("p", null, "Detailed marking scheme allocation as per parts.")
   },
   {
     id: '34',
     marks: 6,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the 'Liberalisation' and 'Globalisation' as part of the economic reforms initiated in India in 1991. Also, explain any four impacts of these reforms on the Indian economy."),
-      React.createElement("p", { className: "mt-4 text-sm text-gray-600" }, "OR"),
-      React.createElement("p", { className: "mt-2" }, "Explain the 'Privatisation' and 'Globalisation' as part of the economic reforms initiated in India in 1991. Also, explain any four impacts of these reforms on the Indian economy.")
+      React.createElement("p", { className: "font-semibold" }, "Read the following text carefully:"),
+      React.createElement("div", { className: "bg-gray-100 p-4 rounded my-4 text-justify text-sm" },
+        React.createElement("p", { className: "mb-2" }, "The National Education Policy (NEP) 2020, asserts that education is fundamental for achieving full human potential, providing universal access to quality education and leadership on the global stage in terms of economic growth, social justice and equality. Thus, it presents the best way forward for developing and optimising India’s resources."),
+        React.createElement("p", { className: "mb-2" }, "To attain the goals of education, NEP 2020 unequivocally endorses a substantial increase in public investment in education by both the Central government and all State governments. This is considered extremely critical for achieving the high-quality and equitable public education system that is truly needed for India's future progress and growth. To achieve this, they need to increase the public investment in Education sector to reach 6% of GDP at the earliest."),
+        React.createElement("p", { className: "mb-2" }, "One of the primary goals of the schooling system must be to ensure that children are enrolled in and are attending school. As per the 75th round household survey by NSSO in 2017-18, the number of out of school children in the age group of 6 to 17 years is 3.22 crore. With a goal to achieve 100% Gross Enrolment Ratio in preschool to secondary level by 2030, it will be a top priority to bring these children back into the educational fold as early as possible, and to prevent further students from dropping out. For the same, two initiatives that will be undertaken are to provide:"),
+        React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
+          React.createElement("li", null, "effective and sufficient infrastructure, so that all students have access to safe and engaging school education at all levels from pre-primary school to Grade 12."),
+          React.createElement("li", null, "regular trained teachers at each stage, special care shall be taken to ensure that no school remains deficient on infrastructure support.")
+        ),
+        React.createElement("p", { className: "mt-4 italic text-right" }, "Source: https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English.pdf (adapted and modified)")
+      ),
+      React.createElement("p", { className: "font-semibold mt-4" }, "On the basis of the given text and common understanding, answer the following questions:"),
+      React.createElement("p", { className: "mt-2" }, "(I) \"Education is considered fundamental for achieving full human potential\". Justify the given statement with valid arguments."),
+      React.createElement("p", { className: "mt-2" }, "(II) Discuss the importance of increasing public expenditure in education."),
+      React.createElement("p", { className: "mt-2" }, "(III) State any two main initiatives that may be implemented to tackle school dropouts and avert additional students from leaving school.")
     ),
-    solution: React.createElement(React.Fragment, null,
-      React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500" },
-        React.createElement("h4", { className: "font-bold text-blue-800 mb-3" }, "Answer"),
-        React.createElement("p", null, React.createElement("strong", null, "Liberalisation:")),
-        React.createElement("p", { className: "mt-2" }, "Liberalisation refers to the removal of unnecessary controls and restrictions imposed by the government on economic activities. It involves deregulation of various sectors of the economy to allow free play of market forces."),
-        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "Globalisation:")),
-        React.createElement("p", { className: "mt-2" }, "Globalisation refers to the integration of the domestic economy with the world economy through removal of trade barriers and free flow of goods, services, capital, and technology across borders."),
-        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "Impacts of these reforms on the Indian economy:")),
-        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
-          React.createElement("li", null, React.createElement("strong", null, "Increase in Foreign Investment: "), "Liberalisation and globalisation attracted large amounts of foreign direct investment (FDI) and foreign institutional investment (FII) into various sectors of the economy."),
-          React.createElement("li", null, React.createElement("strong", null, "Growth in Exports: "), "Removal of trade barriers and reduction in tariffs led to significant increase in exports, improving the balance of payments position."),
-          React.createElement("li", null, React.createElement("strong", null, "Technological Advancement: "), "Globalisation brought advanced technology and management practices, leading to improvement in productivity and efficiency."),
-          React.createElement("li", null, React.createElement("strong", null, "Increase in Competition: "), "Liberalisation increased competition in domestic markets, leading to better quality products and lower prices for consumers."),
-          React.createElement("li", null, React.createElement("strong", null, "Economic Growth: "), "These reforms contributed to higher GDP growth rates and overall economic development.")
+    solution: React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 space-y-4" },
+      React.createElement("div", null,
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (I)"),
+        React.createElement("p", null, "The education is fundamental for achieving full human potential providing universal access to quality education and leadership on the global stage in terms of economic growth, social justice and equality. Thus, it presents the best way forward for developing and optimising India’s resources.")
+      ),
+      React.createElement("div", { className: "border-t border-blue-200 pt-4" },
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (II)"),
+        React.createElement("p", null, "To create a high-quality and equitable public education system essential for India's future development and growth, it is imperative to boost the public investment in education sector to 6% of GDP at the earliest.")
+      ),
+      React.createElement("div", { className: "border-t border-blue-200 pt-4" },
+        React.createElement("h4", { className: "font-bold text-blue-800 mb-2" }, "Answer (III)"),
+        React.createElement("p", null, "Two main initiatives which will be implemented to tackle school dropouts and avert additional students from leaving school are to provide:"),
+        React.createElement("ul", { className: "list-disc pl-5 mt-1 space-y-1" },
+          React.createElement("li", null, "effective and sufficient infrastructure, so that all students have access to safe and engaging school education at all levels from pre-primary school to Grade 12."),
+          React.createElement("li", null, "regular trained teachers at each stage, special care shall be taken to ensure that no school remains deficient on infrastructure support.")
         )
       )
     ),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Explanation of Liberalisation: 1 mark"),
-        React.createElement("li", null, "Explanation of Globalisation: 1 mark"),
-        React.createElement("li", null, "Any four impacts: 4 marks (1 mark each)")
-      )
+    explanation: React.createElement("div", null,
+      React.createElement("p", null, "1. Role of education (2 Marks)."),
+      React.createElement("p", null, "2. Investment goal (2 Marks)."),
+      React.createElement("p", null, "3. Initiatives (2 Marks).")
     )
   }
 ];
