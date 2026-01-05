@@ -309,7 +309,7 @@ export const questions1to20: Question[] = [
         ),
         React.createElement("div", { className: "space-y-3" },
           React.createElement("p", { className: "font-medium" }, "Part (A) Calculation Logic:"),
-          React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300 font-mono text-sm" },
+          React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300 font-mono text-sm text-gray-900" },
             "GDPmp = C + G + I + (X-M)"
           ),
           React.createElement("ul", { className: "list-disc pl-5 text-gray-700 space-y-1" },
@@ -319,7 +319,7 @@ export const questions1to20: Question[] = [
             React.createElement("li", null, "(X-M): Excess of Imports(20) means Net Exports = -20")
           ),
           React.createElement("p", { className: "font-semibold mt-2" }, "Step 1: GDPmp = 800 + 170 + 910 + (-20) = 1860"),
-          React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300 font-mono text-sm mt-2" },
+          React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300 font-mono text-sm mt-2 text-gray-900" },
             "NDPfc = GDPmp - Dep - NIT"
           ),
           React.createElement("p", null, "NDPfc = 1860 - 40 - 70 = 1750 crore.")
@@ -462,11 +462,23 @@ export const questions1to20: Question[] = [
     id: '16',
     marks: 6,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "mb-4 italic text-sm text-gray-600 bg-gray-50 p-2 rounded" },
-        "Read the following text carefully: As societies developed from hunters and gatherers... [Text on Barter, Coins, CBDC]... Source: RBI (adapted)."
+      React.createElement("div", { className: "mb-4 text-sm text-gray-800 bg-gray-50 p-4 rounded border border-gray-200" },
+        React.createElement("p", { className: "font-semibold mb-2" }, "Read the following text carefully:"),
+        React.createElement("p", { className: "mb-2" }, "As societies developed from hunters and gatherers, the material needs of human beings increased – to build a house, wear clothes, make weapons and implements etc. Since these needs could not be produced individually, people had to purchase them from others. These purchases, for example, were paid initially by barter – a leather skin cloak for a spear. As barter had its limits – how many cloaks for a spear – barter got standardized in terms of metals or cowrie shells. Now people knew the value of both the cloak and the spear in terms of bronze or cowrie shells. This was still barter, as both bronze and shells had intrinsic value (shells were desired for their beauty). This system evolved over time into metal currencies. Gold and silver coinage were the offshoot of this system where they had features of barter (both gold and silver had intrinsic value) as well as money (they were standardized representation of value)."),
+        React.createElement("p", { className: "mb-2 font-semibold" }, "In respect of money two facts emerge historically:"),
+        React.createElement("ul", { className: "list-disc pl-5 mb-2" },
+          React.createElement("li", null, "Money has taken the form of either commodities (which have intrinsic value) or in terms of debt instruments."),
+          React.createElement("li", null, "Money is usually issued by a sovereign (or a Central Bank as its representative).")
+        ),
+        React.createElement("p", { className: "mb-2" }, "In modern economies, currency is a form of money that is issued exclusively by some competent authority (Central Bank). It is a liability of the issuing Central Bank and an asset of the holding public. Currency is usually issued in paper (or polymer) form, but the form of currency is not its defining characteristic."),
+        React.createElement("p", { className: "mb-2" }, "In the recent past, the Reserve Bank of India, issued Central Bank Digital Currency (CBDC). A CBDC is the currency issued by a central bank in a digital form. It serves all the purposes of a paper currency in a different form."),
+        React.createElement("p", { className: "mb-2" }, "The introduction of CBDC has the potential to provide significant benefits, such as reduced dependency on cash, lower transaction costs, reduced settlement risk. Introduction of CBDC would possibly lead to a more robust, efficient, trusted, regulated payments option. There are associated risks such as cyber-attacks and technology preparedness, but they need to be carefully evaluated against the potential benefits."),
+        React.createElement("p", { className: "text-xs italic text-right mt-2" }, "Source: https://website.rbi.org.in/web/rbi/-/speeches-interview/central-bank-digital-currencyis-this-the-future-of-money-1111 (adapted and modified)")
       ),
-      React.createElement("p", { className: "mb-2 font-semibold" }, "(I) “Over the centuries, money has evolved in various forms.” In the light of the given statement, state and discuss briefly any two forms of money."),
-      React.createElement("p", { className: "font-semibold" }, "(II) “Various economists have formed a strong opinion that, in the modern times digital currency (like CBDC) is quite essential. However, it comes with its own benefits and potential risks.” Do you agree with the given statement, giving valid arguments in support of your answer.")
+      React.createElement("p", { className: "mb-2 font-semibold" }, "(I) “Over the centuries, money has evolved in various forms.”"),
+      React.createElement("p", { className: "mb-4" }, "In the light of the given statement, state and discuss briefly any two forms of money."),
+      React.createElement("p", { className: "font-semibold mb-2" }, "(II) “Various economists have formed a strong opinion that, in the modern times digital currency (like CBDC) is quite essential. However, it comes with its own benefits and potential risks.”"),
+      React.createElement("p", null, "Do you agree with the given statement, giving valid arguments in support of your answer.")
     ),
     solution: React.createElement(React.Fragment, null,
       React.createElement("p", { className: "font-semibold mb-2" }, "Answer:"),
