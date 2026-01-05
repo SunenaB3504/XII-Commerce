@@ -237,7 +237,16 @@ export const questions1to20: Question[] = [
     id: '10',
     marks: 1,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Based on the given diagram: The trade under current account during January 2024 reflects a ________ of USD ________ billion. [Data: Jan-2024 Exports = 69.72, Imports = 70.46]"),
+      React.createElement("p", { className: "font-semibold block mb-4" }, "Based on the given diagram:"),
+      React.createElement("div", { className: "flex justify-center mb-4" },
+        React.createElement("img", {
+          src: "/images/economics-2024-q10.png",
+          alt: "Current Account Trade Data Jan 2023 vs Jan 2024",
+          className: "max-w-full h-auto border rounded shadow-sm"
+        })
+      ),
+      React.createElement("p", { className: "font-semibold" }, "The trade under current account during January 2024 reflects a ________ of USD ________ billion."),
+      React.createElement("p", { className: "text-sm text-gray-600 mt-1" }, "[Data: Jan-2024 Exports = 69.72, Imports = 70.46]"),
       React.createElement("ul", { className: "list-none pl-6 mt-4 space-y-2" },
         React.createElement("li", null, "A. surplus, 0.74"),
         React.createElement("li", null, "B. surplus, 3.85"),
