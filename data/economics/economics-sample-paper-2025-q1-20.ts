@@ -80,6 +80,9 @@ export const questions1to20: Question[] = [
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. Store of Value"),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 3: Money and Banking | Topic: Functions of Money"
+        ),
         React.createElement("p", { className: "font-semibold" }, "How It Works:"),
         React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
           React.createElement("li", null, React.createElement("strong", null, "Concept (Store of Value):"), " Money facilitates the transfer of purchasing power from the present to the future. It allows individuals to save wealth."),
@@ -106,6 +109,9 @@ export const questions1to20: Question[] = [
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: B. Statement 1 is false and Statement 2 is true."),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 6: Open Economy Macroeconomics | Topic: Exchange Rate Systems"
+        ),
         React.createElement("p", { className: "font-semibold" }, "How It Works:"),
         React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
           React.createElement("li", null, React.createElement("strong", null, "Statement 1 (False):"), " In a Fixed Exchange Rate System, when the government intentionally increases the exchange rate (making domestic currency cheaper), it is called Devaluation. The statement incorrectly says 'decreased'."),
@@ -131,6 +137,9 @@ export const questions1to20: Question[] = [
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. Factor"),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 2: National Income Accounting | Topic: Circular Flow of Income"
+        ),
         React.createElement("p", { className: "font-semibold" }, "How It Works:"),
         React.createElement("p", null, "The Circular Flow Model divides the economy into two main markets:"),
         React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
@@ -157,7 +166,7 @@ export const questions1to20: Question[] = [
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-3" },
         React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
-          "Ref: Chapter 2: National Income Accounting | Topic: Some Basic Concepts of Macroeconomics"
+          "Ref: Chapter 4: Determination of Income and Employment | Topic: Deficient Demand"
         ),
         React.createElement("p", { className: "font-semibold" }, "How It Works:"),
         React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
@@ -272,6 +281,9 @@ export const questions1to20: Question[] = [
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: D. Assertion (A) is false, but Reason (R) is true."),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 6: Open Economy Macroeconomics | Topic: Balance of Payments"
+        ),
         React.createElement("p", { className: "font-semibold" }, "How It Works:"),
         React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
           React.createElement("li", null, React.createElement("strong", null, "Assertion (False):"), " External Assistance (loans/grants) creates a liability or affects assets, so it is recorded in the Capital Account, not the Current Account."),
@@ -295,6 +307,9 @@ export const questions1to20: Question[] = [
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: B. 1935"),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 3: Money and Banking | Topic: Introduction"
+        ),
         React.createElement("p", { className: "font-semibold" }, "How It Works:"),
         React.createElement("p", null, "The Reserve Bank of India (RBI) is India's central banking institution."),
         React.createElement("ul", { className: "list-disc pl-5" },
