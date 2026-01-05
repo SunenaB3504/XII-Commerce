@@ -43,8 +43,16 @@ export const questions25to30: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: C. (c)-iii"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "Horticulture indeed makes India the second-largest producer of fruits and vegetables globally. Animal Husbandry relates to livestock (ii), Fisheries doesn't specifically mean mixed farming, and Agro-processing is not Iron and Steel (iv).")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: IED Chapter 6: Rural Development | Topic: Diversification into Productive Activities"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Horticulture (c-iii):"), " India has emerged as a world leader in producing a variety of fruits and vegetables (Golden Revolution). It is indeed the second-largest producer globally."),
+          React.createElement("li", null, React.createElement("strong", null, "Incorrect Pairs:"), " Animal Husbandry is livestock farming (not instability). Fisheries is aquaculture (not mixed farming). Agro-processing is food processing (not steel).")
+        )
+      )
     )
   },
   {
@@ -62,8 +70,16 @@ export const questions25to30: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: D. Regulation of markets"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "Regulation of markets is explicitly aimed at creating orderly and transparent conditions to protect farmers from malpractices.")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: IED Chapter 6: Rural Development | Topic: Agricultural Marketing System"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Regulation of Markets:"), " This was the first major step initiated by the government to create orderly and transparent marketing conditions. Regulated markets ensure fair play and transparent dealings to protect farmers from malpractices."),
+          React.createElement("li", null, React.createElement("strong", null, "Other Options:"), " Cooperative marketing, MSP, and Infrastructure are other measures, but 'Regulation' specifically targets the 'orderly and transparent' aspect.")
+        )
+      )
     )
   },
   {
@@ -83,8 +99,16 @@ export const questions25to30: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. Statement 1 is true and Statement 2 is false."),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "The Great Leap Forward (GLF) campaign in China did face severe problems including drought. However, in the agricultural reforms, while commune lands were divided into small plots and allocated for use, ownership was NOT transferred to households; they were only allowed to keep the income. Thus, Statement 2 is false.")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: IED Chapter 10: Comparative Development Experiences | Topic: China - Great Leap Forward (GLF)"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Statement 1 (True):"), " The GLF campaign (started in 1958) faced severe setbacks, including a massive drought that killed millions and conflict with Russia which led to withdrawal of professionals."),
+          React.createElement("li", null, React.createElement("strong", null, "Statement 2 (False):"), " Under the Commune system, people collectively cultivated land. While in later reforms (post-1978), plots were allocated to individuals, they were given 'use rights', NOT 'ownership'. The land remained state-owned. Thus, the statement about ownership transfer is false.")
+        )
+      )
     )
   },
   {
@@ -99,7 +123,24 @@ export const questions25to30: Question[] = [
       React.createElement("p", null, "Yes. Pakistan maintained healthy growth rate till 1990s owing to the introduction of various policies such as Green Revolution and import substitution-based industrialisation."),
       React.createElement("p", { className: "mt-2" }, "However, later it faced slowdown to the magnitude of 5.3 % between 2015-17, due to several interconnected factors such as agricultural growth and food supply which were largely dependent on favourable harvest rather than a systematic process of technological advancement. Moreover, political instability, excessive reliance on remittances, and dependence on foreign aid, significantly hindered Pakistan's economic progress.")
     ),
-    explanation: React.createElement("p", null, "Justification with valid arguments: 3 Marks.")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 10: Comparative Development Experiences | Topic: Development Strategies - Pakistan"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Context:"), " Pakistan's economic performance has been volatile."),
+          React.createElement("li", null, React.createElement("strong", null, "Reasons for Slowdown (2015-17):"),
+            React.createElement("ul", { className: "list-circle pl-5 mt-1 space-y-1" },
+              React.createElement("li", null, "Dependence on Agriculture: Growth was largely based on good harvests rather than technological stability."),
+              React.createElement("li", null, "External Reliance: High reliance on foreign aid and remittances made the economy vulnerable."),
+              React.createElement("li", null, "Political Instability: Frequent political changes hindered long-term planning.")
+            )
+          )
+        )
+      )
+    )
   },
   {
     id: '29',
@@ -130,7 +171,31 @@ export const questions25to30: Question[] = [
         )
       )
     ),
-    explanation: React.createElement("p", null, "Part A: Meaning of Sustainable Development (3 Marks). OR Part B: Distinction (3 Marks).")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 9: Environment and Sustainable Development | Topic: Sustainable Development"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option A: Sustainable Development"),
+        React.createElement("p", null, "Defined by Edward Barbier as a strategy to increase the material standard of living of the poor at the grassroots level."),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+          React.createElement("li", null, "Reducing absolute poverty."),
+          React.createElement("li", null, "Minimizing resource depletion and environmental degradation."),
+          React.createElement("li", null, "Ensuring equity for future generations.")
+        ),
+
+        React.createElement("hr", { className: "my-4 border-gray-300" }),
+
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 7: Employment | Topic: Workers and Employment"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option B: Self-Employed vs Hired Workers"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Self-Employed:"), " Individuals who own and operate their own enterprise. Reward is profit (e.g., Shopkeeper)."),
+          React.createElement("li", null, React.createElement("strong", null, "Hired Workers:"), " Individuals employed by others for wages/salaries (e.g., Casual laborers, Regular employees).")
+        )
+      )
+    )
   },
   {
     id: '30',
@@ -177,6 +242,28 @@ export const questions25to30: Question[] = [
         React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "(III) "), "India entered the second stage of demographic transition in 1921.")
       )
     ),
-    explanation: React.createElement("p", null, "Part A: Two impacts (2+2 marks). OR Part B: (I) Identification (1) + Definition (1), (II) Two indicators (1), (III) Year (1).")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 1: Indian Economy on the Eve of Independence | Topic: Infrastructure (Railways)"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option A: Impact of Railways"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Positive Impact:"), " Economic Unification (breaking geographical barriers) and Commercialisation of Agriculture (farmers selling surplus in distant markets)."),
+          React.createElement("li", null, React.createElement("strong", null, "Negative Impact:"), " Hastened the export of raw materials and import of British finished goods.")
+        ),
+
+        React.createElement("hr", { className: "my-4 border-gray-300" }),
+
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 1: Indian Economy on the Eve of Independence | Topic: Demographic Condition"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option B: Demographic Indicators"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Life Expectancy:"), " Average years a person is expected to live. Low life expectancy indicates poor health facilities (was ~44 years during British rule)."),
+          React.createElement("li", null, React.createElement("strong", null, "Demographic Transition (1921):"), " Known as the 'Year of Great Divide'. India transitioned from the First Stage (High Birth/High Death) to the Second Stage (High Birth/Declining Death).")
+        )
+      )
+    )
   }
 ];

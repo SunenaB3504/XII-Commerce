@@ -21,9 +21,20 @@ export const questions31to34: Question[] = [
         React.createElement("p", null, "Special Economic Zone is a geographical region that has economic laws different from a country’s typical economic laws.")
       )
     ),
-    explanation: React.createElement("div", null,
-      React.createElement("p", null, "1. Role of Regional/Global Groupings (3 Marks)."),
-      React.createElement("p", null, "2. Meaning of SEZ (1 Mark).")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 10: Comparative Development Experiences | Topic: Development Strategies"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Part (I): Economic Groupings"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+          React.createElement("li", null, React.createElement("strong", null, "Mutual Learning:"), " Helps nations understand development processes of neighbors."),
+          React.createElement("li", null, React.createElement("strong", null, "Strength Analysis:"), " Allows comprehending own strengths/weaknesses vis-à-vis competitors."),
+          React.createElement("li", null, React.createElement("strong", null, "Shared Environment:"), " Provides a platform to flourish together in a globalized world.")
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800 mt-2" }, "Part (II): Special Economic Zone (SEZ)"),
+        React.createElement("p", null, "A specific geographical region that has economic laws different from a country's typical economic laws, primarily to attract foreign investment.")
+      )
     )
   },
   {
@@ -55,9 +66,18 @@ export const questions31to34: Question[] = [
         )
       )
     ),
-    explanation: React.createElement("div", null,
-      React.createElement("p", null, "1. Identification (1+1 marks)."),
-      React.createElement("p", null, "2. Advantage and Disadvantage (2+2 marks).")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 6: Rural Development | Topic: Sustainable Development (Organic Farming)"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Concepts:"), " Panel A is Conventional Farming (chemical inputs). Panel B is Organic Farming (organic inputs)."),
+          React.createElement("li", null, React.createElement("strong", null, "Advantage (Organic):"), " Chemical-free, sustains soil health, eco-friendly."),
+          React.createElement("li", null, React.createElement("strong", null, "Disadvantage (Organic):"), " Lower yields in initial years, shorter shelf life, limited choice of off-season crops.")
+        )
+      )
     )
   },
   {
@@ -109,7 +129,29 @@ export const questions31to34: Question[] = [
         )
       )
     ),
-    explanation: React.createElement("p", null, "Detailed marking scheme allocation as per parts.")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 2: Indian Economy (1950-1990) | Topic: Industrial Policy & Land Reforms"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option A: IPR 1956 & Land Ceiling"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+          React.createElement("li", null, React.createElement("strong", null, "IPR 1956 Classification:"), " Schedule A (Exclusive State), Schedule B (Mixed), Schedule C (Private)."),
+          React.createElement("li", null, React.createElement("strong", null, "Land Ceiling Challenges:"), " Big landlords used loopholes (transfer to relatives) and challenged legislation in courts.")
+        ),
+
+        React.createElement("hr", { className: "my-4 border-gray-300" }),
+
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 3: Liberalisation, Privatisation and Globalisation | Topic: Globalisation & Crisis"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option B: Globalisation & 1991 Reforms"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+          React.createElement("li", null, React.createElement("strong", null, "Globalisation Impacts:"), " Positive (Access to markets/tech) vs Negative (Disparities, neglect of agriculture)."),
+          React.createElement("li", null, React.createElement("strong", null, "1991 Crisis Reasons:"), " High Inflation, Fiscal Deficit, Gulf Crisis, Fall in Forex Reserves.")
+        )
+      )
+    )
   },
   {
     id: '34',
@@ -149,10 +191,18 @@ export const questions31to34: Question[] = [
         )
       )
     ),
-    explanation: React.createElement("div", null,
-      React.createElement("p", null, "1. Role of education (2 Marks)."),
-      React.createElement("p", null, "2. Investment goal (2 Marks)."),
-      React.createElement("p", null, "3. Initiatives (2 Marks).")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: IED Chapter 5: Human Capital Formation | Topic: Education Sector in India"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Educational Attainment:"), " Essential for economic growth, social justice, and equality."),
+          React.createElement("li", null, React.createElement("strong", null, "Public Investment:"), " Goal is to reach 6% of GDP (Tapas Majumdar Committee). Current levels are lower."),
+          React.createElement("li", null, React.createElement("strong", null, "Initiatives:"), " Providing effective infrastructure and ensuring regular trained teachers.")
+        )
+      )
     )
   }
 ];

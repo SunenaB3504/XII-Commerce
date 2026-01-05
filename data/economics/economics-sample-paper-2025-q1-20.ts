@@ -194,6 +194,9 @@ export const questions1to20: Question[] = [
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: C. Both Statements 1 and 2 are true."),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 2: National Income Accounting | Topic: Classification of Goods"
+        ),
         React.createElement("p", { className: "font-semibold" }, "How It Works:"),
         React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
           React.createElement("li", null, React.createElement("strong", null, "Concept (Final Goods):"), " Goods that have crossed the boundary line of production and are ready for use by final users."),
@@ -363,11 +366,23 @@ export const questions1to20: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: ₹700 crore"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "GVA of Firm B = Value of Output of Firm B - Purchases by Firm B from Firm A = ₹1,000 - ₹250 = ₹750 crore"),
-      React.createElement("p", { className: "mt-2" }, "Since both firms have equal GVA, GVA of Firm A = ₹750 crore"),
-      React.createElement("p", { className: "mt-2" }, "Domestic Sales of Firm A = GVA of Firm A - Exports by Firm A - Additions to stock of Firm A + Purchases by Firm A from Firm B"),
-      React.createElement("p", { className: "mt-2" }, "= ₹750 - ₹200 - ₹150 + ₹300 = ₹700 crore")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 2: National Income Accounting | Topic: Value Added Method"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("p", null, "Value of Output is the market value of all goods and services produced by an enterprise during an accounting year."),
+        React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300" },
+          React.createElement("p", { className: "font-mono text-sm text-black font-semibold" }, "Formula: Value of Output = Sales + Change in Stock")
+        ),
+        React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
+          React.createElement("li", null, "Gross Value Added (GVA) = Value of Output - Intermediate Consumption")
+        ),
+        React.createElement("p", { className: "mt-2" }, "GVA of Firm B = Value of Output of Firm B - Purchases by Firm B from Firm A = ₹1,000 - ₹250 = ₹750 crore"),
+        React.createElement("p", { className: "mt-2" }, "Since both firms have equal GVA, GVA of Firm A = ₹750 crore"),
+        React.createElement("p", { className: "mt-2" }, "Domestic Sales of Firm A = GVA of Firm A - Exports by Firm A - Additions to stock of Firm A + Purchases by Firm A from Firm B"),
+        React.createElement("p", { className: "mt-2" }, "= ₹750 - ₹200 - ₹150 + ₹300 = ₹700 crore")
+      )
     )
   },
   {
@@ -401,6 +416,9 @@ export const questions1to20: Question[] = [
     ),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: Chapter 3: Money and Banking | Topic: Money Creation by Commercial Banks & Functions of Central Bank"
+        ),
         React.createElement("div", null,
           React.createElement("h4", { className: "font-bold text-lg text-gray-800 mb-2" }, "Option A: Limitation on Credit Creation"),
           React.createElement("p", { className: "font-semibold mb-1" }, "Question:"),
@@ -462,9 +480,30 @@ export const questions1to20: Question[] = [
       )
     ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("p", null, "Part A: Classification of Income (3 marks)."),
-      React.createElement("p", null, "Part B: Explanation of any two components of expenditure (3 marks).")
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: Chapter 2: National Income Accounting | Topic: Factor Incomes vs. Transfer Payments (Section 2.3)"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option A: Classification of Income"),
+        React.createElement("div", { className: "space-y-2" },
+          React.createElement("p", null, React.createElement("strong", null, "1. Rental and Interest Income (Factor Income):"), " Payments made to owners of factors of production (Land and Capital) in exchange for productive services."),
+          React.createElement("p", null, React.createElement("strong", null, "2. Cash Transfers (Transfer Income):"), " Unilateral transfers received without providing goods or services in return. Excluded from National Income.")
+        ),
+
+        React.createElement("hr", { className: "my-4 border-gray-300" }),
+
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: Chapter 2: National Income Accounting | Topic: The Expenditure Method (Section 2.2.2)"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option B: Expenditure Method of GDP"),
+        React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300 my-1" },
+          React.createElement("p", { className: "text-sm text-black font-semibold" }, "Formula: GDP = C + I + G + (X - M)")
+        ),
+        React.createElement("div", { className: "space-y-2" },
+          React.createElement("p", null, React.createElement("strong", null, "1. Private Final Consumption Expenditure (C):"), " Aggregate final consumption expenditure of households on goods and services for direct satisfaction of wants."),
+          React.createElement("p", null, React.createElement("strong", null, "2. Net Exports (X - M):"), " The difference between Exports (expenditure by foreigners on domestic goods) and Imports (expenditure by residents on foreign goods).")
+        )
+      )
     )
   },
   {
@@ -483,10 +522,15 @@ export const questions1to20: Question[] = [
       )
     ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Identification of Mr. Spector's loan as autonomous transaction: 1.5 marks"),
-        React.createElement("li", null, "Identification of Government's loan as accommodating transaction: 1.5 marks")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 6: Open Economy Macroeconomics | Topic: Balance of Payments"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Autonomous Transactions:"), " International economic transactions that take place due to some economic motive such as profit maximization. They are independent of the state of BoP."),
+          React.createElement("li", null, React.createElement("strong", null, "Accommodating Transactions:"), " Transactions undertaken to cover the deficit or surplus in the Balance of Payments. They are determined by the net consequences of autonomous transactions.")
+        )
       )
     )
   },
@@ -509,9 +553,16 @@ export const questions1to20: Question[] = [
       )
     ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "Explanation of any two measures: 2 marks (1 mark each)")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 3: Money and Banking | Topic: Central Bank and Control of Credit"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("p", null, "Inflation is a situation of sustained increase in the general price level. The Central Bank uses various monetary policy tools to control inflation."),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Repo Rate:"), " An increase in the repo rate makes borrowing more expensive for commercial banks, which in turn leads to higher lending rates for the public. This discourages borrowing and reduces aggregate demand, helping to control inflation."),
+          React.createElement("li", null, React.createElement("strong", null, "Open Market Operations (OMO):"), " The Central Bank sells government securities in the open market. This reduces the liquidity (funds) available with commercial banks, limiting their ability to lend. A decrease in lending reduces aggregate demand, thereby curbing inflation.")
+        )
       )
     )
   },
@@ -587,9 +638,60 @@ export const questions1to20: Question[] = [
       )
     ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("p", null, "(A) I: k calculation (1) + Values (2). II: Justification (3). Total 6 Marks."),
-      React.createElement("p", null, "(B) I: Calculation (2). II: Definition (1) + Mechanism (3). Total 6 Marks.")
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: Chapter 4: Determination of Income and Employment | Topic: The Multiplier Mechanism"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option A"),
+
+        React.createElement("h5", { className: "font-semibold text-gray-700 mt-2" }, "Part (I): Numerical on Investment Multiplier"),
+        React.createElement("div", { className: "space-y-2" },
+          React.createElement("p", null, React.createElement("strong", null, "1. Investment Multiplier (k):")),
+          React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300" },
+            React.createElement("p", { className: "font-mono text-sm text-black" }, "k = 1 / (1 - MPC) = 1 / (1 - 0.8) = 1 / 0.2 = 5")
+          ),
+
+          React.createElement("p", null, React.createElement("strong", null, "2. Change in Income (\u0394Y):")),
+          React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300" },
+            React.createElement("p", { className: "font-mono text-sm text-black" }, "\u0394Y = k \u00D7 \u0394I = 5 \u00D7 1,000 = \u20B9 5,000 crore")
+          ),
+
+          React.createElement("p", null, React.createElement("strong", null, "3. Change in Consumption (\u0394C):")),
+          React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300" },
+            React.createElement("p", { className: "font-mono text-sm text-black" }, "\u0394C = MPC \u00D7 \u0394Y = 0.8 \u00D7 5,000 = \u20B9 4,000 crore")
+          )
+        ),
+
+        React.createElement("h5", { className: "font-semibold text-gray-700 mt-2" }, "Part (II): Relationship between APC and APS"),
+        React.createElement("p", null, React.createElement("strong", null, "Justification:"), " Income (Y) is either consumed (C) or saved (S)."),
+        React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300 my-1" },
+          React.createElement("p", { className: "font-mono text-sm text-black" }, "Y = C + S"),
+          React.createElement("p", { className: "font-mono text-sm text-black" }, "Dividing by Y: Y/Y = C/Y + S/Y => 1 = APC + APS")
+        ),
+        React.createElement("p", { className: "text-sm text-gray-600" }, "Note: Since income is fully exhausted by consumption or savings, their proportions must sum to 1."),
+
+        React.createElement("hr", { className: "my-4 border-gray-300" }),
+
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: Chapter 4: Determination of Income and Employment | Topic: Effective Demand"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option B (OR)"),
+
+        React.createElement("h5", { className: "font-semibold text-gray-700 mt-2" }, "Part (I): Calculation of Dissavings"),
+        React.createElement("p", null, "At Equilibrium, S = I = 100."),
+        React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300" },
+          React.createElement("p", { className: "font-mono text-sm text-black" }, "S = -\u010C + MPS(Y)"),
+          React.createElement("p", { className: "font-mono text-sm text-black" }, "100 = -\u010C + 0.2(700)"),
+          React.createElement("p", { className: "font-mono text-sm text-black" }, "100 = -\u010C + 140 => \u010C = 40")
+        ),
+        React.createElement("p", null, "Dissavings at zero income is equal to autonomous consumption (\u010C), which is \u20B9 40."),
+
+        React.createElement("h5", { className: "font-semibold text-gray-700 mt-2" }, "Part (II): Effective Demand"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+          React.createElement("li", null, React.createElement("strong", null, "Effective Demand:"), " The level of Aggregate Demand (AD) which is perfectly met by Aggregate Supply (AS). Determines equilibrium output."),
+          React.createElement("li", null, React.createElement("strong", null, "Mechanism (when AD > AS):"), " If planned demand exceeds output, inventories fall. Producers increase employment and output to restore inventory levels, raising National Income until AD = AS.")
+        )
+      )
     )
   },
   {
@@ -616,10 +718,51 @@ export const questions1to20: Question[] = [
       )
     ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Marking Scheme"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-1" },
-        React.createElement("li", null, "(I) Explanation of tax and non-tax revenue: 3 marks"),
-        React.createElement("li", null, "(II) Reasons for fiscal deficit reduction: 3 marks")
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: Chapter 2: National Income Accounting | Topic: Factor Incomes vs. Transfer Payments"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option A: Classification of Income (Case Study)"),
+        React.createElement("div", { className: "space-y-2" },
+          React.createElement("p", { className: "font-semibold" }, "1. Rental and Interest Income:"),
+          React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+            React.createElement("li", null, React.createElement("strong", null, "Classification:"), " Factor Income."),
+            React.createElement("li", null, React.createElement("strong", null, "Explanation:"), " Factor income refers to payments made to owners of factors of production (Land, Labour, Capital, Entrepreneurship) in exchange for productive services."),
+            React.createElement("li", null, "Rent is the reward for Land/Property."),
+            React.createElement("li", null, "Interest is the reward for Capital/Investments."),
+            React.createElement("li", null, "Since productive assets were provided, these are earned incomes.")
+          ),
+          React.createElement("p", { className: "font-semibold mt-2" }, "2. Cash Transfers:"),
+          React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+            React.createElement("li", null, React.createElement("strong", null, "Classification:"), " Transfer Income (Transfer Payments)."),
+            React.createElement("li", null, React.createElement("strong", null, "Explanation:"), " Receipts which residents get for 'free' without providing goods/services in return."),
+            React.createElement("li", null, "The cash transfer from abroad is a unilateral transfer. No productive service was rendered, so it is excluded from National Income.")
+          )
+        ),
+        React.createElement("hr", { className: "my-4 border-gray-300" }),
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium" },
+          "Ref: Chapter 2: National Income Accounting | Topic: The Expenditure Method"
+        ),
+        React.createElement("h4", { className: "font-bold text-gray-800" }, "Option B: Expenditure Method of GDP"),
+        React.createElement("p", null, "The Expenditure Method calculates GDP by summing the final expenditures incurred by the four major sectors: Households (C), Firms (I), Government (G), and External Sector (X-M)."),
+        React.createElement("div", { className: "bg-gray-100 p-2 rounded border border-gray-300 my-2" },
+          React.createElement("p", { className: "font-mono text-sm text-black font-semibold" }, "Formula: GDP = C + I + G + (X - M)")
+        ),
+        React.createElement("div", { className: "space-y-2" },
+          React.createElement("p", { className: "font-semibold" }, "1. Private Final Consumption Expenditure (PFCE) - The Household Sector (C):"),
+          React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+            React.createElement("li", null, "Refers to aggregate final consumption expenditure undertaken by households."),
+            React.createElement("li", null, "Includes expenditure on durable/non-durable goods and services for direct satisfaction of wants."),
+            React.createElement("li", null, "It constitutes the largest component of aggregate demand.")
+          ),
+          React.createElement("p", { className: "font-semibold mt-2" }, "2. Net Exports - The External Sector (X - M):"),
+          React.createElement("ul", { className: "list-disc pl-5 space-y-1" },
+            React.createElement("li", null, "Represents net demand from the foreign sector for domestic goods."),
+            React.createElement("li", null, "Calculated as Exports (X) - Imports (M)."),
+            React.createElement("li", null, React.createElement("strong", null, "Exports (X):"), " Expenditure by foreigners on domestic goods."),
+            React.createElement("li", null, React.createElement("strong", null, "Imports (M):"), " Expenditure by residents on foreign goods (subtracted as it leaves the economy).")
+          )
+        )
       )
     )
   },
@@ -640,8 +783,13 @@ export const questions1to20: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: B. Financial"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "The text refers to reforms in the mutual funds sector, which falls under the financial sector. The government decided to open mutual funds to private and joint sectors with regulatory guidelines.")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 1: Indian Economy on the Eve of Independence | Topic: Financial Sector Reforms"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("p", null, "The text describes reforms related to mutual funds, which are a key component of the financial sector. The government's decision to open mutual funds to the private and joint sectors, along with evolving regulatory guidelines, signifies a reform aimed at strengthening the financial markets and encouraging investment. This falls directly under financial sector reforms, which were a part of the broader economic reforms initiated in India in 1991.")
+      )
     )
   },
   {
@@ -658,8 +806,13 @@ export const questions1to20: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: C. Britain"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "During the colonial period, Britain maintained monopoly control over India's foreign trade through various mechanisms like the East India Company and trade regulations.")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 1: Indian Economy on the Eve of Independence | Topic: Foreign Trade"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("p", null, "During the British colonial rule, Britain maintained a strict monopoly over India's foreign trade. More than half of India's foreign trade was restricted to Britain, while the remaining trade was allowed with a few other countries like Ceylon (Sri Lanka), China, and Persia (Iran). This policy was designed to benefit the British industries by ensuring a supply of raw materials from India and creating a market for British manufactured goods.")
+      )
     )
   },
   {
@@ -682,8 +835,17 @@ export const questions1to20: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: D. (i), (ii) and (iii)"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "Human capital refers to the stock of knowledge, skills, and abilities possessed by individuals. It is intangible (cannot be touched), imperfectly mobile (people may not migrate easily), and inseparable from its owner (cannot be transferred like physical capital).")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: Chapter 5: Human Capital Formation | Topic: Human Capital vs. Physical Capital"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Intangible in nature:"), " Human capital refers to the skills, knowledge, and abilities of individuals, which cannot be physically touched or seen, unlike physical capital (e.g., machinery)."),
+          React.createElement("li", null, React.createElement("strong", null, "Imperfectly mobile:"), " While people can move, their mobility is often restricted by factors like nationality, culture, and personal preferences, making human capital less mobile than physical capital."),
+          React.createElement("li", null, React.createElement("strong", null, "Inseparable from its owner:"), " The skills and knowledge reside within the individual and cannot be separated or transferred independently of the person who possesses them.")
+        )
+      )
     )
   }
 ];

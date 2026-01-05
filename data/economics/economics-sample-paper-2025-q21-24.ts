@@ -19,8 +19,16 @@ export const questions21to24: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)."),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "Technological reforms (Green Revolution) increased the demand for credit to buy inputs like HYV seeds and fertilizers, thus transforming the system towards production-oriented lending.")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: IED Chapter 5: Rural Development | Topic: Credit and Marketing in Rural Areas"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Technological Reforms (Green Revolution):"), " The introduction of high-yielding variety (HYV) seeds and fertilizers required significant investment."),
+          React.createElement("li", null, React.createElement("strong", null, "Shift in Credit Demand:"), " This increased the demand for credit specifically for purchasing agricultural inputs, thus shifting the focus of rural credit towards production-oriented lending rather than just consumption needs.")
+        )
+      )
     )
   },
   {
@@ -38,8 +46,16 @@ export const questions21to24: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: B. International Labour Organisation"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "The International Labour Organisation (ILO) has been instrumental in urging member countries, including India, to modernize their informal sectors to ensure better working conditions and social security for workers.")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: IED Chapter 7: Employment: Growth, Informalisation and other Issues | Topic: Informalisation of Indian Workforce"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "International Labour Organisation (ILO):"), " The ILO specifically mandates and encourages member nations to improve conditions in the informal sector."),
+          React.createElement("li", null, React.createElement("strong", null, "Modernisation Initiative:"), " Following ILO guidelines, the Indian government initiated measures to modernize informal sector enterprises and provide social security to workers in this sector.")
+        )
+      )
     )
   },
   {
@@ -64,7 +80,17 @@ export const questions21to24: Question[] = [
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: B. (i) and (ii)"),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "The primary sector includes activities directly dependent on nature. In the standard 8-fold classification, Agriculture (i) and Mining and Quarrying (ii) fall under the Primary Sector.")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: IED Chapter 2: Indian Economy (1950-1990) | Topic: Sectors of the Indian Economy"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Primary Sector Definition:"), " The primary sector involves activities that directly extract or harvest products from the earth. This includes agriculture, forestry, fishing, and mining."),
+          React.createElement("li", null, React.createElement("strong", null, "Analyzing the Options:"), " Based on the standard classification of economic activities, 'Agriculture' (i) and 'Mining and Quarrying' (ii) are core components of the primary sector."),
+          React.createElement("li", null, React.createElement("strong", null, "Excluding Other Options:"), " Divisions like manufacturing, construction, electricity, gas, water supply (secondary sector), and trade, transport, finance, real estate, public administration (tertiary sector) fall into other categories.")
+        )
+      )
     )
   },
   {
@@ -82,8 +108,16 @@ export const questions21to24: Question[] = [
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. reversal of supply-demand relationship of environmental resources"),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-      React.createElement("p", { className: "mt-2" }, "With the Industrial Revolution and population growth, the demand for resources began to exceed their supply, reversing the earlier relationship where supply exceeded demand.")
+      React.createElement("div", { className: "space-y-3" },
+        React.createElement("div", { className: "bg-purple-100 border-l-4 border-purple-500 text-purple-700 p-2 text-sm font-medium mb-2" },
+          "Ref: IED Chapter 9: Environment and Sustainable Development | Topic: Functions of the Environment"
+        ),
+        React.createElement("p", { className: "font-semibold" }, "How It Works:"),
+        React.createElement("ul", { className: "list-disc pl-5 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Pre-Industrial Era:"), " Demand for resources was less than the supply. Pollution was within the absorptive capacity of the environment."),
+          React.createElement("li", null, React.createElement("strong", null, "Post-Industrial Revolution:"), " With population explosion and industrial growth, the demand for resources for both production and consumption increased drastically. This led to a reversal of the supply-demand relationship, where demand now exceeds the rate of regeneration of resources.")
+        )
+      )
     )
   },
 ];
