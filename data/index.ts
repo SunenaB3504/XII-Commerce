@@ -22,10 +22,7 @@ import { economicsSamplePaper2025 } from './economics/economics-sample-paper-202
 import { economicsSamplePaper2024 } from './economics/economics-sample-paper-2024';
 import { economicsSamplePaper2023 } from './economics/economics-sample-paper-2023';
 import { economicsSamplePaper2022 } from './economics/economics-sample-paper-2022';
-import { economicsBoardExam58_5_1_term } from './economics/board-exam-58-5-1-term';
-import { economicsBoardExam58_5_3 } from './economics/board-exam-58-5-3';
-import { economicsBoardExam58_4_3 } from './economics/board-exam-58-4-3';
-import { economicsBoardExam58_3_3 } from './economics/board-exam-58-3-3';
+
 import { businessStudiesLearningModules } from './learning-content/business-studies';
 import { economicsLearningModules } from './learning-content/economics';
 import { accountancyLearningModules } from './learning-content/accountancy';
@@ -70,10 +67,7 @@ export const subjects: Subject[] = [
       economicsSamplePaper2024,
       economicsSamplePaper2023,
       economicsSamplePaper2022,
-      economicsBoardExam58_5_1_term,
-      economicsBoardExam58_5_3,
-      economicsBoardExam58_4_3,
-      economicsBoardExam58_3_3,
+
     ],
     learningModules: economicsLearningModules,
   },

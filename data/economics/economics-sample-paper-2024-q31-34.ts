@@ -88,38 +88,17 @@ export const questions31to34: Question[] = [
     ),
     solution: React.createElement("div", { className: "space-y-4" },
       React.createElement("div", null,
-        React.createElement("p", { className: "font-bold text-green-700" }, "(I) Challenges in Employment Generation:"),
-        React.createElement("ol", { className: "list-decimal pl-5 text-green-700 font-bold" },
-          React.createElement("li", null, "Jobless Growth: While GDP has grown consistently, employment growth has not kept pace."),
-          React.createElement("li", null, "Informalisation: Most new jobs are in the informal sector with no social security."),
-          React.createElement("li", null, "Skill Mismatch: The education system often doesn't produce the skills required by the modern industry.")
+        React.createElement("p", null, React.createElement("strong", null, "33. (I)"), " Two major sources of data on the workforce and employment:"),
+        React.createElement("ul", { className: "list-disc pl-5 mt-1" },
+          React.createElement("li", null, "decennial population census"),
+          React.createElement("li", null, "nationwide quinquennial surveys by NSSO")
         )
       ),
       React.createElement("div", null,
-        React.createElement("p", { className: "font-bold text-green-700" }, "(II) Difference between Labour Force and Workforce:"),
-        React.createElement("div", { className: "overflow-x-auto mt-2" },
-          React.createElement("table", { className: "min-w-full border-collapse border border-green-700 text-sm" },
-            React.createElement("thead", null,
-              React.createElement("tr", { className: "bg-green-100" },
-                React.createElement("th", { className: "border border-green-700 p-2 text-left" }, "Basis"),
-                React.createElement("th", { className: "border border-green-700 p-2 text-left" }, "Labour Force"),
-                React.createElement("th", { className: "border border-green-700 p-2 text-left" }, "Workforce")
-              )
-            ),
-            React.createElement("tbody", null,
-              React.createElement("tr", null,
-                React.createElement("td", { className: "border border-green-700 p-2 font-bold" }, "Meaning"),
-                React.createElement("td", { className: "border border-green-700 p-2" }, "Persons actually working OR willing and available to work."),
-                React.createElement("td", { className: "border border-green-700 p-2" }, "Persons actually working at a particular point in time.")
-              ),
-              React.createElement("tr", null,
-                React.createElement("td", { className: "border border-green-700 p-2 font-bold" }, "Formula"),
-                React.createElement("td", { className: "border border-green-700 p-2" }, "Workforce + Unemployed People"),
-                React.createElement("td", { className: "border border-green-700 p-2" }, "Labour Force - Unemployed People")
-              )
-            )
-          )
-        )
+        React.createElement("p", null, React.createElement("strong", null, "(II)"), " The given statement is defended. Labour force refers to the number of persons who are either employed or unemployed, whereas, workforce refers to all the people who are actively engaged in economic activities. Hence, labour force is a wider term than the workforce.")
+      ),
+      React.createElement("div", null,
+        React.createElement("p", null, React.createElement("strong", null, "(III)"), " Self-employed are those workers who own and operate an enterprise to earn their livelihood.")
       )
     ),
     explanation: React.createElement(React.Fragment, null,
@@ -150,23 +129,22 @@ export const questions31to34: Question[] = [
     ),
     solution: React.createElement("div", { className: "space-y-4" },
       React.createElement("div", null,
-        React.createElement("p", { className: "font-bold text-green-700" }, "(A) IPR 1956 classified industries into three categories:"),
-        React.createElement("ol", { className: "list-decimal pl-5 text-green-700 font-bold" },
-          React.createElement("li", null, "Schedule A: 17 industries exclusively owned by the State (e.g., Arms, Railways)."),
-          React.createElement("li", null, "Schedule B: 12 industries progressively state-owned (Private can supplement)."),
-          React.createElement("li", null, "Schedule C: All remaining industries left to private sector (License Raj).")
-        )
+        React.createElement("p", { className: "font-semibold underline mb-2" }, "34. (A)"),
+        React.createElement("p", null, React.createElement("strong", null, "(I)"), " Under the Industrial Policy Resolution (IPR) 1956, the policymakers reserved a category of industries for the private sector, however, the sector was kept under state control through a system of licenses. No new industry was allowed unless a license was obtained from the government. It was easier to obtain a license if the industrial unit was established in an economically backward area. In addition, such units were given certain benefits such as tax holidays and subsidised electricity. The purpose of this policy was to promote regional equality."),
+        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "(II)"), " Several notable scholars, such as Dadabhai Naoroji, William Digby, Findlay Shirras, V.K.R.V. Rao, and R.C. Desai, made earnest efforts to calculate national income during the colonial era. Among these scholars, the estimates provided by V.K.R.V. Rao were considered very significant. However, the majority of these studies revealed that the country's overall real output growth during the first half of the 20th century remained below 2%, with a meagre annual per capita output growth of just 0.5%.")
       ),
-      React.createElement("p", { className: "font-bold text-gray-700 border-t pt-2" }, "OR"),
+      React.createElement("div", { className: "relative flex py-2 items-center" },
+        React.createElement("div", { className: "flex-grow border-t border-gray-400" }),
+        React.createElement("span", { className: "flex-shrink-0 mx-4 text-gray-400 font-bold" }, "OR"),
+        React.createElement("div", { className: "flex-grow border-t border-gray-400" })
+      ),
       React.createElement("div", null,
-        React.createElement("p", { className: "font-bold text-green-700" }, "(B) (I) Notable Economists:"),
-        React.createElement("ul", { className: "list-disc pl-5 text-green-700 font-bold" },
-          React.createElement("li", null, "Dadabhai Naoroji, William Digby, Findlay Shirras, V.K.R.V. Rao, R.C. Desai")
-        ),
-        React.createElement("p", { className: "font-bold text-green-700 mt-2" }, "(II) Objectives of Colonial Foreign Trade Policy:"),
-        React.createElement("ol", { className: "list-decimal pl-5 text-green-700 font-bold" },
-          React.createElement("li", null, "Exporter of Raw Materials: To supply cheap raw materials for British industries."),
-          React.createElement("li", null, "Importer of Finished Goods: To sell British manufactured goods in India.")
+        React.createElement("p", { className: "font-semibold underline mb-2" }, "34. (B)"),
+        React.createElement("p", null, React.createElement("strong", null, "(I)"), " Throughout the colonial period, India's foreign trade was characterized by a significant export surplus. However, this surplus had detrimental consequences for the country's economy. This export surplus did not bring gold or silver into India. Instead, it was used to cover expenses incurred by an office set up by the colonial government in Britain, the expenses on the war fought by the British government, and the import of invisible items, all contributed to the drain of India's wealth."),
+        React.createElement("p", { className: "mt-2" }, React.createElement("strong", null, "(II)"), " 'Self-reliance' was adopted as a central planning objective in India's development strategy by the policymakers due to the following reasons:"),
+        React.createElement("ul", { className: "list-disc pl-5 mt-1" },
+          React.createElement("li", null, "To reduce the dependence on foreign nations, the stress was laid on mobilising domestic resources."),
+          React.createElement("li", null, "It was feared that the dependence on imported food supplies, foreign technology, and foreign capital may increase foreign interference in our policies.")
         )
       )
     ),

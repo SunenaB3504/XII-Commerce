@@ -284,19 +284,25 @@ export const questions1to20: Question[] = [
       React.createElement("p", { className: "font-semibold" }, "(B) State the steps pertaining to the estimation of National Income under the income method.")
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold mb-2" }, "Answer:"),
       React.createElement("div", { className: "space-y-4" },
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold underline" }, "Part (A): Domestic Income (NDPfc)"),
-          React.createElement("p", null, "₹ 1,750 crore")
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "11. (A)"),
+          React.createElement("p", null, "Domestic Income (NDP_FC) = i + iv + ii + iii + vii + vi - v - x - viii"),
+          React.createElement("p", null, "= 800 + 170 + 150 + 120 + 500 + 140 - 20 - 40 - 70"),
+          React.createElement("p", { className: "font-bold mt-1" }, "= ₹ 1,750 crore")
+        ),
+        React.createElement("div", { className: "relative flex py-2 items-center" },
+          React.createElement("div", { className: "flex-grow border-t border-gray-400" }),
+          React.createElement("span", { className: "flex-shrink-0 mx-4 text-gray-400 font-bold" }, "OR"),
+          React.createElement("div", { className: "flex-grow border-t border-gray-400" })
         ),
         React.createElement("div", null,
-          React.createElement("p", { className: "font-semibold underline" }, "Part (B): Steps for Income Method"),
-          React.createElement("ol", { className: "list-decimal pl-6 space-y-1" },
-            React.createElement("li", null, "Identify and classify production units."),
-            React.createElement("li", null, "Estimate Factor Incomes (COE + OS + MI)."),
-            React.createElement("li", null, "Sum up to get NDPfc."),
-            React.createElement("li", null, "Add NFIA to get National Income.")
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "11. (B)"),
+          React.createElement("p", { className: "mb-2" }, "Steps pertaining to the estimation of National Income under the Income method:"),
+          React.createElement("ol", { className: "list-decimal pl-6 space-y-2" },
+            React.createElement("li", null, "Identify and classify production units into distinct heads namely primary, secondary, and tertiary sector."),
+            React.createElement("li", null, "Estimate and classify the factor payments in different categories as Compensation of Employees, Operating Surplus, and Mixed Income. The sum of factor payments represents the contribution of the sectors to Domestic Income (NDP_FC)."),
+            React.createElement("li", null, "Finally, estimate and add the value of Net Factor Income from Abroad (NFIA) to arrive at National Income (NNP_FC).")
           )
         )
       )
@@ -334,10 +340,10 @@ export const questions1to20: Question[] = [
       React.createElement("p", { className: "font-semibold" }, "\"Tax revenue collection of the government may be categorized under two heads.\" State and explain the two heads of tax revenue.")
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold mb-2" }, "Answer: Direct Taxes and Indirect Taxes"),
+      React.createElement("p", { className: "font-semibold mb-2" }, "12. Tax revenue collection by the government may be categorized as:"),
       React.createElement("ul", { className: "list-disc pl-6 space-y-2" },
-        React.createElement("li", null, React.createElement("span", { className: "font-semibold" }, "Direct Taxes:"), " Liability and burden fall on the same person (e.g., Income Tax)."),
-        React.createElement("li", null, React.createElement("span", { className: "font-semibold" }, "Indirect Taxes:"), " Liability and burden can be shifted (e.g., GST).")
+        React.createElement("li", null, React.createElement("strong", null, "Direct Taxes:"), " It refers to those taxes whose impact and incidence lie on the same entity. In other words, the liability of paying direct taxes can’t be shifted."),
+        React.createElement("li", null, React.createElement("strong", null, "Indirect Taxes:"), " It refers to those taxes whose impact and incidence may lie on different entities. In other words, the liability of paying indirect taxes can be shifted.")
       )
     ),
     explanation: React.createElement("div", { className: "mt-4 space-y-4" },
@@ -367,16 +373,9 @@ export const questions1to20: Question[] = [
       React.createElement("p", { className: "font-semibold" }, "(II) State the meaning of ‘Balance of Payments Deficit’.")
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold mb-2" }, "Answer:"),
-      React.createElement("ul", { className: "list-decimal pl-6 space-y-2" },
-        React.createElement("li", null,
-          React.createElement("span", { className: "font-semibold" }, "(I) Capital Account, Credit Side."),
-          " Justification: FPI affects asset/liability status (Capital) and inflow of forex is recorded on Credit (+)."
-        ),
-        React.createElement("li", null,
-          React.createElement("span", { className: "font-semibold" }, "(II) BOP Deficit:"),
-          " When Autonomous Payments > Autonomous Receipts."
-        )
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("p", null, React.createElement("strong", null, "13. (I)"), " Foreign Portfolio Investments in India in the fiscal year 2023-24 will be recorded on the credit side of the capital account of the Balance of Payments (BOP) account. It is recorded on the credit side, as it results in the inflow of foreign exchange. Furthermore, such transactions are documented in the capital account as they reflect the change in the ownership of financial assets between the residents of a country and rest of the world."),
+        React.createElement("p", null, React.createElement("strong", null, "(II)"), " Balance of Payments deficit occurs when autonomous receipts fall short of autonomous payments during a given fiscal year in an economy.")
       )
     ),
     explanation: React.createElement("div", { className: "mt-4 space-y-4" },
@@ -404,11 +403,48 @@ export const questions1to20: Question[] = [
       )
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold mb-2" }, "Answer:"),
-      React.createElement("div", { className: "space-y-2" },
-        React.createElement("p", null, React.createElement("span", { className: "font-semibold" }, "(A) Steps:"), " 1. Draw C-curve. 2. Draw 45-degree line. 3. At intersection (C=Y), S=0. 4. Derive S-curve starting from -C bar."),
-        React.createElement("p", null, React.createElement("span", { className: "font-semibold" }, "(B) I:"), " Economy A (Y) = 100 crore."),
-        React.createElement("p", null, React.createElement("span", { className: "font-semibold" }, "(B) II:"), " Economy B (Y) = 700 crore.")
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "14. (A)"),
+          React.createElement("p", { className: "mb-2" }, "Given consumption curve (C) intersecting 45° line at B (Break-even level of income). Steps for derivation of saving curve from the consumption curve are as follows:"),
+          React.createElement("ol", { className: "list-decimal pl-6 space-y-2" },
+            React.createElement("li", null, "Take OA on the negative intercept on Y-axis equals to OC (Autonomous consumption) having positive intercept on Y-axis, as a starting point of the saving curve."),
+            React.createElement("li", null, "Draw a perpendicular from point B (where, Y=C) intersecting the X-axis at B’ (where S=0) which is another point on the saving curve."),
+            React.createElement("li", null, "Join point A to point B’ extending the line till point S to get the saving curve (AS).")
+          ),
+          React.createElement("div", { className: "flex justify-center mt-4" },
+            React.createElement("img", {
+              src: "/images/economics-2024-q14-diagram.png",
+              alt: "Derivation of Saving Curve from Consumption Curve",
+              className: "max-w-full h-auto border rounded shadow-sm"
+            })
+          )
+        ),
+        React.createElement("div", { className: "relative flex py-2 items-center" },
+          React.createElement("div", { className: "flex-grow border-t border-gray-400" }),
+          React.createElement("span", { className: "flex-shrink-0 mx-4 text-gray-400 font-bold" }, "OR"),
+          React.createElement("div", { className: "flex-grow border-t border-gray-400" })
+        ),
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "14. (B)"),
+          React.createElement("p", { className: "mb-2" }, "Given,"),
+          React.createElement("ul", { className: "list-none pl-4 space-y-1 mb-2" },
+            React.createElement("li", null, "Autonomous Consumption (c̄) = ₹ 40 crore"),
+            React.createElement("li", null, "Investment expenditure (I) = ₹ 100 crore"),
+            React.createElement("li", null, "For economy A, Marginal Propensity to Consume (MPC) = 0.6"),
+            React.createElement("li", null, "For economy B, Marginal Propensity to Consume (MPC) = 0.8")
+          ),
+          React.createElement("p", { className: "font-semibold mt-2" }, "(I) At break-even level for economy A;"),
+          React.createElement("p", { className: "font-mono ml-4" }, "Y = C"),
+          React.createElement("p", { className: "font-mono ml-4" }, "Y = 40 + 0.6Y"),
+          React.createElement("p", { className: "font-mono ml-4" }, "0.4Y = 40"),
+          React.createElement("p", { className: "font-mono ml-4 font-bold" }, "Y = ₹ 100 crore"),
+          React.createElement("p", { className: "font-semibold mt-2" }, "(II) Equilibrium level of income for economy B;"),
+          React.createElement("p", { className: "font-mono ml-4" }, "Y = C + I"),
+          React.createElement("p", { className: "font-mono ml-4" }, "Y = c̄ + (MPC) × Y + I"),
+          React.createElement("p", { className: "font-mono ml-4" }, "Y = 40 + 0.8Y + 100"),
+          React.createElement("p", { className: "font-mono ml-4 font-bold" }, "Y = ₹ 700 crore")
+        )
       )
     ),
     explanation: React.createElement("div", { className: "mt-4 space-y-4" },
@@ -441,8 +477,61 @@ export const questions1to20: Question[] = [
       React.createElement("p", { className: "font-semibold" }, "Based on the given text and common understanding, explain the working process of the increase in investment on the National Income, assuming the Marginal Propensity to Save (MPS) as 20%.")
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold mb-2" }, "Answer:"),
-      React.createElement("p", null, "The investment multiplier mechanism shows a total increase in National Income of ₹ 5,000 crore.")
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("p", null, React.createElement("strong", null, "15."), " The working process of the increase in investment on the National Income, is based on the assumption that one’s expenditure is another’s income. In Round 1, the investment in infrastructure undertaken by the government of 1,000 crore, will generate an additional income by the like amount (1,000 crore). Since Marginal Propensity to Save (MPS) is 0.2 i.e. MPC is 0.8 it will lead to an increase in the consumption expenditure by 800 crore (80% of 1,000) and saving by 200 crore (20% of 1,000). As one’s expenditure is another’s income, an increase in consumption expenditure results in an increase in income by 800 crore in the subsequent round. This process continues till the sum of the change in savings becomes equal to the change in the investment."),
+        React.createElement("div", { className: "overflow-x-auto my-4" },
+          React.createElement("table", { className: "min-w-full border-collapse border border-gray-300 text-sm" },
+            React.createElement("thead", null,
+              React.createElement("tr", { className: "bg-gray-100" },
+                React.createElement("th", { className: "border border-gray-300 px-2 py-1" }, "Round"),
+                React.createElement("th", { className: "border border-gray-300 px-2 py-1" }, "Increase in investment (ΔI) (in crore)"),
+                React.createElement("th", { className: "border border-gray-300 px-2 py-1" }, "Increase in income (ΔY) (in crore)"),
+                React.createElement("th", { className: "border border-gray-300 px-2 py-1" }, "Increase in consumption (ΔC) (in crore)"),
+                React.createElement("th", { className: "border border-gray-300 px-2 py-1" }, "Increase in savings (ΔS) (in crore)")
+              )
+            ),
+            React.createElement("tbody", null,
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "1"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "1,000"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "1,000"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "800"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "200")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "2"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "—"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "800"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "640"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "160")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "3"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "—"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "640"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "512"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "128")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "."),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "—"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "."),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, "."),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center" }, ".")
+              ),
+              React.createElement("tr", null,
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center font-bold" }, "Total"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center font-bold" }, "1,000"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center font-bold" }, "5,000"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center font-bold" }, "4,000"),
+                React.createElement("td", { className: "border border-gray-300 px-2 py-1 text-center font-bold" }, "1,000")
+              )
+            )
+          )
+        ),
+        React.createElement("p", null, "Investment Multiplier = 1/(1-MPC) = 1/(1-0.8) = 5"),
+        React.createElement("p", null, "Thus, the above schedule indicates that an increase in investment (ΔI) of 1,000 crore leads to a total increase in national income (ΔY) by 5,000 crore, which is 5 times the increase in investment.")
+      )
     ),
     explanation: React.createElement("div", { className: "mt-4 space-y-4" },
       React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg" },
@@ -481,9 +570,14 @@ export const questions1to20: Question[] = [
       React.createElement("p", null, "Do you agree with the given statement, giving valid arguments in support of your answer.")
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold mb-2" }, "Answer:"),
-      React.createElement("p", { className: "mb-2" }, React.createElement("span", { className: "font-bold" }, "(I) Forms:"), " Commodity Money (intrinsic value like shells) and Metallic/Paper Money (standardized value)."),
-      React.createElement("p", null, React.createElement("span", { className: "font-bold" }, "(II) Yes, agreed."), " CBDC offers benefits like reduced cash cost and settlement risk, but carries risks like cyber-attacks.")
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("p", null, React.createElement("strong", null, "16. (I)"), " The evolution of money has taken place over the centuries in different forms such as:"),
+        React.createElement("ul", { className: "list-disc pl-6 space-y-2" },
+          React.createElement("li", null, React.createElement("strong", null, "Metal currencies:"), " Gold or silver coins (which have intrinsic value) were used for economic transactions as these were used as standardised representation of value."),
+          React.createElement("li", null, React.createElement("strong", null, "Paper currency:"), " Currency is issued in paper (or polymer) form by the Central Bank. It is a liability of the issuing Central Bank and an asset of the holding public.")
+        ),
+        React.createElement("p", null, React.createElement("strong", null, "(II)"), " Yes. The introduction of CBDC provides significant benefits such as reduced dependency on cash, lower transaction costs, and reduced settlement risk. It leads to a more robust, efficient, trusted, and regulated payment option. However, there are associated risks such as cyber-attacks and technology preparedness, but they need to be carefully evaluated against the potential benefits.")
+      )
     ),
     explanation: React.createElement("div", { className: "mt-4 space-y-4" },
       React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg" },
@@ -517,11 +611,29 @@ export const questions1to20: Question[] = [
       React.createElement("p", null, "(II) ‘Natural calamities in the hill states of India have led to massive destruction of capital assets.’ Identify the type of loss (depreciation or capital loss) indicated in the aforesaid statement. Give valid reasons in support of your answer.")
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold mb-2" }, "Answer:"),
-      React.createElement("p", { className: "mb-1" }, React.createElement("span", { className: "font-bold" }, "A(I):"), " 12.5%"),
-      React.createElement("p", { className: "mb-1" }, React.createElement("span", { className: "font-bold" }, "A(II):"), " Positive impact on GDP (Investment) and Welfare (Well-being/Time saving)."),
-      React.createElement("p", { className: "mb-1" }, React.createElement("span", { className: "font-bold" }, "B(I):"), " Defended. End-use determines type (e.g., Car)."),
-      React.createElement("p", { className: "mb-1" }, React.createElement("span", { className: "font-bold" }, "B(II):"), " Capital Loss (Unforeseen).")
+      React.createElement("div", { className: "space-y-4" },
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "17. (A)"),
+          React.createElement("p", { className: "font-semibold" }, "(I)"),
+          React.createElement("p", { className: "ml-4" }, "Percentage change in Real GDP = (Change in Real GDP / Real GDP) × 100"),
+          React.createElement("p", { className: "ml-4" }, "= ((4,500 – 4,000) / 4,000) × 100"),
+          React.createElement("p", { className: "ml-4 font-bold" }, "= 12.5 %"),
+          React.createElement("p", { className: "font-semibold mt-2" }, "(II)"),
+          React.createElement("p", { className: "ml-4" }, "The public investment on the construction of a multi-lane flyover may impact the Gross Domestic Product (GDP) positively as good quality infrastructure (like an effective transport system) generally attracts higher investments in an economy and may lead to an increase in employment opportunities. It may also lead to a reduction in travel time and lower average transportation costs. Consequently, it may increase the well-being of citizens.")
+        ),
+        React.createElement("div", { className: "relative flex py-2 items-center" },
+          React.createElement("div", { className: "flex-grow border-t border-gray-400" }),
+          React.createElement("span", { className: "flex-shrink-0 mx-4 text-gray-400 font-bold" }, "OR"),
+          React.createElement("div", { className: "flex-grow border-t border-gray-400" })
+        ),
+        React.createElement("div", null,
+          React.createElement("p", { className: "font-semibold underline mb-2" }, "17. (B)"),
+          React.createElement("p", { className: "font-semibold" }, "(I)"),
+          React.createElement("p", { className: "ml-4" }, "The given statement is defended. Consumption goods are those goods that directly satisfy the wants of the consumer whereas, capital goods are those final goods that are used for further production. A good can be considered as a consumption good or a capital good. It depends upon the economic nature of its use. For example, machinery purchased by a household can be classified as a consumption good whereas, if it is purchased by a firm for further production, then as a capital good."),
+          React.createElement("p", { className: "font-semibold mt-2" }, "(II)"),
+          React.createElement("p", { className: "ml-4" }, "The massive destruction of capital assets caused by the recent natural calamities in the hill states of Himachal Pradesh and Uttarakhand can be considered as capital loss. Capital loss refers to the loss in the value of fixed assets due to unforeseen circumstances like natural disasters, theft, fires, etc.")
+        )
+      )
     ),
     explanation: React.createElement("div", { className: "mt-4 space-y-4" },
       React.createElement("div", { className: "bg-blue-50 p-4 rounded-lg" },
