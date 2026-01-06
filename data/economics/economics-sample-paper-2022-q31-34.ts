@@ -4,158 +4,97 @@ import React from 'react';
 export const questions31to34: Question[] = [
   {
     id: '31',
-    marks: 6,
+    marks: 4,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Discuss the various measures to control inflation in India."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[6 marks]")
+      React.createElement("p", { className: "mb-2" }, "a) Name any one Maharatana company. (1 mark)"),
+      React.createElement("p", { className: "mb-4" }, "b) ‘Land ceiling promotes equity.’ Support the given statement with valid explanation. (3 marks)"),
+      React.createElement("p", { className: "font-bold text-center my-2" }, "OR"),
+      React.createElement("p", { className: "mb-2" }, "Discuss briefly, how institutional reforms (land reforms) have played a significant role in transforming Indian agriculture. (4 marks)")
     ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Inflation can be controlled through monetary policy measures, fiscal policy measures, and other supplementary measures."),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Monetary Policy Measures"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Increase in Bank Rate:"), " Makes borrowing costlier, reduces investment and consumption"),
-        React.createElement("li", null, React.createElement("b", null, "Increase in CRR:"), " Reduces lending capacity of banks, decreases money supply"),
-        React.createElement("li", null, React.createElement("b", null, "Sale of Government Securities:"), " Absorbs excess liquidity from the market"),
-        React.createElement("li", null, React.createElement("b", null, "Increase in Repo Rate:"), " Makes borrowing from RBI costlier for banks"),
-        React.createElement("li", null, React.createElement("b", null, "Margin Requirements:"), " Increases down payment for loans against securities")
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "mb-4" },
+        React.createElement("p", { className: "font-bold underline" }, "Option 1 Solution:"),
+        React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "a)"), " Indian Oil Corporation Limited (IOCL) / Steel Authority of India Limited (SAIL)."),
+        React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "b)"), " Land ceiling refers to fixing the specified limit of land, which could be owned by an individual. It helps to promote equity in the agricultural sector as surplus land is seized from rich landlords and distributed among small and landless farmers.")
       ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Fiscal Policy Measures"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Increase in Taxes:"), " Reduces disposable income and purchasing power"),
-        React.createElement("li", null, React.createElement("b", null, "Reduction in Government Expenditure:"), " Decreases aggregate demand in the economy"),
-        React.createElement("li", null, React.createElement("b", null, "Increase in Savings:"), " Reduces consumption expenditure"),
-        React.createElement("li", null, React.createElement("b", null, "Surplus Budget:"), " Government spends less than its revenue")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Other Measures"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Increase in Production:"), " Addresses supply-side inflation by increasing output"),
-        React.createElement("li", null, React.createElement("b", null, "Wage Freeze:"), " Prevents wage-price spiral"),
-        React.createElement("li", null, React.createElement("b", null, "Administrative Measures:"), " Price controls, rationing, and fair price shops"),
-        React.createElement("li", null, React.createElement("b", null, "Public Awareness:"), " Encouraging savings and rational consumption")
+      React.createElement("div", { className: "border-t pt-4" },
+        React.createElement("p", { className: "font-bold underline" }, "Option 2 Solution:"),
+        React.createElement("p", { className: "mb-2" }, "Institutional reforms (Land reforms) have played a significant role in transforming Indian agriculture as:"),
+        React.createElement("ul", { className: "list-disc pl-5" },
+          React.createElement("li", { className: "mb-1" }, "Abolition of Intermediaries: It brought 200 lakh tenants into direct contact with the government and ended exploitation."),
+          React.createElement("li", null, "Land Ceiling: Promoted equity by redistributing surplus land to landless farmers.")
+        )
       )
+    ),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 1 | Ch 2: Indian Economy 1950-1990"),
+      React.createElement("p", null, "Institutional reforms mainly refer to Land Reforms (abolition of intermediaries, tenancy reforms, and land ceiling).")
     )
   },
   {
     id: '32',
-    marks: 6,
+    marks: 4,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the process of credit creation by commercial banks."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[6 marks]")
+      React.createElement("p", { className: "mb-2" }, "State whether the following statements are true/false, with valid arguments:"),
+      React.createElement("p", { className: "mb-2" }, "a) Human Capital and Human Development are one and the same thing. (2 marks)"),
+      React.createElement("p", { className: "mb-2" }, "b) India has a poor stock of technical manpower. (2 marks)")
     ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Commercial banks create credit by lending a portion of their deposits, leading to multiple expansion of money supply."),
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "32 a)"), " The given statement is not true to perfection. These two may sound similar but are not exactly same. Whereas, human capital considers education and health as a means to increase labour productivity, human development is based on the idea that education and health are integral to human wellbeing."),
+      React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "32 b)"), " The given statement is not true. India has a rich stock of scientific and technical manpower in the world. Also, India has taken a number of steps to improve it qualitatively and ensure that they are optimally utilized.")
+    ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Primary Deposits"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Banks receive deposits from customers (cash deposits)"),
-        React.createElement("li", null, "These are called primary deposits and form the basis for credit creation"),
-        React.createElement("li", null, "Banks keep only a fraction as cash reserves (CRR + SLR)"),
-        React.createElement("li", null, "The remaining amount is available for lending")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Credit Creation Process"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Bank lends money to borrower who deposits it in another bank"),
-        React.createElement("li", null, "This creates secondary deposits in the second bank"),
-        React.createElement("li", null, "Second bank again keeps reserves and lends the rest"),
-        React.createElement("li", null, "This process continues creating multiple deposits")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Deposit Multiplier"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Total deposits created = Primary deposits × 1/Reserve ratio"),
-        React.createElement("li", null, "If reserve ratio is 10%, deposit multiplier is 10"),
-        React.createElement("li", null, "Higher reserve ratio means lower credit creation"),
-        React.createElement("li", null, "Lower reserve ratio means higher credit creation")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Limitations"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Leakages like cash withdrawals reduce credit creation"),
-        React.createElement("li", null, "Willingness of people to borrow affects the process"),
-        React.createElement("li", null, "Bank's lending policy and RBI regulations act as constraints")
-      )
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 2 | Ch 5: Human Capital Formation"),
+      React.createElement("p", null, "Human Capital focuses on 'productivity' (economic view), while Human Development focuses on 'well-being' (holistic view).")
     )
   },
   {
     id: '33',
     marks: 6,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Discuss the importance of infrastructure in economic development."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[6 marks]")
+      React.createElement("p", { className: "mb-2" }, "a) Define agricultural marketing. (2 marks)"),
+      React.createElement("p", { className: "mb-2" }, "b) Discuss briefly the importance of micro-credit programmes in rural development. (2 marks)"),
+      React.createElement("p", { className: "mb-4" }, "c) Enlist any two problems faced by farmers in the initial years of organic farming. (2 marks)"),
+      React.createElement("p", { className: "font-bold text-center my-2" }, "OR"),
+      React.createElement("p", { className: "mb-2" }, "a) “India has failed to implement the recommendations of Education Commission of 1964 -66.” Give valid arguments in support of the given statement. (3 marks)"),
+      React.createElement("p", { className: "mb-2" }, "b) ‘Casual wage work is the major source of employment in rural India ‘. Defend or refute the given statement with valid reason. (3 marks)")
     ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Infrastructure provides the basic framework for economic activities and supports overall development."),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Economic Growth and Productivity"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Infrastructure reduces production costs and increases efficiency"),
-        React.createElement("li", null, "Better connectivity improves market access and reduces transportation costs"),
-        React.createElement("li", null, "Reliable power supply ensures uninterrupted production processes"),
-        React.createElement("li", null, "Modern communication facilities enhance business operations")
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "mb-4" },
+        React.createElement("p", { className: "font-bold underline" }, "Option 1 Solution:"),
+        React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "33 a)"), " Agriculture marketing is a process that involves the assembling, storage, processing, transportation, packaging grading and distribution of different agricultural commodities across the country."),
+        React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "33 b)"), " Self-help groups (SHG’s) have emerged to fill the gap in the formal credit system in India as its delivery mechanism has not only proven inadequate but has also not been fully integrated into the overall rural social and community development. It came up as the micro finance program .Focus of SHGs is on those rural people, small and marginal farmers, agricultural and non-agricultural laborers who do not have sustainable access to formal banking system."),
+        React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "33 c)"), " i) Inadequate infrastructure and marketing", React.createElement("br", null), "ii) Compared to conventional farm products, organic products have more shorter shelf life span")
       ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Employment Generation"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Infrastructure projects create direct employment during construction"),
-        React.createElement("li", null, "Better infrastructure attracts private investment and creates indirect jobs"),
-        React.createElement("li", null, "Improved connectivity opens new economic opportunities"),
-        React.createElement("li", null, "Development of backward areas reduces regional disparities")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Social Development"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Better healthcare facilities improve productivity and reduce absenteeism"),
-        React.createElement("li", null, "Quality education infrastructure enhances human capital development"),
-        React.createElement("li", null, "Improved water supply and sanitation reduce disease incidence"),
-        React.createElement("li", null, "Housing and urban infrastructure improve quality of life")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Foreign Investment and Trade"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Good infrastructure attracts foreign direct investment"),
-        React.createElement("li", null, "Efficient ports and airports facilitate international trade"),
-        React.createElement("li", null, "Modern transportation reduces logistics costs"),
-        React.createElement("li", null, "Reliable power and communication support global business operations")
+      React.createElement("div", { className: "border-t pt-4" },
+        React.createElement("p", { className: "font-bold underline" }, "Option 2 Solution:"),
+        React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "33 a)"), " The given statement is appropriate. Over the years India has not been able to raise the educational standards to the desired level. Education Commission of 1964-66 had recommended that at least 6 % of GDP should be spent on education so as to make a noticeable rate of growth in educational achievements. However, the current expenditure level has been quite inadequate. Thus, necessary steps must be taken by the government in this direction."),
+        React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "33 b)"), " The given statement is refuted. In rural areas, non-farm job opportunities are limited. People generally do not show preference to acquire skill and training for non-farm occupation .They prefer to stay on family farms and fields as self-employed.")
       )
+    ),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 2 | Ch 6: Rural Dev / Ch 5 & 7"),
+      React.createElement("p", null, "Q33 combines topics from Rural Development (Marketing, Credit, Organic) with Human Capital (Education) and Employment (Casual work).")
     )
   },
   {
     id: '34',
     marks: 6,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Analyze the trends in sectoral composition of India's GDP."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[6 marks]")
+      React.createElement("p", { className: "mb-4 font-bold" }, "Read the following text carefully and answer the given questions on the basis of the same and common understanding:"),
+      React.createElement("div", { className: "p-4 bg-gray-50 rounded mb-4 text-sm" },
+        React.createElement("p", null, "The " + React.createElement("b", null, "Green Revolution") + " in India began in the mid-1960s marking a transition from traditional agriculture in India to high-yielding varieties of seeds and the associated modern agricultural techniques. The need for introduction of Green Revolution in India arose due to a shortage of food-grains in the post-independence period.")
+      ),
+      React.createElement("p", { className: "mb-2" }, "a) Why was Green revolution implemented and how did it benefit the farmers? (3 marks)"),
+      React.createElement("p", { className: "mb-2" }, "b) Justify the following statement with valid explanation: ‘Green revolution enabled the government to procure sufficient food grains to build its stocks that could be used during time of shortage’. (3 marks)")
     ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "India's GDP composition has shifted from agriculture-dominated to service-dominated economy with declining agriculture and rising services sector."),
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "34 a)"), " Green revolution was implemented in India to overcome the shortage of food-grain availability in the post-independence period. Green revolution has increased the production and productivity in the agriculture sector which was otherwise very low. It helped in improving the income of the farmers by creating marketable surplus, increased employment and output."),
+      React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "34 b)"), " The given statement is appropriate as the Green Revolution helped government to procure and preserve more food grains through agencies like Food Corporation of India. Increase in food grain production has been so substantial that India not only started maintaining buffer stocks of food grains but also became a dominant player in food grain exports market.")
+    ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Historical Trends"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "1950-51:"), " Agriculture (59%), Industry (13%), Services (28%)"),
-        React.createElement("li", null, React.createElement("b", null, "1980-81:"), " Agriculture (39%), Industry (24%), Services (37%)"),
-        React.createElement("li", null, React.createElement("b", null, "2000-01:"), " Agriculture (25%), Industry (26%), Services (49%)"),
-        React.createElement("li", null, React.createElement("b", null, "2020-21:"), " Agriculture (20%), Industry (26%), Services (54%)")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Declining Share of Agriculture"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Green Revolution increased productivity but employment growth slowed"),
-        React.createElement("li", null, "Shift of labor from agriculture to industry and services"),
-        React.createElement("li", null, "Low investment in agriculture compared to other sectors"),
-        React.createElement("li", null, "Climate change and natural calamities affected agricultural output")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Rising Share of Services"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "IT and ITES sector emerged as major contributor"),
-        React.createElement("li", null, "Financial services, telecommunications, and tourism grew rapidly"),
-        React.createElement("li", null, "Liberalization and globalization opened new opportunities"),
-        React.createElement("li", null, "Higher productivity and value addition in service sector")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Stable Share of Industry"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Manufacturing sector growth has been moderate"),
-        React.createElement("li", null, "Construction and infrastructure development provided some growth"),
-        React.createElement("li", null, "Capital goods and consumer goods industries expanded"),
-        React.createElement("li", null, "However, employment growth in industry has been limited")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Implications"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "India has become a service-led economy"),
-        React.createElement("li", null, "Need for skill development in service sector"),
-        React.createElement("li", null, "Agriculture still employs majority of workforce despite low GDP contribution"),
-        React.createElement("li", null, "Balanced growth across sectors is essential for inclusive development")
-      )
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 1 | Ch 2: Indian Economy 1950-1990"),
+      React.createElement("p", null, "The Green Revolution's key impacts were 'Marketable Surplus' and 'Buffer Stocks'.")
     )
   }
 ];

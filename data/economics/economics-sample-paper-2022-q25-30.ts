@@ -1,167 +1,151 @@
 import { Question } from '../../types';
 import React from 'react';
 
-export const questions25to30: Question[] = [
-  {
-    id: '25',
-    marks: 4,
-    question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the concept of 'Elasticity of Supply' and its types."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[4 marks]")
-    ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Elasticity of supply measures the responsiveness of quantity supplied to changes in price."),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Definition"),
-      React.createElement("p", { className: "mt-2" }, "Elasticity of supply is the degree of responsiveness of quantity supplied to a change in price of the commodity."),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Formula"),
-      React.createElement("p", { className: "mt-2 font-mono bg-gray-100 p-2 rounded" }, "Es = Percentage change in quantity supplied / Percentage change in price"),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Types"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Perfectly Elastic Supply (Es = ∞):"), " Horizontal supply curve, any price change causes infinite quantity change"),
-        React.createElement("li", null, React.createElement("b", null, "Elastic Supply (Es > 1):"), " Quantity supplied changes more than proportionate to price change"),
-        React.createElement("li", null, React.createElement("b", null, "Unit Elastic Supply (Es = 1):"), " Quantity supplied changes equally with price change"),
-        React.createElement("li", null, React.createElement("b", null, "Inelastic Supply (Es < 1):"), " Quantity supplied changes less than proportionate to price change"),
-        React.createElement("li", null, React.createElement("b", null, "Perfectly Inelastic Supply (Es = 0):"), " Vertical supply curve, quantity supplied remains constant despite price changes")
-      )
-    )
-  },
+export const questions26to30: Question[] = [
   {
     id: '26',
-    marks: 4,
+    marks: 1,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Discuss the problems faced by the agricultural sector in India."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[4 marks]")
-    ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Indian agriculture faces problems like small land holdings, inadequate irrigation, and lack of modern technology."),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Institutional Problems"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Small and Fragmented Land Holdings:"), " Average farm size is very small, leading to low productivity"),
-        React.createElement("li", null, React.createElement("b", null, "Lack of Credit Facilities:"), " Farmers face difficulties in getting timely and adequate credit"),
-        React.createElement("li", null, React.createElement("b", null, "Inadequate Storage Facilities:"), " Poor storage leads to post-harvest losses")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Technological Problems"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Traditional Methods:"), " Use of outdated farming techniques and seeds"),
-        React.createElement("li", null, React.createElement("b", null, "Inadequate Irrigation:"), " Only about 40% of land has assured irrigation"),
-        React.createElement("li", null, React.createElement("b", null, "Lack of Modern Equipment:"), " Farmers cannot afford modern machinery")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Market Problems"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Price Fluctuations:"), " Farmers face unstable prices for their produce"),
-        React.createElement("li", null, React.createElement("b", null, "Lack of Marketing Facilities:"), " Poor transportation and market linkages"),
-        React.createElement("li", null, React.createElement("b", null, "Middlemen Exploitation:"), " Farmers get low prices due to intermediaries")
+      React.createElement("p", { className: "mb-2" }, "Read the following statement - Assertion (A) and Reason (R). Choose one of the correct alternatives given below:"),
+      React.createElement("p", { className: "mb-1" }, React.createElement("b", null, "Assertion (A):"), " Unemployment and poverty are inseparable twins."),
+      React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "Reason (R):"), " Unemployment is the root cause of all socio-economic evils."),
+      React.createElement("p", { className: "mb-2" }, "Alternatives:"),
+      React.createElement("div", { className: "space-y-2" },
+        React.createElement("p", null, "a) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)."),
+        React.createElement("p", null, "b) Both Assertion (A) and Reason (R) are true and Reason (R) is not the correct explanation of Assertion (A)."),
+        React.createElement("p", null, "c) Assertion (A) is true but Reason (R) is false."),
+        React.createElement("p", null, "d) Assertion (A) is false but Reason (R) is true.")
       )
+    ),
+    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: c) Assertion (A) is true but Reason (R) is false."),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 2 | Ch 4: Poverty / Ch 7: Employment"),
+      React.createElement("p", null, "Poverty and unemployment create a vicious circle (twins), making Assertion true. However, unemployment is a major cause but not necessarily the 'root cause of ALL' evils, making R false in this context (per Marking Scheme).")
     )
   },
   {
     id: '27',
-    marks: 4,
+    marks: 1,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the concept of 'Foreign Exchange Rate' and its types."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[4 marks]")
-    ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Foreign exchange rate is the price of one currency in terms of another currency."),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Definition"),
-      React.createElement("p", { className: "mt-2" }, "Foreign exchange rate is the rate at which one currency can be exchanged for another. It represents the value of domestic currency in terms of foreign currency."),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Types"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Nominal Exchange Rate:"), " The rate at which currency is traded in the market"),
-        React.createElement("li", null, React.createElement("b", null, "Real Exchange Rate:"), " Nominal rate adjusted for inflation differentials between countries"),
-        React.createElement("li", null, React.createElement("b", null, "Fixed Exchange Rate:"), " Government fixes the exchange rate and maintains it through intervention"),
-        React.createElement("li", null, React.createElement("b", null, "Flexible Exchange Rate:"), " Exchange rate is determined by market forces of demand and supply"),
-        React.createElement("li", null, React.createElement("b", null, "Managed Floating Rate:"), " Combination of fixed and flexible rates where central bank intervenes occasionally")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Methods of Quotation"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Direct Quote:"), " Units of domestic currency per unit of foreign currency"),
-        React.createElement("li", null, React.createElement("b", null, "Indirect Quote:"), " Units of foreign currency per unit of domestic currency")
+      React.createElement("p", { className: "mb-2" }, "Read the following statement - Assertion (A) and Reason (R). Choose one of the correct alternatives given below:"),
+      React.createElement("p", { className: "mb-1" }, React.createElement("b", null, "Assertion (A):"), " In the late 1970s, China’s population growth rate had sharply declined."),
+      React.createElement("p", { className: "mb-2" }, React.createElement("b", null, "Reason (R):"), " China has witnessed an increase in the proportion of elderly people owing to stringent family planning programmes."),
+      React.createElement("p", { className: "mb-2" }, "Alternatives:"),
+      React.createElement("div", { className: "space-y-2" },
+        React.createElement("p", null, "a) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)."),
+        React.createElement("p", null, "b) Both Assertion (A) and Reason (R) are true and Reason (R) is not the correct explanation of Assertion (A)."),
+        React.createElement("p", null, "c) Assertion (A) is true but Reason (R) is false."),
+        React.createElement("p", null, "d) Assertion (A) is false but Reason (R) is true.")
       )
+    ),
+    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: d) Assertion (A) is false but Reason (R) is true."),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 3 | Ch 10: Comparative Development Indicators"),
+      React.createElement("p", null, "Assertion is false because the sharp decline happened due to the One Child Policy introduced in 1979, but the statement implies the rate *had already* declined *in* the late 1970s (nuance). Reason is true; One Child Policy increased the elderly proportion.")
     )
   },
   {
     id: '28',
-    marks: 4,
+    marks: 3,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Discuss the role of Reserve Bank of India as the central bank of the country."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[4 marks]")
-    ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "RBI acts as the central bank, issuing currency, regulating banks, and controlling monetary policy."),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Banker to the Government"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Maintains government's bank accounts"),
-        React.createElement("li", null, "Provides short-term loans and advances"),
-        React.createElement("li", null, "Manages public debt and government securities"),
-        React.createElement("li", null, "Advises government on monetary and banking matters")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Banker's Bank"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Holds cash reserves of commercial banks"),
-        React.createElement("li", null, "Provides loans to commercial banks during emergencies"),
-        React.createElement("li", null, "Acts as lender of last resort"),
-        React.createElement("li", null, "Supervises and regulates commercial banks")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Controller of Credit"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, "Formulates and implements monetary policy"),
-        React.createElement("li", null, "Uses quantitative and qualitative credit control measures"),
-        React.createElement("li", null, "Manages inflation and ensures price stability"),
-        React.createElement("li", null, "Regulates money supply in the economy")
+      React.createElement("p", { className: "mb-2" }, "Interpret the given picture on account of current environmental challenges."),
+      React.createElement("div", { className: "flex justify-center mb-4" },
+        React.createElement("img", {
+          src: "/images/eco_2022_q28.png",
+          alt: "Environmental Challenge - Hourglass with Melting Glaciers",
+          className: "max-w-full h-auto border rounded shadow-md",
+          style: { maxHeight: '400px' }
+        })
       )
+    ),
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "mb-2" }, "The given image indicates towards the environmental challenge of ", React.createElement("b", null, "‘global warming’"), ". Global warming is a gradual increase in the average temperature of the earth’s lower atmosphere as a result in the increase in greenhouse gases."),
+      React.createElement("p", { className: "mb-2" }, "The statement given, ‘we are running out of time, act now before it’s too late’ represents the urgency of actions to be taken to control the situation. Various studies have shown that global warming is causing rise in sea level, loss of coastal land, increase risks of floods etc.")
+    ),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 2 | Ch 9: Environment and Sustainable Development"),
+      React.createElement("p", null, "The image clearly depicts melting ice (glaciers) filling up a city, symbolizing rising sea levels due to global warming.")
     )
   },
   {
     id: '29',
-    marks: 4,
+    marks: 3,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Explain the concept of 'National Income' and its methods of measurement."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[4 marks]")
+      React.createElement("p", { className: "mb-2" }, "Defend or refute the following statement with valid explanation:"),
+      React.createElement("p", { className: "italic mb-4" }, "‘Disguised unemployment is a common form of unemployment in rural India’"),
+      React.createElement("p", { className: "font-bold text-center my-2" }, "OR"),
+      React.createElement("p", { className: "mb-2" }, "Critically evaluate the role of rural banking system in the process of rural development in India.")
     ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "National Income is the total value of goods and services produced within a country during a year."),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Definition"),
-      React.createElement("p", { className: "mt-2" }, "National Income is the sum total of incomes earned by the factors of production (land, labour, capital, and entrepreneurship) in the form of rent, wages, interest, and profit respectively."),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Methods of Measurement"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Product Method:"), " Measures national income by adding value added at each stage of production"),
-        React.createElement("li", null, React.createElement("b", null, "Income Method:"), " Measures by adding all incomes earned by factors of production (rent + wages + interest + profit)"),
-        React.createElement("li", null, React.createElement("b", null, "Expenditure Method:"), " Measures by adding all expenditures made on final goods and services (C + I + G + (X - M))")
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "mb-4" },
+        React.createElement("p", { className: "font-bold underline" }, "Option 1 Solution:"),
+        React.createElement("p", { className: "mb-2" }, "The given statement is ", React.createElement("b", null, "true"), "."),
+        React.createElement("p", { className: "mb-2" }, "Disguised unemployment is a situation where the marginal productivity of labour is zero. In India, this situation is often witnessed, as farming is more of a family affair in rural areas and most of the members are generally engaged on the farms without any direct contribution to the production process."),
+        React.createElement("p", null, "This problem persists in rural India due to lesser availability of jobs.")
       ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Important Concepts"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Gross National Product (GNP):"), " GDP + Net factor income from abroad"),
-        React.createElement("li", null, React.createElement("b", null, "Net National Product (NNP):"), " GNP - Depreciation"),
-        React.createElement("li", null, React.createElement("b", null, "National Income:"), " NNP - Net indirect taxes")
+      React.createElement("div", { className: "border-t pt-4" },
+        React.createElement("p", { className: "font-bold underline" }, "Option 2 Solution:"),
+        React.createElement("p", { className: "mb-2" }, "Rapid expansion of the banking system had positive effect on rural farm and non-farm output, income and employment. In spite of it, following problems have been faced in the rural banking such as-"),
+        React.createElement("ul", { className: "list-disc pl-5" },
+          React.createElement("li", { className: "mb-1" }, "The volume of rural credit in the country is still insufficient in comparison to its demand and institutional sources have failed to cover the entire rural farmers of the country."),
+          React.createElement("li", null, "Less attention has been given on the credit requirements of needy (small and marginal farmers) and the problem of overdue in agricultural credit continues.")
+        )
       )
+    ),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 2 | Ch 6: Rural Development"),
+      React.createElement("p", null, "Option 1 refers to Disguised Unemployment (Employment chapter). Option 2 refers to Rural Banking/Credit (Rural Development chapter).")
     )
   },
   {
     id: '30',
     marks: 4,
     question: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-semibold" }, "Discuss the causes and consequences of unemployment in India."),
-      React.createElement("p", { className: "mt-2 text-sm text-gray-600" }, "[4 marks]")
-    ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Unemployment in India is caused by rapid population growth, slow economic growth, and lack of skills."),
-    explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Causes of Unemployment"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Rapid Population Growth:"), " Population growing faster than job creation"),
-        React.createElement("li", null, React.createElement("b", null, "Slow Economic Growth:"), " GDP growth not sufficient to absorb new entrants"),
-        React.createElement("li", null, React.createElement("b", null, "Lack of Skill Development:"), " Mismatch between education and job requirements"),
-        React.createElement("li", null, React.createElement("b", null, "Capital Intensive Technology:"), " Modern technology reduces job opportunities"),
-        React.createElement("li", null, React.createElement("b", null, "Seasonal Nature of Agriculture:"), " Many workers remain unemployed during off-season")
-      ),
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Consequences of Unemployment"),
-      React.createElement("ul", { className: "list-disc pl-5 mt-2 space-y-2" },
-        React.createElement("li", null, React.createElement("b", null, "Economic Losses:"), " Loss of output and income, wastage of human resources"),
-        React.createElement("li", null, React.createElement("b", null, "Social Problems:"), " Poverty, crime, social unrest, and health issues"),
-        React.createElement("li", null, React.createElement("b", null, "Political Instability:"), " Dissatisfaction with government and political unrest"),
-        React.createElement("li", null, React.createElement("b", null, "Brain Drain:"), " Skilled workers migrate to other countries"),
-        React.createElement("li", null, React.createElement("b", null, "Low Standard of Living:"), " Reduced consumption and savings")
+      React.createElement("p", { className: "mb-2" }, "Compare and analyse the following information related to Imports and Exports of the three neighbouring nations:"),
+      React.createElement("div", { className: "overflow-x-auto my-4" },
+        React.createElement("table", { className: "min-w-full border-collapse border border-gray-300" },
+          React.createElement("thead", null,
+            React.createElement("tr", { className: "bg-gray-100" },
+              React.createElement("th", { className: "border p-2 text-left" }, "Country"),
+              React.createElement("th", { className: "border p-2 text-right" }, "Exports from India (2004-05)"),
+              React.createElement("th", { className: "border p-2 text-right" }, "Exports from India (2018-19)"),
+              React.createElement("th", { className: "border p-2 text-right" }, "Annual Growth Rate (%)"),
+              React.createElement("th", { className: "border p-2 text-right" }, "Imports to India (2004-05)"),
+              React.createElement("th", { className: "border p-2 text-right" }, "Imports to India (2018-19)"),
+              React.createElement("th", { className: "border p-2 text-right" }, "Annual Growth Rate (%)")
+            )
+          ),
+          React.createElement("tbody", null,
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border p-2 font-bold" }, "Pakistan"),
+              React.createElement("td", { className: "border p-2 text-right" }, "2,341"),
+              React.createElement("td", { className: "border p-2 text-right" }, "14,426"),
+              React.createElement("td", { className: "border p-2 text-right" }, "3.7"),
+              React.createElement("td", { className: "border p-2 text-right" }, "427"),
+              React.createElement("td", { className: "border p-2 text-right" }, "3,476"),
+              React.createElement("td", { className: "border p-2 text-right" }, "5.1")
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border p-2 font-bold" }, "China"),
+              React.createElement("td", { className: "border p-2 text-right" }, "25,232"),
+              React.createElement("td", { className: "border p-2 text-right" }, "1,17,289"),
+              React.createElement("td", { className: "border p-2 text-right" }, "2.6"),
+              React.createElement("td", { className: "border p-2 text-right" }, "31,892"),
+              React.createElement("td", { className: "border p-2 text-right" }, "4,92,079"),
+              React.createElement("td", { className: "border p-2 text-right" }, "10.3")
+            )
+          )
+        ),
+        React.createElement("p", { className: "text-sm text-gray-500 mt-1" }, "(Values are in ₹ Crore)")
       )
+    ),
+    solution: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "mb-2" }, "The above table shows that during the given periods the Exports from India to Pakistan have increased at an annualized rate of 3.7 % while the same with China shows 2.6% of growth. On the other hand, India’s import from China accounted for a massive 10.3 %. The corresponding figure with Pakistan witnessed an average of 5.1% respectively."),
+      React.createElement("p", { className: "mb-2" }, "The situation indicates that Indian imports from China are too high in comparison to the exports to China. This shows that Indian economy was over-dependent on Chinese economy for goods and services, over the given period of time. Whereas, in case of Pakistan gap is quite narrow, which may be due to various reasons.")
+    ),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "font-semibold text-sm mb-2" }, "Ref: IED Unit 3 | Ch 10: Comparative Development Indicators"),
+      React.createElement("p", null, "The data highlights India's massive trade deficit with China (Imports growing at 10.3% vs Exports 2.6%) compared to Pakistan.")
     )
   }
 ];
