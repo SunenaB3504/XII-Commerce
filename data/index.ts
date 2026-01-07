@@ -3,6 +3,7 @@ import { accountancyBoardExam67_4_1 } from './accountancy/board-exam-67-4-1';
 import { accountancyBoardExam67_5_3 } from './accountancy/board-exam-67-5-3';
 import { accountancyBoardExam67_3_1 } from './accountancy/board-exam-67-3-1';
 import { accountancyBoardExam67_4_3 } from './accountancy/board-exam-67-4-3';
+import { samplePaper2025 } from './accountancy/sample-paper-2025';
 import samplePaper2024 from './accountancy/sample-paper-2024';
 import samplePaper2023 from './accountancy/sample-paper-2023';
 import samplePaper2022 from './accountancy/sample-paper-2022';
@@ -33,6 +34,7 @@ export const subjects: Subject[] = [
     name: 'Accountancy',
     questionPapers: [
       accountancySamplePaper2026,
+      samplePaper2025,
       samplePaper2024,
       samplePaper2023,
       samplePaper2022,
