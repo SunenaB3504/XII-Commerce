@@ -59,7 +59,12 @@ export const questions27to34: Question[] = [
       ),
       React.createElement("p", { className: "mt-2 font-semibold" }, "Alternative: Only manufacturing inventory"),
       React.createElement("p", null, "Change = ₹2,10,000 - ₹2,70,000 = ₹(60,000). Still doesn't match answer C."),
-      React.createElement("p", { className: "mt-2 text-red-600" }, "Note: There may be an error in the question or answer key.")
+      React.createElement("p", { className: "mt-2 text-red-600" }, "Note: There may be an error in the question or answer key."),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Financial Statements of a Company"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Statement of Profit and Loss")
+      )
     )
   },
   {
@@ -74,7 +79,7 @@ export const questions27to34: Question[] = [
         React.createElement("li", null, "D. ₹ 50,000")
       )
     ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. ₹ 80,000"),
+    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: C. ₹ 1,00,000"),
     explanation: React.createElement(React.Fragment, null,
       React.createElement("div", { className: "space-y-2 mt-2" },
         React.createElement("p", null, "Step 1: Calculate Cost of Revenue from Operations"),
@@ -92,7 +97,11 @@ export const questions27to34: Question[] = [
         React.createElement("p", null, "₹1,60,000 = Opening + ₹60,000"),
         React.createElement("p", { className: "font-semibold text-gray-900" }, "Opening Inventory = ₹1,00,000")
       ),
-      React.createElement("p", { className: "mt-2 text-red-600" }, "Wait! This gives answer C, not A. Let me recalculate...")
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Accounting Ratios"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Inventory Turnover Ratio")
+      )
     )
   },
   {
@@ -108,8 +117,15 @@ export const questions27to34: Question[] = [
         React.createElement("li", null, "D. A is incorrect but R is correct")
       )
     ),
-    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: A. Both A and R are correct, and R is the correct explanation of A"),
-    explanation: React.createElement("p", { className: "mt-2" }, "Assertion (A) is correct because Gross Profit is calculated before deducting indirect expenses, while Net Profit is calculated after deducting all expenses. Since Net Profit = Gross Profit - Indirect Expenses + Indirect Income, and typically indirect expenses exceed indirect income, Net Profit is usually lower than Gross Profit. Therefore, Gross Profit Ratio (GP/Sales × 100) is higher than Net Profit Ratio (NP/Sales × 100). Reason (R) correctly explains this by stating the formula for calculating Net Profit from Gross Profit.")
+    solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: D. A is incorrect but R is correct"),
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "mt-2" }, "Reason (R) explains the correct formula: Net Profit = Gross Profit - Indirect Expenses + Indirect Incomes. Assertion (A) states that GP Ratio is 'always' higher than NP Ratio. This is incorrect because if Indirect Incomes exceed Indirect Expenses, Net Profit can be higher than Gross Profit. Therefore, the assertion is false."),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Accounting Ratios"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Profitability Ratios")
+      )
+    )
   },
   {
     id: '29',
@@ -130,6 +146,11 @@ export const questions27to34: Question[] = [
       React.createElement("ul", { className: "list-disc pl-6" },
         React.createElement("li", null, "Add back to Net Profit: Dividend approved in current year = ₹1,80,000 (approved in AGM June-July 2024 for FY 2023-24)"),
         React.createElement("li", null, "Cash outflow in Financing Activities = Dividend paid = ₹1,80,000 - ₹10,000 (unclaimed) = ₹1,70,000")
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Cash Flow Statement"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Treatment of Proposed Dividend")
       )
     )
   },
@@ -153,7 +174,12 @@ export const questions27to34: Question[] = [
       React.createElement("p", null, "Add: Tax proposed during year: X"),
       React.createElement("p", null, "Closing balance: ₹3,00,000"),
       React.createElement("p", { className: "mt-2" }, "Therefore: ₹2,80,000 - ₹2,50,000 + X = ₹3,00,000"),
-      React.createElement("p", null, "X = ₹3,00,000 - ₹30,000 = ₹2,70,000")
+      React.createElement("p", null, "X = ₹3,00,000 - ₹30,000 = ₹2,70,000"),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Cash Flow Statement"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Provision for Tax")
+      )
     )
   },
   {
@@ -169,7 +195,14 @@ export const questions27to34: Question[] = [
       )
     ),
     solution: React.createElement("p", { className: "font-bold text-green-700" }, "Correct Answer: B. Dividend received"),
-    explanation: React.createElement("p", { className: "mt-2" }, "For a finance company, dividend received is part of operating activities as investing in securities is the main revenue-generating activity. For non-finance companies, it would be investing activity. Option A is a non-cash transaction, C is investing activity, and D is financing activity.")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "mt-2" }, "For a finance company, dividend received is part of operating activities as investing in securities is the main revenue-generating activity. For non-finance companies, it would be investing activity. Option A is a non-cash transaction, C is investing activity, and D is financing activity."),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Cash Flow Statement"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Classification of Activities")
+      )
+    )
   },
   {
     id: '31',
@@ -328,6 +361,11 @@ export const questions27to34: Question[] = [
         React.createElement("p", { className: "pl-4" }, "2024 = ₹10,00,000 - ₹7,00,000 = ₹3,00,000"),
         React.createElement("p", { className: "pl-4" }, "2025 = ₹15,00,000 - ₹10,50,000 = ₹4,50,000"),
         React.createElement("p", { className: "pl-4" }, "Increase = ₹1,50,000, Percentage = 50%")
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Comparative Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Comparative Balance Sheet")
       )
     )
   },
@@ -454,6 +492,11 @@ export const questions27to34: Question[] = [
         React.createElement("li", null, "Purchases = (10,00,000 ÷ 40,00,000) × 100 = 25%"),
         React.createElement("li", null, "Employee Benefits = (8,00,000 ÷ 40,00,000) × 100 = 20%"),
         React.createElement("li", null, "Tax = 50% of Profit Before Tax = 13,00,000")
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Common Size Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Common Size Profit and Loss Account")
       )
     )
   },
@@ -492,6 +535,11 @@ export const questions27to34: Question[] = [
         React.createElement("li", null, "Inventory includes Loose Tools, Stores and Spares in addition to raw materials, work-in-progress, finished goods, and stock-in-trade"),
         React.createElement("li", null, "Loss on issue of debentures is part of Finance Cost shown in Statement of Profit & Loss"),
         React.createElement("li", null, "Purchase of Raw Materials is part of Cost of Materials Consumed calculation shown in Notes to Accounts")
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Financial Statements of a Company"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Disclosure in Balance Sheet")
       )
     )
   },
@@ -542,6 +590,11 @@ export const questions27to34: Question[] = [
         React.createElement("li", null, "Equal decrease in numerator and denominator: Ratio decreases"),
         React.createElement("li", null, "Only numerator increases: Ratio increases"),
         React.createElement("li", null, "Only denominator increases: Ratio decreases")
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Accounting Ratios"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Quick Ratio Analysis")
       )
     )
   },
@@ -593,6 +646,11 @@ export const questions27to34: Question[] = [
         React.createElement("li", null, "Trade Receivables for this calculation = Gross Debtors (without deducting provision)"),
         React.createElement("li", null, "Average = (Opening + Closing) ÷ 2 = (₹1,00,000 + ₹2,00,000) ÷ 2 = ₹1,50,000"),
         React.createElement("li", null, "The ratio indicates how many times receivables are converted into cash during the year")
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Accounting Ratios"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Trade Receivables Turnover Ratio")
       )
     )
   },
@@ -781,6 +839,11 @@ export const questions27to34: Question[] = [
           React.createElement("p", { className: "pl-4" }, "Increase in Debentures = ₹4,00,000 - ₹3,00,000 = ₹1,00,000"),
           React.createElement("p", { className: "pl-4" }, "Issued at 5% discount, so cash received = ₹1,00,000 - ₹5,000 = ₹95,000")
         )
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Cash Flow Statement"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Analysis of Financial Statements"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Cash Flow from Operating and Financing Activities")
       )
     )
   }

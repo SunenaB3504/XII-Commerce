@@ -1,4 +1,4 @@
-import { accountancySamplePaper2025 } from './accountancy/sample-paper-2025';
+import { accountancySamplePaper2026 } from './accountancy/sample-paper-2026';
 import { accountancyBoardExam67_4_1 } from './accountancy/board-exam-67-4-1';
 import { accountancyBoardExam67_5_3 } from './accountancy/board-exam-67-5-3';
 import { accountancyBoardExam67_3_1 } from './accountancy/board-exam-67-3-1';
@@ -32,7 +32,7 @@ export const subjects: Subject[] = [
   {
     name: 'Accountancy',
     questionPapers: [
-      accountancySamplePaper2025,
+      accountancySamplePaper2026,
       samplePaper2024,
       samplePaper2023,
       samplePaper2022,

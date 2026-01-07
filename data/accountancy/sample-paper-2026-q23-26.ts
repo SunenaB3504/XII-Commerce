@@ -218,6 +218,11 @@ export const questions23to26: Question[] = [
           React.createElement("li", null, "Premium per share = (₹42,00,000 - ₹33,60,000) ÷ 3,36,000 = ₹2.50"),
           React.createElement("li", null, "Issue price = ₹10 + ₹2.50 = ₹12.50 per share")
         )
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Accounting for Share Capital"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Accounting for Companies"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Issue of Shares for Consideration other than Cash")
       )
     )
   },
@@ -352,7 +357,14 @@ export const questions23to26: Question[] = [
         )
       )
     ),
-    explanation: React.createElement("p", { className: "mt-2" }, "When a retiring partner's dues are paid in instalments, interest is charged on the outstanding balance at 12% p.a. (as per Companies Act) if no agreement exists. Each year, interest is added to the loan account and the total payment (principal + interest) is debited.")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("p", { className: "mt-2" }, "When a retiring partner's dues are paid in instalments, interest is charged on the outstanding balance at 12% p.a. (as per Companies Act) if no agreement exists. Each year, interest is added to the loan account and the total payment (principal + interest) is debited."),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Retirement/Death of a Partner"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Accounting for Partnership Firms"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Settlement of Loan of Retiring Partner")
+      )
+    )
   },
   {
     id: '25',
@@ -649,6 +661,11 @@ export const questions23to26: Question[] = [
             React.createElement("li", null, "Adjustments through Current Accounts")
           )
         )
+      ),
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Admission of a Partner"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Accounting for Partnership Firms"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Preparation of Revaluation A/c and Partners' Capital A/c")
       )
     )
   },
@@ -657,54 +674,249 @@ export const questions23to26: Question[] = [
     marks: 6,
     question: React.createElement(React.Fragment, null,
       React.createElement("p", { className: "mb-3" }, "Space Ventures Limited was registered with an authorised capital of ₹20,00,000 divided into 2,00,000 shares of ₹10 each. The company offered 80,000 shares for public subscription payable ₹4 on application and ₹7 on allotment (including ₹1 premium). Public had applied for 1,10,000 shares and pro-rata allotment was made in the ratio of 5:4. Remaining applications were rejected. Mukta, holding 6,000 shares failed to pay allotment money. Her shares were being forfeited and later re-issued 4,000 shares at a discount of ₹2 per share."),
-      React.createElement("p", { className: "font-semibold mt-3" }, "Pass necessary entries in the books of Space Ventures Ltd.")
+      React.createElement("p", { className: "font-semibold mt-3" }, "Pass necessary entries in the books of Space Ventures Ltd."),
+      React.createElement("p", { className: "font-bold text-center my-2" }, "OR"),
+      React.createElement("p", { className: "mb-3" }, "Pass necessary journal entries for the following transactions in the books of XYZ Ltd.:"),
+      React.createElement("p", { className: "mb-1" }, "XYZ Ltd. invited applications for issuing 3,00,000 equity shares of ₹10 each at a premium of ₹4 per share. The amount was payable as follows:"),
+      React.createElement("ul", { className: "list-disc pl-6 mb-2" },
+        React.createElement("li", null, "On Application : ₹3 per share"),
+        React.createElement("li", null, "On Allotment : ₹6 per share (including premium ₹2)"),
+        React.createElement("li", null, "On First & Final Call : Balance Amount")
+      ),
+      React.createElement("p", { className: "mb-3" }, "Applications were received for 4,50,000 shares and allotment was made on pro-rata basis to all applicants. Excess money received on application was adjusted towards sums due on allotment. All calls were made and separately duly received except allotment and call money on 10,000 shares held by Rohan. His shares were forfeited. Out of the forfeited shares, 6,000 shares were re-issued at ₹9 per share fully paid up.")
     ),
     solution: React.createElement(React.Fragment, null,
-      React.createElement("p", { className: "font-bold text-green-700 mb-3" }, "Journal Entries:"),
-      React.createElement("div", { className: "space-y-3" },
-        React.createElement("pre", { className: "bg-gray-100 p-3 rounded" },
-          "1. Bank A/c                          Dr.    4,40,000\n" +
-          "       To Share Application A/c               4,40,000\n" +
-          "(Being application money received on 1,10,000 shares @ ₹4 per share)"
-        ),
-        React.createElement("pre", { className: "bg-gray-100 p-3 rounded" },
-          "2. Share Application A/c             Dr.    4,40,000\n" +
-          "       To Share Capital A/c                   3,20,000\n" +
-          "       To Bank A/c (Excess refund)            1,20,000\n" +
-          "(Being 80,000 shares allotted, excess money refunded to 30,000 rejected applications)"
-        ),
-        React.createElement("pre", { className: "bg-gray-100 p-3 rounded" },
-          "3. Share Allotment A/c               Dr.    5,60,000\n" +
-          "       To Share Capital A/c                   4,80,000\n" +
-          "       To Securities Premium A/c                80,000\n" +
-          "(Being allotment money due on 80,000 shares @ ₹7 including ₹1 premium)"
-        ),
-        React.createElement("pre", { className: "bg-gray-100 p-3 rounded" },
-          "4. Bank A/c                          Dr.    5,18,000\n" +
-          "       To Share Allotment A/c                 5,18,000\n" +
-          "(Being allotment money received except from Mukta on 6,000 shares)"
-        ),
-        React.createElement("pre", { className: "bg-gray-100 p-3 rounded" },
-          "5. Share Capital A/c                 Dr.      60,000\n" +
-          "   Securities Premium A/c            Dr.       6,000\n" +
-          "       To Share Allotment A/c                   42,000\n" +
-          "       To Share Forfeiture A/c                  24,000\n" +
-          "(Being 6,000 shares forfeited for non-payment of allotment)"
-        ),
-        React.createElement("pre", { className: "bg-gray-100 p-3 rounded" },
-          "6. Bank A/c                          Dr.      32,000\n" +
-          "   Share Forfeiture A/c              Dr.       8,000\n" +
-          "       To Share Capital A/c                     40,000\n" +
-          "(Being 4,000 forfeited shares re-issued @ ₹8 per share i.e. ₹2 discount)"
-        ),
-        React.createElement("pre", { className: "bg-gray-100 p-3 rounded" },
-          "7. Share Forfeiture A/c              Dr.      16,000\n" +
-          "       To Capital Reserve A/c                   16,000\n" +
-          "(Being balance in share forfeiture account transferred to capital reserve)"
+      React.createElement("p", { className: "font-bold text-green-700 mb-3" }, "Option 1 Solution:"),
+      React.createElement("p", { className: "font-semibold text-center mb-2" }, "Journal"),
+      React.createElement("div", { className: "overflow-x-auto" },
+        React.createElement("table", { className: "w-full border-collapse border border-gray-300 text-sm" },
+          React.createElement("thead", null,
+            React.createElement("tr", { className: "bg-gray-100" },
+              React.createElement("th", { className: "border border-gray-300 p-2 text-left" }, "Date"),
+              React.createElement("th", { className: "border border-gray-300 p-2 text-left" }, "Particulars"),
+              React.createElement("th", { className: "border border-gray-300 p-2 text-right" }, "Debit (₹)"),
+              React.createElement("th", { className: "border border-gray-300 p-2 text-right" }, "Credit (₹)")
+            )
+          ),
+          React.createElement("tbody", null,
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "I."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Bank A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Application A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being application amount received for 1,10,000 shares)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "4,40,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "4,40,000")
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "II."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Share Application A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Capital A/c"),
+                React.createElement("p", { className: "pl-8" }, "To Share Allotment A/c"),
+                React.createElement("p", { className: "pl-8" }, "To Bank A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being application money adjusted and surplus money refunded)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "4,40,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "3,20,000"),
+                React.createElement("div", null, "80,000"),
+                React.createElement("div", null, "40,000")
+              )
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "III."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Share Allotment A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Capital A/c"),
+                React.createElement("p", { className: "pl-8" }, "To Securities Premium A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being allotment amount due)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "5,60,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "4,80,000"),
+                React.createElement("div", null, "80,000")
+              )
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "IV."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Bank A/c ... Dr."),
+                React.createElement("p", { className: "font-semibold" }, "Calls in Arrears A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Allotment A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being allotment money received and unpaid amount transferred to Call in arrears)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "4,44,000"),
+                React.createElement("div", null, "36,000")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "4,80,000")
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "V."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Share Capital A/c ... Dr."),
+                React.createElement("p", { className: "font-semibold" }, "Securities Premium A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Forfeited A/c"),
+                React.createElement("p", { className: "pl-8" }, "To Calls in Arrears A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being shares forfeited)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "60,000"),
+                React.createElement("div", null, "6,000")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "30,000"),
+                React.createElement("div", null, "36,000")
+              )
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "VI."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Bank A/c ... Dr."),
+                React.createElement("p", { className: "font-semibold" }, "Share Forfeited A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Capital A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being shares reissued)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "32,000"),
+                React.createElement("div", null, "8,000")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "40,000")
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "VII."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Share Forfeited A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Capital Reserve A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being gain on reissue transferred to Capital Reserve)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "12,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "12,000")
+            )
+          )
+        )
+      ),
+      React.createElement("hr", { className: "my-8 border-t-2 border-gray-200" }),
+      React.createElement("p", { className: "font-bold text-green-700 mb-3" }, "OR (Option 2) Solution:"),
+      React.createElement("p", { className: "font-semibold text-center mb-2" }, "Journal"),
+      React.createElement("div", { className: "overflow-x-auto" },
+        React.createElement("table", { className: "w-full border-collapse border border-gray-300 text-sm" },
+          React.createElement("thead", null,
+            React.createElement("tr", { className: "bg-gray-100" },
+              React.createElement("th", { className: "border border-gray-300 p-2 text-left" }, "Date"),
+              React.createElement("th", { className: "border border-gray-300 p-2 text-left" }, "Particulars"),
+              React.createElement("th", { className: "border border-gray-300 p-2 text-right" }, "Debit (₹)"),
+              React.createElement("th", { className: "border border-gray-300 p-2 text-right" }, "Credit (₹)")
+            )
+          ),
+          React.createElement("tbody", null,
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "I."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Bank A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Application A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being application amount received for 3,00,000 shares)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "9,00,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "9,00,000")
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "II."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Share Application A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Capital A/c"),
+                React.createElement("p", { className: "pl-8" }, "To Share Allotment A/c"),
+                React.createElement("p", { className: "pl-8" }, "To Bank A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being application money adjusted and surplus money refunded)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "9,00,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "6,00,000"),
+                React.createElement("div", null, "1,20,000"),
+                React.createElement("div", null, "1,80,000")
+              )
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "III."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Share Allotment A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Capital A/c"),
+                React.createElement("p", { className: "pl-8" }, "To Securities Premium A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being allotment amount due)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "10,00,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "8,00,000"),
+                React.createElement("div", null, "2,00,000")
+              )
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "IV."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Bank A/c ... Dr."),
+                React.createElement("p", { className: "font-semibold" }, "Calls in Arrears A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Allotment A/c"),
+                React.createElement("p", { className: "pl-8" }, "To Calls in advance A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being allotment money received with calls in advance and unpaid amount transferred to Call advance and calls in arrears A/c)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "8,60,000"),
+                React.createElement("div", null, "44,000")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "8,80,000"),
+                React.createElement("div", null, "24,000")
+              )
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "V."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Share First Call A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share Capital A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being Call money due)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "6,00,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "6,00,000")
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "VI."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Bank A/c ... Dr."),
+                React.createElement("p", { className: "font-semibold" }, "Calls in Advance A/c ... Dr."),
+                React.createElement("p", { className: "font-semibold" }, "Calls in Arrears A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Share First Call A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being Call money received except on 10,000 shares and advance adjusted)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" },
+                React.createElement("div", null, "5,46,000"),
+                React.createElement("div", null, "24,000"),
+                React.createElement("div", null, "30,000")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "6,00,000")
+            ),
+            React.createElement("tr", null,
+              React.createElement("td", { className: "border border-gray-300 p-2 align-top" }, "VII."),
+              React.createElement("td", { className: "border border-gray-300 p-2" },
+                React.createElement("p", { className: "font-semibold" }, "Bank A/c ... Dr."),
+                React.createElement("p", { className: "pl-8" }, "To Calls in Arrears A/c"),
+                React.createElement("p", { className: "italic mt-1 text-gray-600" }, "(Being Calls in arrears received)")
+              ),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "74,000"),
+              React.createElement("td", { className: "border border-gray-300 p-2 text-right align-top" }, "74,000")
+            )
+          )
         )
       )
     ),
-    explanation: React.createElement("p", { className: "mt-2" }, "Pro-rata allotment means shares are allotted in proportion. Here 80,000 shares allotted to applicants of 1,10,000 shares means ratio 8:11 or simplified 5:4 for every 5 shares applied, 4 are allotted. Mukta must have applied for 7,500 shares (6,000 × 5/4) and got 6,000 allotted.")
+    explanation: React.createElement(React.Fragment, null,
+      React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: Accounting for Share Capital"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Accounting for Companies"),
+        React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Pro-rata Allotment, Forfeiture, and Reissue of Shares")
+      )
+    )
   }
 ];
 
