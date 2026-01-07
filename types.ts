@@ -6,6 +6,10 @@ export interface Question {
   question: ReactNode;
   solution: ReactNode;
   explanation: ReactNode;
+  // Metadata for better organization/display
+  name?: string;    // Unit or Section Name
+  chapter?: string;
+  topic?: string;
 }
 
 export interface QuestionPaper {
@@ -39,7 +43,7 @@ export interface LearningModule {
 }
 
 export interface Subject {
-  name:string;
+  name: string;
   questionPapers: QuestionPaper[];
   learningModules?: LearningModule[];
 }

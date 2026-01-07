@@ -1,0 +1,220 @@
+import React from 'react';
+import { Question } from '../../types';
+
+export const questions11to15: Question[] = [
+    {
+        id: 'accountancy-2025-11',
+        marks: 1,
+        chapter: 'Accounting for Partnership Firms',
+        name: 'Fundamentals',
+        topic: 'Fixed Capital Accounts',
+        question: React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "mb-2" }, "Rahul, Samarth and Ayaan were partners sharing profits and losses in the ratio of 5:4:3. Ayaan’s fixed Capital balance as on March 31, 2024 was ₹ 2,70,000. Which of the following items would have affected this Capital balance?"),
+            React.createElement("ul", { className: "space-y-1 list-none pl-6" },
+                React.createElement("li", null, "A. Profit/Loss for the year"),
+                React.createElement("li", null, "B. Additional Capital introduced"),
+                React.createElement("li", null, "C. Reduction in Capital due to Capital Adjustment"),
+                React.createElement("li", null, "D. Both B and C")
+            )
+        ),
+        solution: React.createElement("p", { className: "font-semibold text-green-700" }, "Correct Answer: D. Both B and C"),
+        explanation: React.createElement(React.Fragment, null,
+            React.createElement("p", null, "Under Fixed Capital Account Method, two accounts are maintained for each partner: Capital Account and Current Account."),
+            React.createElement("p", null, "The Capital Account balance remains constant (fixed) unless:"),
+            React.createElement("ul", { className: "list-disc ml-5" },
+                React.createElement("li", null, "Additional Capital is introduced."),
+                React.createElement("li", null, "Capital is withdrawn (Permanent Withdrawal)."),
+            ),
+            React.createElement("p", null, "Items like Share of Profit/Loss, Interest on Capital, Drawings (against profit), etc., are recorded in the Current Account and do not affect the Fixed Capital balance."),
+            React.createElement("p", null, "Therefore, both 'Additional Capital introduced' and 'Reduction in Capital' (Withdrawal) affect the Fixed Capital balance."),
+            React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: 2"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Fundamentals"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Fixed Capital Method")
+            )
+        )
+    },
+    {
+        id: 'accountancy-2025-12',
+        marks: 1,
+        chapter: 'Accounting for Companies',
+        name: 'Accounting for Share Capital',
+        topic: 'Sweat Equity Shares',
+        question: React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "mb-2" }, "Shares issued as sweat equity can be"),
+            React.createElement("ol", { className: "list-decimal pl-6 mb-2" },
+                React.createElement("li", null, "Issued at par."),
+                React.createElement("li", null, "Issued at discount."),
+                React.createElement("li", null, "Issued at a premium.")
+            ),
+            React.createElement("p", { className: "mb-2" }, "Which of the following is correct?"),
+            React.createElement("ul", { className: "space-y-1 list-none pl-6" },
+                React.createElement("li", null, "A. Only (i) is correct."),
+                React.createElement("li", null, "B. Both (i) and (iii) are correct."),
+                React.createElement("li", null, "C. All are correct."),
+                React.createElement("li", null, "D. Only (ii) is correct.")
+            )
+        ),
+        solution: React.createElement("p", { className: "font-semibold text-green-700" }, "Correct Answer: C. All are correct."),
+        explanation: React.createElement(React.Fragment, null,
+            React.createElement("p", null, "Sweat Equity Shares are issued by a company to its directors or employees at a discount or for consideration other than cash."),
+            React.createElement("p", null, "Section 54 of the Companies Act, 2013 allows the issue of sweat equity shares."),
+            React.createElement("p", null, "These shares can be issued at Par, at a Premium, or even at a Discount. Unlike normal equity shares (which cannot be issued at a discount except for sweat equity), sweat equity is an exception."),
+            React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: 1 (Part B)"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Accounting for Share Capital"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Sweat Equity Shares")
+            )
+        )
+    },
+    {
+        id: 'accountancy-2025-13',
+        marks: 1,
+        chapter: 'Accounting for Companies',
+        name: 'Accounting for Share Capital',
+        topic: 'Reissue of Forfeited Shares',
+        question: React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "mb-2" }, "2,000 shares allotted to Ms. Regal, on which ₹ 80 each called up and ₹ 50 paid were forfeited and reissued for ₹ 70 each as ₹ 90 paid up. Amount transferred to capital reserve A/c is"),
+            React.createElement("ul", { className: "space-y-1 list-none pl-6" },
+                React.createElement("li", null, "A. ₹ 1,00,000"),
+                React.createElement("li", null, "B. ₹ 60,000"),
+                React.createElement("li", null, "C. ₹ 40,000"),
+                React.createElement("li", null, "D. ₹ 20,000")
+            )
+        ),
+        solution: React.createElement("p", { className: "font-semibold text-green-700" }, "Correct Answer: B. ₹ 60,000"),
+        explanation: React.createElement(React.Fragment, null,
+            React.createElement("p", null, "1. Amount Forfeited on 2,000 shares:"),
+            React.createElement("p", null, "Total Paid = 2,000 × ₹ 50 = ₹ 1,00,000."),
+            React.createElement("p", null, "(This is the credit balance in Forfeited Shares A/c before reissue)."),
+            React.createElement("p", null, "2. Reissue details:"),
+            React.createElement("p", null, "Reissued as ₹ 90 paid up for ₹ 70."),
+            React.createElement("p", null, "Discount on Reissue per share = ₹ 90 (Paid up value) - ₹ 70 (Issue Price) = ₹ 20."),
+            React.createElement("p", null, "Total Discount on Reissue = 2,000 × ₹ 20 = ₹ 40,000."),
+            React.createElement("p", null, "3. Transfer to Capital Reserve:"),
+            React.createElement("p", null, "Gain = Amount Forfeited - Discount allowed on Reissue"),
+            React.createElement("p", null, "Gain = ₹ 1,00,000 - ₹ 40,000 = ₹ 60,000."),
+            React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: 1 (Part B)"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Accounting for Share Capital"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Capital Reserve on Reissue")
+            )
+        )
+    },
+    {
+        id: 'accountancy-2025-14',
+        marks: 1,
+        chapter: 'Reconstitution of Partnership',
+        name: 'Change in Profit Sharing Ratio',
+        topic: 'Treatment of Accumulated Profits and Losses',
+        question: React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "mb-2" }, "Joey, Sam and Tex were partners sharing profits and losses in the ratio 5:3:2. W.e.f 01 April, 2024 they decided to share future profits and losses in the ratio 2:1:1. For which of the following balances Tex will be credited at the time of reconstitution of firm, if the firm decided to continue with available accumulated profits and losses balances."),
+            React.createElement("ul", { className: "space-y-1 list-none pl-6" },
+                React.createElement("li", null, "A. General Reserve ₹ 2,00,000 and Profit and Loss (Dr.) ₹ 1,20,000"),
+                React.createElement("li", null, "B. General Reserve ₹ 2,00,000 and Profit and Loss (Cr.) ₹ 2,50,000"),
+                React.createElement("li", null, "C. Deferred Revenue Expenditure ₹ 50,000 and Profit and Loss (Cr.) ₹ 80,000"),
+                React.createElement("li", null, "D. Deferred Revenue Expenditure ₹ 50,000 and Profit and Loss (Dr.) ₹ 80,000")
+            )
+        ),
+        solution: React.createElement("p", { className: "font-semibold text-green-700" }, "Correct Answer: D. Deferred Revenue Expenditure ₹ 50,000 and Profit and Loss (Dr.) ₹ 80,000"),
+        explanation: React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "mb-2" }, "Note: This is an adjustment entry case because the firm decided to 'continue with available accumulated profits and losses balances', meaning they are NOT distributing them."),
+            React.createElement("p", null, "Old Ratio (Joey:Sam:Tex) = 5:3:2 (i.e., 5/10, 3/10, 2/10)."),
+            React.createElement("p", null, "New Ratio = 2:1:1 (i.e., 2/4, 1/4, 1/4). Let's convert to 20ths:"),
+            React.createElement("p", null, "Old: 10/20, 6/20, 4/20. New: 10/20, 5/20, 5/20."),
+            React.createElement("p", null, "Change for Tex: New (5/20) - Old (4/20) = +1/20 (Gain)."),
+            React.createElement("p", null, "Change for Sam: New (5/20) - Old (6/20) = -1/20 (Sacrifice)."),
+            React.createElement("p", null, "Joey: No Change."),
+            React.createElement("p", null, "Since Tex is Gaining, he will be Debited for Net Credit items (Profits) and Credited for Net Debit items (Losses) in the adjustment entry for compensation."),
+            React.createElement("p", null, "We need to find the case where Tex is CREDITED."),
+            React.createElement("p", null, "Tex is Credited if the net effect is a LOSS (Debit Balance)."),
+            React.createElement("p", null, "Let's analyze the options for Net Effect:"),
+            React.createElement("ul", { className: "list-disc ml-5" },
+                React.createElement("li", null, "A: GR (Cr) 2L - P&L (Dr) 1.2L = +80k (Profit). Tex would be Debited."),
+                React.createElement("li", null, "B: GR (Cr) 2L + P&L (Cr) 2.5L = +4.5L (Profit). Tex would be Debited."),
+                React.createElement("li", null, "C: Def Rev (Dr) 50k - P&L (Cr) 80k = +30k (Profit). Tex would be Debited."),
+                React.createElement("li", null, "D: Def Rev (Dr) 50k + P&L (Dr) 80k = 1.3L (Loss). Since it's a Net Loss, the Gaining Partner (Tex) is Credited."),
+            ),
+            React.createElement("p", null, "Entry for Net Loss: Gaining Partner (Credit) / Sacrificing Partner (Debit). Wait, normally for Loss: Sacrificing Dr / Gaining Cr. Yes, so Tex (Gaining) is Credited to compensate Sam."),
+            React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: 3"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Change in Profit Sharing Ratio"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Adjustment of Accumulated Profits/Losses (Not Distributed)")
+            )
+        )
+    },
+    {
+        id: 'accountancy-2025-15',
+        marks: 1,
+        chapter: 'Reconstitution of Partnership',
+        name: 'Admission of a Partner',
+        topic: 'Adjustment of Capital',
+        question: React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "mb-2" }, "Rohit, Virat and Shikhar were partners sharing profits and losses in the ratio 3:1:1. Their Capital balance as on March 31, 2024 was ₹ 3,00,000; ₹ 2,70,000 and ₹ 2,50,000 respectively. On the same date, they admitted Hardik as a new partner for 20% share. Hardik was to bring ₹ 80,000 for his share of goodwill and 1/5 of the combined capital of all the partners of new firm. What will be the amount of capital brought in by Hardik on his admission as a new partner?"),
+            React.createElement("ul", { className: "space-y-1 list-none pl-6" },
+                React.createElement("li", null, "A. ₹ 2,25,000"),
+                React.createElement("li", null, "B. ₹ 1,80,000"),
+                React.createElement("li", null, "C. ₹ 2,60,000"),
+                React.createElement("li", null, "D. ₹ 3,05,000")
+            )
+        ),
+        solution: React.createElement("p", { className: "font-semibold text-green-700" }, "Correct Answer: A. ₹ 2,25,000"),
+        explanation: React.createElement(React.Fragment, null,
+            React.createElement("p", null, "To calculate Hardik's Capital, we first need the Adjusted Capitals of Old Partners."),
+            React.createElement("p", null, "Adjustments typically include Revaluation, Reserves, etc. Here, only Goodwill premium is given."),
+            React.createElement("p", null, "Premium for Goodwill = ₹ 80,000. It is distributed to Sacrificing Partners. Assuming simple admission where Old Ratio = Sacrificing Ratio (3:1:1)."),
+            React.createElement("p", null, "Total Adjusted Capital of Old Partners (Rohit + Virat + Shikhar) = (3,00,000 + 2,70,000 + 2,50,000) + 80,000 (Goodwill Credit) = 8,20,000 + 80,000 = ₹ 9,00,000."),
+            React.createElement("p", null, "Hardik's Share = 20% = 1/5."),
+            React.createElement("p", null, "Remaining Share for Old Partners = 1 - 1/5 = 4/5."),
+            React.createElement("p", null, "However, the question says Hardik brings '1/5 of the COMBINED capital of ALL partners of NEW firm'."),
+            React.createElement("p", null, "Let Total Capital of New Firm be X."),
+            React.createElement("p", null, "Hardik's Capital = X/5."),
+            React.createElement("p", null, "Combined Capital of Old Partners = 4/5 of X."),
+            React.createElement("p", null, "We know Combined Capital of Old Partners = ₹ 9,00,000."),
+            React.createElement("p", null, "So, 4/5 X = 9,00,000 => X = 9,00,000 × 5/4 = ₹ 11,25,000."),
+            React.createElement("p", null, "Hardik's Capital = 11,25,000 / 5 = ₹ 2,25,000."),
+            React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: 4"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Admission of a Partner"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Calculation of New Partner's Capital")
+            )
+        )
+    },
+    {
+        id: 'accountancy-2025-15-OR',
+        marks: 1,
+        chapter: 'Reconstitution of Partnership',
+        name: 'Death of a Partner',
+        topic: 'Interest on Executor\'s Loan',
+        question: React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "mb-2 font-bold" }, "OR"),
+            React.createElement("p", { className: "mb-2" }, "A, B and C were partners sharing profits and losses equally. B died on 31 August, 2023 and total amount transferred to B’s executors was ₹ 13,20,000. B’s executors were being paid ₹ 1,20,000 immediately and balance was to be paid in four equal semi-annual instalments together with interest @ 10% p.a. Total amount of interest to be credited to B’s executors Account for the year ended March 31, 2024 will be?"),
+            React.createElement("ul", { className: "space-y-1 list-none pl-6" },
+                React.createElement("li", null, "A. ₹ 70,000"),
+                React.createElement("li", null, "B. ₹ 67,500"),
+                React.createElement("li", null, "C. ₹ 60,000"),
+                React.createElement("li", null, "D. ₹ 77,000")
+            )
+        ),
+        solution: React.createElement("p", { className: "font-semibold text-green-700" }, "Correct Answer: B. ₹ 67,500"),
+        explanation: React.createElement(React.Fragment, null,
+            React.createElement("p", null, "Total Due = 13,20,000. Paid Immediately = 1,20,000. Balance = 12,00,000."),
+            React.createElement("p", null, "Installments: 4 equal semi-annual. Principal per installment = 12,00,000 / 4 = 3,00,000."),
+            React.createElement("p", null, "Date of Death: 31st August 2023."),
+            React.createElement("p", null, "Year End: 31st March 2024 (7 months from death)."),
+            React.createElement("p", null, "1st Installment Due Date: 28th Feb 2024 (6 months from 31 Aug)."),
+            React.createElement("p", null, "Interest Calculation:"),
+            React.createElement("p", null, "1. For first 6 months (Aug 31 to Feb 28): Principal Outstanding = 12,00,000."),
+            React.createElement("p", null, "Interest = 12,00,000 × 10% × 6/12 = ₹ 60,000."),
+            React.createElement("p", null, "On Feb 28, 1st installment (3L) + Interest (60k) is paid. Principal reduces to 9,00,000."),
+            React.createElement("p", null, "2. For next 1 month (Feb 29 to Mar 31): Principal Outstanding = 9,00,000."),
+            React.createElement("p", null, "Interest = 9,00,000 × 10% × 1/12 = ₹ 7,500."),
+            React.createElement("p", null, "Total Interest Credited/Accrued for the year = 60,000 + 7,500 = ₹ 67,500."),
+            React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: 5"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Death of a Partner"),
+                React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Topic: Calculation of Interest on Executor's Loan")
+            )
+        )
+    }
+];
