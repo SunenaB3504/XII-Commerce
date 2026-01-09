@@ -14,11 +14,11 @@ export const samplePaper2023Q26To30: Question[] = [
             React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer:"),
             React.createElement("p", { className: "mb-2 font-semibold" }, "Option 1: Semantic Barriers (Any four)"),
             React.createElement("ul", { className: "list-decimal pl-6 space-y-2 mb-4" },
-                React.createElement("li", null, React.createElement("b", null, "Badly expressed message:"), " Sometimes intended meaning may not be conveyed by a manager to his subordinates. These badly expressed messages may be an account of inadequate vocabulary, usage of wrong words, omission of needed words etc."),
-                React.createElement("li", null, React.createElement("b", null, "Symbols with different meanings:"), " A word may have several meanings. Receiver has to perceive one such meaning for the word used by communicator."),
-                React.createElement("li", null, React.createElement("b", null, "Faulty translations:"), " Sometimes the communications originally drafted in one language (e.g., English) need to be translated to the language understandable to workers (e.g., Hindi). If the translator is not proficient with both the languages, mistakes may creep in causing different meanings to the communication."),
+                React.createElement("li", null, React.createElement("b", null, "Badly expressed message:"), " Sometimes intended meaning may not be conveyed by a manager to his subordinates due to inadequate vocabulary, usage of wrong works, omission of needed works, etc."),
+                React.createElement("li", null, React.createElement("b", null, "Symbols with different meanings:"), " A word may have different meanings and the receiver has to perceive one such meaning for the word used by the communicator."),
+                React.createElement("li", null, React.createElement("b", null, "Faulty translations:"), " If the translator is not proficient with both the languages, mistakes may creep in causing different meanings to communication."),
                 React.createElement("li", null, React.createElement("b", null, "Unclarified assumptions:"), " Some communications may have certain assumptions which are subject to different interpretations."),
-                React.createElement("li", null, React.createElement("b", null, "Technical jargon:"), " It is usually found that specialists use technical jargon while explaining to persons who are not specialists in the concerned field. Therefore, they may not understand the actual meaning of many such words."),
+                React.createElement("li", null, React.createElement("b", null, "Technical jargon:"), " Specialists use technical jargon while explaining to persons who are not specialists in the concerned field and therefore they may not understand the actual meaning."),
                 React.createElement("li", null, React.createElement("b", null, "Body language and gesture decoding:"), " If there is no match between what is said and what is expressed in body movements, communications may be wrongly perceived.")
             ),
             React.createElement("p", { className: "mb-2 font-semibold" }, "Option 2: Organizational Barriers (Any four)"),
@@ -40,100 +40,96 @@ export const samplePaper2023Q26To30: Question[] = [
         id: '27',
         marks: 4,
         question: React.createElement(React.Fragment, null,
-            React.createElement("p", { className: "mb-2" }, "In an organization, all the employees take things easy and are free to approach anyone for minor queries and problems. This has resulted in everyone talking to each other and thus resulting in inefficiency in the office. It has also resulted in loss of secrecy and confidential information being leaked out."),
-            React.createElement("p", { className: "mb-2" }, "Explain the system of communication being used in the organization and state any three disadvantages of this system.")
+            React.createElement("p", { className: "mb-2" }, "In Saarthak Steel several initiatives have been taken to further improve the motivation levels of employees through designing jobs that include greater variety of work content, providing certain stability about future income and work, providing fringe benefits like housing, medical aid, etc., allotment of shares in line with various incentives. Identify and briefly explain the incentives being given by the organization to the employees.")
         ),
         solution: React.createElement(React.Fragment, null,
-            React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer:"),
-            React.createElement("p", { className: "mb-2" }, "The system of communication is ", React.createElement("b", null, "Informal Communication (Grapevine)"), "."),
-            React.createElement("p", { className: "mb-2 font-semibold" }, "Disadvantages involved (Any three):"),
-            React.createElement("ul", { className: "list-disc pl-6 space-y-2" },
-                React.createElement("li", null, "It tends to be irregular and fits no set pattern."),
-                React.createElement("li", null, "It is not official, so its origin and credibility are often doubtful."),
-                React.createElement("li", null, "It spreads rapidly and sometimes gets distorted, leading to rumors."),
-                React.createElement("li", null, "It may result in leakage of confidential information."),
-                React.createElement("li", null, "It is difficult to fix responsibility as the source of information cannot be traced.")
+            React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer: Incentives (Any four)"),
+            React.createElement("ul", { className: "list-decimal pl-6 space-y-2" },
+                React.createElement("li", null, React.createElement("b", null, "Job enrichment:"), " Job enrichment is concerned with designing jobs that include greater variety of work content, require higher level of knowledge and skill; give workers more autonomy and responsibility; and provide opportunity for personal growth and a meaningful work experience."),
+                React.createElement("li", null, React.createElement("b", null, "Job security:"), " Employees want their jobs to be secure. They want certain stability about future income and work so that they do not feel worried about these aspects and work with greater zeal."),
+                React.createElement("li", null, React.createElement("b", null, "Perquisites:"), " In many companies perquisites and fringe benefits are offered such as car allowance, housing, medical aid and education to the children, etc., over and above the salary."),
+                React.createElement("li", null, React.createElement("b", null, "Co-partnership/stock option:"), " Under these incentive schemes, employees are offered company shares at a set price which is lower than market price. Sometimes, management may allot shares in line of various incentives payable in cash.")
             )
         ),
         explanation: React.createElement(React.Fragment, null,
             React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-            React.createElement("p", { className: "mt-2 font-semibold text-purple-700" }, "Chapter 7: Directing - Informal Communication"),
-            React.createElement("p", { className: "mt-2" }, "'Free to approach anyone', 'everyone talking to each other', and 'leakage of secrecy' points to Informal Communication or Grapevine.")
+            React.createElement("p", { className: "mt-2 font-semibold text-purple-700" }, "Chapter 7: Directing - Incentive Systems"),
+            React.createElement("p", { className: "mt-2" }, "The case mentions specific non-monetary and monetary incentives: Job Enrichment (variety of work), Job Security (stability), Perquisites (housing/medical), and Stock Options (shares).")
         )
     },
     {
         id: '28',
         marks: 4,
         question: React.createElement(React.Fragment, null,
-            React.createElement("p", { className: "mb-2" }, "State with reasons, whether the following statements are true or false:"),
-            React.createElement("ul", { className: "list-none pl-6 space-y-2" },
-                React.createElement("li", null, "a) Capital budgeting decisions are reversible."),
-                React.createElement("li", null, "b) A higher Debt Service Coverage Ratio (DSCR) indicates better ability to meet debt obligations."),
-                React.createElement("li", null, "c) In case of high inflation, a company should hold more working capital."),
-                React.createElement("li", null, "d) Equity capital is a cheaper source of finance than debt.")
-            ),
-            React.createElement("div", { className: "text-center my-2 font-bold" }, "OR"),
-            React.createElement("p", { className: "mb-2" }, "Enumerate any four factors affecting the capital structure of a company.")
+            React.createElement("p", { className: "mb-2" }, "State any four factors affecting the financial decision that is concerned with raising of finance using shareholders’ funds and borrowed funds.")
         ),
         solution: React.createElement(React.Fragment, null,
-            React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer:"),
-            React.createElement("p", { className: "mb-2 font-semibold" }, "Option 1: True/False"),
-            React.createElement("ul", { className: "list-none pl-6 space-y-2" },
-                React.createElement("li", null, "a) ", React.createElement("b", null, "False"), ". Capital budgeting decisions are crucial as they affect the long-term growth and are irreversible except at a huge cost."),
-                React.createElement("li", null, "b) ", React.createElement("b", null, "True"), ". A higher DSCR indicates better ability to meet cash commitments and therefore, the company's potential to increase debt component in its capital structure."),
-                React.createElement("li", null, "c) ", React.createElement("b", null, "True"), ". During inflation, prices of raw materials rise, requiring more funds to maintain the same level of activity."),
-                React.createElement("li", null, "d) ", React.createElement("b", null, "False"), ". Debt is considered cheaper because interest is a tax-deductible expense, whereas dividends are paid out of after-tax profits.")
-            ),
-            React.createElement("div", { className: "border-t-2 border-gray-300 my-4" }),
-            React.createElement("p", { className: "mb-2 font-semibold" }, "Option 2: Factors affecting capital structure (Any four)"),
+            React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer: Factors (Any four)"),
             React.createElement("ul", { className: "list-decimal pl-6 space-y-2" },
-                React.createElement("li", null, "Size of the projected Cash flows must be considered before borrowing."),
-                React.createElement("li", null, "Interest Coverage Ratio: Number of times earnings covers interest obligation."),
-                React.createElement("li", null, "Debt Service Coverage Ratio: Takes care of deficiencies in ICR."),
-                React.createElement("li", null, "Cost of Debt: More debt can be used if it can be raised at a lower rate."),
-                React.createElement("li", null, "Tax Rate: Higher tax rate makes debt relatively cheaper."),
-                React.createElement("li", null, "Cost of Equity: Financial risk increases with debt, potentially increasing cost of equity."),
-                React.createElement("li", null, "Floatation Costs: Cost of raising resources."),
-                React.createElement("li", null, "Risk Consideration: Lower business risk allows higher debt capacity."),
-                React.createElement("li", null, "Flexibility: Maintain borrowing power for unforeseen circumstances.")
+                React.createElement("li", null, "Cost: A prudent financial manager would normally opt for a source which is the cheapest."),
+                React.createElement("li", null, "Risk: The risk associated with each of the sources is different."),
+                React.createElement("li", null, "Floatation Costs: Higher the floatation cost, less attractive the source."),
+                React.createElement("li", null, "Cash Flow Position: A stronger cash flow position may make debt financing more viable than funding through equity."),
+                React.createElement("li", null, "Fixed Operating Costs: If a business has high fixed operating costs, it must reduce fixed financing costs."),
+                React.createElement("li", null, "Control Considerations: Issues of more equity may lead to dilution of management’s control over the business."),
+                React.createElement("li", null, "State of Capital Market: Health of the capital market may also affect the choice of source of funds.")
             )
         ),
         explanation: React.createElement(React.Fragment, null,
             React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-            React.createElement("p", { className: "mt-2 font-semibold text-purple-700" }, "Chapter 9: Financial Management - Capital Structure"),
-            React.createElement("p", { className: "mt-2" }, "Capital budgeting is irreversible. DSCR measures debt capacity. Inflation increases working capital needs. Debt is cheaper due to tax shield.")
+            React.createElement("p", { className: "mt-2 font-semibold text-purple-700" }, "Chapter 9: Financial Management - Financing Decision"),
+            React.createElement("p", { className: "mt-2" }, "The financing decision (Capital Structure) is affected by cost, risk, cash flow, control, and market conditions.")
         )
     },
     {
         id: '29',
         marks: 4,
         question: React.createElement(React.Fragment, null,
-            React.createElement("p", { className: "mb-2" }, "Krishna Ltd. continues to earn high profits over the years. The company has a good cash flow position and wants to reward its shareholders. However, the stock market reaction to dividend declaration is not very positive."),
-            React.createElement("p", { className: "mb-2" }, "Identify the decision involved in the above case and explain any three factors affecting this decision.")
+            React.createElement("p", { className: "mb-2" }, "Krish limited is in the business of manufacturing and exporting carpets and other home décor products. It has a share capital of ₹ 70 lacs at the face value of ₹ 100 each. Company is considering a major expansion of its production facilities and wants to raise ₹ 50 lacs. The finance manager of the company Mr. Prabhakar has recommended that the company can raise funds of the same amount by issuing 7% debentures. Given that earning per share of the company after expansion is ₹ 35 and tax rate is 30%, did Mr. Prabhakar give a justified recommendation?"),
+            React.createElement("p", { className: "mb-2" }, "Show the working.")
         ),
         solution: React.createElement(React.Fragment, null,
-            React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer:"),
-            React.createElement("p", { className: "mb-2" }, "The decision involved is ", React.createElement("b", null, "Dividend Decision"), "."),
-            React.createElement("p", { className: "mb-2 font-semibold" }, "Factors affecting dividend decision (Any three):"),
-            React.createElement("ul", { className: "list-decimal pl-6 space-y-2" },
-                React.createElement("li", null, React.createElement("b", null, "Amount of Earnings:"), " Dividends are paid out of current and past earnings. High earnings support higher dividends."),
-                React.createElement("li", null, React.createElement("b", null, "Stability Earnings:"), " A company having stable earnings is in a better position to declare higher dividends."),
-                React.createElement("li", null, React.createElement("b", null, "Cash Flow Position:"), " Payment of dividend involves outflow of cash. A good cash flow position is necessary for declaring dividends."),
-                React.createElement("li", null, React.createElement("b", null, "Stock Market Reaction:"), " Investors view an increase in dividend as good news and stock prices react positively. A decrease may have a negative impact.")
+            React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer: Yes, the recommendation is justified."),
+            React.createElement("p", { className: "mb-2 font-semibold" }, "Working:"),
+            React.createElement("div", { className: "bg-gray-100 p-4 rounded-md text-sm font-mono overflow-x-auto" },
+                React.createElement("p", null, "1. Calculate Earnings After Tax (EAT):"),
+                React.createElement("p", null, "   EPS = EAT / No. of Equity Shares"),
+                React.createElement("p", null, "   No. of Shares = 70,00,000 / 100 = 70,000"),
+                React.createElement("p", null, "   35 = EAT / 70,000"),
+                React.createElement("p", null, "   EAT = 35 * 70,000 = ₹ 24,50,000"),
+                React.createElement("br", null),
+                React.createElement("p", null, "2. Calculate Earnings Before Tax (EBT):"),
+                React.createElement("p", null, "   EAT = EBT - Tax (30%)"),
+                React.createElement("p", null, "   24,50,000 = EBT - 0.30 * EBT"),
+                React.createElement("p", null, "   24,50,000 = 0.70 * EBT"),
+                React.createElement("p", null, "   EBT = 24,50,000 / 0.70 = ₹ 35,00,000"),
+                React.createElement("br", null),
+                React.createElement("p", null, "3. Calculate Earnings Before Interest and Tax (EBIT):"),
+                React.createElement("p", null, "   Interest on Debentures = 7% of 50,00,000 = ₹ 3,50,000"),
+                React.createElement("p", null, "   EBIT = EBT + Interest"),
+                React.createElement("p", null, "   EBIT = 35,00,000 + 3,50,000 = ₹ 38,50,000"),
+                React.createElement("br", null),
+                React.createElement("p", null, "4. Calculate Return on Investment (ROI):"),
+                React.createElement("p", null, "   Total Investment = Share Capital + Debentures"),
+                React.createElement("p", null, "   Total Investment = 70,00,000 + 50,00,000 = ₹ 1,20,00,000"),
+                React.createElement("p", null, "   ROI = (EBIT / Total Investment) * 100"),
+                React.createElement("p", null, "   ROI = (38,50,000 / 1,20,00,000) * 100 = 32.08%"),
+                React.createElement("br", null),
+                React.createElement("p", null, "5. Conclusion:"),
+                React.createElement("p", null, "   As ROI (32.08%) > Rate of Interest (7%), the company can choose to use Trading on Equity to increase its EPS.")
             )
         ),
         explanation: React.createElement(React.Fragment, null,
             React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
-            React.createElement("p", { className: "mt-2 font-semibold text-purple-700" }, "Chapter 9: Financial Management - Dividend Decision"),
-            React.createElement("p", { className: "mt-2" }, "The decision regarding how much profit to distribute to shareholders is the Dividend Decision. Factors include earnings, cash flow, stability, growth opportunities, etc.")
+            React.createElement("p", { className: "mt-2 font-semibold text-purple-700" }, "Chapter 9: Financial Management - Trading on Equity"),
+            React.createElement("p", { className: "mt-2" }, "Trading on Equity (using debt) is beneficial when the Return on Investment (ROI) is higher than the Cost of Debt (Interest Rate). Here, 32.08% > 7%, so debt is favorable.")
         )
     },
     {
         id: '30',
         marks: 4,
         question: React.createElement(React.Fragment, null,
-            React.createElement("p", { className: "mb-2" }, "A consumer should keep in mind the following responsibilities while purchasing, using and consuming goods and services. Enumerate any four responsibilities."),
-            React.createElement("p", { className: "italic text-gray-500" }, "(Note: Question inferred from context 'A consumer should keep in mind... Enumerate any four responsibilities')")
+            React.createElement("p", { className: "mb-2" }, "Mayank purchased a pack of chocolates of a renowned brand for his daughter from a shop in the nearby market. After consuming the chocolates, his daughter fell sick. He filed a case with the District forum against the renowned brand. He lost the case because of a mistake that he could not provide proof of purchase. What should be kept in mind by a consumer while purchasing, using and consuming goods and services apart from avoiding the mistake committed by Mayank, in order to enable him/her to achieve the objective of consumer protection? Enumerate any four points.")
         ),
         solution: React.createElement(React.Fragment, null,
             React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer: Consumer Responsibilities (Any four):"),
@@ -144,7 +140,6 @@ export const samplePaper2023Q26To30: Question[] = [
                 React.createElement("li", null, "Read labels carefully so as to have information about prices, net weight, manufacturing and expiry dates, etc."),
                 React.createElement("li", null, "Assert yourself to ensure that you get a fair deal."),
                 React.createElement("li", null, "Be honest in your dealings. Choose only from legal goods and services and discourage unscrupulous practices like black-marketing, hoarding, etc."),
-                React.createElement("li", null, "File a complaint in an appropriate consumer forum in case of a shortcoming in the quality of goods purchased or services availed."),
                 React.createElement("li", null, "Form consumer societies which would play an active part in educating consumers and safeguarding their interests."),
                 React.createElement("li", null, "Respect the environment. Avoid waste, littering and contributing to pollution.")
             )
@@ -152,7 +147,7 @@ export const samplePaper2023Q26To30: Question[] = [
         explanation: React.createElement(React.Fragment, null,
             React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Explanation"),
             React.createElement("p", { className: "mt-2 font-semibold text-purple-700" }, "Chapter 12: Consumer Protection - Consumer Responsibilities"),
-            React.createElement("p", { className: "mt-2" }, "Consumers have rights but also responsibilities like being aware, looking for quality marks, reading labels, being honest, and filing complaints when necessary.")
+            React.createElement("p", { className: "mt-2" }, "Apart from keeping Proof of Purchase (Cash Memo), consumers must be quality conscious, aware of risks, read labels, and be honest.")
         )
     }
 ];

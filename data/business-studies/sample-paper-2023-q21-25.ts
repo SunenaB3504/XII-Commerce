@@ -101,9 +101,9 @@ export const samplePaper2023Q21To25: Question[] = [
         id: '25',
         marks: 4,
         question: React.createElement(React.Fragment, null,
-            React.createElement("p", { className: "mb-2" }, "Enumerate any four benefits of training to an organization."),
+            React.createElement("p", { className: "mb-2" }, "Enumerate any four benefits of the process by which the aptitudes, skills and abilities of employees to perform specific jobs are increased."),
             React.createElement("div", { className: "text-center my-2 font-bold" }, "OR"),
-            React.createElement("p", { className: "mb-2" }, "State any four types of selection tests.")
+            React.createElement("p", { className: "mb-2" }, "Name the mechanism that attempts to measure certain characteristics of individuals in the process of identifying and choosing the best person out of the number of prospective candidates for the job. Enumerate any three of its types.")
         ),
         solution: React.createElement(React.Fragment, null,
             React.createElement("p", { className: "font-bold text-green-700 mb-2" }, "Correct Answer:"),
