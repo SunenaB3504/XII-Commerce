@@ -36,7 +36,7 @@ const App: React.FC = () => {
     const firstPaper = currentSubject.questionPapers[0];
     setSelectedPaperName(firstPaper?.name || null);
     setSelectedQuestionId(firstPaper?.questions[0]?.id || null);
-    
+
     const firstModule = currentSubject.learningModules?.[0];
     setSelectedChapter(firstModule?.chapter || null);
   }, [selectedSubjectName, currentSubject]);
@@ -60,7 +60,7 @@ const App: React.FC = () => {
   const handleSelectPaper = useCallback((name: string) => {
     setSelectedPaperName(name);
   }, []);
-  
+
   const handleSelectChapter = useCallback((chapter: string) => {
     setSelectedChapter(chapter);
   }, []);
@@ -114,16 +114,16 @@ const App: React.FC = () => {
       </header>
 
       <main className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
-        <SubjectTabs 
+        <SubjectTabs
           subjects={subjects.map(s => s.name)}
           selectedSubject={selectedSubjectName}
           onSelectSubject={handleSelectSubject}
         />
-        
+
         <ModeSelector
           currentMode={viewMode}
           onSetMode={setViewMode}
-          showLearnTab={!!(currentSubject.learningModules && currentSubject.learningModules.length > 0)}
+          showLearnTab={!!currentSubject.learningModules}
         />
 
         {viewMode === 'papers' && availablePapers.length > 0 && (
@@ -136,7 +136,7 @@ const App: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row gap-8 mt-6">
           <aside className="lg:w-1/4 xl:w-1/5">
-            <Sidebar 
+            <Sidebar
               mode={viewMode}
               questions={currentQuestions}
               currentQuestionId={selectedQuestionId}
@@ -160,7 +160,7 @@ const App: React.FC = () => {
                   studentName="Commerce Student"
                   onTestComplete={handleTestComplete}
                 />
-                
+
                 {/* Test History */}
                 {testHistory.length > 0 && (
                   <div className="mt-8 border-t pt-6">
@@ -170,12 +170,11 @@ const App: React.FC = () => {
                         <div key={index} className="bg-slate-50 p-4 rounded-lg border">
                           <div className="flex justify-between items-center mb-2">
                             <span className="font-semibold">Test {testHistory.length - index}</span>
-                            <span className={`px-2 py-1 rounded text-sm font-bold ${
-                              test.performanceLevel === 'excellent' ? 'bg-green-100 text-green-800' :
-                              test.performanceLevel === 'good' ? 'bg-blue-100 text-blue-800' :
-                              test.performanceLevel === 'average' ? 'bg-yellow-100 text-yellow-800' :
-                              'bg-red-100 text-red-800'
-                            }`}>
+                            <span className={`px-2 py-1 rounded text-sm font-bold ${test.performanceLevel === 'excellent' ? 'bg-green-100 text-green-800' :
+                                test.performanceLevel === 'good' ? 'bg-blue-100 text-blue-800' :
+                                  test.performanceLevel === 'average' ? 'bg-yellow-100 text-yellow-800' :
+                                    'bg-red-100 text-red-800'
+                              }`}>
                               {test.performanceLevel.charAt(0).toUpperCase() + test.performanceLevel.slice(1)}
                             </span>
                           </div>
@@ -204,7 +203,7 @@ const App: React.FC = () => {
               />
             )}
             {!selectedQuestion && !selectedModule && viewMode !== 'test' && viewMode !== 'challenge' && viewMode !== 'knowledge' && (
-               <div className="bg-white p-8 rounded-lg shadow-md flex items-center justify-center h-full">
+              <div className="bg-white p-8 rounded-lg shadow-md flex items-center justify-center h-full">
                 <p className="text-xl text-slate-500">Select an item from the list to get started!</p>
               </div>
             )}
