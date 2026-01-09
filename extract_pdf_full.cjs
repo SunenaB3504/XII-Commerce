@@ -1,8 +1,9 @@
 const fs = require('fs');
 const pdf = require('pdf-parse');
+const path = require('path');
 
-const sqpPath = process.argv[2] || 'c:\\Users\\Admin\\Neil\\XII-Commerce\\SQPs\\BS-SQPs\\BusinessStudies-SQP-2023-24.pdf';
-const msPath = process.argv[3] || 'c:\\Users\\Admin\\Neil\\XII-Commerce\\SQPs\\BS-SQPs\\BusinessStudies-MS-2023-24.pdf';
+const sqpPath = process.argv[2] || path.join(__dirname, 'SQPs/BS-SQPs/BusinessStudies-SQP-2022-23.pdf');
+const msPdfPath = process.argv[3] || path.join(__dirname, 'SQPs/BS-SQPs/BusinessStudies-MS-2022-23.pdf');
 
 async function extractText() {
     try {
@@ -14,8 +15,8 @@ async function extractText() {
             output += data.text + "\n";
         }
 
-        if (fs.existsSync(msPath)) {
-            const msDataBuffer = fs.readFileSync(msPath);
+        if (fs.existsSync(msPdfPath)) {
+            const msDataBuffer = fs.readFileSync(msPdfPath);
             const msData = await pdf(msDataBuffer);
             output += "\n--- MS TEXT ---\n";
             output += msData.text + "\n";

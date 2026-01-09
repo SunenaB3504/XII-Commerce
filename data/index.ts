@@ -11,6 +11,7 @@ import { accountancySamplePaper2021 } from './accountancy/sample-paper-2021';
 import { businessStudiesSamplePaper2026 } from './business-studies/sample-paper-2026';
 import { businessStudiesSamplePaper2025 } from './business-studies/sample-paper-2025';
 import { businessStudiesSamplePaper2024 } from './business-studies/sample-paper-2024';
+import { businessStudiesSamplePaper2023 } from './business-studies/sample-paper-2023';
 // import { businessStudiesBoardExam66_1_1 } from './business-studies/board-exam-66-1-1';
 // import { businessStudiesBoardExam66_1_2 } from './business-studies/board-exam-66-1-2';
 // import { businessStudiesBoardExam66_7_3 } from './business-studies/board-exam-66-7-3';
@@ -48,9 +49,10 @@ export const subjects: Subject[] = [
       businessStudiesSamplePaper2026,
       businessStudiesSamplePaper2025,
       businessStudiesSamplePaper2024,
+      businessStudiesSamplePaper2023,
       // businessStudiesChallenge2025,
       // businessStudiesChallenge2024,
-      businessStudiesChallenge2023,
+      // businessStudiesChallenge2023,
       businessStudiesChallenge2022,
       businessStudiesChallenge2021,
       // businessStudiesBoardExam66_1_1,
