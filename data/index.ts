@@ -74,4 +74,12 @@ export const subjects: Subject[] = [
     ],
     learningModules: economicsLearningModules,
   },
+  {
+    name: 'English',
+    questionPapers: [],
+  },
+  {
+    name: 'Physical Education',
+    questionPapers: [],
+  },
 ];
