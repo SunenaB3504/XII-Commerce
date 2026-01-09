@@ -1,8 +1,8 @@
 const fs = require('fs');
 const pdf = require('pdf-parse');
 
-const sqpPath = process.argv[2] || 'c:\\Users\\Admin\\Neil\\XII-Commerce\\SQPs\\BS-SQPs\\BusinessStudies-SQP 2025-26.pdf';
-const msPath = process.argv[3] || 'c:\\Users\\Admin\\Neil\\XII-Commerce\\SQPs\\BS-SQPs\\BusinessStudies-MS 2025-26.pdf';
+const sqpPath = 'c:\\Users\\Admin\\Neil\\XII-Commerce\\SQPs\\Acc-SQPs\\SQPs\\Accountancy-SQP-2023-24.pdf';
+const msPath = 'c:\\Users\\Admin\\Neil\\XII-Commerce\\SQPs\\Acc-SQPs\\SQPs\\Accountancy-MS-2023-24.pdf';
 
 async function extractText() {
     try {
@@ -12,6 +12,8 @@ async function extractText() {
             const data = await pdf(dataBuffer);
             output += "--- SQP TEXT ---\n";
             output += data.text + "\n";
+        } else {
+            console.error("SQP file not found at " + sqpPath);
         }
 
         if (fs.existsSync(msPath)) {
@@ -19,10 +21,12 @@ async function extractText() {
             const msData = await pdf(msDataBuffer);
             output += "\n--- MS TEXT ---\n";
             output += msData.text + "\n";
+        } else {
+            console.error("MS file not found at " + msPath);
         }
 
-        fs.writeFileSync('extracted_pdf_content.txt', output);
-        console.log("Extraction complete. Check extracted_pdf_content.txt");
+        fs.writeFileSync('extracted_pdf_2024.txt', output);
+        console.log("Extraction complete. Check extracted_pdf_2024.txt");
     } catch (error) {
         console.error("Error extracting PDF:", error);
     }
