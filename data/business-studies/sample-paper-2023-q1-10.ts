@@ -73,7 +73,13 @@ export const samplePaper2023Q1To10: Question[] = [
         marks: 1,
         question: React.createElement(React.Fragment, null,
             React.createElement("p", { className: "mb-2" }, "Identify the dimensions of the business environment illustrated by the picture given above in which Sapna who has joined the workforce recently is working on an accounting software."),
-            React.createElement("p", { className: "text-sm text-gray-500 italic" }, "(Note: Image description provided in text: Sapna joined workforce + working on accounting software)"),
+            React.createElement("div", { className: "my-4 flex justify-center" },
+                React.createElement("img", {
+                    src: "/bs-sqp-2023-q4.png",
+                    alt: "Sapna working on accounting software",
+                    className: "max-w-full h-auto border rounded-lg shadow-sm"
+                })
+            ),
             React.createElement("ul", { className: "list-none pl-6 space-y-2" },
                 React.createElement("li", null, "a) Technological and social."),
                 React.createElement("li", null, "b) Technological and political"),
