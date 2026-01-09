@@ -30,6 +30,8 @@ import { economicsSamplePaper2022 } from './economics/economics-sample-paper-202
 import { businessStudiesLearningModules } from './learning-content/business-studies';
 import { economicsLearningModules } from './learning-content/economics';
 import { accountancyLearningModules } from './learning-content/accountancy';
+import { englishLearningModules } from './learning-content/english';
+import { physicalEducationLearningModules } from './learning-content/physical-education';
 import type { Subject } from '../types';
 
 export const subjects: Subject[] = [
@@ -77,9 +79,11 @@ export const subjects: Subject[] = [
   {
     name: 'English',
     questionPapers: [],
+    learningModules: englishLearningModules,
   },
   {
     name: 'Physical Education',
     questionPapers: [],
+    learningModules: physicalEducationLearningModules,
   },
 ];
