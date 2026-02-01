@@ -13,7 +13,10 @@ export interface Question {
 }
 
 export interface QuestionPaper {
+  id?: string;
   name: string;
+  year?: string;
+  subject?: string;
   questions: Question[];
 }
 

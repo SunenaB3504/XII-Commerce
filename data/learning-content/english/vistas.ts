@@ -6,6 +6,8 @@ export const vistasModules: LearningModule[] = [
         chapter: "Vistas 1",
         title: "The Third Level",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "Charley, a modern man seeking escape from the insecurities of the post-war world, hallucinates a 'third level' at Grand Central Station leading to the peaceful year of 1894. The story blurs the line between reality and fantasy/wish-fulfillment."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Charley discovers a mysterious third level at Grand Central Station that transports him to 1894."),
@@ -18,19 +20,19 @@ export const vistasModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Nostalgic with Surreal Undertones",
-                description: "\"In 1894, summer evenings were twice as long... peaceful world.\""
+                content: "\"In 1894, summer evenings were twice as long... peaceful world.\""
             },
             {
                 title: "Symbolism: The Third Level",
-                description: "Escapism from modernity's anxieties."
+                content: "Escapism from modernity's anxieties."
             },
             {
                 title: "Irony",
-                description: "Sam, the psychiatrist diagnosing \"waking-dream wish fulfillment,\" escapes to 1894 himself."
+                content: "Sam, the psychiatrist diagnosing \"waking-dream wish fulfillment,\" escapes to 1894 himself."
             },
             {
                 title: "Symbolism: First-Day Cover",
-                description: "Postmarked July 18, 1894—symbolizes proof that the past can be accessed."
+                content: "Postmarked July 18, 1894—symbolizes proof that the past can be accessed."
             }
         ],
         keywords: [
@@ -44,8 +46,7 @@ export const vistasModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Explores escapism as a psychological response to post-war anxieties.",
-                question: "Extrapolation Point",
-                answer: "Compare Charley's escapism to Douglas's confrontation of fear in 'Deep Water'—Charley avoids reality, Douglas actively overcomes trauma."
+                analysis: "Extrapolation Point: Compare Charley's escapism to Douglas's confrontation of fear in 'Deep Water'—Charley avoids reality, Douglas actively overcomes trauma."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -67,6 +68,8 @@ export const vistasModules: LearningModule[] = [
         chapter: "Vistas 2",
         title: "The Tiger King",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "A satire on the conceit of those in power. The Maharaja of Pratibandapuram spends his life killing 99 tigers to disprove a prophecy, only to be killed by a wooden toy tiger, proving that destiny—and nature—cannot be arrogantly conquered."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Astrologers predict the Maharaja will be killed by the 100th tiger, prompting him to hunt tigers obsessively."),
@@ -79,19 +82,19 @@ export const vistasModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Satirical and Ironic",
-                description: "\"The operation was successful. The Maharaja is dead.\""
+                content: "\"The operation was successful. The Maharaja is dead.\""
             },
             {
                 title: "Dramatic Irony",
-                description: "The 100th tiger doesn't kill him; a toy tiger does."
+                content: "The 100th tiger doesn't kill him; a toy tiger does."
             },
             {
                 title: "Hyperbole",
-                description: "Exaggerated titles: \"His Highness Jamedar-General... Sir Jilani Jung Jung Bahadur\"."
+                content: "Exaggerated titles: \"His Highness Jamedar-General... Sir Jilani Jung Jung Bahadur\"."
             },
             {
                 title: "Symbolism: Wooden Toy Tiger",
-                description: "Symbolizes fate's inevitability—human arrogance cannot outwit destiny."
+                content: "Symbolizes fate's inevitability—human arrogance cannot outwit destiny."
             }
         ],
         keywords: [
@@ -105,8 +108,7 @@ export const vistasModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Satirizes autocratic power and man's futile attempts to control destiny.",
-                question: "Extrapolation Point",
-                answer: "Compare the Maharaja's hubris to Edla's compassion in 'The Rattrap'—pride destroys him, while kindness redeems the rattrap seller."
+                analysis: "Extrapolation Point: Compare the Maharaja's hubris to Edla's compassion in 'The Rattrap'—pride destroys him, while kindness redeems the rattrap seller."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -128,6 +130,8 @@ export const vistasModules: LearningModule[] = [
         chapter: "Vistas 3",
         title: "Journey to the End of the Earth",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "A travelogue detailing an expedition to Antarctica. The author reflects on the continent's pristine environment, its geological history as part of Gondwana, and its crucial role in understanding clear danger signals of global warming like melting ice shelves."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " The author joins 'Students on Ice' expedition to Antarctica."),
@@ -140,19 +144,19 @@ export const vistasModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Reflective and Urgent",
-                description: "\"Human civilisations have been around for a paltry 12,000 years... we've managed to create quite a ruckus.\""
+                content: "\"Human civilisations have been around for a paltry 12,000 years... we've managed to create quite a ruckus.\""
             },
             {
                 title: "Metaphor: Ping-Pong Ball",
-                description: "Antarctica's disorienting whiteness."
+                content: "Antarctica's disorienting whiteness."
             },
             {
                 title: "Juxtaposition",
-                description: "Scale ranges from microscopic (midges) to mighty (whales)."
+                content: "Scale ranges from microscopic (midges) to mighty (whales)."
             },
             {
                 title: "Symbolism: Walking on Ocean",
-                description: "Symbolizes humanity's fragile relationship with nature."
+                content: "Symbolizes humanity's fragile relationship with nature."
             }
         ],
         keywords: [
@@ -166,8 +170,7 @@ export const vistasModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Doshi's travelogue emphasizes understanding Earth's climatic history through Antarctica.",
-                question: "Extrapolation Point",
-                answer: "Compare Doshi's environmental awakening to Anees Jung's depiction of child laborers—both address intergenerational responsibility (ecological vs. socio-economic)."
+                analysis: "Extrapolation Point: Compare Doshi's environmental awakening to Anees Jung's depiction of child laborers—both address intergenerational responsibility (ecological vs. socio-economic)."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -189,6 +192,8 @@ export const vistasModules: LearningModule[] = [
         chapter: "Vistas 4",
         title: "The Enemy",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "Set during WWII, Dr. Sadao Hoki finds a wounded American POW on his doorstep. The story explores the conflict between his duty as a doctor to save a life and his patriotism as a Japanese citizen. Humanity prevails as he saves the soldier and helps him escape."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Dr. Sadao discovers a wounded American POW. A moral dilemma: duty as doctor vs. loyalty to Japan."),
@@ -201,19 +206,19 @@ export const vistasModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Tense and Morally Ambiguous",
-                description: "\"This man... there is no reason under heaven why he should live.\""
+                content: "\"This man... there is no reason under heaven why he should live.\""
             },
             {
                 title: "Internal Conflict",
-                description: "Sadao's ethics (save a life) vs. patriotism (enemy)."
+                content: "Sadao's ethics (save a life) vs. patriotism (enemy)."
             },
             {
                 title: "Symbolism: Open Gate",
-                description: "Sadao's house openness = openness to humanity."
+                content: "Sadao's house openness = openness to humanity."
             },
             {
                 title: "Symbolism: Scars",
-                description: "The white man's scars symbolize universal suffering and torture."
+                content: "The white man's scars symbolize universal suffering and torture."
             }
         ],
         keywords: [
@@ -227,8 +232,7 @@ export const vistasModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Examines the conflict between universal humanitarian duty and nationalist loyalty.",
-                question: "Extrapolation Point",
-                answer: "Compare Sadao's dilemma with the peddler's transformation in 'The Rattrap'—both confront ethical choices, but Sadao faces life-threatening consequences."
+                analysis: "Extrapolation Point: Compare Sadao's dilemma with the peddler's transformation in 'The Rattrap'—both confront ethical choices, but Sadao faces life-threatening consequences."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -250,6 +254,8 @@ export const vistasModules: LearningModule[] = [
         chapter: "Vistas 5",
         title: "On the Face of It",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "A play exploring the bond between Derry, a boy with a scarred face, and Mr. Lamb, an old man with a tin leg. Both are social outcasts, but while Derry is bitter and withdrawn, Mr. Lamb is accepting and open. Mr. Lamb's philosophy transforms Derry's perspective before a tragic end."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Derry, a boy with a burned face, trespasses into Mr. Lamb's garden and meets the elderly man with a tin leg."),
@@ -262,19 +268,19 @@ export const vistasModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Compassionate yet Melancholic",
-                description: "\"Derry begins to weep. 'I came back. Lamey-Lamb. I did... come back.'\""
+                content: "\"Derry begins to weep. 'I came back. Lamey-Lamb. I did... come back.'\""
             },
             {
                 title: "Metaphor: Weeds and Flowers",
-                description: "\"It's all life... growing. Same as you and me\"—challenges social hierarchies."
+                content: "\"It's all life... growing. Same as you and me\"—challenges social hierarchies."
             },
             {
                 title: "Symbolism: Crab Apples",
-                description: "Life's bittersweet nature; \"ugly\" but make \"magic\" jelly."
+                content: "Life's bittersweet nature; \"ugly\" but make \"magic\" jelly."
             },
             {
                 title: "Symbolism: Tin Leg",
-                description: "Visible vs. invisible disabilities. Can be covered, unlike Derry's face."
+                content: "Visible vs. invisible disabilities. Can be covered, unlike Derry's face."
             }
         ],
         keywords: [
@@ -288,8 +294,7 @@ export const vistasModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Illustrates how physical disabilities cause alienation, but connection enables healing.",
-                question: "Extrapolation Point",
-                answer: "Compare Derry's struggle to Zitkala-Sa's cultural trauma—both experience marginalization, but Derry internalizes shame while Zitkala-Sa resists."
+                analysis: "Extrapolation Point: Compare Derry's struggle to Zitkala-Sa's cultural trauma—both experience marginalization, but Derry internalizes shame while Zitkala-Sa resists."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -311,6 +316,8 @@ export const vistasModules: LearningModule[] = [
         chapter: "Vistas 6",
         title: "Memories of Childhood",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "Two autobiographical extracts highlighting social marginalization. Zitkala-Sa recounts the trauma of her hair being shorn at a Native American boarding school (cultural erasure), while Bama describes her awakening to the indignity of caste untouchability in India and her resolve to overcome it through education."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Part I: The Cutting of My Long Hair (Zitkala-Sa)"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, "Zitkala-Sa is forcibly taken to a missionary school."),
@@ -329,19 +336,19 @@ export const vistasModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone (Part I): Anguished and Defiant",
-                description: "\"I was only one of many little animals driven by a herder.\""
+                content: "\"I was only one of many little animals driven by a herder.\""
             },
             {
                 title: "Symbolism (Part I): Long Hair",
-                description: "Cultural identity and honor. Cutting it symbolizes defeat."
+                content: "Cultural identity and honor. Cutting it symbolizes defeat."
             },
             {
                 title: "Tone (Part II): Indignant yet Hopeful",
-                description: "\"But we too are human beings.\""
+                content: "\"But we too are human beings.\""
             },
             {
                 title: "Symbolism (Part II): Vadai Package",
-                description: "Symbolizes untouchability's absurdity."
+                content: "Symbolizes untouchability's absurdity."
             }
         ],
         keywords: [
@@ -355,8 +362,7 @@ export const vistasModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Two accounts of systemic oppression and the struggle for identity/dignity.",
-                question: "Extrapolation Point",
-                answer: "Compare Zitkala-Sa's forced erasure to Bama's caste humiliation. Compare Bama's empowerment to Saheb's trapped existence."
+                analysis: "Extrapolation Point: Compare Zitkala-Sa's forced erasure to Bama's caste humiliation. Compare Bama's empowerment to Saheb's trapped existence."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,

@@ -6,6 +6,8 @@ export const flamingoProseModules: LearningModule[] = [
         chapter: "Prose 1",
         title: "The Last Lesson",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "The story recounts the poignant realization of Franz, a young student in Alsace, attending his last French lesson given by M. Hamel. As the district has been captured by Prussia, German is imposed as the medium of instruction. The narrative captures the emotional shift in the village, transforming an ordinary school day into a solemn tribute to their lost linguistic heritage."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Franz arrives late to school expecting a scolding about participles, only to discover M. Hamel wearing formal clothes and villagers sitting in class—an unusual scene."),
@@ -18,23 +20,23 @@ export const flamingoProseModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Narrative Tone: Nostalgic and Mournful",
-                description: "Franz regrets his lost opportunities: \"My last French lesson! Why, I hardly knew how to write!\""
+                content: "Franz regrets his lost opportunities: \"My last French lesson! Why, I hardly knew how to write!\""
             },
             {
                 title: "Symbolism: 'Vive La France!'",
-                description: "Defiant assertion of French cultural identity against German occupation."
+                content: "Defiant assertion of French cultural identity against German occupation."
             },
             {
                 title: "Irony",
-                description: "Franz suddenly values French lessons only when they're taken away; villagers attend class to honor education they neglected."
+                content: "Franz suddenly values French lessons only when they're taken away; villagers attend class to honor education they neglected."
             },
             {
                 title: "Metaphor: Key to Prison",
-                description: "\"When a people are enslaved, as long as they hold fast to their language it is as if they had the key to their prison\"—language = freedom's key."
+                content: "\"When a people are enslaved, as long as they hold fast to their language it is as if they had the key to their prison\"—language = freedom's key."
             },
             {
                 title: "Symbolism: M. Hamel's Outfit",
-                description: "His \"beautiful green coat, frilled shirt, and little black silk cap\" symbolizes dignity in defeat—he honors French culture's last official moment."
+                content: "His \"beautiful green coat, frilled shirt, and little black silk cap\" symbolizes dignity in defeat—he honors French culture's last official moment."
             }
         ],
         keywords: [
@@ -49,8 +51,7 @@ export const flamingoProseModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "'The Last Lesson' critiques linguistic imperialism as a tool of cultural erasure.",
-                question: "Extrapolation Point",
-                answer: "Compare M. Hamel's linguistic pride to Bama's emphasis on education in 'Memories of Childhood'—both texts show how dominant powers suppress marginalized communities, but while M. Hamel mourns a lost language, Bama uses education as active resistance against untouchability."
+                analysis: "Extrapolation Point: Compare M. Hamel's linguistic pride to Bama's emphasis on education in 'Memories of Childhood'—both texts show how dominant powers suppress marginalized communities, but while M. Hamel mourns a lost language, Bama uses education as active resistance against untouchability."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -72,6 +73,8 @@ export const flamingoProseModules: LearningModule[] = [
         chapter: "Prose 2",
         title: "Lost Spring",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "This chapter vividly depicts the grinding poverty of child laborers in India through two distinct stories: vivid encounters with Saheb, a ragpicker in Seemapuri who resignedly accepts a job at a tea stall, and Mukesh, a boy in Firozabad's bangle-making industry who dares to dream of being a mechanic despite his family's rigid caste-bound tradition."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " The author encounters Saheb, a Bangladeshi ragpicker in Delhi's Seemapuri slum, who dreams of school but has no access."),
@@ -84,23 +87,23 @@ export const flamingoProseModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Empathetic yet Indignant",
-                description: "\"Garbage to them is gold... But for a child it is even more.\""
+                content: "\"Garbage to them is gold... But for a child it is even more.\""
             },
             {
                 title: "Hyperbole",
-                description: "\"Garbage to them is gold\"—exaggeration emphasizes desperate dependence."
+                content: "\"Garbage to them is gold\"—exaggeration emphasizes desperate dependence."
             },
             {
                 title: "Metaphor: Web of Poverty",
-                description: "\"Vicious circle\" of middlemen and politicians traps them."
+                content: "\"Vicious circle\" of middlemen and politicians traps them."
             },
             {
                 title: "Juxtaposition",
-                description: "Saheb's carefree plastic bag (freedom) vs. the heavy steel canister (servitude)."
+                content: "Saheb's carefree plastic bag (freedom) vs. the heavy steel canister (servitude)."
             },
             {
                 title: "Symbolism: Steel Canister",
-                description: "Symbolizes loss of autonomy. \"Saheb is no longer his own master!\""
+                content: "Symbolizes loss of autonomy. \"Saheb is no longer his own master!\""
             }
         ],
         keywords: [
@@ -115,8 +118,7 @@ export const flamingoProseModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Jung's 'Lost Spring' exposes how systemic poverty, caste discrimination, and illegal child labor create intergenerational traps.",
-                question: "Extrapolation Point",
-                answer: "Compare Saheb's loss of freedom to Sophie's economic entrapment in 'Going Places'—both working-class youth dream of escape but are 'earmarked' for predetermined futures, highlighting how class immobility crushes aspirations."
+                analysis: "Extrapolation Point: Compare Saheb's loss of freedom to Sophie's economic entrapment in 'Going Places'—both working-class youth dream of escape but are 'earmarked' for predetermined futures, highlighting how class immobility crushes aspirations."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -138,6 +140,8 @@ export const flamingoProseModules: LearningModule[] = [
         chapter: "Prose 3",
         title: "Deep Water",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "An autobiographical account where William Douglas chronicles his journey from a paralyzing fear of water—rooted in childhood trauma—to eventual mastery. Through sheer will and rigorous training with an instructor, he confronts his terror step-by-step, ultimately swimming across lakes to prove he has conquered his phobia."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " As a child, Douglas nearly drowns when a bully throws him into a YMCA pool; he experiences three terrifying descents."),
@@ -150,19 +154,19 @@ export const flamingoProseModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Reflective and Triumphant",
-                description: "\"The experience had a deep meaning for me... In death there is peace. There is terror only in the fear of death.\""
+                content: "\"The experience had a deep meaning for me... In death there is peace. There is terror only in the fear of death.\""
             },
             {
                 title: "Repetition",
-                description: "\"I went down, down, endlessly\"—emphasizes the endless horror."
+                content: "\"I went down, down, endlessly\"—emphasizes the endless horror."
             },
             {
                 title: "Personification of Terror",
-                description: "\"Terror that knows no understanding, terror that knows no control\"—fear becomes an autonomous force."
+                content: "\"Terror that knows no understanding, terror that knows no control\"—fear becomes an autonomous force."
             },
             {
                 title: "Symbolism: Pulley System",
-                description: "Symbolizes systematic therapy and gradual healing—recovery is methodical."
+                content: "Symbolizes systematic therapy and gradual healing—recovery is methodical."
             }
         ],
         keywords: [
@@ -177,8 +181,7 @@ export const flamingoProseModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Douglas's narrative demonstrates that fear itself is the true enemy, and conquering trauma requires systematic desensitization.",
-                question: "Extrapolation Point",
-                answer: "Compare Douglas's methodical conquest of fear to Gandhi's strategic approach in 'Indigo'—both emphasize incremental progress (Douglas's pulley training vs. Gandhi's step-by-step civil disobedience), proving lasting change requires patience."
+                analysis: "Extrapolation Point: Compare Douglas's methodical conquest of fear to Gandhi's strategic approach in 'Indigo'—both emphasize incremental progress (Douglas's pulley training vs. Gandhi's step-by-step civil disobedience), proving lasting change requires patience."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -200,6 +203,8 @@ export const flamingoProseModules: LearningModule[] = [
         chapter: "Prose 4",
         title: "The Rattrap",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "A philosophical story about a cynical peddler who views the world as a 'rattrap' offering riches as bait. After stealing from a generous crofter, he is mistaken for an old comrade by an ironmaster. The unconditional kindness and respect shown to him by the ironmaster's daughter, Edla, sparks a moral transformation, leading him to return the stolen money."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " A peddler philosophizes that \"the whole world is a big rattrap\" baiting people with riches, then steals 30 kronor from a crofter, becoming trapped himself."),
@@ -212,19 +217,19 @@ export const flamingoProseModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Allegorical and Redemptive",
-                description: "\"Since you have been so nice to me... I want to be nice to you, in return, as if I was a real captain.\""
+                content: "\"Since you have been so nice to me... I want to be nice to you, in return, as if I was a real captain.\""
             },
             {
                 title: "Extended Metaphor",
-                description: "The rattrap = the world's temptations and traps."
+                content: "The rattrap = the world's temptations and traps."
             },
             {
                 title: "Irony",
-                description: "The peddler lectures others about the \"world's rattrap\" while already trapped himself."
+                content: "The peddler lectures others about the \"world's rattrap\" while already trapped himself."
             },
             {
                 title: "Symbolism: The Gift",
-                description: "The rattrap left as a gift (containing the 30 kronor) symbolizes moral transformation."
+                content: "The rattrap left as a gift (containing the 30 kronor) symbolizes moral transformation."
             }
         ],
         keywords: [
@@ -238,8 +243,7 @@ export const flamingoProseModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Lagerlöf's allegorical tale argues that human compassion and unconditional respect can redeem even society's outcasts.",
-                question: "Extrapolation Point",
-                answer: "Compare Edla's redemptive kindness to Dr. Sadao's ethical dilemma in 'The Enemy'—both show compassion to 'undeserving', but Edla acts from pure empathy while Sadao struggles with conflicting duties."
+                analysis: "Extrapolation Point: Compare Edla's redemptive kindness to Dr. Sadao's ethical dilemma in 'The Enemy'—both show compassion to 'undeserving', but Edla acts from pure empathy while Sadao struggles with conflicting duties."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -261,6 +265,8 @@ export const flamingoProseModules: LearningModule[] = [
         chapter: "Prose 5",
         title: "Indigo",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "This historical account details Mahatma Gandhi's leadership in the Champaran movement of 1917. Approached by a poor sharecropper, Gandhi visits Bihar to investigate the exploitative indigo plantation system. His strategy of civil disobedience, combined with gathering evidence and negotiating with the British, not only secures refunds for farmers but empowers them with courage and self-reliance."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Illiterate sharecropper Rajkumar Shukla persists in persuading Gandhi to visit Champaran to address the injustice of the indigo landlord system."),
@@ -273,19 +279,19 @@ export const flamingoProseModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Inspirational and Documentary",
-                description: "\"The battle of Champaran is won,\" Gandhi exclaimed."
+                content: "\"The battle of Champaran is won,\" Gandhi exclaimed."
             },
             {
                 title: "Repetition",
-                description: "Shukla's persistence—\"Fix a date,\" he begged."
+                content: "Shukla's persistence—\"Fix a date,\" he begged."
             },
             {
                 title: "Symbolism: Peasant Gathering",
-                description: "Peasants spontaneously gathering symbolizes collective awakening—liberation from fear."
+                content: "Peasants spontaneously gathering symbolizes collective awakening—liberation from fear."
             },
             {
                 title: "Understatement",
-                description: "Gandhi accepts 25% refund—strategic compromise, not weakness."
+                content: "Gandhi accepts 25% refund—strategic compromise, not weakness."
             }
         ],
         keywords: [
@@ -299,8 +305,7 @@ export const flamingoProseModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Gandhi's philosophy: 'freedom from fear is more important than legal justice for the poor.'",
-                question: "Extrapolation Point",
-                answer: "Compare Gandhi's self-reliance principle to Zitkala-Sa's forced assimilation—Gandhi chooses dignified resistance while Zitkala-Sa suffers cultural erasure."
+                analysis: "Extrapolation Point: Compare Gandhi's self-reliance principle to Zitkala-Sa's forced assimilation—Gandhi chooses dignified resistance while Zitkala-Sa suffers cultural erasure."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -322,6 +327,8 @@ export const flamingoProseModules: LearningModule[] = [
         chapter: "Prose 6",
         title: "Poets and Pancakes",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "A humorous and satirical memoir of the author's years at Gemini Studios in Chennai. It sketches the eccentric characters, the hierarchy of the makeup department, the incongruous visit of an English poet (Stephen Spender), and the overarching influence of politics and ideology on the film industry during the 1950s."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " The author works at Gemini Studios observing the makeup department and the office boy's frustration with Kothamangalam Subbu."),
@@ -334,19 +341,19 @@ export const flamingoProseModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Humorous and Satirical",
-                description: "\"Truck-loads of pancake... hideous crimson hued monster.\""
+                content: "\"Truck-loads of pancake... hideous crimson hued monster.\""
             },
             {
                 title: "Hyperbole",
-                description: "\"Truck-loads of pancake\"—exaggerates makeup usage."
+                content: "\"Truck-loads of pancake\"—exaggerates makeup usage."
             },
             {
                 title: "Irony",
-                description: "Gemini Studios' \"national integration\" precedes government campaigns; they are clueless about Spender's politics."
+                content: "Gemini Studios' \"national integration\" precedes government campaigns; they are clueless about Spender's politics."
             },
             {
                 title: "Symbolism: The God That Failed",
-                description: "The book symbolizes delayed enlightened—understanding Spender's visit years later."
+                content: "The book symbolizes delayed enlightened—understanding Spender's visit years later."
             }
         ],
         keywords: [
@@ -360,8 +367,7 @@ export const flamingoProseModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Asokamitran's satirical memoir exposes the ideological confusion and mediocrity of India's early film industry.",
-                question: "Extrapolation Point",
-                answer: "Compare Gemini Studios' superficial 'national integration' to the village unity in 'Indigo'—Gemini's is accidental, Gandhi's is purposeful."
+                analysis: "Extrapolation Point: Compare Gemini Studios' superficial 'national integration' to the village unity in 'Indigo'—Gemini's is accidental, Gandhi's is purposeful."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -383,6 +389,8 @@ export const flamingoProseModules: LearningModule[] = [
         chapter: "Prose 7",
         title: "The Interview",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "The chapter examines the genre of the interview from two perspectives: its perception as an intrusive ordeal by celebrities, and its utility as a medium of truth. It concludes with an engaging interview of Umberto Eco, who discusses his academic work and the unexpected success of his novel 'The Name of the Rose'."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Silvester introduces the interview as a medium with polarized opinions—some see it as truth, others as intrusion."),
@@ -395,15 +403,15 @@ export const flamingoProseModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Analytical (Part I) / Conversational (Part II)",
-                description: "Silvester analyzes the medium; Eco chats wittily."
+                content: "Silvester analyzes the medium; Eco chats wittily."
             },
             {
                 title: "Metaphor: Thumbprints on his windpipe",
-                description: "Saul Bellow's description of interviews as suffocating."
+                content: "Saul Bellow's description of interviews as suffocating."
             },
             {
                 title: "Symbolism: Interstices",
-                description: "Empty spaces symbolize hidden productivity—Eco writes in elevator waits."
+                content: "Empty spaces symbolize hidden productivity—Eco writes in elevator waits."
             }
         ],
         keywords: [
@@ -417,8 +425,7 @@ export const flamingoProseModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Interviews are simultaneously invasive and indispensable.",
-                question: "Extrapolation Point",
-                answer: "Compare Eco's identity struggle (novelist vs. academic) to the makeup artist's frustration in 'Poets and Pancakes'—both feel their primary work/identity is overshadowed."
+                analysis: "Extrapolation Point: Compare Eco's identity struggle (novelist vs. academic) to the makeup artist's frustration in 'Poets and Pancakes'—both feel their primary work/identity is overshadowed."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -440,6 +447,8 @@ export const flamingoProseModules: LearningModule[] = [
         chapter: "Prose 8",
         title: "Going Places",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "Focusing on adolescent fantasies, the story follows Sophie, a girl from a working-class family who dreams of a glamorous future and imagines meeting the football star Danny Casey. The narrative contrasts her vivid escapism with the grounded realism of her friend Jansie and her family, highlighting the pain of unfulfilled aspirations."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Sophie, a working-class teenager, fantasizes about opening a boutique or meeting Danny Casey, despite her friend Jansie's realism."),
@@ -452,19 +461,19 @@ export const flamingoProseModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Melancholic and Compassionate",
-                description: "\"It is a hard burden to carry, this sadness...\""
+                content: "\"It is a hard burden to carry, this sadness...\""
             },
             {
                 title: "Stream of Consciousness",
-                description: "Sophie's internal monologue reveals her drift into fantasy."
+                content: "Sophie's internal monologue reveals her drift into fantasy."
             },
             {
                 title: "Contrast",
-                description: "Sophie's vibrant fantasies vs. her family's grimy reality."
+                content: "Sophie's vibrant fantasies vs. her family's grimy reality."
             },
             {
                 title: "Symbolism: Canal Bench",
-                description: "The \"perfect place\" for lovers symbolizes romantic longing and isolation."
+                content: "The \"perfect place\" for lovers symbolizes romantic longing and isolation."
             }
         ],
         keywords: [
@@ -478,8 +487,7 @@ export const flamingoProseModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Barton's narrative critiques adolescent escapism as both psychologically necessary and socially harmful.",
-                question: "Extrapolation Point",
-                answer: "Compare Sophie's fantasy to Charley's Third Level escapism—both flee unbearable presents, but Sophie's lies are transparently false while Charley's are ambiguous."
+                analysis: "Extrapolation Point: Compare Sophie's fantasy to Charley's Third Level escapism—both flee unbearable presents, but Sophie's lies are transparently false while Charley's are ambiguous."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,

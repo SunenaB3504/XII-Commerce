@@ -26,12 +26,15 @@ import { economicsSamplePaper2025 } from './economics/economics-sample-paper-202
 import { economicsSamplePaper2024 } from './economics/economics-sample-paper-2024';
 import { economicsSamplePaper2023 } from './economics/economics-sample-paper-2023';
 import { economicsSamplePaper2022 } from './economics/economics-sample-paper-2022';
+import { englishSamplePaper2026 } from './english/sample-paper-2026';
+import { englishSamplePaper2025 } from './english/sample-paper-2025';
 
 import { businessStudiesLearningModules } from './learning-content/business-studies';
 import { economicsLearningModules } from './learning-content/economics';
 import { accountancyLearningModules } from './learning-content/accountancy';
 import { englishLearningModules } from './learning-content/english';
 import { physicalEducationLearningModules } from './learning-content/physical-education';
+import { physicalEducationQuestionPapers } from './physical-education';
 import type { Subject } from '../types';
 
 export const subjects: Subject[] = [
@@ -78,12 +81,15 @@ export const subjects: Subject[] = [
   },
   {
     name: 'English',
-    questionPapers: [],
+    questionPapers: [
+      englishSamplePaper2026,
+      englishSamplePaper2025,
+    ],
     learningModules: englishLearningModules,
   },
   {
     name: 'Physical Education',
-    questionPapers: [],
+    questionPapers: physicalEducationQuestionPapers,
     learningModules: physicalEducationLearningModules,
   },
 ];

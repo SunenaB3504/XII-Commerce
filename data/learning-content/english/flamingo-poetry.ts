@@ -6,6 +6,8 @@ export const flamingoPoetryModules: LearningModule[] = [
         chapter: "Poem 1",
         title: "My Mother at Sixty-Six",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "A poignant poem capturing the complex emotions of a daughter noticing her mother's aging face during a car ride. It juxtaposes the fear of separation and death inside the car with the energetic, youthful life outside, ending with a smile that masks the poet's inner ache."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " The poet is driving to Cochin airport with her elderly mother beside her and notices her \"ashen\" face, realizing she is aging and nearing death."),
@@ -18,19 +20,19 @@ export const flamingoPoetryModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Melancholic and Confessional",
-                description: "Captures the ache of separation and fear of loss."
+                content: "Captures the ache of separation and fear of loss."
             },
             {
                 title: "Simile",
-                description: "\"Her face was ashen like that of a corpse\" / \"Pale as a late winter's moon\"—emphasizes decay/death."
+                content: "\"Her face was ashen like that of a corpse\" / \"Pale as a late winter's moon\"—emphasizes decay/death."
             },
             {
                 title: "Personification",
-                description: "\"Trees sprinting\"—time passing quickly/energy of youth vs. mother's stillness."
+                content: "\"Trees sprinting\"—time passing quickly/energy of youth vs. mother's stillness."
             },
             {
                 title: "Contrast",
-                description: "Mother's aging/corpse-like appearance vs. Young trees/Merry children (Life vs. Death)."
+                content: "Mother's aging/corpse-like appearance vs. Young trees/Merry children (Life vs. Death)."
             }
         ],
         keywords: [
@@ -43,8 +45,7 @@ export const flamingoPoetryModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "The poem deals with the universal fear of losing a parent and the ache of separation.",
-                question: "Extrapolation Point",
-                answer: "Compare the poet's suppression of emotion (\"smile and smile and smile\") to Aunt Jennifer's silent suffering—both women hide inner turmoil, but Das does it to reassure her mother."
+                analysis: "Extrapolation Point: Compare the poet's suppression of emotion (\"smile and smile and smile\") to Aunt Jennifer's silent suffering—both women hide inner turmoil, but Das does it to reassure her mother."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -59,6 +60,8 @@ export const flamingoPoetryModules: LearningModule[] = [
         chapter: "Poem 2",
         title: "Keeping Quiet",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "Neruda advocates for a moment of universal stillness and introspection. By counting to twelve and suspending all activity—including work and war—humans can break their cycle of destruction and misunderstanding, fostering a sense of brotherhood and renewal similar to nature's quiet rebirth."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " The poet urges everyone to count to twelve and keep still, stopping all activity and speech."),
@@ -71,19 +74,19 @@ export const flamingoPoetryModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Calm and Persuasive",
-                description: "Urges reflection without anger."
+                content: "Urges reflection without anger."
             },
             {
                 title: "Symbolism: 'Twelve'",
-                description: "Hours of the day or months of the year—a full cycle."
+                content: "Hours of the day or months of the year—a full cycle."
             },
             {
                 title: "Metaphor: Clean Clothes",
-                description: "A change of soul/mindset; ending clear enmities."
+                content: "A change of soul/mindset; ending clear enmities."
             },
             {
                 title: "Personification: Earth",
-                description: "\"Earth can teach us\"—nature is alive even when dormant (winter)."
+                content: "\"Earth can teach us\"—nature is alive even when dormant (winter)."
             }
         ],
         keywords: [
@@ -96,8 +99,7 @@ export const flamingoPoetryModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Necessity of quiet introspection to understand ourselves and stop mutual destruction.",
-                question: "Extrapolation Point",
-                answer: "Compare Neruda's call for silence to the 'ubiquitous silence' in 'Journey to the End of the Earth'—both offer a space for realization, but Neruda's is an active choice for humans."
+                analysis: "Extrapolation Point: Compare Neruda's call for silence to the 'ubiquitous silence' in 'Journey to the End of the Earth'—both offer a space for realization, but Neruda's is an active choice for humans."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -112,6 +114,8 @@ export const flamingoPoetryModules: LearningModule[] = [
         chapter: "Poem 3",
         title: "A Thing of Beauty",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "Keats celebrates the eternal power of beauty to heal the human spirit. He suggests that despite suffering, gloom, and 'inhuman dearth', beautiful things like nature, art, and heroic tales provide a 'bower' of peace and an endless source of inspiration that binds us to the earth."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " The poet asserts that a thing of beauty is a joy forever; its loveliness increases and never fades."),
@@ -124,19 +128,19 @@ export const flamingoPoetryModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Awe-inspiring and Serene",
-                description: "Celebrates the eternal power of beauty."
+                content: "Celebrates the eternal power of beauty."
             },
             {
                 title: "Metaphor: Bower",
-                description: "A pleasant shady place—beauty provides shelter/peace."
+                content: "A pleasant shady place—beauty provides shelter/peace."
             },
             {
                 title: "Imagery",
-                description: "Flowery bands, daffodies, clear rills, musk-rose blooms."
+                content: "Flowery bands, daffodies, clear rills, musk-rose blooms."
             },
             {
                 title: "Oxymoron: Mighty Dead",
-                description: "Those who are dead but powerful/inspiring in memory."
+                content: "Those who are dead but powerful/inspiring in memory."
             }
         ],
         keywords: [
@@ -149,8 +153,7 @@ export const flamingoPoetryModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Beauty has the power to heal the soul and lift the veil of gloom.",
-                question: "Extrapolation Point",
-                answer: "Compare the healing power of beauty here to the description of Antarctica's beauty in 'Journey to the End of the Earth'—both evoke awe and perspective."
+                analysis: "Extrapolation Point: Compare the healing power of beauty here to the description of Antarctica's beauty in 'Journey to the End of the Earth'—both evoke awe and perspective."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -165,6 +168,8 @@ export const flamingoPoetryModules: LearningModule[] = [
         chapter: "Poem 4",
         title: "A Roadside Stand",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "Frost juxtaposes the lives of struggling rural folk who run a roadside stand with the indifferent, wealthy city dwellers who speed past. The poem critiques the hollow promises of politicians and the selfish charitable acts of the 'greedy good-doers', expressing the poet's deep pain at the rural people's dashed hopes."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Rural folk put up a roadside stand to sell produce (berries, squash) to city passersby, hoping for some city money."),
@@ -177,19 +182,19 @@ export const flamingoPoetryModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Critical and Sympathetic",
-                description: "Critical of city apathy; sympathetic to rural struggle."
+                content: "Critical of city apathy; sympathetic to rural struggle."
             },
             {
                 title: "Personification",
-                description: "\"The little old house was out with a little new shed\"."
+                content: "\"The little old house was out with a little new shed\"."
             },
             {
                 title: "Oxymoron: Greedy Good-doers",
-                description: "Benefactors who actually exploit (politicians, developers)."
+                content: "Benefactors who actually exploit (politicians, developers)."
             },
             {
                 title: "Transferred Epithet",
-                description: "\"Polished traffic\"—the traffic isn't polished, the cars/people are."
+                content: "\"Polished traffic\"—the traffic isn't polished, the cars/people are."
             }
         ],
         keywords: [
@@ -202,8 +207,7 @@ export const flamingoPoetryModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "The gap between rural hardship and urban apathy.",
-                question: "Extrapolation Point",
-                answer: "Compare the rural poverty here to the Ragpickers in 'Lost Spring'—both are marginalized, but the roadside stand owners have land yet struggle for cash, whereas ragpickers are landless and urban."
+                analysis: "Extrapolation Point: Compare the rural poverty here to the Ragpickers in 'Lost Spring'—both are marginalized, but the roadside stand owners have land yet struggle for cash, whereas ragpickers are landless and urban."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,
@@ -218,6 +222,8 @@ export const flamingoPoetryModules: LearningModule[] = [
         chapter: "Poem 5",
         title: "Aunt Jennifer’s Tigers",
         overview: React.createElement(React.Fragment, null,
+            React.createElement("h3", { className: "text-lg font-bold mb-2" }, "Chapter Snapshot"),
+            React.createElement("p", { className: "mb-4" }, "Through the character of Aunt Jennifer, Rich explores the constraints of patriarchal marriage. Jennifer creates a tapestry of fearless, prancing tigers that contrast sharply with her own terrified, submissive life, weighed down by the 'massive weight' of her wedding band."),
             React.createElement("h3", { className: "text-lg font-bold mb-2" }, "3-Sentence Summary"),
             React.createElement("ul", { className: "list-disc pl-5 space-y-2 mb-4" },
                 React.createElement("li", null, React.createElement("strong", null, "Inciting Incident:"), " Aunt Jennifer creates a tapestry of fearless, prancing tigers, contrasting with her own weak, terrified state."),
@@ -230,19 +236,19 @@ export const flamingoPoetryModules: LearningModule[] = [
         keyConcepts: [
             {
                 title: "Tone: Somber and Critical",
-                description: "Highlights the oppression of women."
+                content: "Highlights the oppression of women."
             },
             {
                 title: "Symbolism: Tigers",
-                description: "Freedom, strength, and fearlessness—what Aunt Jennifer desires to be."
+                content: "Freedom, strength, and fearlessness—what Aunt Jennifer desires to be."
             },
             {
                 title: "Symbolism: Wedding Band",
-                description: "The heavy weight of patriarchal oppression and marital constraints."
+                content: "The heavy weight of patriarchal oppression and marital constraints."
             },
             {
                 title: "Contrast",
-                description: "Aunt Jennifer (weak, terrified) vs. Tigers (bold, chivalric)."
+                content: "Aunt Jennifer (weak, terrified) vs. Tigers (bold, chivalric)."
             }
         ],
         keywords: [
@@ -255,8 +261,7 @@ export const flamingoPoetryModules: LearningModule[] = [
             {
                 title: "Thematic Thesis",
                 scenario: "Art as a medium of escape and expression for oppressed women.",
-                question: "Extrapolation Point",
-                answer: "Compare Aunt Jennifer to Sophie in 'Going Places'—both use imagination (art/fantasy) to escape reality, but Jennifer's art is permanent (\"will go on prancing\") while Sophie's fantasy is fleeting."
+                analysis: "Extrapolation Point: Compare Aunt Jennifer to Sophie in 'Going Places'—both use imagination (art/fantasy) to escape reality, but Jennifer's art is permanent (\"will go on prancing\") while Sophie's fantasy is fleeting."
             }
         ],
         quickRevision: React.createElement(React.Fragment, null,

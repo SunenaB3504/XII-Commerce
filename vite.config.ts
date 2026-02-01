@@ -7,8 +7,14 @@ export default defineConfig(({ mode }) => {
     return {
       base: mode === 'production' ? '/XII-Commerce/' : '/',
       server: {
-        port: 3000,
-        host: true,
+        port: 5173,
+        host: '127.0.0.1',
+        strictPort: false,
+        open: true,
+        headers: {
+          'Content-Type': 'text/javascript; charset=utf-8',
+        },
+        middlewareMode: false,
       },
       plugins: [react()],
       define: {
@@ -19,6 +25,19 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
-      }
+      },
+      build: {
+        target: 'ES2022',
+        minify: 'terser',
+        sourcemap: false,
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              vendor: ['react', 'react-dom'],
+            },
+          },
+        },
+        chunkSizeWarningLimit: 1000,
+      },
     };
 });

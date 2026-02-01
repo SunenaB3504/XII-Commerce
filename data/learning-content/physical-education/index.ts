@@ -1,3 +1,6 @@
-import type { LearningModule } from '../../../types';
+import { LearningModule } from "../../../types";
+import { physicalEducationTextbookModules } from "./pe-textbook";
 
-export const physicalEducationLearningModules: LearningModule[] = [];
+export const physicalEducationLearningModules: LearningModule[] = [
+    ...physicalEducationTextbookModules
+];
