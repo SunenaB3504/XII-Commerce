@@ -6,6 +6,7 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       base: mode === 'production' ? '/XII-Commerce/' : '/',
+      publicDir: 'public',
       server: {
         port: 5173,
         host: '127.0.0.1',
