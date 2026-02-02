@@ -12,7 +12,8 @@ export default defineConfig(({ mode }) => {
         strictPort: false,
         open: true,
         headers: {
-          'Content-Type': 'text/javascript; charset=utf-8',
+          'Content-Type': 'application/javascript; charset=utf-8',
+          'Access-Control-Allow-Origin': '*',
         },
         middlewareMode: false,
       },
