@@ -69,7 +69,7 @@ export const samplePaper2023Q23To26: Question[] = [
               React.createElement('div', null, 'Equity Share Allotment A/c ...Dr.'),
               React.createElement('div', { className: 'pl-8' }, 'To Equity Share Capital A/c (60,000 x 60)'),
               React.createElement('div', { className: 'pl-8' }, 'To Securities Premium A/c (60,000 x 25)'),
-              React.createElement('div', { className: 'text-sm italic' }, '(Allotment due: Bal 60 + 25 Premium = 85)')
+              React.createElement('div', { className: 'text-sm italic' }, '(Allotment due)')
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, ''),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '51,00,000'),
@@ -98,8 +98,8 @@ export const samplePaper2023Q23To26: Question[] = [
           React.createElement('tr', null,
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '(v)'),
             React.createElement('td', { className: 'border border-gray-300 p-2' },
-              React.createElement('div', null, 'Equity Share Capital A/c ...Dr. (4000 x 100)'), // Called up? Full.
-              React.createElement('div', null, 'Securities Premium A/c ...Dr. (4000 x 25)'), // Premium not received
+              React.createElement('div', null, 'Equity Share Capital A/c ...Dr. (4000 x 100)'),
+              React.createElement('div', null, 'Securities Premium A/c ...Dr. (4000 x 25)'),
               React.createElement('div', { className: 'pl-8' }, 'To Share Forfeited A/c'),
               React.createElement('div', { className: 'pl-8' }, 'To Calls in Arrears A/c'),
               React.createElement('div', { className: 'text-sm italic' }, '(Forfeiture of 4,000 shares)')
@@ -143,7 +143,7 @@ export const samplePaper2023Q23To26: Question[] = [
         )
       )
     ),
-    explanation: 'Mr. Anand allotment failure: Applied = 4000 x 5/4 = 5000. App money paid 5000 x 40 = 2,00,000. Allotted 4000. App due 4000 x 40 = 1,60,000. Excess 40,000 adjusted. Allotment due 4000 x 85 = 3,40,000. Arrears = 3,40,000 - 40,000 = 3,00,000. Capital Reserve: Amount forfeited on 3000 shares = (2,00,000 / 4000) * 3000 ? No. Forfeited Amount = Amount received - Premium(if reversed). Amount recvd = 2,00,000. Less Premium? Premium not paid on 4000 shares. So entire 2,00,000 is for Capital? Yes. Amount forfeited per share = 50. Discount on reissue = 20. Gain = 30 per share. 3000 x 30 = 90,000.'
+    explanation: 'Applied Shares for 4,000 allotted = 4,000 * 5/4 = 5,000 shares. Application money paid = 5,000 * 40 = 2,00,000. Application money due = 4,00,000 * 40 = 1,60,000. Excess adjusted to Allotment = 40,000. Allotment Due on 4,000 shares = 4,000 * 85 = 3,40,000. Calls in Arrears = 3,40,000 - 40,000 = 3,00,000. \nForfeited Amount = Amount Received - Security Premium (if not paid). Since specific premium on these shares is unpaid, it is reversed. The amount received (2,00,000) is entirely capital receipt portion as premium was due on allotment. Forfeited Amount = 2,00,000 (Received) = ₹50/share. \nGain on Reissue = Amount Forfeited (50) - Discount Allowed (20) = 30 per share. Capital Reserve = 3,000 * 30 = 90,000.'
   },
   {
     id: 'acc-2023-q23-or',
@@ -177,13 +177,6 @@ export const samplePaper2023Q23To26: Question[] = [
               React.createElement('div', null, 'Share Capital A/c ...Dr. (5000 x 10)'),
               React.createElement('div', { className: 'pl-8' }, 'To Share Forfeited A/c'),
               React.createElement('div', { className: 'pl-8' }, 'To Calls in Arrears A/c (5000 x 7 less excess)'),
-              // Arrears: Allotment (5) + Call (2) = 7.
-              // Applied 6000. Paid 3. Total paid 18,000.
-              // Due on App 5000 x 3 = 15,000. Excess 3,000.
-              // Allotment due 5000 x 5 = 25,000. Less Excess 3,000 = 22,000 unpaid.
-              // Call due 5000 x 2 = 10,000 unpaid.
-              // Total Arrears = 32,000.
-              // Forfeited = Amount Received = 18,000.
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '50,000'),
             React.createElement('td', { className: 'border border-gray-300 p-2' },
@@ -207,12 +200,6 @@ export const samplePaper2023Q23To26: Question[] = [
             React.createElement('td', { className: 'border border-gray-300 p-2' },
               React.createElement('div', null, 'Share Forfeited A/c ...Dr.'),
               React.createElement('div', { className: 'pl-8' }, 'To Capital Reserve A/c'),
-              // Forfeited amount on 3000 shares:
-              // Total forfeited 18,000 for 5000 shares.
-              // Per share = 18000/5000 = 3.6 per share.
-              // For 3000 shares = 10,800.
-              // Loss on reissue = 0 (Premium).
-              // Capital Reserve = 10,800.
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '10,800'),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '10,800')
@@ -224,10 +211,7 @@ export const samplePaper2023Q23To26: Question[] = [
         React.createElement('tbody', null,
           React.createElement('tr', null,
             React.createElement('td', { className: 'border border-gray-300 p-2' },
-              React.createElement('div', null, 'Share Capital A/c ...Dr. (3000 x 7)'), // Called up = 10 - 3 = 7.
-              // Issued at 2 premium. Premium received?
-              // Non payment of First call. Application and Allotment paid? Yes.
-              // So premium received. Ignore premium.
+              React.createElement('div', null, 'Share Capital A/c ...Dr. (3000 x 7)'),
               React.createElement('div', { className: 'pl-8' }, 'To Share Forfeited A/c'),
               React.createElement('div', { className: 'pl-8' }, 'To Calls in Arrears A/c (3000 x 2)'),
             ),
@@ -241,11 +225,8 @@ export const samplePaper2023Q23To26: Question[] = [
           ),
           React.createElement('tr', null,
             React.createElement('td', { className: 'border border-gray-300 p-2' },
-              // Reissue 2000 @ 10 fully paid.
-              // Fully paid means 10 credited. Issue price 10. No discount.
               React.createElement('div', null, 'Bank A/c ...Dr. (2000 x 10)'),
               React.createElement('div', { className: 'pl-8' }, 'To Share Capital A/c (2000 x 10)'),
-              // Wait. Question says "re-issued at ₹ 10 per share as fully paid".
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '20,000'),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '20,000')
@@ -254,10 +235,6 @@ export const samplePaper2023Q23To26: Question[] = [
             React.createElement('td', { className: 'border border-gray-300 p-2' },
               React.createElement('div', null, 'Share Forfeited A/c ...Dr.'),
               React.createElement('div', { className: 'pl-8' }, 'To Capital Reserve A/c'),
-              // Forfeited per share = 5.
-              // For 2000 shares = 10,000.
-              // Loss = 0.
-              // CR = 10,000.
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '10,000'),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '10,000')
@@ -322,8 +299,8 @@ export const samplePaper2023Q23To26: Question[] = [
               )
             ),
             React.createElement('td', { className: 'border border-gray-400 p-2 text-center align-top' },
-              React.createElement('div', null, '21,000'), // Stock
-              React.createElement('div', { className: 'mt-8' }, '35,000') // Provision Result
+              React.createElement('div', null, '21,000'),
+              React.createElement('div', { className: 'mt-8' }, '35,000')
             )
           ),
           React.createElement('tr', null,
@@ -343,8 +320,8 @@ export const samplePaper2023Q23To26: Question[] = [
       React.createElement('p', { className: 'font-semibold mb-2' }, 'Z was admitted for 1/6th share on the following terms:'),
       React.createElement('div', { className: 'mb-4' },
         React.createElement('p', null, '(i) Z will bring ₹ 56,000 as his share of capital, but was not able to bring any amount to compensate the sacrificing partners.'),
-        React.createElement('p', null, '(ii) Goodwill of the firm is valued at ₹. 84,000.'), // Exact user text "₹." included
-        React.createElement('p', null, '(iii) Plant and Machinery were found to be undervalued by ₹ 14,000 Building was to brought up to ₹ 1,09,000.'), // Exact grammar "was to brought"
+        React.createElement('p', null, '(ii) Goodwill of the firm is valued at ₹. 84,000.'),
+        React.createElement('p', null, '(iii) Plant and Machinery were found to be undervalued by ₹ 14,000 Building was to brought up to ₹ 1,09,000.'),
         React.createElement('p', null, '(iv) All debtors are good.'),
         React.createElement('p', null, '(v) Capitals of X and Y will be adjusted on the basis of Z’s share and adjustments will be done by opening necessary current accounts.')
       ),
@@ -369,7 +346,7 @@ export const samplePaper2023Q23To26: Question[] = [
           React.createElement('tr', null,
             React.createElement('td', { className: 'border border-gray-300 p-2' }, 'X (19,200)'),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, ''),
-            React.createElement('td', { className: 'border border-gray-300 p-2' }, 'By Buildings (1,09,000 - 98,000)'), // brought up TO 1,09,000. Increase = 11,000.
+            React.createElement('td', { className: 'border border-gray-300 p-2' }, 'By Buildings (1,09,000 - 98,000)'),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, '11,000')
           ),
           React.createElement('tr', null,

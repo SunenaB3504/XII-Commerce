@@ -65,20 +65,7 @@ export const samplePaper2023Q21To22: Question[] = [
               React.createElement('p', { className: 'font-semibold mt-2' }, 'Subscribed Capital'),
               React.createElement('p', null, 'Subscribed but not fully paid up:'),
               React.createElement('p', null, '8,00,000 Equity Shares of ₹ 10 each ... 80,00,000'),
-              React.createElement('p', null, 'Less: Calls in Arrears (15,000 x 5) ... (75,000)'), // Called up is 3+5=8? Wait.
-              // Question says: "payable 3 on app, 7 on allotment (inc premium)".
-              // Premium is 20% of 10 = 2. So Allotment = 5 Capital + 2 Premium.
-              // Total Capital Called = 3 (App) + 5 (Allotment) = 8.
-              // Sanju failed allotment. So he paid only 3. Arrears = 5 on allotment? No, Arrears is Alloment (7).
-              // But for Share Capital Note, we only deduct Capital part of arrears if we consider called up.
-              // Wait, Notes to Accounts usually shows "Subscribed and fully paid" and "not fully paid".
-              // Here balance is on call. Call is not made yet. So shares are NOT fully called up.
-              // So all are "Subscribed but not fully paid".
-              // Called up = 8 per share.
-              // 8,00,000 x 8 = 64,00,000.
-              // Less: Calls in Arrears. Sanju failed Allotment (5 Capital + 2 Premium).
-              // Arrears for Share Capital = 15,000 x 5 = 75,000.
-              // Result = 64,00,000 - 75,000 = 63,25,000.
+              React.createElement('p', null, 'Less: Calls in Arrears (15,000 x 5) ... (75,000)'),
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2 align-top text-right' },
               React.createElement('div', null, ' '),
@@ -87,11 +74,10 @@ export const samplePaper2023Q21To22: Question[] = [
               React.createElement('div', { className: 'border-b border-black mb-2' }, '1,50,00,000'),
               React.createElement('div', null, '4,00,00,000'), // Double underline usually
               React.createElement('div', { className: 'mt-2' }, ' '),
-              React.createElement('div', { className: 'border-b border-black mb-2' }, '80,00,000'), // This is nominal value 8L x 10? Or called up? Issued is usually face value.
-              // Notes to accounts standard format usually shows Face Value for Issued.
+              React.createElement('div', { className: 'border-b border-black mb-2' }, '80,00,000'),
               React.createElement('div', { className: 'mt-4' }, ' '),
               React.createElement('div', null, ' '),
-              React.createElement('div', null, '64,00,000'), // 8L x 8 called up
+              React.createElement('div', null, '64,00,000'),
               React.createElement('div', { className: 'border-b border-black' }, '75,000'),
               React.createElement('div', { className: 'font-bold' }, '63,25,000')
             )
@@ -154,15 +140,6 @@ export const samplePaper2023Q21To22: Question[] = [
             React.createElement('td', { className: 'border border-gray-300 p-2' },
               React.createElement('div', null, 'Paavni\'s Loan A/c ...Dr.'),
               React.createElement('div', { className: 'pl-8' }, 'To Realisation A/c'),
-              // Wait. Paavni's Loan (Liability) settled by Unrecorded Asset.
-              // Usually, output implies no entry?
-              // However, MS says: Paavni's Loan A/c Dr 40,000 to Realisation A/c 40,000.
-              // Why? Because Asset was unrecorded?
-              // If asset is given to settle liability, if both are in realisation, no entry.
-              // But Partner's Loan is NOT in Realisation.
-              // So we debit Partner Loan to close it, and Credit Realisation (as if asset realised).
-              // Amount? Settle full loan 40k. Asset worth 45k.
-              // MS says 40,000.
               React.createElement('div', { className: 'text-sm italic' }, '(Loan settled by giving unrecorded asset)')
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, ''),
@@ -174,14 +151,6 @@ export const samplePaper2023Q21To22: Question[] = [
             React.createElement('td', { className: 'border border-gray-300 p-2' },
               React.createElement('div', null, 'Realisation A/c ...Dr.'),
               React.createElement('div', { className: 'pl-8' }, 'To Loan to Charu A/c'),
-              // Wait. "Loan to Charu" is an ASSET (Firm gave loan).
-              // "Charu's Brother Loan" is a LIABILITY (Third party).
-              // Asset settled by paying Liability.
-              // Normally no entry if both in Realisation.
-              // Loan to Charu (Asset) -> Transferred to Dr side of Realisation? No, usually separate?
-              // But Brother's loan IS in Realisation (Liability).
-              // MS says: Realisation A/c Dr 60,000 to Loan to Charu A/c 60,000.
-              // This implies Loan to Charu is credited (removed). And Realisation is debited (Liability paid).
               React.createElement('div', { className: 'text-sm italic' }, '(Loan to Charu settled by payment to Charu\'s brother loan)')
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2' }, ''),

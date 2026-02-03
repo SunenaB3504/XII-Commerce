@@ -389,7 +389,7 @@ export const questions26to30: Question[] = [
             React.createElement('ul', { className: 'list-disc pl-5' },
                 React.createElement('li', null, 'Repayment of Bank Loan = -1,00,000'),
                 React.createElement('li', null, 'Dividend Paid (Previous Year Proposed Approved) = -20,000'),
-                React.createElement('li', null, 'Interest on Bank Loan? Repaid on 01.04.2022 (Start of year). So No Interest paid for current year on this loan. Interest is Nil.')
+                React.createElement('li', null, 'Interest on Bank Loan: Loan repaid on 01.04.2022 (Start of year). Hence, no interest is paid for the current year.')
             ),
             'Total Financing Cash Flow = 3,00,000 - 1,00,000 - 20,000 = +1,80,000.',
             React.createElement('br'),

@@ -91,8 +91,7 @@ export const samplePaper2023Q17To20: Question[] = [
               React.createElement('div', { className: 'pl-4' }, 'Amay (1,20,000 × 3/6)'),
               React.createElement('div', { className: 'pl-4' }, 'Anmol (1,20,000 × 2/6)'),
               React.createElement('div', { className: 'pl-4' }, 'Rohan (1,20,000 × 1/6) 20,000'),
-              React.createElement('div', { className: 'pl-8 text-sm' }, 'Add: Deficiency met by Amay'), // Wait, guaranteed amount analysis needed
-              // Re-calculating based on MS solution which shows correct figures
+              React.createElement('div', { className: 'pl-8 text-sm' }, 'Add: Deficiency met by Amay'),
             ),
             React.createElement('td', { className: 'border border-gray-300 p-2 align-top text-right' },
               React.createElement('div', null, ' '),
@@ -100,7 +99,7 @@ export const samplePaper2023Q17To20: Question[] = [
               React.createElement('div', null, '4,500'),
               React.createElement('div', null, '4,500'),
               React.createElement('div', { className: 'mt-8' }, ' '),
-              React.createElement('div', null, '53,000'), // Adjusted figure
+              React.createElement('div', null, '53,000'),
               React.createElement('div', null, '40,000'),
               React.createElement('div', null, '27,000'),
             ),
@@ -412,7 +411,7 @@ export const samplePaper2023Q17To20: Question[] = [
       React.createElement('div', { className: 'mt-2' }, '2. Calculation of Goodwill:'),
       React.createElement('p', null, 'Adjusted Profit for 2022:'),
       React.createElement('ul', { className: 'list-disc list-inside pl-4' },
-        React.createElement('li', null, 'Loss given: (70,000)'), // Wait, I need to check depreciation adjustment
+        React.createElement('li', null, 'Loss given: (70,000)'),
         React.createElement('li', null, 'Add: Motor Bike wrongly debited: +50,000'),
         React.createElement('li', null, 'Less: Depreciation on Motor Bike (20% of 50k): -10,000'),
         React.createElement('li', null, 'Adjusted Loss 2022: (30,000)'),

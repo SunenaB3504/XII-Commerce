@@ -82,29 +82,31 @@ export const questions11to15: Question[] = [
             React.createElement('p', { className: 'font-bold mb-2' }, 'Chapter 8: Accounting for Share Capital - Issue of Shares for Consideration other than Cash'),
             'Total Amount Due to PK Ltd = 20,00,000.',
             React.createElement('br'),
-            'Paid by Bank Draft (30%) = 30% of 20,00,000 = 6,00,000.',
+            '1. Standard Cash Payment (30%) = 30% of 20,00,000 = 6,00,000.',
             React.createElement('br'),
-            'Wait, the option B shows Bank as 6,00,030. Why? Let\'s re-calculate shares.',
+            '2. Balance Purchase Consideration = 20,00,000 - 6,00,000 = 14,00,000.',
             React.createElement('br'),
-            'Balance Purchase Consideration = 20,00,000 - 6,00,000 = 14,00,000.',
+            '3. Calculation of Shares:',
             React.createElement('br'),
-            'Issue Price per share = 100 + 10% premium = 110.',
+            '   Issue Price per share = 100 + 10% premium = ₹110.',
             React.createElement('br'),
-            'Number of Shares = 14,00,000 / 110 = 12,727.27 shares.',
+            '   Number of Shares = 14,00,000 / 110 = 12,727.27 shares.',
             React.createElement('br'),
-            'Fractions cannot be issued. Shares issued = 12,727.',
+            '   Since fractions cannot be issued, shares issued = 12,727.',
             React.createElement('br'),
-            'Amount towards Share Capital = 12,727 * 100 = 12,72,700.',
+            '   Value credited to Share Capital = 12,727 × 100 = 12,72,700.',
             React.createElement('br'),
-            'Amount towards Securities Premium = 12,727 * 10 = 1,27,270.',
+            '   Value credited to Securities Premium = 12,727 × 10 = 1,27,270.',
             React.createElement('br'),
-            'Total Value of Shares = 12,72,700 + 1,27,270 = 13,99,970.',
+            '   Total Value via Shares = 12,72,700 + 1,27,270 = 13,99,970.',
             React.createElement('br'),
-            'Amount Short Paid via Shares = 14,00,000 - 13,99,970 = 30.',
+            '4. Fractional Adjustment:',
             React.createElement('br'),
-            'This ₹30 balance must be paid in Cash/Bank additionally.',
+            '   Amount adjusted in cash = Balance Due (14,00,000) - Share Value (13,99,970) = ₹30.',
             React.createElement('br'),
-            'Total Bank Payment = 6,00,000 (30%) + 30 (fractional adjustment) = 6,00,030.'
+            '5. Total Bank Payment = Initial Payment (6,00,000) + Fractional Adjustment (30) = 6,00,030.',
+            React.createElement('br'),
+            '   (Entry B matches these figures).'
         )
     },
     {
@@ -203,9 +205,7 @@ export const questions11to15: Question[] = [
             React.createElement('br'),
             '9,000 = 4x × 0.15 × 0.375',
             React.createElement('br'),
-            '9,000 = x × (4 × 0.15 × 0.375) => 9,000 = x × 0.225',
-            React.createElement('br'),
-            'x = 9,000 / 0.225 = 40,000.'
+            '9,000 = x × 0.225 => x = 40,000.'
         )
     },
     {
@@ -230,9 +230,9 @@ export const questions11to15: Question[] = [
         explanation: React.createElement('div', null,
             React.createElement('p', { className: 'font-bold mb-2' }, 'Chapter 1: Accounting for Partnership Firms - Fundamentals - Interest on Drawings'),
             React.createElement('ul', { className: 'list-disc pl-5' },
-                React.createElement('li', null, 'Shyam: 10,000 beginning of each quarter. Total = 40,000. Avg Period = 7.5 months. Interest = 40,000 × 10/100 × 7.5/12 = 2,500.'),
-                React.createElement('li', null, 'Gopal: Withdrew garments ₹15,000. This is drawings in kind. Interest is charged on drawings in kind as well usually? Wait. MS says "Gopal- ₹ 750". That would be 15,000 * 10% * 6/12 = 750. So yes, interest charged on goods withdrawn for average 6 months.'),
-                React.createElement('li', null, 'Arjun: Withdrew from Capital Account. Interest is NOT charged on withdrawal of capital (it reduces capital balance for Interest on Capital calculation, but is not "Drawings" for Interest on Drawings). So Nil.')
+                React.createElement('li', null, 'Shyam: 10,000 beginning of each quarter. Total = 40,000. Avg Period = 7.5 months. Interest = 40,000 × 10/100 × 7.5/12 = ₹2,500.'),
+                React.createElement('li', null, 'Gopal: Withdrew garments ₹15,000 (Drawings in kind). No period specified, so average 6 months. Interest = 15,000 × 10/100 × 6/12 = ₹750.'),
+                React.createElement('li', null, 'Arjun: Withdrew from Capital Account. This decreases capital but is not subject to Interest on Drawings. Interest = Nil.')
             )
         )
     }

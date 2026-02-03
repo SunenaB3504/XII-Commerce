@@ -39,10 +39,7 @@ export const samplePaper2023Q27To34: Question[] = [
       React.createElement('div', { className: 'grid grid-cols-2 gap-4 mt-4' },
         React.createElement('div', null, 'a) All are correct.'),
         React.createElement('div', null, 'b) Only (i) and (iii) are correct.'),
-        React.createElement('div', null, 'c) Only (ii) and (iii) are correct.'), // Option C correct as per MS (Wait, MS says (ii) and (iii))
-        // Quick ratio cannot be more than CR (CR includes Inventory).
-        // (ii) High ITR is generally good but has exceptions. Correct.
-        // (iii) OR + OPR = 100. Correct.
+        React.createElement('div', null, 'c) Only (ii) and (iii) are correct.'),
         React.createElement('div', null, 'd) Only (i) and (ii) are correct')
       )
     ),
@@ -86,15 +83,7 @@ export const samplePaper2023Q27To34: Question[] = [
       React.createElement('p', null, 'Insurance Claim received by Albert Co. Ltd. of ₹ 5,00,000 for Loss of Machinery due to theft will be recorded in Cash Flow Statement in which of the following manner?'),
       React.createElement('div', { className: 'space-y-2 mt-4' },
         React.createElement('div', null, 'a) Added under Operating Activities as Extraordinary Item and Subtracted from Operating Activities also.'),
-        React.createElement('div', null, 'b) Subtracted under Operating Activities as Extraordinary Item and Added to Operating Activities also.'), // Wait.
-        // Loss of machinery is non-operating? No.
-        // Insurance claim for loss of asset is Extraordinary Investing Inflow?
-        // Or Operating?
-        // MS says: d) Subtracted under Operating Activities as Extraordinary Item and Inflow under Investing Activities also.
-        // Reason: It is extraordinary. Added to Net Profit? No, profit includes it? Wait.
-        // If profit includes gain/claim, subtract (Non-operating income).
-        // Then Add to Investing (Inflow).
-        // Option d says "Subtracted... and Inflow under Investing". Correct.
+        React.createElement('div', null, 'b) Subtracted under Operating Activities as Extraordinary Item and Added to Operating Activities also.'),
         React.createElement('div', null, 'c) Added under Operating Activities as Extraordinary Item and Outflow under Investing Activity also.'),
         React.createElement('div', null, 'd) Subtracted under Operating Activities as Extraordinary Item and Inflow under Investing Activities also.')
       )
@@ -297,29 +286,9 @@ export const samplePaper2023Q27To34: Question[] = [
     type: 'Long Answer',
     solution: React.createElement(React.Fragment, null,
       React.createElement('div', { className: 'space-y-2' },
-        React.createElement('p', null, '(i) Ratio will improve. Reason: Capital Employed decreases (Loss 1L decreases Reserves), Debt remains same.'), // Wait.
-        // Ratio = Debt / Capital Employed.
-        // Sale of Equipment 10L for 9L. Loss 1L.
-        // Assets decrease. Cash increases. Net Assets decrease by 1L (Loss).
-        // Capital Employed decrease by 1L.
-        // Debt unchanged.
-        // If Denominator decreases, Ratio INCREASES?
-        // MS says: "(i) Ratio will improve... Reason Capital Employed will decrease...".
-        // Improve usually means Ratio Decreases (towards ideal)? Or Increases?
-        // Wait, "Improve" context for solvency ratio depends.
-        // Let's assume arithmetic.
-        // If 0.3/1 = 0.3.
-        // Debt = 30, CE=100.
-        // New CE = 99. Debt = 30. Ratio = 30/99 = >0.3.
-        // It increases. "Improve" ?
-        // MS Answer: "(i) Ratio will improve. Reason - Capital Employed will decrease and Debt will remain same".
-        // Wait, if ratio increases, it implies higher debt proportion. Is that improvement? No.
-        // Maybe "Improve" means the RATIO FIGURE increases?
-        // Let's stick to MS verbiage.
+        React.createElement('p', null, '(i) Ratio will improve. Reason: Capital Employed decreases (Loss 1L decreases Reserves), Debt remains same.'),
         React.createElement('p', null, '(ii) Ratio will remain same. Reason: Goods on credit (Current Liability). No change in Debt or Capital Employed (Long term).'),
-        React.createElement('p', null, '(iii) Ratio will decline. Reason: Debt decreases (Debentures converted), Capital Employed remains same (Debt replaced by Equity, total CE is same? Yes, CE = Debt + Equity. Debt down, Equity up. CE constant).'),
-        // Ratio = Debt / CE. Numerator decreases. Denominator constant.
-        // Ratio decreases. "Decline". Correct.
+        React.createElement('p', null, '(iii) Ratio will decline. Reason: Debt decreases (Debentures converted), Capital Employed remains same (Debt replaced by Equity, total CE is same).'),
       )
     ),
     explanation: 'Debt to Capital Employed = Long Term Debt / (Shareholders Funds + Long Term Debt).'
@@ -363,9 +332,7 @@ export const samplePaper2023Q27To34: Question[] = [
         React.createElement('li', null, 'Add: Proposed Dividend (Prev Year): 1,60,000'),
         React.createElement('li', null, 'Add: Provision for Tax (Current Year): 80,000'),
         React.createElement('li', null, 'Add: Loss of Machinery (Extraordinary): 20,000'),
-        React.createElement('li', null, 'Less: Insurance Claim (Extraordinary): (10,000)'), // Net Loss 10k added back.
-        // Wait, MS says: 7,50,000 + 90,000 + 20,000 + 80,000 + 1,60,000 - 10,000 - 20,000(Tax Refund) = 10,70,000.
-        // Note: Loss due to fire 20k. Claim 10k. Net loss 10k.
+        React.createElement('li', null, 'Less: Insurance Claim (Extraordinary): (10,000)'),
       ),
       React.createElement('p', { className: 'font-bold mt-2' }, '2. Operating Profit before Working Capital Changes:'),
       React.createElement('ul', { className: 'list-disc list-inside' },

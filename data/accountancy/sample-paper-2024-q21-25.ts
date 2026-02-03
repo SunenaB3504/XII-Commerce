@@ -309,7 +309,7 @@ export const questions21to25: Question[] = [
             React.createElement('p', { className: 'my-2' }, 'Simba, an applicant of 15,000 shares failed to pay allotment and call money. His shares were forfeited and out of these 6,000 shares were reissued at a discount of ₹2 per share. Journalise.'),
             React.createElement('p', { className: 'my-2 font-bold' }, 'OR'),
             'Shaktimaan Ltd. invited applications for issuing 1,00,000 Shares of ₹ 10 each at a premium of ₹2 per share. The amount was payable as₹ 4 on application (including premium); ₹ 5 on Allotment and balance on call. Applications were received shares for 1,80,000 of which Applications for 30,000 shares were rejected and remaining applicants were allotted on pro-rata basis.',
-            React.createElement('p', { className: 'my-2' }, 'Manthan, holding 5,000 shares failed to pay call money and his shares were forfeited. Out of these 2,00,000 shares (Wait, text says "2,000 shares" in MS, PDF typo says "2,00,000"? No, text in Q says "2,000 shares were re-issued". My extraction has 2,000. Okay.) were re-issued at premium of ₹ 3 per share.'),
+            React.createElement('p', { className: 'my-2' }, 'Manthan, holding 5,000 shares failed to pay call money and his shares were forfeited. Out of these 2,000 shares were re-issued at premium of ₹ 3 per share.'),
             React.createElement('p', { className: 'mt-2' }, 'Prepare Cash Book and pass necessary entries.')
         ),
         solution: React.createElement('div', null,
@@ -416,7 +416,7 @@ export const questions21to25: Question[] = [
                         ),
                         React.createElement('tr', null,
                             React.createElement('td', { className: 'border p-2' }, 'Securities Premium A/c ... Dr (10,000 * 2)'),
-                            React.createElement('td', { className: 'border p-2' }, '20,000 (Wait, MS says 15k? Let\'s check logic.)'),
+                            React.createElement('td', { className: 'border p-2' }, '15,000'),
                             React.createElement('td', { className: 'border p-2' }, '')
                         ),
                         React.createElement('tr', null,
@@ -493,7 +493,7 @@ export const questions21to25: Question[] = [
                         ),
                         React.createElement('tr', null,
                             React.createElement('td', { className: 'border p-2' }, 'To Securities Premium A/c (Reissue)'),
-                            React.createElement('td', { className: 'border p-2' }, '6,00,000 (Wait, 6k)'),
+                            React.createElement('td', { className: 'border p-2' }, '6,000'),
                             React.createElement('td', { className: 'border p-2' }, '')
                         ),
                         React.createElement('tr', { className: 'font-bold bg-gray-50' },
@@ -529,9 +529,11 @@ export const questions21to25: Question[] = [
             React.createElement('br'),
             'Not Paid = 40,000 - 25,000 = 15,000 (Calls in Arrears on Allotment).',
             React.createElement('br'),
-            'Premium on Allotment (included in 4) is 2. But excess 25k covers capital (10k*2) + part of premium? Allotment split 2 Cap + 2 Prem. Capital due 20k. Prem due 20k.',
+            'Premium on Allotment (included in 4) is 2. Application Money Excess adjusted towards Allotment.',
             React.createElement('br'),
-            'Excess 25k covers 20k Cap + 5k Prem. Unpaid Prem = 15k. So Securities Premium DR = 15,000.'
+            'Excess Application (25,000) -> Adjusted to Capital Due (10,000 * 2 = 20,000). Remaining 5,000 adjusted to Premium.',
+            React.createElement('br'),
+            'Total Premium Due (10,000 * 2) = 20,000. Less Adjusted 5,000. Unpaid Premium = 15,000. Hence Securities Premium Dr 15,000.'
         )
     },
     {
@@ -541,7 +543,7 @@ export const questions21to25: Question[] = [
         name: 'Admission Journal Entries',
         topic: 'Revaluation and Capital',
         question: React.createElement('div', null,
-            'Rajinder and Vijay were partners in a firm sharing profits in the ratio 3:2. On 31st March 2023 their balance sheet showed Capitals (Rajinder 3L, Vijay 1.5L) and Current A/c (Rajinder 50k, Vijay 10k). Ranvijay is admitted for 1/6 share? (Ratio 5:3:2 implies Ranvijay 2/10 = 1/5).',
+            'Rajinder and Vijay were partners in a firm sharing profits in the ratio 3:2. On 31st March 2023 their balance sheet showed Capitals (Rajinder 3,00,000, Vijay 1,50,000) and Current A/c (Rajinder 50,000, Vijay 10,000). With an aim to expand business it is decided to admit Ranvijay as a partner on 1st April 2023 on the following terms:',
             React.createElement('p', null, 'Terms:'),
             React.createElement('ul', { className: 'list-none pl-5' },
                 React.createElement('li', null, 'a) PDD increased to 6%.'),
@@ -632,9 +634,9 @@ export const questions21to25: Question[] = [
             React.createElement('br'),
             'Total Stock = 74,000. Half = 37,000. Value taken = 42,000. Increase = 5,000.',
             React.createElement('br'),
-            'Remaining Half (37k) also revalued at same rate (increase by 5k? or valued AT 42k?). Assuming pro-rata increase. 37->42 is +5k. Total Increase = 10,000 - Wait. MS entry says Stock Dr 8000? Let\'s check.',
+            'Remaining Half (37,000) also revalued at same rate. (Increase = 5,000). Total Increase should be 10,000.',
             React.createElement('br'),
-            'MS says Stock A/c Dr 8,000. Why? 42+42 = 84 total value? 84-74 = 10. Strange. Maybe calculation difference.',
+            'Note: Marking Scheme Answer Key uses ₹8,000 for Stock Revaluation. This solution follows the MS value.',
             React.createElement('br'),
             'Goodwill Calc = 2 * Avg(1.5+1.3+1.7)/3 = 2 * 4.5/3 = 2*1.5 = 3.0L. Ranvijay Share (2/10) = 60,000. Correct.'
         )
@@ -646,7 +648,14 @@ export const questions21to25: Question[] = [
         name: 'Executors Account',
         topic: 'Settlement in Instalments',
         question: React.createElement('div', null,
-            'Sandeep, Maheep and Amandeep were partners (2:2:1). Maheep died on 30.06.2020. Executors entitled to Cap (1.15L), IOC (5k), Profit (20k), Goodwill share. Loan to Maheep 20k. Goodwill of Firm 1.5L. Amount paid in 3 yearly instalments @ 10% p.a. starting 30.06.2021.',
+            'Sandeep, Maheep and Amandeep were partners in a firm sharing profits in the ratio of 2: 2: 1. The firm closes its books on 31st March every year. On 30th June, 2020 Maheep died. The partnership deed provided that on the death of a partner his executors will be entitled to the following:',
+            React.createElement('ul', { className: 'list-none pl-5' },
+                React.createElement('li', null, 'a) Balance in his capital account which amounted to ₹1,15,000 and interest on capital till date of death which amounted to ₹5,000.'),
+                React.createElement('li', null, 'b) His share in the profits of the firm till the date of his death amounted to ₹20,000.'),
+                React.createElement('li', null, 'c) His share in the goodwill of the firm. The goodwill of the firm on Maheep’s death was valued at ₹ 1,50,000.'),
+                React.createElement('li', null, 'd) Loan to Maheep amounted ₹ 20,000.')
+            ),
+            React.createElement('p', null, 'It was agreed that the amount will be paid to his executor in three equal yearly instalments with interest @10% p.a. The first instalment was to be paid on 30.06.2021.'),
             React.createElement('p', { className: 'mt-2' }, 'Calculate the amount to be transferred to Maheep’s executors Account and prepare the executor’s account till it is finally settled.')
         ),
         solution: React.createElement('div', null,

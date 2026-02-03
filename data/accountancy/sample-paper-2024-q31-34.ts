@@ -365,15 +365,15 @@ export const questions31to34: Question[] = [
         ),
         explanation: React.createElement('div', null,
             React.createElement('p', { className: 'font-bold mb-2' }, 'Chapter 3: Tools for Financial Statement Analysis - Common Size and Comparative Statements'),
-            'Note on Cost of Revenue from Operations (COR):',
+            'Note on Other Expenses Calculation:',
             React.createElement('br'),
-            'In Common Size Q: GP given as %. COR = Rev - GP.',
+            'The question states Other Expenses are a percentage of "Cost of Revenue". However, the Marking Scheme values (80,000 and 1,50,000) correspond to percentages of "Revenue from Operations".',
             React.createElement('br'),
-            'In Comparative Q: Other Expenses given as % of COR. We need to find COR first? No, Material Consumed and Change in Inv are components of COR (Cost of Mat Consumed + Change in Inv + Direct Exp). COR = 4L + 2L = 6L (for 22-23)? No, Other Expenses is % of Cost of Revenue. We need to calculate Cost of Revenue separately? Wait. The question says "Other Expenses (% of Cost of Revenue from Operations)". AND Cost of Mat and Change in Inv are given separately. Usually COR = Mat Consumed + Change in Inv. So Other Exp = % of (Mat+Change).',
+            '2021-22: 10% of Revenue (8,00,000) = 80,000.',
             React.createElement('br'),
-            '2021-22: Mat(3L) + Change(1L) = 4L. Other Exp = 10% of? Wait MS says Other Exp 80k. Logic: 80k is 20% of 4L? Or maybe COR included something else? Let\'s assume simpler: MS has Other Exp 80k for 21-22. 80k is 10% of 8L (Revenue)? But text says "Cost". Maybe 8L Rev - GP? No GP given.',
+            '2022-23: 15% of Revenue (10,00,000) = 1,50,000.',
             React.createElement('br'),
-            'Actually, let\'s trust the MS values: Other Exp 80,000 (21-22) and 1,50,000 (22-23). I will display the table as calculated in MS.'
+            'The solution table follows the Marking Scheme logic (percentage of Revenue).'
         )
     },
     {
@@ -543,10 +543,8 @@ export const questions31to34: Question[] = [
             React.createElement('p', { className: 'font-bold mb-2' }, 'Chapter 6: Cash Flow Statement - Preparation of CFS'),
             'Working Notes:',
             React.createElement('ul', { className: 'list-decimal pl-5' },
-                React.createElement('li', null, 'Net Profit Before Tax = Diff in Surplus (60k) - Gain on Inv (10k to Cap Res?) NO, Gain to Cap Res doesn\'t affect Surplus. Diff in General Reserve? No, Gen Reserve 1.5L vs ? Wait. Notes say Reserves: Gen Res (30k->?), Cap Res (0->?), Surplus (28k->45k?). The table in question says Reserves 5.4L to 6.4L. Notes break it down. Need to reconstruct PBT.'),
-                React.createElement('li', null, 'Logic from MS: NP After Tax = 20k? (Diff in Surplus 28k to 60k? Wait MS says "Surplus ie balance in statement of profit and loss" 28,000 to 60,000? No, 28k to 4,90,000? NO. Look at Note 1. 2022: Gen Res 1.5L, Surplus 28k? Total 5.4L? No. 1.5L+... = 5.4L? Something missing. Let\'s stick to MS calculation.'),
-                React.createElement('li', null, 'MS says: Net Profits after Tax = 20,000. Transfer to Gen Res 70,000. Prov for Tax 17,000. Total 1,07,000.'),
-                React.createElement('li', null, 'Interest on Deb: 10% on 1L (Opening Balance) = 10k. Additional issued on 31.03, so no interest on that.')
+                React.createElement('li', null, 'Net Profit Before Tax (Calculation per MS): Surplus Difference (80k-60k = 20k) + Transfer to General Reserve (5.0L-4.3L = 70k) + Provision for Tax (17k) = 1,07,000. (Note: Dividend Paid is not added back in MS calculation, possibly assumed appropriated differently).'),
+                React.createElement('li', null, 'Interest on Debentures: 10% on Opening Balance (1,00,000) = 10,000. Additional Debentures issued at year end do not carry interest for current year.')
             )
         )
     }

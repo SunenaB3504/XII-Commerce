@@ -379,7 +379,7 @@ export const samplePaper2023Q1To10: Question[] = [
         solution: React.createElement(React.Fragment, null,
             React.createElement('p', { className: 'font-semibold text-green-700' }, 'Correct Answer: c) ₹ 36,000')
         ),
-        explanation: 'Chapter 1: Partnership Fundamentals - Manager/Partner Commission.\n\nPuneet Comm (10% on Net Profit) = 44,000.\nNet Profit = 4,40,000.\nRaju Comm = 10% on (NP - All Comm).\nRaju Comm = 10/110 * (NP - 44,000)? No, "After charging all commission".\nLet Raju Comm = R.\nR = 10% of (4,40,000 - 44,000 - R).\nR = 0.10 * (3,96,000 - R)\nR = 39,600 - 0.10R\n1.10R = 39,600\nR = 39,600 / 1.10 = 36,000.'
+        explanation: 'Chapter 1: Partnership Fundamentals - Manager/Partner Commission.\n\nPuneet\'s Commission (10% on Net Profit before charging any commission) is given as ₹ 44,000. \nTherefore, Net Profit before commission = ₹ 4,40,000.\n\nRaju\'s Commission is 10% on Net Profit after charging all commissions.\nLet Raju\'s Commission be R.\nR = 10% of (Net Profit - Puneet\'s Comm - Raju\'s Comm)\nR = 10% of (4,40,000 - 44,000 - R)\nR = 10% of (3,96,000 - R)\n1.1R = 39,600\nR = 36,000.'
     },
     {
         id: 'acc-2023-q10',

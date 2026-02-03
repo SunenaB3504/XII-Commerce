@@ -213,7 +213,7 @@ export const samplePaper2023Q11To16: Question[] = [
             React.createElement('p', {}, '   Sundry Assets = Total Assets - Cash Balance = 1,90,000 - 10,000 = 1,80,000.'),
             React.createElement('p', { className: 'mt-2' }, '2. Calculate Profit/Loss on Realisation:'),
             React.createElement('p', {}, '   Realisation A/c Dr (Book Value of Assets) = 1,80,000.'),
-            React.createElement('p', {}, '   Realisation A/c Cr (Payment to Liabilities) = 70,000 (Creditors paid full implied).'),
+            React.createElement('p', {}, '   Realisation A/c Dr (Payment to Liabilities) = 70,000 (Creditors paid full implied).'),
             React.createElement('p', {}, '   Realisation A/c Cr (Book Value of Liabilities) = 70,000.'),
             React.createElement('p', {}, '   Realisation A/c Cr (Assets Realised) = 1,50,000.'),
             React.createElement('p', { className: 'mt-2 font-semibold' }, 'Net Result:'),
