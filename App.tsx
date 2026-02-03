@@ -86,34 +86,31 @@ const App: React.FC = () => {
   const selectedModule = learningModules.find(m => m.chapter === selectedChapter);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 font-sans text-slate-800">
-      <header className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 shadow-2xl border-b-4 border-yellow-300 sticky top-0 z-10 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
+      <header className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 shadow-xl border-b border-white/10 sticky top-0 z-50">
+        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-300">
-                <span className="text-3xl">🎯</span>
+              <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center shadow-inner backdrop-blur-sm">
+                <span className="text-2xl">�</span>
               </div>
               <div>
-                <h1 className="text-3xl sm:text-4xl font-black bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent drop-shadow-lg">
-                  Commerce Champions! 🚀
+                <h1 className="text-2xl font-bold text-white tracking-tight">
+                  XII Commerce Prep
                 </h1>
-                <p className="text-white font-bold mt-1 text-sm sm:text-base drop-shadow-md">Level Up Your XII Commerce Game! 💪</p>
+                <p className="text-slate-400 text-xs font-medium uppercase tracking-wider">Comprehensive Exam Preparation</p>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-4">
-              <div className="bg-white/20 backdrop-blur-md rounded-full px-4 py-2 border-2 border-white/40 shadow-lg">
-                <span className="text-white font-bold text-sm">🔥 Streak: 7 days!</span>
-              </div>
-              <div className="bg-yellow-400 rounded-full px-4 py-2 border-2 border-yellow-300 shadow-lg">
-                <span className="font-black text-purple-900 text-sm">⭐ 2025-26</span>
+              <div className="px-4 py-1.5 bg-slate-800 rounded-md border border-slate-700 shadow-sm">
+                <span className="text-slate-300 text-sm font-medium">Academic Year: <span className="text-white">2025-26</span></span>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+      <main className="w-full max-w-[1920px] mx-auto p-4 sm:p-6 lg:p-8">
         <SubjectTabs
           subjects={subjects.map(s => s.name)}
           selectedSubject={selectedSubjectName}
@@ -171,9 +168,9 @@ const App: React.FC = () => {
                           <div className="flex justify-between items-center mb-2">
                             <span className="font-semibold">Test {testHistory.length - index}</span>
                             <span className={`px-2 py-1 rounded text-sm font-bold ${test.performanceLevel === 'excellent' ? 'bg-green-100 text-green-800' :
-                                test.performanceLevel === 'good' ? 'bg-blue-100 text-blue-800' :
-                                  test.performanceLevel === 'average' ? 'bg-yellow-100 text-yellow-800' :
-                                    'bg-red-100 text-red-800'
+                              test.performanceLevel === 'good' ? 'bg-blue-100 text-blue-800' :
+                                test.performanceLevel === 'average' ? 'bg-yellow-100 text-yellow-800' :
+                                  'bg-red-100 text-red-800'
                               }`}>
                               {test.performanceLevel.charAt(0).toUpperCase() + test.performanceLevel.slice(1)}
                             </span>

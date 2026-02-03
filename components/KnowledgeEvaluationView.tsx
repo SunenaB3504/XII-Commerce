@@ -9,10 +9,10 @@ import type {
 } from '../types';
 import { subjects } from '../data';
 import KnowledgeQuestionComponent from './KnowledgeQuestion.tsx';
-import { 
-  getMCQsBySubject, 
-  getMCQsByChapters, 
-  getWeightedMCQs, 
+import {
+  getMCQsBySubject,
+  getMCQsByChapters,
+  getWeightedMCQs,
   getRandomMCQs,
   getMCQStats,
   type MCQPoolQuestion
@@ -25,7 +25,7 @@ interface KnowledgeEvaluationViewProps {
 // Chapter weightage configuration for each subject (based on CBSE exam patterns)
 const CHAPTER_WEIGHTAGE: { [subject: string]: { [chapter: string]: number } } = {
   'Business Studies': {
-    '1': 10, '2': 20, '3': 14, '4': 10, '5': 10, 
+    '1': 10, '2': 20, '3': 14, '4': 10, '5': 10,
     '6': 10, '7': 10, '8': 8, '9': 4, '10': 2, '11': 2
   },
   'Accountancy': {
@@ -72,7 +72,7 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
 
     // Get MCQs from centralized pool
     let poolQuestions: MCQPoolQuestion[];
-    
+
     if (selectedChapters.length === 0) {
       // All chapters - use weighted selection
       poolQuestions = getWeightedMCQs(subjectName, count);
@@ -118,8 +118,8 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
   const extractCorrectAnswer = (solution: any): string => {
     const solutionText = extractText(solution);
     // Match patterns: "Correct Answer: B)" or "Correct Answer: B." or just "B)" or "B."
-    const match = solutionText.match(/correct answer:\s*([a-d])[\.\)]/i) || 
-                  solutionText.match(/^([a-d])[\.\)]/i);
+    const match = solutionText.match(/correct answer:\s*([a-d])[\.\)]/i) ||
+      solutionText.match(/^([a-d])[\.\)]/i);
     return match ? match[1].toLowerCase() : '';
   };
 
@@ -164,20 +164,20 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
     let correctAnswers = 0;
 
     // Calculate chapter-wise and topic-wise performance
-    const chapterStats: { 
-      [key: string]: { 
-        correct: number; 
-        total: number; 
+    const chapterStats: {
+      [key: string]: {
+        correct: number;
+        total: number;
         topics: { [key: string]: { correct: number; total: number } };
         weightage: number;
-      } 
+      }
     } = {};
 
     questions.forEach((question, index) => {
       const userAnswer = session.answers[index];
       const correctAnswer = extractCorrectAnswer(question.solution);
       const isCorrect = userAnswer === correctAnswer;
-      
+
       if (isCorrect) correctAnswers++;
 
       const chapter = question.chapter || 'Unknown';
@@ -206,7 +206,7 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
 
         // Weighted scoring: High-weightage chapters need higher threshold
         const threshold = stats.weightage > 15 ? 75 : 70;
-        
+
         if (percentage >= 80) studyRecommendation = 'excellent';
         else if (percentage >= threshold) studyRecommendation = 'good';
         else if (percentage >= 50) studyRecommendation = 'needs-improvement';
@@ -245,7 +245,7 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
         const userAnswer = session.answers[index];
         const correctAnswer = extractCorrectAnswer(q.solution);
         const isCorrect = userAnswer === correctAnswer;
-        
+
         return {
           questionId: q.id,
           correct: isCorrect,
@@ -303,27 +303,27 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
   if (currentStep === 'setup') {
     const availableChapters = getAvailableChapters(filters.subject);
 
+
     return (
-      <div className="bg-gradient-to-br from-white via-blue-50 to-indigo-50 border-4 border-blue-300 rounded-3xl shadow-2xl p-8 max-w-4xl mx-auto">
-        <div className="text-center mb-8">
+      <div className="bg-gradient-to-br from-white via-blue-50 to-indigo-50 border-4 border-blue-300 rounded-3xl shadow-2xl p-8 max-w-5xl mx-auto">
+        <div className="text-center mb-10">
           <h2 className="text-4xl font-black text-slate-800 mb-4">🧠 Knowledge Evaluation</h2>
           <p className="text-lg text-slate-600">Assess your understanding across chapters and get personalized study recommendations</p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-10">
           {/* Subject Selection */}
-          <div className="bg-white p-6 rounded-2xl shadow-lg">
-            <h3 className="text-xl font-bold text-slate-800 mb-4">Select Subject</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+            <h3 className="text-xl font-bold text-slate-800 mb-6">Select Subject</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {subjects.map(subject => (
                 <button
                   key={subject.name}
                   onClick={() => setFilters(prev => ({ ...prev, subject: subject.name, chapters: [] }))}
-                  className={`p-4 rounded-xl font-bold text-lg transition-all ${
-                    filters.subject === subject.name
-                      ? 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg scale-105'
-                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                  }`}
+                  className={`p-6 rounded-2xl font-bold text-lg transition-all shadow-sm ${filters.subject === subject.name
+                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-xl scale-105 ring-4 ring-blue-100'
+                    : 'bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200 hover:border-slate-300'
+                    }`}
                 >
                   {subject.name}
                 </button>
@@ -333,12 +333,12 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
 
           {/* Chapter Selection */}
           {filters.subject && (
-            <div className="bg-white p-6 rounded-2xl shadow-lg">
+            <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
               <h3 className="text-xl font-bold text-slate-800 mb-4">Select Chapters</h3>
-              <p className="text-sm text-slate-600 mb-4">Leave empty to include all chapters</p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <p className="text-sm text-slate-500 mb-6 font-medium">Leave empty to include all chapters</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {availableChapters.map(chapter => (
-                  <label key={chapter.id} className="flex items-center space-x-2">
+                  <label key={chapter.id} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-slate-50 transition-colors cursor-pointer border border-transparent hover:border-slate-100">
                     <input
                       type="checkbox"
                       checked={filters.chapters.includes(chapter.id)}
@@ -348,9 +348,9 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
                           : filters.chapters.filter(c => c !== chapter.id);
                         setFilters(prev => ({ ...prev, chapters: newChapters }));
                       }}
-                      className="w-4 h-4 text-blue-600 rounded"
+                      className="w-5 h-5 text-blue-600 rounded border-slate-300 focus:ring-blue-500 mt-1"
                     />
-                    <span className="text-sm font-medium">{chapter.title}</span>
+                    <span className="text-base text-slate-700 font-medium leading-tight">{chapter.title}</span>
                   </label>
                 ))}
               </div>
@@ -358,18 +358,17 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
           )}
 
           {/* Question Count Selection */}
-          <div className="bg-white p-6 rounded-2xl shadow-lg">
-            <h3 className="text-xl font-bold text-slate-800 mb-4">Number of Questions</h3>
-            <div className="flex gap-4">
+          <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+            <h3 className="text-xl font-bold text-slate-800 mb-6">Number of Questions</h3>
+            <div className="flex flex-wrap gap-6">
               {[10, 20, 50].map(count => (
                 <button
                   key={count}
                   onClick={() => setFilters(prev => ({ ...prev, questionCount: count as 10 | 20 | 50 }))}
-                  className={`px-6 py-3 rounded-xl font-bold transition-all ${
-                    filters.questionCount === count
-                      ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-lg'
-                      : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
-                  }`}
+                  className={`px-8 py-4 rounded-2xl font-bold text-lg transition-all shadow-sm ${filters.questionCount === count
+                    ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-xl scale-105 ring-4 ring-emerald-100'
+                    : 'bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200 hover:border-slate-300'
+                    }`}
                 >
                   {count} Questions
                 </button>
@@ -378,11 +377,11 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
           </div>
 
           {/* Start Button */}
-          <div className="text-center">
+          <div className="text-center pt-4">
             <button
               onClick={startEvaluation}
               disabled={!filters.subject}
-              className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-black text-xl rounded-2xl hover:scale-105 transition-transform shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-12 py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-black text-2xl rounded-2xl hover:scale-105 transition-transform shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-blue-200"
             >
               🚀 Start Knowledge Evaluation
             </button>
@@ -419,19 +418,18 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
         <div className="mb-6">
           <div className="bg-slate-200 rounded-full h-4 overflow-hidden relative">
             <div
-              className={`bg-gradient-to-r from-green-500 to-emerald-500 h-full transition-all duration-300 ${
-                answeredQuestions === questions.length ? 'w-full' :
+              className={`bg-gradient-to-r from-green-500 to-emerald-500 h-full transition-all duration-300 ${answeredQuestions === questions.length ? 'w-full' :
                 answeredQuestions >= questions.length * 0.9 ? 'w-11/12' :
-                answeredQuestions >= questions.length * 0.8 ? 'w-4/5' :
-                answeredQuestions >= questions.length * 0.7 ? 'w-3/4' :
-                answeredQuestions >= questions.length * 0.6 ? 'w-3/5' :
-                answeredQuestions >= questions.length * 0.5 ? 'w-1/2' :
-                answeredQuestions >= questions.length * 0.4 ? 'w-2/5' :
-                answeredQuestions >= questions.length * 0.3 ? 'w-1/3' :
-                answeredQuestions >= questions.length * 0.2 ? 'w-1/4' :
-                answeredQuestions >= questions.length * 0.1 ? 'w-1/12' :
-                answeredQuestions > 0 ? 'w-1/12' : 'w-0'
-              }`}
+                  answeredQuestions >= questions.length * 0.8 ? 'w-4/5' :
+                    answeredQuestions >= questions.length * 0.7 ? 'w-3/4' :
+                      answeredQuestions >= questions.length * 0.6 ? 'w-3/5' :
+                        answeredQuestions >= questions.length * 0.5 ? 'w-1/2' :
+                          answeredQuestions >= questions.length * 0.4 ? 'w-2/5' :
+                            answeredQuestions >= questions.length * 0.3 ? 'w-1/3' :
+                              answeredQuestions >= questions.length * 0.2 ? 'w-1/4' :
+                                answeredQuestions >= questions.length * 0.1 ? 'w-1/12' :
+                                  answeredQuestions > 0 ? 'w-1/12' : 'w-0'
+                }`}
             ></div>
           </div>
           <p className="text-sm text-slate-600 mt-2 text-center">
@@ -463,13 +461,12 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
               <button
                 key={index}
                 onClick={() => setCurrentQuestionIndex(index)}
-                className={`w-10 h-10 rounded-full font-bold text-sm transition-all ${
-                  index === currentQuestionIndex
-                    ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white scale-110'
-                    : session?.answers[index]
+                className={`w-10 h-10 rounded-full font-bold text-sm transition-all ${index === currentQuestionIndex
+                  ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white scale-110'
+                  : session?.answers[index]
                     ? 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white'
                     : 'bg-slate-200 text-slate-600 hover:bg-slate-300'
-                }`}
+                  }`}
               >
                 {index + 1}
               </button>
@@ -519,11 +516,10 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
             return (
               <div
                 key={index}
-                className={`border-4 rounded-2xl p-6 ${
-                  isCorrect
-                    ? 'border-green-300 bg-gradient-to-br from-green-50 to-emerald-50'
-                    : 'border-red-300 bg-gradient-to-br from-red-50 to-pink-50'
-                }`}
+                className={`border-4 rounded-2xl p-6 ${isCorrect
+                  ? 'border-green-300 bg-gradient-to-br from-green-50 to-emerald-50'
+                  : 'border-red-300 bg-gradient-to-br from-red-50 to-pink-50'
+                  }`}
               >
                 {/* Question Header */}
                 <div className="flex items-start justify-between mb-4">
@@ -543,11 +539,10 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
                     )}
                   </div>
                   <div
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full font-bold text-lg ${
-                      isCorrect
-                        ? 'bg-green-500 text-white'
-                        : 'bg-red-500 text-white'
-                    }`}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full font-bold text-lg ${isCorrect
+                      ? 'bg-green-500 text-white'
+                      : 'bg-red-500 text-white'
+                      }`}
                   >
                     <span className="text-2xl">{isCorrect ? '✅' : '❌'}</span>
                     <span>{isCorrect ? 'Correct' : 'Incorrect'}</span>
@@ -565,11 +560,10 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
                   {/* Your Answer */}
                   <div
-                    className={`p-4 rounded-xl border-2 ${
-                      isCorrect
-                        ? 'bg-green-100 border-green-300'
-                        : 'bg-red-100 border-red-300'
-                    }`}
+                    className={`p-4 rounded-xl border-2 ${isCorrect
+                      ? 'bg-green-100 border-green-300'
+                      : 'bg-red-100 border-red-300'
+                      }`}
                   >
                     <h4 className="font-bold text-sm mb-2 flex items-center gap-2">
                       <span>{isCorrect ? '✅' : '❌'}</span>
@@ -701,11 +695,11 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
           </h3>
           <div className="space-y-4">
             {results.chapterPerformance.map((chapter, idx) => {
-              const performanceColor = 
+              const performanceColor =
                 chapter.percentage >= 80 ? 'from-green-500 to-emerald-500' :
-                chapter.percentage >= 65 ? 'from-blue-500 to-indigo-500' :
-                chapter.percentage >= 50 ? 'from-yellow-500 to-orange-500' :
-                'from-red-500 to-pink-500';
+                  chapter.percentage >= 65 ? 'from-blue-500 to-indigo-500' :
+                    chapter.percentage >= 50 ? 'from-yellow-500 to-orange-500' :
+                      'from-red-500 to-pink-500';
 
               const weakTopics = chapter.topics.filter(t => t.percentage < 60);
 
@@ -725,16 +719,15 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
                         <span className="text-slate-600">
                           {chapter.correctAnswers}/{chapter.totalQuestions} correct
                         </span>
-                        <span className={`px-3 py-1 rounded-full text-sm font-bold ${
-                          chapter.studyRecommendation === 'excellent' ? 'bg-green-100 text-green-800' :
+                        <span className={`px-3 py-1 rounded-full text-sm font-bold ${chapter.studyRecommendation === 'excellent' ? 'bg-green-100 text-green-800' :
                           chapter.studyRecommendation === 'good' ? 'bg-blue-100 text-blue-800' :
-                          chapter.studyRecommendation === 'needs-improvement' ? 'bg-yellow-100 text-yellow-800' :
-                          'bg-red-100 text-red-800'
-                        }`}>
+                            chapter.studyRecommendation === 'needs-improvement' ? 'bg-yellow-100 text-yellow-800' :
+                              'bg-red-100 text-red-800'
+                          }`}>
                           {chapter.studyRecommendation === 'excellent' ? '🌟 Excellent' :
-                           chapter.studyRecommendation === 'good' ? '✅ Good' :
-                           chapter.studyRecommendation === 'needs-improvement' ? '⚠️ Needs Practice' :
-                           '🚨 Requires Focus'}
+                            chapter.studyRecommendation === 'good' ? '✅ Good' :
+                              chapter.studyRecommendation === 'needs-improvement' ? '⚠️ Needs Practice' :
+                                '🚨 Requires Focus'}
                         </span>
                       </div>
                     </div>
@@ -746,19 +739,18 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
                   {/* Progress bar */}
                   <div className="bg-slate-200 rounded-full h-3 overflow-hidden mb-3">
                     <div
-                      className={`bg-gradient-to-r ${performanceColor} h-full transition-all duration-500 ${
-                        chapter.percentage >= 95 ? 'w-full' :
+                      className={`bg-gradient-to-r ${performanceColor} h-full transition-all duration-500 ${chapter.percentage >= 95 ? 'w-full' :
                         chapter.percentage >= 90 ? 'w-11/12' :
-                        chapter.percentage >= 80 ? 'w-4/5' :
-                        chapter.percentage >= 70 ? 'w-3/4' :
-                        chapter.percentage >= 60 ? 'w-3/5' :
-                        chapter.percentage >= 50 ? 'w-1/2' :
-                        chapter.percentage >= 40 ? 'w-2/5' :
-                        chapter.percentage >= 30 ? 'w-1/3' :
-                        chapter.percentage >= 20 ? 'w-1/4' :
-                        chapter.percentage >= 10 ? 'w-1/12' :
-                        'w-1/12'
-                      }`}
+                          chapter.percentage >= 80 ? 'w-4/5' :
+                            chapter.percentage >= 70 ? 'w-3/4' :
+                              chapter.percentage >= 60 ? 'w-3/5' :
+                                chapter.percentage >= 50 ? 'w-1/2' :
+                                  chapter.percentage >= 40 ? 'w-2/5' :
+                                    chapter.percentage >= 30 ? 'w-1/3' :
+                                      chapter.percentage >= 20 ? 'w-1/4' :
+                                        chapter.percentage >= 10 ? 'w-1/12' :
+                                          'w-1/12'
+                        }`}
                     ></div>
                   </div>
 
@@ -768,21 +760,19 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
                       <p className="text-sm font-bold text-slate-700 mb-2">📖 Topic Performance:</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {chapter.topics.map((topic, topicIdx) => (
-                          <div 
-                            key={topicIdx} 
-                            className={`text-sm p-3 rounded-lg ${
-                              topic.percentage >= 70 ? 'bg-green-50 border border-green-200' :
+                          <div
+                            key={topicIdx}
+                            className={`text-sm p-3 rounded-lg ${topic.percentage >= 70 ? 'bg-green-50 border border-green-200' :
                               topic.percentage >= 50 ? 'bg-yellow-50 border border-yellow-200' :
-                              'bg-red-50 border border-red-200'
-                            }`}
+                                'bg-red-50 border border-red-200'
+                              }`}
                           >
                             <div className="flex justify-between items-center">
                               <span className="font-semibold text-slate-700">{topic.topic}</span>
-                              <span className={`font-bold ${
-                                topic.percentage >= 70 ? 'text-green-700' :
+                              <span className={`font-bold ${topic.percentage >= 70 ? 'text-green-700' :
                                 topic.percentage >= 50 ? 'text-yellow-700' :
-                                'text-red-700'
-                              }`}>
+                                  'text-red-700'
+                                }`}>
                                 {topic.percentage.toFixed(0)}%
                               </span>
                             </div>
@@ -790,7 +780,7 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
                           </div>
                         ))}
                       </div>
-                      
+
                       {/* Weak topics alert */}
                       {weakTopics.length > 0 && (
                         <div className="mt-3 p-3 bg-red-50 border-l-4 border-red-500 rounded">
@@ -810,11 +800,11 @@ const KnowledgeEvaluationView: React.FC<KnowledgeEvaluationViewProps> = ({
                     <div className="mt-3 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
                       <p className="text-sm font-bold text-blue-800">📝 Study Tip:</p>
                       <p className="text-sm text-blue-700 mt-1">
-                        {chapter.studyRecommendation === 'requires-focus' 
+                        {chapter.studyRecommendation === 'requires-focus'
                           ? `This chapter needs immediate attention${chapter.weightage && chapter.weightage > 12 ? ' and carries significant exam weightage' : ''}. Review the learning module and practice basic MCQs.`
                           : chapter.studyRecommendation === 'needs-improvement'
-                          ? `Practice more questions from this chapter. Focus on understanding concepts rather than memorization.`
-                          : `Good understanding! Solve a few more complex questions to achieve mastery.`}
+                            ? `Practice more questions from this chapter. Focus on understanding concepts rather than memorization.`
+                            : `Good understanding! Solve a few more complex questions to achieve mastery.`}
                       </p>
                     </div>
                   )}

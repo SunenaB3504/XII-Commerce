@@ -70,29 +70,14 @@ const QuestionView: React.FC<QuestionViewProps> = ({ question }) => {
   };
 
   // For better aesthetics, we inject the keyframes for animations.
+  // Professional styling without playful animations
   const style = `
     @keyframes fadeIn {
-        0% { opacity: 0; transform: translateY(-10px); }
+        0% { opacity: 0; transform: translateY(-5px); }
         100% { opacity: 1; transform: translateY(0); }
     }
     .animate-fade-in {
-        animation: fadeIn 0.5s ease-out forwards;
-    }
-    @keyframes fadeInSlow {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-    .animate-fade-in-slow {
-        animation: fadeInSlow 0.6s ease-in forwards;
-    }
-    @keyframes bounceIn {
-        0% { opacity: 0; transform: scale(0.3); }
-        50% { transform: scale(1.05); }
-        70% { transform: scale(0.9); }
-        100% { opacity: 1; transform: scale(1); }
-    }
-    .animate-bounce-in {
-        animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+        animation: fadeIn 0.3s ease-out forwards;
     }
     ul.list-roman {
         list-style-type: upper-roman;
@@ -102,97 +87,92 @@ const QuestionView: React.FC<QuestionViewProps> = ({ question }) => {
   return (
     <>
       <style>{style}</style>
-      <div className="bg-gradient-to-br from-white via-yellow-50 to-orange-50 border-4 border-yellow-300 rounded-3xl shadow-2xl p-8 animate-fade-in">
-        <div className="flex flex-col sm:flex-row items-start justify-between mb-6 gap-4">
+      <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-8 animate-fade-in min-h-[60vh] flex flex-col">
+        <div className="flex flex-col sm:flex-row items-start justify-between mb-6 gap-4 border-b border-slate-100 pb-4">
           <div className="flex items-center gap-4">
-            <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center shadow-2xl transform rotate-6 hover:rotate-0 transition-transform">
-              <span className="text-3xl transform -rotate-6">❓</span>
+            <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
+              <span className="text-lg font-bold text-slate-500">Q{question.id.replace(/\D/g, '')}</span>
             </div>
             <div>
-              <h3 className="text-3xl font-black text-slate-800 mb-1">Question {question.id}</h3>
-              <p className="text-purple-600 font-bold">Let's ace this! 💪</p>
+              <h3 className="text-xl font-bold text-slate-900 leading-tight">Question {question.id}</h3>
+              <p className="text-sm text-slate-500 font-medium">Review the question carefully</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-base font-black px-5 py-3 rounded-2xl shadow-2xl border-2 border-yellow-300 transform hover:scale-110 transition-transform">
-              <span className="text-xl">⭐</span> {question.marks} {question.marks > 1 ? 'Points' : 'Point'}
+            <div className="bg-slate-50 text-slate-700 text-sm font-semibold px-4 py-2 rounded-lg border border-slate-200">
+              <span className="text-slate-400 mr-2">Marks:</span>
+              {question.marks}
             </div>
           </div>
         </div>
 
-        <div className="bg-white border-4 border-purple-200 rounded-2xl p-6 mb-8 shadow-lg">
-          <div className="prose prose-slate max-w-none text-slate-800 text-lg leading-relaxed font-medium">
-            {question.question}
-          </div>
+        <div className="prose prose-slate max-w-none text-slate-800 text-lg leading-relaxed flex-grow">
+          {question.question}
         </div>
 
-        <div className="border-t-4 border-purple-200 pt-8">
+        <div className="mt-8 pt-6 border-t border-slate-100">
           {!showSolution && (
-            <div className="text-center">
+            <div className="flex justify-start">
               <button
                 onClick={() => setShowSolution(true)}
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 text-white font-black text-lg py-5 px-10 rounded-2xl hover:from-purple-600 hover:via-pink-600 hover:to-rose-600 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-yellow-400 shadow-2xl hover:shadow-3xl border-4 border-white"
+                className="inline-flex items-center gap-3 bg-blue-600 text-white font-semibold text-base py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-sm min-w-[160px] justify-center"
               >
-                <span className="text-2xl animate-bounce">💡</span>
-                <span>Reveal Answer!</span>
-                <span className="text-2xl">✨</span>
+                <span className="text-xl">💡</span>
+                <span>View Solution</span>
               </button>
-              <p className="text-purple-600 font-bold text-sm mt-4">Click to see the solution and learn! 🚀</p>
             </div>
           )}
 
           {showSolution && (
-            <div className="space-y-6 animate-bounce-in">
-              <div className="bg-gradient-to-r from-green-400 to-emerald-500 border-4 border-green-300 rounded-3xl p-6 shadow-2xl">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
-                      <span className="text-3xl">✅</span>
+            <div className="space-y-6 animate-fade-in">
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <span className="text-sm">✓</span>
                     </div>
-                    <h4 className="text-2xl font-black text-white drop-shadow-lg">Correct Answer!</h4>
+                    <h4 className="text-lg font-bold text-green-800">Correct Answer</h4>
                   </div>
                   <button
                     onClick={handleSpeakSolution}
-                    className={`bg-white/20 hover:bg-white/30 text-white p-2 rounded-xl transition-all border-2 border-white/40 shadow-lg active:scale-95 ${isSpeakingSolution ? 'animate-pulse ring-2 ring-white' : ''}`}
+                    className={`text-green-700 hover:bg-green-100 p-2 rounded-lg transition-colors ${isSpeakingSolution ? 'bg-green-100 ring-1 ring-green-300' : ''}`}
                     title={isSpeakingSolution ? "Stop Reading" : "Read Aloud"}
                   >
-                    <span className="text-2xl">{isSpeakingSolution ? '⏹️' : '🔊'}</span>
+                    <span className="text-xl">{isSpeakingSolution ? '⏹️' : '🔊'}</span>
                   </button>
                 </div>
-                <div ref={solutionRef} className="text-xl font-bold bg-white/20 backdrop-blur-sm rounded-2xl p-5 border-2 border-white/40">
+                <div ref={solutionRef} className="text-base text-green-900 font-medium leading-relaxed">
                   {question.solution}
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-blue-400 to-indigo-500 border-4 border-blue-300 rounded-3xl p-6 shadow-2xl">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg">
-                      <span className="text-3xl">🧠</span>
+              <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-sm">ℹ️</span>
                     </div>
-                    <h4 className="text-2xl font-black text-white drop-shadow-lg">How It Works</h4>
+                    <h4 className="text-lg font-bold text-slate-800">Explanation</h4>
                   </div>
                   <button
                     onClick={handleSpeak}
-                    className={`bg-white/20 hover:bg-white/30 text-white p-2 rounded-xl transition-all border-2 border-white/40 shadow-lg active:scale-95 ${isSpeaking ? 'animate-pulse ring-2 ring-white' : ''}`}
+                    className={`text-slate-600 hover:bg-slate-200 p-2 rounded-lg transition-colors ${isSpeaking ? 'bg-slate-200 ring-1 ring-slate-300' : ''}`}
                     title={isSpeaking ? "Stop Reading" : "Read Aloud"}
                   >
-                    <span className="text-2xl">{isSpeaking ? '⏹️' : '🔊'}</span>
+                    <span className="text-xl">{isSpeaking ? '⏹️' : '🔊'}</span>
                   </button>
                 </div>
-                <div ref={explanationRef} className="prose prose-slate max-w-none text-white text-base leading-relaxed font-medium bg-white/20 backdrop-blur-sm rounded-2xl p-5 border-2 border-white/40">
+                <div ref={explanationRef} className="prose prose-slate max-w-none text-slate-700 text-base leading-relaxed">
                   {question.explanation}
                 </div>
               </div>
 
-              <div className="text-center pt-4 flex flex-col items-center gap-3">
-                <div className="text-5xl animate-bounce">🎉</div>
-                <p className="text-purple-700 font-black text-xl">Awesome work! 🌟</p>
+              <div className="flex justify-end pt-2">
                 <button
                   onClick={() => setShowSolution(false)}
-                  className="inline-flex items-center gap-3 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-bold text-base py-3 px-6 rounded-2xl hover:from-slate-700 hover:to-slate-800 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-slate-400 shadow-lg"
+                  className="text-slate-500 hover:text-slate-700 text-sm font-medium px-4 py-2 hover:bg-slate-50 rounded-lg transition-colors"
                 >
-                  <span>Hide Solution</span>
+                  Hide Solution
                 </button>
               </div>
             </div>

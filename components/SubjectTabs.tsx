@@ -33,28 +33,37 @@ const getSubjectGradient = (subject: string) => {
 };
 
 const SubjectTabs: React.FC<SubjectTabsProps> = ({ subjects, selectedSubject, onSelectSubject }) => {
+
   return (
-    <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-2 border-4 border-white/60 mb-6">
-      <nav className="flex flex-col sm:flex-row gap-3" aria-label="Subject Tabs">
+    <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-1.5 mb-8">
+      <nav className="flex flex-col sm:flex-row gap-2" aria-label="Subject Tabs">
         {subjects.map((subject) => {
           const isSelected = subject === selectedSubject;
-          const gradient = getSubjectGradient(subject);
           const emoji = getSubjectIcon(subject);
-          
+
+          let selectedClass = 'bg-slate-800 text-white shadow-sm';
+          // Subtle color coding for active state only
+          if (isSelected) {
+            switch (subject.toLowerCase()) {
+              case 'accountancy': selectedClass = 'bg-emerald-600 text-white shadow-md'; break;
+              case 'business studies': selectedClass = 'bg-purple-600 text-white shadow-md'; break;
+              case 'economics': selectedClass = 'bg-orange-600 text-white shadow-md'; break;
+              default: selectedClass = 'bg-blue-600 text-white shadow-md';
+            }
+          }
+
           return (
             <button
               key={subject}
               onClick={() => onSelectSubject(subject)}
-              className={`flex-1 px-6 py-4 rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 transform focus:outline-none focus:ring-4 focus:ring-yellow-400 ${
-                isSelected
-                  ? `bg-gradient-to-r ${gradient} text-white shadow-2xl scale-105 border-4 border-white`
-                  : 'bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 hover:scale-105 hover:shadow-lg border-2 border-slate-300'
-              }`}
+              className={`flex-1 px-4 py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-200 focus:outline-none ${isSelected
+                ? selectedClass
+                : 'bg-transparent text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                }`}
             >
               <div className="flex items-center justify-center gap-2">
-                <span className="text-2xl">{emoji}</span>
+                <span className="text-xl">{emoji}</span>
                 <span>{subject}</span>
-                {isSelected && <span className="text-xl animate-bounce">🔥</span>}
               </div>
             </button>
           );

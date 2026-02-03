@@ -11,10 +11,10 @@ interface SidebarProps {
   onSelectChapter: (chapter: string) => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ 
-  mode, 
-  questions, 
-  currentQuestionId, 
+const Sidebar: React.FC<SidebarProps> = ({
+  mode,
+  questions,
+  currentQuestionId,
   onSelectQuestion,
   chapters,
   currentChapter,
@@ -32,223 +32,162 @@ const Sidebar: React.FC<SidebarProps> = ({
       <style>
         {`#${progressBarId} { width: ${progress}%; }`}
       </style>
-    <div className="bg-gradient-to-br from-white via-purple-50 to-pink-50 border-4 border-purple-200 rounded-3xl shadow-2xl lg:sticky lg:top-24 p-6">
-      <div className="mb-6 pb-4 border-b-4 border-purple-200">
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-6">
-              <span className="text-2xl transform -rotate-6">{mode === 'papers' ? '🎯' : mode === 'learn' ? '📚' : mode === 'challenge' ? '⚡' : mode === 'knowledge' ? '🧠' : '📝'}</span>
+      <div className="bg-white border border-slate-200 rounded-xl shadow-sm lg:sticky lg:top-24 p-5">
+        <div className="mb-6 pb-4 border-b border-slate-100">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-3">
+              <div className={`w-10 h-10 rounded-lg flex items-center justify-center shadow-sm ${mode === 'papers' ? 'bg-blue-100 text-blue-600' :
+                  mode === 'learn' ? 'bg-teal-100 text-teal-600' :
+                    mode === 'challenge' ? 'bg-orange-100 text-orange-600' :
+                      mode === 'knowledge' ? 'bg-indigo-100 text-indigo-600' : 'bg-slate-100 text-slate-600'
+                }`}>
+                <span className="text-xl">{mode === 'papers' ? '📝' : mode === 'learn' ? '📖' : mode === 'challenge' ? '⚡' : mode === 'knowledge' ? '🧠' : '📋'}</span>
+              </div>
+              <div>
+                <h2 className="text-lg font-bold text-slate-800">
+                  {mode === 'papers' ? 'Question Navigator' : mode === 'learn' ? 'Chapter List' : mode === 'challenge' ? 'Timed Challenge' : mode === 'knowledge' ? 'Knowledge Check' : 'Assessment'}
+                </h2>
+                <p className="text-xs font-medium text-slate-500">
+                  {mode === 'papers' ? 'Select a question to view' : mode === 'learn' ? 'Select a chapter to study' : mode === 'challenge' ? 'Beat the clock' : mode === 'knowledge' ? 'Evaluate understanding' : 'Test knowledge'}
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="text-xl font-black text-slate-800">
-                {mode === 'papers' ? 'Challenges' : mode === 'learn' ? 'Chapters' : mode === 'challenge' ? 'Timed Challenge' : mode === 'knowledge' ? 'Knowledge Assessment' : 'Assessment'}
-              </h2>
-              <p className="text-sm font-bold text-purple-600">
-                {mode === 'papers' ? 'Pick your battle!' : mode === 'learn' ? 'Select & study!' : mode === 'challenge' ? 'Beat the clock!' : mode === 'knowledge' ? 'Evaluate your understanding!' : 'Test your knowledge!'}
-              </p>
+          </div>
+
+          {/* Progress Bar */}
+          <div>
+            <div className="flex items-center justify-between mb-1.5">
+              <span className="text-xs font-semibold text-slate-500">Completion Status</span>
+              <span className="text-xs font-bold text-slate-700">{progress}%</span>
+            </div>
+            <div className="bg-slate-100 rounded-full h-2 overflow-hidden">
+              <div
+                id={progressBarId}
+                className={`h-full rounded-full transition-all duration-500 ${progress === 100 ? 'bg-green-500' : 'bg-blue-600'
+                  }`}
+              />
             </div>
           </div>
         </div>
-        
-        {/* Progress Bar */}
-        <div className="bg-white/80 rounded-full p-2 border-2 border-purple-200">
-          <div className="flex items-center justify-between mb-1 px-2">
-            <span className="text-xs font-bold text-slate-700">Your Progress</span>
-            <span className="text-xs font-black text-purple-600">{progress}% 🎉</span>
-          </div>
-          <div className="bg-slate-200 rounded-full h-3 overflow-hidden">
-            <div 
-              id={progressBarId}
-              className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 rounded-full transition-all duration-500"
-            />
-          </div>
-        </div>
+
+        <nav>
+          {mode === 'papers' && (
+            <ul className="space-y-2 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+              {questions.map((q, index) => {
+                const isSelected = q.id === currentQuestionId;
+                const isCompleted = index < completedCount;
+                return (
+                  <li key={q.id}>
+                    <button
+                      onClick={() => onSelectQuestion(q.id)}
+                      className={`w-full text-left p-3 rounded-lg transition-all duration-200 border ${isSelected
+                          ? 'bg-blue-50 border-blue-200 text-blue-900 shadow-sm'
+                          : 'bg-white hover:bg-slate-50 text-slate-700 border-transparent hover:border-slate-200'
+                        }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <div className={`w-8 h-8 rounded-md flex items-center justify-center text-xs font-bold ${isSelected ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500'
+                            }`}>
+                            {q.id}
+                          </div>
+                          <div>
+                            <div className={`font-semibold text-sm ${isSelected ? 'text-blue-900' : 'text-slate-700'}`}>
+                              Question {q.id}
+                            </div>
+                            <div className="text-xs text-slate-500">
+                              {q.marks} {q.marks > 1 ? 'marks' : 'mark'}
+                            </div>
+                          </div>
+                        </div>
+                        {isCompleted && <span className="text-green-500 text-lg">✓</span>}
+                      </div>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+
+          {mode === 'learn' && (
+            <ul className="space-y-2 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+              {chapters.map((chap, index) => {
+                const isSelected = chap.chapter === currentChapter;
+                const isCompleted = index < completedCount;
+                return (
+                  <li key={chap.chapter}>
+                    <button
+                      onClick={() => onSelectChapter(chap.chapter)}
+                      className={`w-full text-left p-3 rounded-lg transition-all duration-200 border ${isSelected
+                          ? 'bg-teal-50 border-teal-200 text-teal-900 shadow-sm'
+                          : 'bg-white hover:bg-slate-50 text-slate-700 border-transparent hover:border-slate-200'
+                        }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3 flex-1 min-w-0">
+                          <div className={`w-8 h-8 rounded-md flex items-center justify-center text-xs font-bold flex-shrink-0 ${isSelected ? 'bg-teal-600 text-white' : 'bg-slate-100 text-slate-500'
+                            }`}>
+                            {chap.chapter}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className={`font-semibold text-sm truncate ${isSelected ? 'text-teal-900' : 'text-slate-700'}`}>
+                              {chap.title}
+                            </div>
+                            <div className="text-xs text-slate-500">
+                              Chapter {chap.chapter}
+                            </div>
+                          </div>
+                        </div>
+                        {isCompleted && <span className="text-green-500 text-lg">✓</span>}
+                      </div>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+
+          {mode === 'challenge' && (
+            <div className="space-y-4">
+              <div className="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                <h3 className="font-bold text-orange-900 mb-2 text-sm">⚡ Challenge Specs</h3>
+                <div className="space-y-2 text-xs text-slate-600">
+                  <div className="flex justify-between border-b border-orange-100 pb-1">
+                    <span>Questions</span>
+                    <span className="font-semibold">{questions.length}</span>
+                  </div>
+                  <div className="flex justify-between border-b border-orange-100 pb-1">
+                    <span>Duration</span>
+                    <span className="font-semibold">30 mins</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Type</span>
+                    <span className="font-semibold">Adaptive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {mode === 'knowledge' && (
+            <div className="space-y-4">
+              <div className="bg-indigo-50 p-4 rounded-xl border border-indigo-100">
+                <h3 className="font-bold text-indigo-900 mb-2 text-sm">🧠 Assessment Details</h3>
+                <div className="space-y-2 text-xs text-slate-600">
+                  <div className="flex justify-between border-b border-indigo-100 pb-1">
+                    <span>Format</span>
+                    <span className="font-semibold">MCQ Pool</span>
+                  </div>
+                  <div className="flex justify-between border-b border-indigo-100 pb-1">
+                    <span>Scope</span>
+                    <span className="font-semibold">Comprehensive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </nav>
       </div>
-      
-      <nav>
-        {mode === 'papers' && (
-          <ul className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
-            {questions.map((q, index) => {
-              const isSelected = q.id === currentQuestionId;
-              const isCompleted = index < completedCount;
-              return (
-                <li key={q.id}>
-                  <button
-                    onClick={() => onSelectQuestion(q.id)}
-                    className={`w-full text-left p-4 rounded-2xl transition-all duration-300 transform focus:outline-none focus:ring-4 focus:ring-yellow-400 hover:scale-105 ${
-                      isSelected
-                        ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-2xl scale-105 border-4 border-white'
-                        : 'bg-white/80 hover:bg-white text-slate-700 border-2 border-purple-200 hover:border-pink-300 hover:shadow-lg'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-sm font-black shadow-md ${
-                          isSelected ? 'bg-white/30 text-white' : 'bg-gradient-to-br from-purple-400 to-pink-400 text-white'
-                        }`}>
-                          {q.id}
-                        </div>
-                        <div>
-                          <div className={`font-bold ${isSelected ? 'text-white' : 'text-slate-800'}`}>
-                            Question {q.id}
-                          </div>
-                          <div className={`text-sm font-semibold ${isSelected ? 'text-pink-100' : 'text-purple-600'}`}>
-                            {q.marks} {q.marks > 1 ? 'marks' : 'mark'} {isCompleted && '✓'}
-                          </div>
-                        </div>
-                      </div>
-                      {isSelected && <span className="text-2xl animate-bounce">⚡</span>}
-                      {!isSelected && isCompleted && <span className="text-xl">✨</span>}
-                    </div>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-
-        {mode === 'learn' && (
-          <ul className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
-            {chapters.map((chap, index) => {
-              const isSelected = chap.chapter === currentChapter;
-              const isCompleted = index < completedCount;
-              return (
-                <li key={chap.chapter}>
-                  <button
-                    onClick={() => onSelectChapter(chap.chapter)}
-                    className={`w-full text-left p-4 rounded-2xl transition-all duration-300 transform focus:outline-none focus:ring-4 focus:ring-yellow-400 hover:scale-105 ${
-                      isSelected
-                        ? 'bg-gradient-to-r from-teal-500 to-cyan-500 text-white shadow-2xl scale-105 border-4 border-white'
-                        : 'bg-white/80 hover:bg-white text-slate-700 border-2 border-purple-200 hover:border-teal-300 hover:shadow-lg'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3 flex-1 min-w-0">
-                        <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-sm font-black shadow-md flex-shrink-0 ${
-                          isSelected ? 'bg-white/30 text-white' : 'bg-gradient-to-br from-teal-400 to-cyan-400 text-white'
-                        }`}>
-                          {chap.chapter}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className={`font-bold truncate ${isSelected ? 'text-white' : 'text-slate-800'}`}>
-                            {chap.title}
-                          </div>
-                          <div className={`text-sm font-semibold ${isSelected ? 'text-teal-100' : 'text-teal-600'}`}>
-                            Chapter {chap.chapter} {isCompleted && '✓'}
-                          </div>
-                        </div>
-                      </div>
-                      {isSelected && <span className="text-2xl animate-bounce flex-shrink-0">💡</span>}
-                      {!isSelected && isCompleted && <span className="text-xl flex-shrink-0">🌟</span>}
-                    </div>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-
-        {mode === 'challenge' && (
-          <div className="space-y-4">
-            <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-2xl border-2 border-orange-200">
-              <h3 className="font-bold text-orange-800 mb-2">⚡ Challenge Mode</h3>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-orange-700">Questions:</span>
-                  <span className="font-bold text-orange-800">{questions.length}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-orange-700">Time limit:</span>
-                  <span className="font-bold text-orange-800">30 mins</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-orange-700">Difficulty:</span>
-                  <span className="font-bold text-orange-800">Adaptive</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-2xl border-2 border-yellow-200">
-              <h3 className="font-bold text-yellow-800 mb-2">� Challenge Rules</h3>
-              <ul className="text-sm text-yellow-700 space-y-1">
-                <li>• Answer quickly for bonus points</li>
-                <li>• Wrong answers cost time</li>
-                <li>• Skip difficult questions</li>
-                <li>• Beat your personal best!</li>
-              </ul>
-            </div>
-
-            <div className="bg-gradient-to-r from-red-50 to-pink-50 p-4 rounded-2xl border-2 border-red-200">
-              <h3 className="font-bold text-red-800 mb-2">� Rewards</h3>
-              <div className="space-y-1 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-red-700">Perfect Score:</span>
-                  <span className="font-bold text-green-600">🏆 Trophy</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-red-700">Speed Demon:</span>
-                  <span className="font-bold text-blue-600">⚡ Badge</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-red-700">Streak Master:</span>
-                  <span className="font-bold text-purple-600">🔥 Badge</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {mode === 'knowledge' && (
-          <div className="space-y-4">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-2xl border-2 border-blue-200">
-              <h3 className="font-bold text-blue-800 mb-2">🧠 Knowledge Evaluation</h3>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-blue-700">Assessment Type:</span>
-                  <span className="font-bold text-blue-800">MCQ Pool</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-blue-700">Coverage:</span>
-                  <span className="font-bold text-blue-800">All Chapters</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-blue-700">Analysis:</span>
-                  <span className="font-bold text-blue-800">Detailed</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-2xl border-2 border-indigo-200">
-              <h3 className="font-bold text-indigo-800 mb-2">📊 What You'll Get</h3>
-              <ul className="text-sm text-indigo-700 space-y-1">
-                <li>• Chapter-wise performance analysis</li>
-                <li>• Topic-level insights</li>
-                <li>• Personalized study recommendations</li>
-                <li>• Progress tracking over time</li>
-              </ul>
-            </div>
-
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-2xl border-2 border-purple-200">
-              <h3 className="font-bold text-purple-800 mb-2">🎯 Benefits</h3>
-              <div className="space-y-1 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-purple-700">Identify Weak Areas:</span>
-                  <span className="font-bold text-green-600">📈</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-purple-700">Track Improvement:</span>
-                  <span className="font-bold text-blue-600">📊</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-purple-700">Study Guidance:</span>
-                  <span className="font-bold text-purple-600">🎓</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </nav>
-    </div>
     </>
   );
 };

@@ -11,12 +11,10 @@ export default defineConfig(({ mode }) => {
         port: 5173,
         host: '127.0.0.1',
         strictPort: false,
-        open: true,
-        headers: {
-          'Content-Type': 'application/javascript; charset=utf-8',
-          'Access-Control-Allow-Origin': '*',
+        open: false,
+        fs: {
+          strict: false,
         },
-        middlewareMode: false,
       },
       plugins: [react()],
       define: {
