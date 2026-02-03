@@ -1411,7 +1411,7 @@ export const questions21to25: Question[] = [
                 React.createElement("p", { className: "font-semibold mt-2" }, "2. Liabilities Paid:"),
                 React.createElement("p", null, "Creditors paid 1,75,000."),
                 React.createElement("p", null, "Mrs Sunny Loan taken by Sunny (55,000)."),
-                React.createElement("p", null, "Expenses: 20,000. Paid by Sunny & Bobby. Firm pays implies To Bank? 'Paid by Sunny and Bobby equally on behalf of the firm'. Means Partners paid. So Credited to Partners Caps (10k each). Debited to Realisation. Wait. Realisation To Partners Capital (Exp) 20k. Or Realisation To Bank (if reimbursed). Usually 'Paid by partners on behalf of firm' => Realisation Dr, Partners Capital Cr."),
+                React.createElement("p", null, "Expenses: 20,000. Paid by Sunny & Bobby on behalf of the firm. Hence, Realisation A/c is debited and Partners' Capital A/cs are credited."),
                 React.createElement("p", null, "Bills Payable: 1,10,000 (Full). EPF: 50,000 (Full)."),
                 React.createElement("p", { className: "font-semibold mt-2" }, "3. Bobby's Loan Set-off:"),
                 React.createElement("p", null, "Loan 85,000. Took Furniture 41,000. Balance 44,000 paid in Cash (Not in Realisation A/c). Furniture realisation is recorded as By Bobby Capital 41,000 in Realisation A/c.")

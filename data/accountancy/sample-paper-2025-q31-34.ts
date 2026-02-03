@@ -58,7 +58,7 @@ export const questions31to34: Question[] = [
                     ),
                     React.createElement('tr', null,
                         React.createElement('td', { className: 'border p-2' }, 'f) Leave encashable'),
-                        React.createElement('td', { className: 'border p-2' }, 'Current Liabilities?'),
+                        React.createElement('td', { className: 'border p-2' }, 'Current Liabilities'),
                         React.createElement('td', { className: 'border p-2' }, 'Short term provisions (If payable within 12 months)')
                     )
                 )
@@ -576,8 +576,8 @@ export const questions31to34: Question[] = [
             ),
             React.createElement('p', { className: 'font-semibold mt-1' }, '2. Machinery A/c:'),
             React.createElement('ul', { className: 'list-disc ml-5' },
-                React.createElement('li', null, 'Credit Side: Fire Loss BV 40k (Claim 32 + Loss 8?) Or simply By Acc Dep 10k, By Bank (Claim) 32k, By P&L (Loss) 8k. (Total Cost 50k removed).'),
-                React.createElement('li', null, 'Credit Side cont.: Sale Cost 2.5L. (By Acc Dep 90k, By Bank Sale ?, By P&L Loss 20k). BV = 2.5L - 90k = 1.6L. Sale Price = 1.6L - 20k = 1.4L.'),
+                React.createElement('li', null, 'Credit Side: Fire Loss BV 40k (Claim 32 + Loss 8). Breakdown: By Acc Dep 10k, By Bank (Claim) 32k, By P&L (Loss) 8k.'),
+                React.createElement('li', null, 'Credit Side cont.: Sale Cost 2.5L. (By Acc Dep 90k, By Bank Sale 1.4L, By P&L Loss 20k). BV = 2.5L - 90k = 1.6L. Sale Price = 1.6L - 20k = 1.4L.'),
                 React.createElement('li', null, 'Total Cr items related to Cost: 50,000 (Fire) + 2,50,000 (Sale) = 3,00,000.'),
                 React.createElement('li', null, 'Op Bal 20,00,000. Cl Bal 28,00,000.'),
                 React.createElement('li', null, 'Equation: Op + Purchase - Cost of Sold/Lost = Cl.'),

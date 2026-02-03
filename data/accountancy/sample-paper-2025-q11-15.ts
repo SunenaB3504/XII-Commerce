@@ -135,7 +135,7 @@ export const questions11to15: Question[] = [
                 React.createElement("li", null, "C: Def Rev (Dr) 50k - P&L (Cr) 80k = +30k (Profit). Tex would be Debited."),
                 React.createElement("li", null, "D: Def Rev (Dr) 50k + P&L (Dr) 80k = 1.3L (Loss). Since it's a Net Loss, the Gaining Partner (Tex) is Credited."),
             ),
-            React.createElement("p", null, "Entry for Net Loss: Gaining Partner (Credit) / Sacrificing Partner (Debit). Wait, normally for Loss: Sacrificing Dr / Gaining Cr. Yes, so Tex (Gaining) is Credited to compensate Sam."),
+            React.createElement("p", null, "Entry for Net Loss: Gaining Partner (Credit) to Sacrificing Partner (Debit). Therefore, Tex (Gaining Partner) is Credited to compensate Sam."),
             React.createElement("div", { className: "mt-4 p-4 bg-gray-50 rounded-md" },
                 React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Chapter: 3"),
                 React.createElement("p", { className: "font-semibold text-sm text-gray-700" }, "Name: Change in Profit Sharing Ratio"),

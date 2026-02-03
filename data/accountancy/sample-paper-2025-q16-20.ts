@@ -20,18 +20,7 @@ export const questions16to20: Question[] = [
         solution: React.createElement("p", { className: "font-semibold text-green-700" }, "Correct Answer: A. 6:5:5"),
         explanation: React.createElement(React.Fragment, null,
             React.createElement("p", null, "Old Ratio (String:Kite) = 5:3 = 5/8 : 3/8."),
-            React.createElement("p", null, "Sacrifice by String = 1/4 of his share = 5/8 × 1/4 = 5/32."), // Wait, "1/4 from his share" usually means subtraction, but "of his share" means multiplication. The Q says "1/4 from his share" and "1/6 of his share".
-            // Let's re-read carefully: "String sacrificed 1/4 from his share". This phrasing "from his share" usually implies absolute subtraction, i.e., Share - 1/4. BUT 5/8 (0.625) - 1/4 (0.25) = 0.375.
-            // "Kite sacrificed 1/6 of his share". This implies multiplication: 3/8 * 1/6 = 3/48 = 1/16.
-            // Let's check the options. If "from" means direct subtraction:
-            // String New = 5/8 - 1/4 = 5/8 - 2/8 = 3/8.
-            // Kite Sacrifice = 3/8 * 1/6 = 1/16. Kite New = 3/8 - 1/16 = 6/16 - 1/16 = 5/16.
-            // Spinner Share = String Sacrifice (1/4) + Kite Sacrifice (1/16) = 4/16 + 1/16 = 5/16.
-            // New Ratio: String (3/8 = 6/16) : Kite (5/16) : Spinner (5/16).
-            // Ratio = 6:5:5.
-            // This matches Option A.
-            // So "1/4 from his share" means Absolute Sacrifice = 1/4.
-            // "1/6 of his share" means Relative Sacrifice = 1/6 * Old Share.
+            React.createElement("p", null, "Sacrifice by String = 1/4 from his share."),
             React.createElement("p", null, "1. String's Sacrifice: '1/4 from his share' means he gives 1/4 directly."),
             React.createElement("p", null, "   String's New Share = Old Share - Sacrifice = 5/8 - 1/4 = 5/8 - 2/8 = 3/8."),
             React.createElement("p", null, "2. Kite's Sacrifice: '1/6 of his share' means he gives 1/6 × 3/8 = 3/48 = 1/16."),
@@ -140,8 +129,7 @@ export const questions16to20: Question[] = [
             React.createElement("p", null, "Profit earned = ₹ 20,500."),
             React.createElement("p", null, "C's Share = Profit × (C's Capital / Total Capital)"),
             React.createElement("p", null, "C's Share = 20,500 × (42,250 / 1,80,000) = 20,500 × 0.2347..."),
-            React.createElement("p", null, "Using Ratio: 42,250 / 1,80,000 = 169 / 720? Approx 23.47%."),
-            React.createElement("p", null, "From MS: (42,250 / 1,80,000) * 20,500 = ₹ 4,812."),
+            React.createElement("p", null, "C's Share = 20,500 × (42,250 / 1,80,000) = ₹ 4,812."),
             React.createElement("p", { className: "font-semibold mt-2" }, "Option (ii): Interest @ 6% p.a."),
             React.createElement("p", null, "Time period = 6 months."),
             React.createElement("p", null, "Interest = 42,250 × 6% × 6/12 = 42,250 × 0.03 = ₹ 1,267.50."),
@@ -385,7 +373,7 @@ export const questions16to20: Question[] = [
                             React.createElement("td", { className: "border p-2 text-right" }, "16,000")
                         ),
                         React.createElement("tr", { className: "bg-gray-50" },
-                            React.createElement("td", { className: "border p-2", colSpan: 3 }, "(Forfeiture of 8,000 shares: Called up = 8-1=7? No, 8 called including 1 prem. So Cap=7. 8000*7=56k. Correct.)")
+                            React.createElement("td", { className: "border p-2", colSpan: 3 }, "(Forfeiture of 8,000 shares: Called up = 8-1=7. 8000*7=56k)")
                         ),
                         React.createElement("tr", null,
                             React.createElement("td", { className: "border p-2" }, "Bank A/c ...Dr"),
@@ -424,7 +412,7 @@ export const questions16to20: Question[] = [
             React.createElement("p", null, "2. Reissue of 5,000 shares at Maximum Discount:"),
             React.createElement("p", null, "Max Discount Permissible = Amount Forfeited on these shares."),
             React.createElement("p", null, "Forfeited Amount on 5,000 shares = 5,000 × 5 = 25,000."),
-            React.createElement("p", null, "Shares are reissued (assumed fully paid? or paid up to called value? Usually reissued as fully paid unless specified. The specific text says 're-issued at maximum possible discount'. It doesn't explicitly say 'fully paid'. However, if reissued, they would likely be reissued for the called-up value of 7 or fully paid 10. Let's check Marking Scheme. MS says 'To Share Capital 35,000'. 5000 shares -> 35000 means ₹ 7 paid up (same as original status)."),
+            React.createElement("p", null, "Shares are reissued as ₹ 7 paid up."),
             React.createElement("p", null, "So Reissued as ₹ 7 paid up."),
             React.createElement("p", null, "Max Discount = ₹ 25,000 (i.e. ₹ 5 per share)."),
             React.createElement("p", null, "Issue Price = Paid Up Value (7) - Discount (5) = ₹ 2 per share."),
