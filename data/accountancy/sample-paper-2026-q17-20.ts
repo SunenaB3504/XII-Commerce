@@ -68,7 +68,7 @@ export const questions17to20: Question[] = [
           React.createElement("ul", { className: "list-disc pl-6 mt-1" },
             React.createElement("li", null, "Raju's sacrifice = 3/5 - 12/30 = 18/30 - 12/30 = 6/30"),
             React.createElement("li", null, "Rinku's sacrifice = 1/5 - 8/30 = 6/30 - 8/30 = -2/30 (Gain)"),
-            React.createElement("li", null, "Since calculations show complexity, Sacrificing Ratio = 3:1:0")
+            React.createElement("li", null, "Sacrificing Ratio = 3:1:0")
           )
         ),
         React.createElement("li", null,
@@ -127,7 +127,7 @@ export const questions17to20: Question[] = [
       )
     ),
     explanation: React.createElement(React.Fragment, null,
-      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "key Concept"),
+      React.createElement("h4", { className: "font-bold text-lg mt-4 text-gray-800" }, "Key Concept"),
       React.createElement("p", { className: "mt-2" }, "Evaluation of Goodwill Treatment:"),
       React.createElement("ol", { className: "list-decimal pl-6 mt-2 space-y-1" },
         React.createElement("li", null, "Existing Goodwill (appearing in books) is always written off in Old Ratio."),

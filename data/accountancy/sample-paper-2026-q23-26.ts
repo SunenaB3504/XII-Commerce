@@ -639,7 +639,7 @@ export const questions23to26: Question[] = [
             React.createElement("li", null, "Increase in Provision = ₹6,700 - ₹8,000 + ₹5,000 = ₹3,700 (reduced, so gain ₹4,500 shown on credit)"),
             React.createElement("li", null, "Investments decreased by ₹20,000 (₹1,20,000 - ₹1,00,000)"),
             React.createElement("li", null, "Accrued Income loss = ₹20,000 - ₹14,500 = ₹5,500"),
-            React.createElement("li", null, "Building overvalued by 20%, so reduction = ₹3,00,000 × 20% = ₹60,000, but book shows ₹50,000")
+            React.createElement("li", null, "Building overvalued by 20%. Value = ₹3,00,000 × 20/120 = ₹50,000. Reduction = ₹50,000.")
           )
         ),
         React.createElement("div", null,
