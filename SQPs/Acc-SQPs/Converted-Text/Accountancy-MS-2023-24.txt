@@ -1,0 +1,594 @@
+                                                 Marking Scheme – Accountancy XII (SQP 2023-24)
+1     d)  33:27:20                                                                                                                                1
+2     a) A is incorrect but R is correct                                                                                                          1
+3     b) ₹ 9,000                                                                                                                                  1
+          or
+      c) ₹ 24,00,000
+4     d) ₹ 80,000                                                                                                                                 1
+          or
+      d) A need to return ₹2,35,000 to the firm.
+5     c) Partner’s Loan Account                                                                                                                   1
+6     b) ₹ 10,00,000                                                                                                                              1
+          or
+      a).Interest on debentures is an appropriation of profits.
+7     a) Both Assertion (A) and Reason (R) are Correct and Reason (R) is the correct explanation of                                               1
+      Assertion (A)
+8     c) ₹ 2,40,000                                                                                                                               1
+          or
+      b) Debited, ₹6,500.
+9     d). ₹20,940.                                                                                                                                1
+10    c). ₹71,400.                                                                                                                                1
+
+11    c). Only (iii)                                                                                                                              1
+12           B.     PK Ltd.                                            Dr.           20,00,000                                                    1
+                     To Share Capital A/c                                                                  12,72,700
+                     To Securities Premium A/c                                                               1,27,270
+                     To Bank A/c                                                                             6,00,030
+                    (Being  settlement  of  amount  due  to
+                   vendors)
+
+
+
+
+
+
+
+
+
+
+13    c). 2,000 Shares                                                                                                                            1
+14    a). ₹24,000.                                                                                                                                1
+15    b). ₹40,000.                                                                                                                                1
+             Or
+      c). Shyam - ₹ 2,500; Gopal- ₹  750; Arjun- Nil.
+16    d). ₹1,50,000                                                                                                                               1
+17     Date         Particulars                                          L.F          Dr (₹)               Cr (₹)                                 3
+                    Anshul’s Capital A/c                   Dr                       9,000
+                    Chander’s Capital A/c                   Dr                    21,000
+                         To Babita’s Capital A/c                                                        30,000
+                    (Chander’s    share    of    Goodwill
+                    debited to the amounts of continuing
+                    partners in their gaining ratio)
+
+      Gaining Ratio is 3:7
+
+18     Partners           Interest on             Salary Paid           Payable          Salary         Excess /                                  3
+                      Capital        Paid       (wrong credit)                          Payable         Deficiency
+                              (2%)                      (ii)               (iii)           (iv)
+                                (i)
+            P                  800                  12,000             1152                 ----        11,648
+                                                                                                        (Excess)
+            Q                  640                      ----             384            12,000          11,744
+                                                                                                        (Deficiency)
+
+             R                   480                        ----               384                 ----                96
+                                                                                                                   (excess)
+
+        Date          Particulars                                              L.F           Dr (₹)                 Cr (₹)
+                      P’s Capital A/c                              Dr                      11,648
+                      R’s Capital A/c                             Dr                             96
+                           To Q’s Capital A/c                                                                    11,744
+                      (Being entry passed for adjustment of
+                      interest on capital and salary)
+
+                                                                                         Or
+
+        Date          Particulars                                              L.F           Dr (₹)                 Cr (₹)
+                      P&L Adjustment A/c                       Dr.                            9,000
+                             To Cheese Capital A/c                                                                    3,000
+                             To Slice Capital A/c                                                                     6,000
+                      (Being  Interest  on  capital  omitted
+                      earlier now provided)
+
+                      P&L Adjustment A/c                       Dr.                             5,000
+                             To Cheese Capital A/c                                                                    5,000
+                      (Being  salary  omitted  earlier  now
+                      provided)
+
+                      Cheese Capital A/c                        Dr.                            7,000
+                      Slice Capital A/c                           Dr.                          7,000
+                             To P&L Adjustment A/c                                                                    14,000
+                      (Being     Loss     on      Adjustment
+                      transferred to partners)
+
+
+
+
+
+19      Date          Particulars                                              L.F           Dr (₹)                 Cr (₹)                                    3
+                      Assets A/c                                     Dr.                    10,00,000
+                      Goodwill A/c                                Dr.                            60,000
+                            To Liabilities A/c                                                                      1,70,000
+                            To Healthy World ltd.                                                                   8,90,000
+                      (Being   assets   and   liability   taken
+                      over)
+
+                      Healthy World Ltd.                       Dr.                          8,90,000
+                      Loss on issue of Debentures A/c  Dr.                                    80,000
+                             To 8% Debentures A/c                                                                     8,00,000
+                             To Securities Premium A/c                                                                   40,000
+                             To Premium on redemption A/c                                                                80,000
+                             To Bank A/c                                                                                 50,000
+                      (Being      Purchase      consideration
+                      discharged  by  issue  of  Debentures
+                      and in Cash)
+
+                                                                                      Or
+
+
+                                                                                   Share Forfeiture A/c
+
+        Particulars                                        Amt(₹)            Particulars                                         Amt(₹)
+        To Share Capital A/c                                    120          By Share Capital A/c                                      400
+        To Capital Reserve A/c                                  120
+        To Capital Reserve A/c                                   80
+        To Balance c/d                                           80
+                                                                400                                                                    400
+
+
+20      Years (ending 31st                  Adjusted Profit (₹)                Weights                             Product (₹)                            3
+        March)
+        2020                                           28,000                                  1                                      28,000
+        2021                                           36,000                                  1                                      36,000
+        2022                                           46,000                                  2                                      92,000
+        2023                                           53,000                                  3                                    1,59,000
+         Total                                                                                 7                                    3,15,000
+
+        Adjusted Profits                             2020                  2021                    2022                       2023
+        Given Profits                                          28,000                  27,000                     46,900               53810
+        Add Capital Expenditure
+        Charged to Revenue                                                             10,000
+        Less: Unprovided Depreciation                                                  (1,000)                      (900)                (810)
+
+        Adjusted Profits                                       28,000                  36,000                     46,000              53,000
+       Weighted Average Profit = 3,15,000/7
+                                                    =₹45,000
+      Goodwill = 45,000 × 3 = ₹1,35,000
+
+      Notes to Solution
+      (i) Depreciation of 2021= 10% of 10,000
+      = 10,000 × 10/100 =₹1,000
+      (ii) Depreciation of 2022 = 10% of 9000
+      = 9,000x10/100= ₹900
+      (iii) Depreciation of 2022 = 10% of 8,100
+      = ₹8,100
+21          Balance Sheet (Extract) as at                                                                                                                 4
+
+        Particulars                                           Note No         Amount
+        I. EQUITY AND LIABILITIES
+        (1) Shareholder’s Funds
+        (a) Share Capital                                     1               7,78,000
+
+
+      Notes to Accounts
+      Note 1:
+        Particulars                                            Details                                         Amount
+        1. Share Capital
+        Authorised Capital
+        2,00,000 Equity shares of Rs.10 each                                                                 20,00,000
+        Issued Capital
+        80000 Equity shares of 10 each                                                                        8,00,000
+        Subscribed capital
+
+        Subscribed and fully paid up
+        74,000 equity shares of 10 each                                                                          7,40,000
+        Subscribed but not fully paid-up
+        4,000 equity shares of 10 each                              40,000                                         32,000
+        Less: calls in arrears (4,000x2)                            (8,000)
+        Add Forfeited Shares
+        2,000 equity shares@3                                                                                        6,000
+                                                                                                                 7,78,000
+
+
+22                                                                                                  Journal                                                  4
+        Date       Particulars                                                          LF         Dr. (₹)                  Cr. (₹)
+        a)         Realisation A/c                                  Dr                             40,000
+                            To Sun’s Capital A/c                                                                            40,000
+                   (Being Remuneration and expenses payable to
+                   Sun)
+        b)         Sun’s Capital A/c                            Dr                                 14,000
+                   Kiran’s Capital A/c                         Dr                                  14,000
+                     To Deferred Advertisement Suspense A/c
+                   (Being Advertisement Suspense A/c has been                                                               28,000
+                   debited in partner’s capital account in their profit
+                   sharing ratio)
+        c)(1)      Kiran’s Capital A/c                                Dr                           30,000
+                            To Realisation A/c                                                                              30,000
+                   (Being 1/3 of Stock has been taken over by Kiran
+                   at 25% discount))
+        c)(2)      No Entry
+        c)(3)      Bank A/c                                                Dr                      25,000
+                                To Realisation A/c                                                                          25,000
+                   (Being Stock Realised)
+        d)         Cash/Bank A/c                                                 Dr                7,000
+                     To Realisation A/c                                                                                     7,000
+                   (Being amount realised from unrecorded assets
+                   after payment of outstanding bill)
+
+
+
+
+
+
+
+
+
+23                                          Journal Entries in the Books of Rockstar Ltd.                                                                    6
+        Date      Particulars                                                                      L.F     Debit (₹          Credit (₹)
+         i)       Bank A/c Dr.                                                                             16,00,000
+                      To Share Application A/c                                                                               16,00,000
+                  (Being Application money received)
+         ii)      Share Application A/c Dr.                                                                16,00,000
+                      To Share Capital A/c                                                                                   10,00,000
+                      To Share Allotment A/c                                                                                  5,00,000
+                      To Bank A/c                                                                                             1,00,000
+                  (Being Application money utilised)
+         iii)     Share Allotment A/c Dr.                                                                    8,00,000
+                      To Share Capital A/c                                                                                    4,00,000
+                      To Securities Premium A/c                                                                               4,00,000
+                  (Being allotment due with premium)
+         iv)      Bank A/c Dr.                                                                               2,85,000
+                  Calls in Arrears A/c Dr.                                                                      15,000
+                      To Share Allotment A/c                                                                                  3,00,000
+                  (Being allotment received except of Simba)
+         v)       Share First and Final Call A/c Dr.                                                         6,00,000
+
+              To Share Capital A/c                                                                        6,00,000
+          (Being call money due)
+  vi)     Bank A/c Dr.                                                                     5,70,000
+          Calls in Arrears A/c Dr.                                                           30,000
+              To Share First and Final Call A/c                                                           6,00,000
+          (Being call money received except of Simba)
+  vii)    Share Capital A/c Dr.                                                            1,00,000
+          Securities Premium A/c Dr.                                                         15,000
+              To Share Forfeited A/c                                                                         70,000
+              To Calls in Arrears A/c                                                                        45,000
+          (Being Simba’s shares forfeited)
+  viii)   Bank A/c Dr.                                                                       48,000
+          Share Forfeited A/c Dr.                                                            12,000
+              To Share Capital A/c                                                                           60,000
+          (Being forfeited shares re-issued)
+  ix)     Share Forfeited A/c Dr.                                                            30,000
+              To Capital Reserve A/c                                                                         30,000
+          (Being gain on re-issue transferred to Capital Reserve)
+                                                                Or
+                                             Journal Entries in the Books of Shaktimaan Ltd.
+ Date     Particulars                                                             L.F    Debit (₹)      Credit (₹)
+  i)      Share Application A/c Dr.                                                       6,00,000
+              To Share Capital A/c                                                                       2,00,000
+              To Securities Premium A/c                                                                  2,00,000
+              To Share Allotment A/c                                                                     2,00,000
+          (Being Application money utilised)
+  ii)     Share Allotment A/c Dr.                                                         5,00,000
+              To Share Capital A/c                                                                       5,00,000
+          (Being allotment due with premium)
+  iii)    Share First and Final Call A/c Dr.                                              3,00,000
+              To Share Capital A/c                                                                       3,00,000
+          (Being call money due)
+  iv)     Calls in Arrears A/c Dr.                                                          15,000
+              To Share First and Final Call A/c                                                            15,000
+          (Being call money received except of Simba)
+  v)      Share Capital A/c Dr.                                                             50,000
+              To Share Forfeited A/c                                                                       35,000
+              To Calls in Arrears A/c                                                                      15,000
+          (Being Simba’s shares forfeited)
+  vi)     Share Forfeited A/c Dr.                                                           14,000
+              To Capital Reserve A/c                                                                       14,000
+          (Being gain on re-issue transferred to Capital Reserve)
+
+                                          Cash Book (with Bank Column only)
+ Date     Particulars                       LF      Amount         Date     Particulars                       LF      Amount
+                                                        (₹)                                                              (₹)
+ i)       To Share Application A/c                   7,20,000      ii)      By Share Application A/c                  1,20,000
+ iii)     To Share Allotment A/c                     3,00,000
+ iv)      To Share First and Final                   2,85,000
+          Call A/c
+ v)       To Share Capital A/c                         20,000      vi)      By Balance c/d                           12,11,000
+          To Securities Premium                          6,000
+          A/c
+
+                                                           13,31,000                                                           13,31,000
+
+24    Journal Entries in the Books of Rajinder, Vijay and Ranvijay                                                                               6
+       Date     Particulars                                                                L.F    Debit (₹       Credit (₹)
+        i)      Revaluation A/c Dr.                                                                  52,000
+                    To Prov. For Doubtful Debts A/c                                                                   2,000
+                    To Outstanding Bill for Repairs A/c                                                              50,000
+                (Being increase in PDD and O/S bill accounted)
+        ii)     Accrued Interest A/c Dr.                                                              7,500
+                Stock A/c Dr.                                                                         8,000
+                    To Revaluation A/c                                                                               15,500
+                (Being increase in Stock and Accrued Interest
+                accounted)
+        iii)    Rajinder’s Current A/c     Dr                                                        21,900
+                Vijay’s Current A/c          Dr                                                      14,600
+                      To Revaluation A/c                                                                             36,500
+                 (Being loss on revaluation transferred to partner’s
+                current A/c)
+        iv)     Bank A/c Dr.                                                                         40,000
+                    To Investment A/c                                                                                40,000
+                (Being Investment sold at book value)
+        v)      Rajinder’s Current A/c      Dr.                                                      42,000
+                    To Stock A/c                                                                                     42,000
+                (Being stock taken over by Rajinder)
+        vi)     General Reserve A/c         Dr.                                                      60,000
+                    To Rajinder’s Current A/c                                                                        36,000
+                    To Vijay’s Current A/c                                                                           24,000
+                 (Being General Reserve distributed)
+        vii)    Rajinder’s Current A/c       Dr.                                                     30,000
+                Vijay’s Current A/c            Dr.                                                   20,000
+                    To Goodwill A/c                                                                                  50,000
+                (Being Goodwill written off)
+        viii)   Bank A/c                                  Dr.                                     1,60,000
+                    To Ranvijay’s Capital A/c                                                                     1,00,000
+                    To Premium for Goodwill A/c                                                                      60,000
+                (Being new partner brings capital and share of
+                goodwill)
+        ix)     Premium for Goodwill A/c   Dr.                                                       60,000
+                    To Rajinder’s Current A/c                                                                        30,000
+                    To Vijay’s Current A/c                                                                           30,000
+                (Being premium distributed in Sacrificing Ratio)
+                                                                                   OR
+                                                                     Partner’s Capital A/c
+       Particulars                    L            M              N         Particulars                 L            M              N
+       Def. Rev. Exp.A/c            20,000        20,000         30,000     Balance b/d             6,25,000      4,00,000       5,25,000
+       Investments A/c                            50,000                    Revaluation A/c           30,000        30,000         45,000
+       M’s Capital A/c              64,000                       96,000     L’s Capital A/c                         64,000
+       M’s Loan A/c                             5,20,000                    N’s Capital A/c                         96,000
+       Balance c/d               12,80,000                   19,20,000      Bank A/c                7,09,000                   14,76,000
+                                 13,64,000      5,90,000     20,46,000                             13,64,000      5,90,000     20,46,000
+
+
+
+
+                                   Balance Sheet of Reconstituted Firm as at March 31,2023
+       Liabilities                                      Amount(₹)         Assets                                       Amount(₹)
+       Creditors                                                80,000    Land and Building                               7,40,000
+       Bank overdraft                                           22,000    Machinery                                       2,25,000
+       Long term debts                                       2,00,000     Furniture                                       3,50,000
+       Capital A/C s:                                                     Investments                                        50,000
+       L-   12,80,000                                                     Stock                                           3,00,000
+       N  - 19,20,000                                      32,00,000      Debtors          2,00,000
+       Employees provident fund                                 38,000    Less: prov.      (10,000)                       1,90,000
+       M’s Loan A/c                                         5,20,000      Bank                                           22,05,000
+                                                           40,60,000                                                     40,60,000
+
+25    Maheep dues to be transferred to executors = 1,15,000 + 5,000 + 20,000 + 60,000 – 20,000 = 1,80,000                                    6
+
+                                                     Maheep’s Executors Account
+       Date         Particulars                       LF     Amount        Date          Particulars                   LF     Amount
+                                                                 (₹)                                                             (₹)
+       31/03/21     To Balance c/d                            1,93,500     30/06/20      By Maheep’s Cap. A/c                  1,80,000
+                                                                           31/03/21      Interest (9 months)                     13,500
+                                                              1,93,500                                                         1,93,500
+       30/06/21     To Bank (I Instalment)                      78,000     01/04/21      By Balance b/d                        1,93,500
+       31/03/22     To Balance c/d                            1,29,000     30/06/21      By Interest (3 months)                   4,500
+                                                                           31/03/22      By Interest (9 months)                   9,000
+                                                              2,07,000                                                         2,07,000
+       30/06/22     To Bank (II Instalment)                     72,000     01/04/22      By Balance b/d                        1,29,000
+       31/03/23     To Balance c/d                              64,500     30/06/22      By Interest (3 months)                   3,000
+                                                                           31/03/23      By Interest (9 months)                   4,500
+                                                              1,36,500                                                         1,36,500
+       30/06/23     To Bank (III Instalment)                    66,000     01/04/23      By Balance b/d                          64,500
+                                                                           30/06/23      By Interest (3 months)                   1,500
+                                                                66,000                                                           66,000
+
+26                                                   Journal Entries in the Books of Panther Ltd.                                            6
+       Date         Particulars                                                               L.F     Debit (₹       Credit (₹)
+       July 1       Bank A/c                                         Dr.                              21,60,000
+       2022             To Debenture Application and Allotment A/c                                                   21,60,000
+                    (Being Application money received)
+       July 1       Debenture Application and Allotment Dr.                                           21,60,000
+       2022         Loss on Issue of Debentures A/c     Dr.                                            3,00,000
+                        To 9% Debentures A/c                                                                         20,00,000
+                        To Securities Premium A/c                                                                      1,60,000
+                        To Premium on Redemption of Debentures A/c                                                     3,00,000
+                    (Being Debentures issued)
+       Mar. 31      Debenture Interest A/c                   Dr.                                       1,35,000
+       2022             To Debenture holders A/c                                                                       1,35,000
+                    (Being Interest due on debentures)
+       Mar. 31      Debenture holders A/c                    Dr.                                       1,35,000
+       2022             To Bank A/c                                                                                    1,35,000
+                    (Being interest paid to debenture holders)
+       Mar. 31      Statement of Profit and Loss           Dr.                                         1,35,000
+       2022             To Debenture Interest A/c                                                                      1,35,000
+                    (Interest on Debentures charged from Statement of Pnl)
+       Mar. 31      Securities Premium A/c                  Dr.                                        2,40,000
+       2022         Statement of Profit and Loss           Dr.                                            60,000
+
+                        To Loss on Issue of Debentures A/c                                                            3,00,000
+                    (Loss on Issue of Debentures written off)
+
+                                                   Loss on Issue of Debentures A/c
+       Date       Particulars                           Amount        Date        Particulars                               Amount
+                                                            (₹)                                                                (₹)
+       01 July    To Premium on Redemption               3,00,000     31 Mar.     By Securities Premium A/c                 2,40,000
+       2022       of Debentures A/c                                   2023        By Statement of Profit and Loss               60,000
+                                                         3,00,000                                                           3,00,000
+
+
+                                                       Part – B (Analysis of Financial Statements)
+
+27    c). Not Free from Bias                                                                                                                1
+                                                            OR
+      c). Loose Tools and Stores and Spares
+28    d) Issue of Equity Shares                                                                                                             1
+29    c) Statement I is correct, and Statement II is incorrect                                                                              1
+                                            Or
+          A.   No effect
+30    d) ₹ 1,80,000                                                                                                                         1
+31     S.No.     Item                                         Heading                          Sub-heading                                  3
+          i.      Loose Tools                                 Current Assets                   Inventories
+         ii.      Loan repayable on demand                    Current Liabilities              Short Term Borrowings
+        iii.      Provision for Retirement                    Non-Current                      Long Term Provisions
+                 benefits                                     Liabilities
+         iv.      Pre-paid Insurance                          Current Assets                   Other Current Assets
+         v.       Capital advances                            Non-Current Assets               Long Term Loans and
+                                                                                               Advances
+         vi.      Shares in Listed Companies                  Non-Current Assets               Non-Current Investments
+
+32    (a).Current Ratio = Current Assets / Current Liabilities                                                                              3
+
+      2 = 8,00,000 / Current Liabilities
+      So, Current Liabilities = ₹ 4,00,000
+
+      Liquid Ratio = Liquid Assets / Current Liabilities
+      1.5 = Liquid Assets / 4,00,000
+
+      So, Liquid Assets =  ₹ 6,00,000
+      Inventory = Current Assets - Liquid Assets
+      Inventory = 8,00,000 – 6,00,000 = ₹ 2,00,000
+      Inventory Turnover Ratio = Cost of Revenue From Operations / Average Inventory
+      6 = Cost of Revenue from Operations / 2,00,000
+
+      Cost of Revenue from Operations = ₹ 12,00,000
+
+      Gross Profit = 25% of Cost i.e ₹ 3,00,000
+
+      Revenue From Operations = Cost of Revenue from Operations + Gross Profit = 12,00,000 + 3,00,000
+      Revenue From Operations = ₹ 15,00,000
+
+          (a) Debt to Capital employed ratio = Debt / Capital Employed
+
+           Debt to Capital employed ratio  = 7,50,000 / (7,50,000 + 15,00,000) = 7,50,000 / 22,50,000
+
+            Debt to Capital employed ratio = 1/3 = 0.33 : 1
+33                                        Common Size Statement of Profit & Loss                                                         4
+       Particulars                       2022-23(₹)       2021-22(₹)       % on revenue from            % on revenue from
+                                                                           operations (2021-22)         operations (2022-23)
+
+       Revenue from operations             8,00,000        10,00,000                  100                           100
+       Less :- Expenses
+       Cost of revenue                     3,20,000        3,00,000                    40                           30
+       Other Expenses                      2,20,000        2,60,000                  27.5                           26
+       Total Expenses                      5,40,000        5,60,000                  67.5                           56
+       Profit Before Tax                   2,60,000        4,40,000                  32.5                           44
+       Less:- Tax                          1,30,000        2,20,000                  16.25                          22
+       Profits after Tax                   1,30,000        2,20,000                  16.25                          22
+
+                                                                    OR
+                                           Comparative Statement of Profit & Loss
+       Particulars                                      2021-22      2022-23         Absolute             Proportionate
+                                                            (₹)         (₹)          Change (in ₹)        Change (in %)
+            A.  Revenue from operations                 8,00,000     10,00,000           2,00,000                     25
+            B.  Add: Other Income                       1,50,000      2,20,000            70,000                    46.67
+            C.   Total Revenue (A+B)                    9,50,000     12,20,000           2,70,000                   28.42
+            D.  Less: Cost of materials                 3,00,000      4,00,000           1,00,000                   33.33
+                consumed
+                Change in inventories of                    1,00,000  2,00,000           1,00,000                    100
+       finished goods and work
+       in progress
+                  Other Expenses                         80,000       1,50,000            70,000                     87.5
+                  Total Expenses                        4,80,000      7,50,000           2,70,000                   56.25
+            E.  Profits before Tax   (C-D)              4,70,000      4,70,000               --                       --
+            F.  Tax Rate                                1,41,000      1,41,000               --                       --
+            G.  Profits after Tax (E-F)                 3,29,000      3,29,000               --                       --
+
+
+34                                                                                                                                       6
+                                 Cash Flow Statement for the year ended March 31, 2023
+       Particulars                                                                              Details         Amount (₹)
+       Cash from Operating Activities
+       Profits before Tax and Extraordinary Activities                                            1,07,000
+       Add :- Non-Cash and Non-Operating Expenses
+       Depreciation on Plant and Machinery                                                        1,20,000
+       Interest on Debentures                                                                       10,000
+       Cash from Operating Activities before working capital changes                              2,37,000
+       Increase in Trade Payables                                                                   18,000
+       Decrease in Trade Receivable                                                               1,74,000
+       Increase in Inventory                                                                    (2,07,000)
+       Cash from Operations                                                                       2,22,000
+       Less :- Tax Paid                                                                           (15,000)
+       Cash from Operating Activities                                                (A)                            2,07,000
+       Cash from Investing Activities
+       Sale of Investments                                                                          40,000
+
+       Purchase of Investments                                                                          (70,000)
+       Purchase of Plant and Machinery                                                                (4,05,000)
+       Cash from Investing Activities                                                 (B)                                (4,35,000)
+       Cash from Financing Activities
+       Issue of Shares                                                                                  2,00,000
+       Issue of Debentures                                                                                 50,000
+       Interest on Debentures                                                                           (10,000)
+       Cash from Financing Activities                                                 (C)                                  2,40,000
+       Net Cash Flow during the year                                           (A+B+C)                                        12,000
+       Add :- Opening Cash and Cash Equivalents                                                                               33,000
+       Closing Cash and Cash Equivalents                                                                                      45,000
+
+      Working Notes :-
+                                                           Plant and Machinery Account
+       Particulars                                    Amount (₹)          Particulars                               Amount (₹)
+
+       Balance b/d                                          4,90,000      Depreciation A/c                                1,20,000
+       Bank (Purchase)                                      4,05,000      Balance c/d                                     7,75,000
+                                                            8,95,000                                                      8,95,000
+
+                                                                      Investments Account
+       Particulars                                     Amount (₹)            Particulars                            Amount (₹)
+       Balance b/d                                                50,000     Bank A/c (sale)                                  40,000
+       Gain on Sale (Capital Reserve)                             10,000     Balance c/d                                      90,000
+       Bank (Purchase)                                            70,000
+                                                                1,30,000                                                    1,30,000
+
+                                                                 Provision for Tax Account
+       Particulars                                   Amount (₹)         Particulars                                   Amount (₹)
+       Bank (Paid)                                           15,000     Balance b/d                                           28,000
+       Balance c/d                                           30,000     Statement of Profit and Loss                          17,000
+                                                             45,000                                                           45,000
+
+      Net Profits after Tax and Extraordinary Items = 20,000
+      + Transfer to General Reserve =                          70,000
+      + Provision for Tax =                                           17,000
+      = Net Profits before Tax and Extraordinary Items = 1,07,000
+
+                                                       Computerised Accounting
+27    d) =AND (C3<10, D4,200)                                                                                                                    1
+28    c) [Home]                                                                                                                                  1
+                                           Or
+      a) SUM and AVERAGE
+29    (b) Financial                                                                                                                              1
+30    a). PMT (rate, nper, pv, [fv], [type])                                                                                                     1
+                                                                            Or
+      b)  Design, Layout, Format
+31     The points to be considered before making investment in a database: (any three)                                                           3
+            (i)  What all data is to be stored in the database?
+             (ii) Who will capture or modify the data, and how frequently the data will be modified?
+            (iii) Who will be using the database, and what all tasks will they perform?
+            (iv) Will the database ( backend) be used by any other frontend application?
+            (v)  Will access to database be given over LAN/ Internet, and for what purposes?
+
+            (vi) What level of hardware and operating system is available?
+32     Types of Accounting Vouchers                                                                                                           3
+            (i)  Contra Vouchers
+            (ii) Payments Vouchers
+               (iii) Receipt Vouchers
+33     Uses of conditional formatting:                                                                                                        4
+            (i)  It helps in making needed information highlighted.
+            (ii) It changes the appearance of cells ranges.
+            (iii) Color scale may be used to highlight cells.
+            (iv) useful in making decision making.
+                                                                                    Or
+       Features of computerized accounting system:
+            (i)  Simple and integrated.
+            (ii) Transparency and control.
+            (iii) Accuracy and speed.
+            (iv) Scalability.
+            (v)  Reliability.
+34     Two basic methods of charging depreciation are:                                                                                        6
+       Straight line method: This method              calculates fixed amount          of  depreciation      every   year   which    is
+       calculated keeping in view the useful life of assets and its salvage value at the end of its useful life.
+       Written down value method: This method uses current book value of the asset for computing the
+       amount of depreciation for the next period. It is also known as declining balance method.
+       Differences:
+       1.   Equal amount of depreciation is charged in straight line                   method. Amount of           depreciation
+                 goes on decreasing every year in written down value method.
+            2.   Depreciation is charged on original cost in straight line method. The amount is calculated
+                 on the book value every year.
+            3.   In straight    line  method     the   value   of  asset   can   come    to  zero   but   in written    down     value
+                 method this can never be zero.
+            4.   Generally rate of depreciation           is low in case     of  straight line method but it is kept high            in
+                 case of written down value method.
+            5.   It is suitable for assets in which repair charges are less and the possibility of obsolescence is
+                    less. It is suitable for the assets which become obsolete due to changes in technology.
+
+
